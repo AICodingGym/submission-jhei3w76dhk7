@@ -1727,7 +1727,7 @@ def dot(*arrays, dims=None, **kwargs):
     return result.transpose(*all_dims, missing_dims="ignore")
 
 
-def where(cond, x, y):
+def where(cond, x, y, keep_attrs=None):
     """Return elements from `x` or `y` depending on `cond`.
 
     Performs xarray-like broadcasting across input arguments.
@@ -1743,6 +1743,15 @@ def where(cond, x, y):
         values to choose from where `cond` is True
     y : scalar, array, Variable, DataArray or Dataset
         values to choose from where `cond` is False
+    keep_attrs : bool, str or callable, optional
+        If True, copy attributes from `x` to the output, including attributes
+        of its corresponding variables and coordinates. If `x` has no
+        attributes, the output attributes are empty. When a DataArray or
+        Variable is broadcast into a Dataset, copy its attributes to each
+        output data variable. If False, discard data attributes. A string or
+        callable specifies how to combine attributes from the inputs, as in
+        :py:func:`merge`. By default, use the global
+        ``keep_attrs`` option, or False if it is unset.
 
     Returns
     -------
@@ -1808,8 +1817,14 @@ def where(cond, x, y):
     Dataset.where, DataArray.where :
         equivalent methods
     """
+    from .dataarray import DataArray
+    from .dataset import Dataset
+
+    if keep_attrs is None:
+        keep_attrs = _get_keep_attrs(default=False)
+
     # alignment for three arguments is complicated, so don't support it yet
-    return apply_ufunc(
+    result = apply_ufunc(
         duck_array_ops.where,
         cond,
         x,
@@ -1817,7 +1832,26 @@ def where(cond, x, y):
         join="exact",
         dataset_join="exact",
         dask="allowed",
+        keep_attrs=False if keep_attrs is True else keep_attrs,
     )
+
+    if keep_attrs is True and isinstance(result, (Variable, DataArray, Dataset)):
+        # Coordinates can share Variables with the inputs. Copy the metadata
+        # before restoring attributes without copying the underlying arrays.
+        result = result.copy(deep=False)
+        result.attrs = getattr(x, "attrs", {})
+        if isinstance(result, Dataset):
+            for name in result.data_vars:
+                source = x[name] if isinstance(x, Dataset) else x
+                result[name].attrs = getattr(source, "attrs", {})
+        if isinstance(result, (DataArray, Dataset)):
+            source_coords = getattr(x, "coords", {})
+            for name in result.coords:
+                result[name].attrs = (
+                    source_coords[name].attrs if name in source_coords else {}
+                )
+
+    return result
 
 
 def polyval(coord, coeffs, degree_dim="degree"):
