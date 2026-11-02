@@ -1,0 +1,5 @@
+# Baseline v001, Python 3.11.9 in the course DataHub image.
+lightgbm==4.6.0
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
