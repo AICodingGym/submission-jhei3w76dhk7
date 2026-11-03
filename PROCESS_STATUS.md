@@ -1,6 +1,6 @@
 # Process map
 
-Checked **November 3, 2026, 9:24 AM Pacific**. All modeling, review and backup stages are complete.
+Checked **November 3, 2026, 9:33 AM Pacific**. All modeling, review, backup and Gym submission stages are complete.
 
 ```text
 Approved data + CUDA environment           COMPLETE
@@ -12,6 +12,7 @@ Approved data + CUDA environment           COMPLETE
                       └─ All-labeled fit  COMPLETE — 67,905 breaths
                           └─ CSV + QA     COMPLETE — 603,600 rows
                               └─ Backup   VERIFIED on DataHub and Mac
+                                  └─ Gym  ACCEPTED — MAE .47462
 ```
 
 | Process / resource | Current state |
@@ -28,7 +29,7 @@ Approved data + CUDA environment           COMPLETE
 The selected recipe is **75% continued GRU + 25% larger LightGBM**.
 Earlier validation-model MAE: **A .4837194726 / B .5075927078**.
 The final models are fresh fits on all approved labeled breaths and have no
-independent A/B holdout. No new Gym upload or Gym score was produced.
+independent A/B holdout. Gym submission is now accepted: **official MAE 0.47462**. Source code was archived by the CLI.
 
 Persistent DataHub work directory:
 

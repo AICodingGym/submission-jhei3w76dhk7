@@ -6,6 +6,8 @@ user request authorized the first baseline; see `EXPERIMENTS.md` for its results
 Latest completed work: open `results_review_v004.ipynb` to review results and
 plots, or `sequence_refinement_v004b.ipynb` for the executed modeling pipeline.
 The verified final CSV is `outputs/sequence_v004b/final_all/submission.csv`.
+Gym accepted this CSV with **MAE 0.47462**; see
+`research/submission_receipt_v004b.json` for the receipt.
 See `PROCESS_STATUS.md` for the final process map.
 
 ## Approved local data

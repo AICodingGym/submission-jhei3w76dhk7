@@ -282,3 +282,19 @@ Both `review/learning_curves.png` and `review/selected_hard_breaths.png` were
 visually inspected: readable labels/legends, no clipped panels, and correct
 inspiratory-only hard-case comparisons. The figures and R/C/phase tables are
 embedded in `results_review_v004.ipynb` and saved under `outputs/sequence_v004b/`.
+
+
+## Gym submission — November 3, 2026, 9:33 AM Pacific
+
+The user authorized submission of the verified final CSV. Gym accepted it and
+returned **MAE 0.47462**, versus the prior accepted 0.67230 (29.40% lower).
+The CSV checksum is unchanged from final verification. This is the external
+score; A/B validation-model scores remain .483719/.507593.
+
+The CLI archived source commit `0bfe3e71f0ce031fd64ebfb55a1dd78d02351d6a` on branch
+`ventilator-pressure-prediction`. Optional CLI session-log upload was disabled;
+Entire capture is not installed. The source archive includes our committed
+visible-history snapshots. Original run manifests and backups retain their
+pre-submission state. Current receipt: `outputs/sequence_v004b/submission_receipt.json`
+(tracked copy: `research/submission_receipt_v004b.json`). No retraining or second
+submission was performed to obtain or record this result.
