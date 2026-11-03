@@ -35,7 +35,8 @@ data/models, or existing competition solutions. Keep the source data unchanged.
 The selected working environment is the course DataHub. The original container
 `v2gao-254347` expired at its six-hour deadline and was archived and removed.
 Replacement pod `v2gao-939516` was submitted at about 7:55 PM Pacific on November 2.
-It initially queued for an available course GPU. It was submitted with:
+It started at **9:10:09 PM Pacific**, after about 75 minutes queued, and passed
+CUDA and persistent-file verification. It was submitted with:
 
 ```bash
 launch-scipy-ml.sh -W DSC102_FA26_001 -g 1 -c 8 -m 16 -B /bin/sleep infinity
@@ -46,10 +47,13 @@ The first container started at about 1:30 PM Pacific on November 2 after about
 Python 3.11.9, image PyTorch 2.2.1+cu121 / CUDA 12.1, NumPy 1.26.4, pandas 2.2.2,
 and Gym CLI 1.1.0. CUDA
 arithmetic, imports, Gym configuration, and approved data integrity all passed.
-A readiness worker will repeat these checks in the replacement container and save
-`/home/v2gao/dsc102/pa3/setup/restart-v2gao-939516.json` when they pass. A queued pod
-does not yet have a verified GPU; check `kubectl get pods` before connecting.
+A readiness worker repeated these checks in the replacement container and saved
+`/home/v2gao/dsc102/pa3/setup/restart-v2gao-939516.json`.
 CPU/RAM limits are 8 CPUs and 16 GiB; scheduling requests are 4 CPUs and 8 GiB.
+
+Replacement verification is complete: GTX 1080 Ti (11 GB VRAM), driver
+580.126.20, the same project Python/Torch/CUDA versions, working CUDA arithmetic,
+matching approved-data/notebook/submission hashes, and the saved Gym identity.
 
 Connect from your Mac:
 
@@ -80,8 +84,8 @@ Use official `kubesh`: it initializes DataHub's Unix user mapping. Plain raw
 `ssh-keygen`. This setup uses a batch/shell container; no Jupyter server or
 notebook URL was started.
 
-The replacement pod has a six-hour active deadline, measured from its eventual
-start time. Queue waiting does not consume this lifetime. Home-directory files
+The replacement pod's six-hour active deadline is **3:10:09 AM Pacific on
+November 3, 2026**. Queue waiting did not consume this lifetime. Home-directory files
 persist after it stops. When finished with the GPU, exit to the login server and
 run `kubectl delete pod v2gao-939516` to release it. Do not run training on the
 login server.
@@ -126,3 +130,17 @@ independent new search. Results and the selected submission are in
 The comparison includes larger LightGBM models, ExtraTrees, GRUs, a training-size
 ablation, and confirmation on previously unused breaths. See `EXPERIMENTS.md`
 for all settings, limitations, and results.
+
+The next controlled investigation is `controlled_improvements_v003.ipynb`.
+It defaults to review mode; `PA3_RUN_V003=1` enables execution and
+`PA3_RESUME_V003=1` enables compatible resumption. See `INVESTIGATION_v003.md`
+for the ten-idea audit, separate ablations, fixed model seeds, equal-weight
+ensemble, and A-frozen-budget confirmation on grouped split B. Source data and
+the original validation breaths remain protected. Live results are in
+`outputs/controlled_v003/`; no CSV upload is enabled by this notebook.
+
+A temporary CPU-only pod completed tree screening and the two full-pool tree
+arms while the GPU queued. Its execution snapshot is
+`controlled_improvements_v003_cpu_screen.ipynb` on DataHub; that pod has been
+released. The GPU notebook reuses the verified fits. Visible-conversation
+snapshots are preserved in `interaction-history/`.

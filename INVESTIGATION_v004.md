@@ -40,7 +40,7 @@ The new models will join a fresh, bounded A-only pair search before B confirmati
 
 Figures and detailed tables are in `outputs/sequence_v004/error_analysis/`.
 
-## GPU experiments prepared, not yet run
+## GPU experiment plan
 
 | Suggestion | Controlled action |
 |---|---|
@@ -93,10 +93,33 @@ A-selected continuation while retaining that base's all-data scalers.
   mappings, causal TCN prefix invariance, and cross-breath independence.
 - `research/orchestration_checks_v004.json`: source compilation/default-review
   execution and read-only orchestration review passed. No v004 assignment model
-  has trained yet; CUDA compatibility will be checked in the new container.
+  had trained at this preparation checkpoint; live execution is recorded below.
 - Prior GPU deadline passed at 3:10 AM Pacific November 3. The SSH session expired
   and DataHub requires a fresh password/Duo login after eight hours. The user has
   been asked to reconnect using the persistent project control socket.
 - Announced login-node maintenance is 7–8 AM Pacific November 3. New launch will
   use a staged container entrypoint so training can proceed without a login-node
-  readiness worker once the container starts. No replacement GPU is claimed ready.
+  readiness worker once the container starts.
+
+## Live execution — November 3
+
+The reconnected login verified v003 completed all 27 trials and generated its
+checked CSV. A temporary CPU-only pod staged the notebook in persistent course
+storage and verified all four model shapes and parameter counts under course
+Torch 2.2.1+cu121. No package upgrade was needed. That CPU pod was released.
+
+GPU pod `v2gao-11673` started at 7:52:57 AM Pacific, passed CUDA arithmetic, and
+started the notebook automatically from its container entrypoint. Its six-hour
+deadline is approximately 1:52:57 PM Pacific. Model code remains unchanged from
+the reviewed source. The matched warm starts both reproduced baseline A MAE
+0.4962725306 before any continuation.
+
+| Completed warm-start arm | A MAE | Selected extra epoch | Executed extra epochs | Seconds |
+|---|---:|---:|---:|---:|
+| Constant LR 1e-5 | 0.494150 | 29 | 30 | 130.56 |
+| Constant LR 1e-6 | 0.495826 | 12 | 30 | 128.97 |
+
+Both changes are small. Reducing the already-low rate another tenfold did not
+beat continuation at the current rate in this matched comparison. Neither warm
+arm is adopted before the remaining A search and B confirmation finish.
+Bidirectional GRU, learned R/C embeddings, and TCN runs remain in progress.
