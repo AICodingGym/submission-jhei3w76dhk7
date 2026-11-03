@@ -1,0 +1,8 @@
+{
+  "exported_at_utc": "2026-11-03T04:22:41.156970+00:00",
+  "messages": 116,
+  "snapshot_file": "visible_conversation_20261103T042241Z.md",
+  "sha256": "e0aad1b511ab57c9e7e203ed08163c45ee9cef668b83b33aa68c5c7fe495e1ee",
+  "coverage": "visible user/assistant messages only; experiment tool execution logs stored separately",
+  "uploaded": false
+}
