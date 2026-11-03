@@ -147,6 +147,11 @@ GPU's steady synthetic batch improved from 2.04 seconds to .0372 seconds. The
 first actual epoch took 11.26 seconds. Floating-point summation and stochastic
 training trajectories need not be identical across implementations.
 
+Float32 CUDA checks also passed: maximum output difference 3.58e-7, maximum
+input-gradient difference 1.43e-9, every parameter gradient within tolerance,
+and zero change in a prefix when only future inputs changed. Independent source
+review found no blockers in causal indexing, cache reuse or B/final replay.
+
 The four completed non-TCN candidates are reused only after verifying unchanged
 GRU/preprocessing/training source, matching recipes/data/group hashes, checkpoint
 hashes, prediction hashes, row IDs, and recomputed MAE. They remain the original
@@ -159,3 +164,65 @@ benchmark omitted the deterministic CUDA workspace variable and failed explicitl
 it was rerun with the real notebook's setting. Local notebook generation lacked
 nbformat, so local compilation used JSON and the course environment then performed
 the actual nbformat schema and default-review execution checks. Both passed.
+
+The optimized lr .0015 TCN completed 52 epochs in 607.68 seconds, selecting
+epoch 48 / A MAE 0.7303338192. Its time cap is checked between epochs; this small
+overrun is expected and logged. The lr .003 comparison is running. This budget
+does not establish an architecture-wide optimum.
+
+The current-rate GRU continuation improves all nine R/C cells on A. Total absolute
+error falls by 437.5165 over 206,098 scored points; R=50 accounts for 200.3759 of
+that reduction. These remain A-selection findings until B confirmation.
+
+### Completed A comparison and frozen ensemble
+
+All six new comparisons use the original 61,114 A fitting breaths and 6,791
+held-out A breaths, model seed 20261102, training-only statistics and inspiratory
+L1/MAE. Imported arms retain their original runtimes and are not counted as new
+fits in v004b.
+
+| Model / controlled change | A MAE | Selected epoch / extra epoch | Training/evaluation seconds |
+|---|---:|---:|---:|
+| Reference GRU | 0.496273 | 99 | Reused from v003 |
+| Current-rate continuation, 1e-5 | 0.494150 | 29 extra | 130.56 |
+| One-tenth-rate continuation, 1e-6 | 0.495826 | 12 extra | 128.97 |
+| Bidirectional GRU, 80 units/direction x 2 | 0.569077 | 99 | 561.98 |
+| GRU with learned R/C embeddings | 0.535171 | 72 | 364.72 |
+| TCN, lr .0015 | 0.730334 | 48 | 607.68 |
+| TCN, lr .003 | 0.695900 | 34 | 483.43 |
+
+The new architectures/embedding representation did not improve A in this bounded
+search. This does not establish that those architecture families are inferior
+under every tuning/training budget. The current-rate continuation is the best
+individual. The 1e-6 arm is slightly better than the old baseline but worse than
+continuing at 1e-5.
+
+The A-only pair search includes individual vertices and weights .25/.5/.75 across
+aligned model predictions. Its winner is **25% leaves-511 LightGBM + 75% current-rate
+GRU continuation**, A MAE **0.4837194726** (2.11% below the best individual).
+Members, weights, checkpoint hashes and the eligibility rule were locked in
+`outputs/sequence_v004b/experiments/locked_before_B.json` at 8:54:20 AM Pacific,
+before starting fresh B continuation/tree fits. B outcomes are not used to tune
+weights.
+
+### Confirmed B comparison and selected recipe
+
+| Approach | A MAE | B MAE |
+|---|---:|---:|
+| Previous best GRU | 0.496272531 | 0.522832012 |
+| GRU continued at 1e-5 | 0.494149674 | 0.520393853 |
+| 25% larger tree + 75% continued GRU | **0.483719473** | **0.507592708** |
+
+The continuation improves B by 0.0024381591; the paired whole-breath bootstrap
+95% interval for continued-GRU minus reference error is [-0.0032297670,
+-0.0016575609]. The frozen pair improves on the continued GRU by 0.0128011453;
+its corresponding interval is [-0.0154676989, -0.0100254084]. Each bootstrap uses
+1,000 whole-breath resamples with seed 20261206 and point-count weighting.
+These intervals describe this B resampling comparison, not a newly untouched
+test population or every possible seed. B supplies the stated eligibility filter,
+not a weight or training-duration search.
+
+The pair passes the predeclared rule and is selected. Final fresh fitting on all
+67,905 approved labeled breaths is now running. It keeps the A-selected tree
+count, GRU schedule and 29-epoch continuation, fits all-data scalers, and has no
+independent A/B holdout. Validation evidence remains tied to the earlier models.

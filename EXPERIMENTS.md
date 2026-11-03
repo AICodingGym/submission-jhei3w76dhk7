@@ -172,3 +172,21 @@ Receipts, model checkpoints, metrics, splits, epoch logs and notebook snapshots
 are preserved. Optional AI session-log upload remained disabled. The CLI again
 reported that automatic remote source archiving is not configured; source was
 committed in the DataHub repository and retained in our project.
+
+
+## Controlled follow-up v003 and sequence refinement v004
+
+The completed v003 study contains 27 trial records. Its full controlled settings,
+training-size comparison, learning-rate/capacity/regularization tests, seed
+comparison, and grouped B confirmation are in `INVESTIGATION_v003.md` and
+`controlled_improvements_v003.ipynb`. Independent local QA recomputed every score.
+The selected GRU scores A MAE 0.496273 and B MAE 0.522832. Its verified CSV is
+`outputs/controlled_v003/submission.csv`; no Gym score is available for it.
+The equal-three-seed average did not beat the best individual on either split.
+
+The subsequent seven-idea study is tracked in `INVESTIGATION_v004.md`.
+`sequence_refinement_v004b.ipynb` continues it with a verified, mathematically
+equivalent faster TCN backend; the original v004 notebook and partial trial remain
+preserved. Completed non-TCN A trials are reused with full provenance checks.
+`results_review_v004.ipynb` is the read-only review and artifact-verification entry
+point. Validation evidence and the later all-labeled final fit are kept separate.

@@ -16,5 +16,10 @@
   "course_environment_schema_check_required": false,
   "notebook_sha256": "dd138d60d1046a5fbfa746a8f7c927deb328871b365a078a0f9a637ca2bb5fc3",
   "course_default_review_execution": "passed",
-  "four_parent_stages_reused_with_verified_provenance": true
+  "four_parent_stages_reused_with_verified_provenance": true,
+  "independent_source_review": {
+    "status": "no blockers",
+    "scope": "causal GEMM indexing/state compatibility; four-arm non-TCN reuse guards; unchanged B/final replay",
+    "B_outcomes_read": false
+  }
 }

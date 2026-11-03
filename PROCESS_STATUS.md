@@ -1,6 +1,6 @@
 # Process map
 
-Checked **November 3, 2026, 8:41 AM Pacific**. This is a timestamped snapshot;
+Checked **November 3, 2026, 9:03 AM Pacific**. This is a timestamped snapshot;
 the JSONL epoch logs contain newer live progress.
 
 ```text
@@ -12,11 +12,12 @@ Approved data + environment checks       COMPLETE
               ├─ Fine-tune LR 1e-6       COMPLETE — A MAE .49583
               ├─ Bidirectional GRU      COMPLETE — A MAE .56908
               ├─ Learned R/C embeddings COMPLETE — A MAE .53517
-              ├─ TCN LR .0015           RUNNING — optimized v004b
-              └─ TCN LR .003            WAITING
-                  └─ A ensemble search  WAITING
-                      └─ B confirmation WAITING
-                          └─ Final all-labeled fit + CSV + QA  WAITING
+              ├─ TCN LR .0015           COMPLETE — A MAE .73033
+              └─ TCN LR .003            COMPLETE — A MAE .69590
+                  └─ A ensemble search  COMPLETE — A MAE .48372
+                      └─ B confirmation COMPLETE — blend B MAE .50759
+                          └─ Final all-labeled fit RUNNING
+                              └─ CSV + independent QA + backup WAITING
 ```
 
 | Process / location | State |
@@ -28,11 +29,16 @@ Approved data + environment checks       COMPLETE
 | Pod startup shell PID `44` | Sleeping after the original worker stopped; the pod remains available. |
 | Temporary CPU staging pod | Released after successful staging/checks. |
 | Research agents | No agents currently training or doing research; completed review/analysis is incorporated. |
+| Read-only report worker PID `1190` | Waiting for model completion; then CPU verification, plots and archival. |
 
 The original dilated-convolution backend took 549.67 seconds for its first epoch.
 The verified equivalent implementation took 11.26 seconds. Four completed non-TCN
 comparisons are imported with source/recipe/split/hash/metric checks. No conclusion
 about TCN accuracy is drawn from the interrupted original run.
+
+A ensemble weights are frozen: 25% leaves-511 LightGBM + 75% GRU continued at LR
+1e-5. The pair passed B confirmation: A MAE .4837194726, B MAE .5075927078.
+Final fits use all 67,905 labeled breaths and have no independent A/B holdout.
 
 Persistent DataHub work directory:
 
