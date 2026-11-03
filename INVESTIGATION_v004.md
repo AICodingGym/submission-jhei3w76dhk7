@@ -1,8 +1,10 @@
 # Offline sequence refinement v004
 
-Implementation: `sequence_refinement_v004.ipynb` (31 cells). It defaults to review
-mode. `PA3_RUN_V004=1` executes the new investigation; `PA3_RESUME_V004=1` reuses
-compatible completed stages. Modeling code is contained in the notebook.
+Completed implementation: `sequence_refinement_v004b.ipynb` (31 cells), with the
+original `sequence_refinement_v004.ipynb` retained. It defaults to review mode.
+`PA3_RUN_V004B=1` executes; `PA3_RESUME_V004B=1` reuses compatible completed stages.
+Modeling code is contained in the notebook. `results_review_v004.ipynb` is the
+executed read-only results and artifact-check notebook.
 
 Only the approved Gym data is used. Prior notebooks, validation models and CSVs
 remain intact. There is no automatic submission or interaction-history upload.
@@ -223,6 +225,60 @@ test population or every possible seed. B supplies the stated eligibility filter
 not a weight or training-duration search.
 
 The pair passes the predeclared rule and is selected. Final fresh fitting on all
-67,905 approved labeled breaths is now running. It keeps the A-selected tree
-count, GRU schedule and 29-epoch continuation, fits all-data scalers, and has no
-independent A/B holdout. Validation evidence remains tied to the earlier models.
+67,905 approved labeled breaths is complete. It keeps the A-selected tree count,
+GRU schedule and 29-epoch continuation, fits all-data scalers, and has no independent
+A/B holdout. Validation evidence remains tied to the earlier models.
+
+### Final all-labeled artifacts and checks
+
+Final training uses all 2,061,922 approved inspiratory target points:
+
+| Final stage | Frozen recipe | Fit seconds |
+|---|---|---:|
+| Larger LightGBM | 2,500 trees, 511 leaves; numeric R/C + history recipe | 289.20 |
+| Fresh GRU base | 128 units x 2, dropout .15, 99 A-selected epochs/LRs | 449.68 |
+| GRU continuation | Fresh Adam, constant 1e-5, 29 extra epochs, same all-data scalers | 133.26 |
+
+The warm wrapper's elapsed time includes its nested base fit; do not add that
+wrapper time to the base time again. The full v004b pipeline finished in 2,436.50
+seconds, excluding earlier completed arms imported from v004.
+
+Verified final CSV: **`outputs/sequence_v004b/final_all/submission.csv`**,
+603,600 finite `id,pressure` rows in exact sample-ID order. SHA-256:
+`e4baa82cf3d3b2f68d04cb91a62f22a7dd056f059018bb2634a8ea248c55d51d`.
+`final_manifest.json` records model hashes, recipes, data hashes and the link to
+earlier validation evidence. No new Gym submission or Gym score was produced.
+
+The read-only course review independently recomputed all 14 saved validation
+records, verified grouped splits and scored-row alignment, checked prediction
+and checkpoint hashes, and verified final all-data scaler counts, raw-feature
+means/std, target median/IQR, and serialized CSV alignment. All 18 primary and
+five review code cells completed without errors. Local transfer checks verified
+17 checkpoint records, 14 prediction hashes, unchanged notebook code, and the
+local CSV. See `outputs/sequence_v004b/final_local_verification.json`.
+
+The complete local backup contains 134 files, 225,432,958 bytes, archive SHA-256:
+`589fdbdde0f40e7853b84089bbfce0d8e3f0f2d8201649560190ff13a65cd07c`.
+It includes the final checkpoints, referenced validation checkpoints, predictions,
+logs, notebooks, and review artifacts. Original data, notebooks and earlier CSVs
+remain intact. Visible interaction-history snapshots are preserved separately.
+
+### Remaining error pattern
+
+The selected **validation** blend improves every R/C cell on A, reducing total
+absolute error from 102,280.7760 to 99,693.6159. R=50 MAE falls from .657908 to
+.647677, but it still contributes 54.13% of total error. R=50/C=10 contributes
+24.57% (MAE .654117), versus 15.18% for R=50/C=50 despite that group's higher
+MAE .665389. Thus high resistance, especially the larger C=10 slice, remains a
+useful priority for future investigation.
+
+Early/middle/late inspiration MAE is .411324/.515893/.527237, with total-error
+shares 29.27%/34.04%/36.69%. The six preselected hard breaths still show errors
+in both directions, and the blend does not fix every difficult example. These
+observations do not justify dropping valid observations or applying a global
+pressure offset.
+
+Both `review/learning_curves.png` and `review/selected_hard_breaths.png` were
+visually inspected: readable labels/legends, no clipped panels, and correct
+inspiratory-only hard-case comparisons. The figures and R/C/phase tables are
+embedded in `results_review_v004.ipynb` and saved under `outputs/sequence_v004b/`.

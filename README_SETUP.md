@@ -3,6 +3,11 @@
 Setup date: November 2, 2026. The initial setup records precede modeling. A later
 user request authorized the first baseline; see `EXPERIMENTS.md` for its results.
 
+Latest completed work: open `results_review_v004.ipynb` to review results and
+plots, or `sequence_refinement_v004b.ipynb` for the executed modeling pipeline.
+The verified final CSV is `outputs/sequence_v004b/final_all/submission.csv`.
+See `PROCESS_STATUS.md` for the final process map.
+
 ## Approved local data
 
 The archive was obtained using the assignment-approved command:
@@ -44,12 +49,16 @@ project environment was reused without upgrades. Verification and execution logs
 are in `/home/v2gao/dsc102/pa3/setup/v004-startup-verification.json` and
 `setup/sequence-v004-execution.log` at that project root.
 
-The active continuation is now `sequence_refinement_v004b.ipynb`, worker PID 925,
-with `setup/sequence-v004b-execution.log`. It replaces the inefficient TCN
+The completed continuation is `sequence_refinement_v004b.ipynb`, with
+`setup/sequence-v004b-execution.log`. It replaces the inefficient TCN
 convolution backend with a verified equivalent implementation. Four completed
 non-TCN comparisons are reused with provenance checks. Original v004 files are
 preserved. See `PROCESS_STATUS.md` for a timestamped map and
 `INVESTIGATION_v004.md` for the diagnosis.
+
+Training worker PID 925 and CPU review worker PID 1190 have finished successfully.
+No model is currently training. The pod remains running and idle until its
+deadline; the final artifacts are also verified and backed up on the Mac.
 
 Earlier containers `v2gao-254347` and `v2gao-939516` expired and were archived and
 removed. Their completed models, notebooks and data remain in persistent home
@@ -150,8 +159,8 @@ It compares matched low-rate continuation, a compact bidirectional GRU, R/C
 embeddings, a causal TCN, and A-selected error-diverse pairs. The separate final
 fit on all 67,905 approved labeled breaths is explicitly authorized by the user's
 later request; its checkpoint will have no independent A/B holdout. Validation
-evidence stays separate in `outputs/sequence_v004/experiments/`; the final all-data
-CSV will now be `outputs/sequence_v004b/final_all/submission.csv`. Review is the default;
+evidence stays separate in `outputs/sequence_v004b/experiments/`; the final all-data
+CSV is `outputs/sequence_v004b/final_all/submission.csv`. Review is the default;
 `PA3_RUN_V004=1` enables training and `PA3_RESUME_V004=1` reuses compatible completed
 stages. `error_analysis_v004.ipynb` contains the executed error-contribution and
 hard-breath plots. See `INVESTIGATION_v004.md` for methodology and current results.

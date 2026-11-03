@@ -190,3 +190,29 @@ equivalent faster TCN backend; the original v004 notebook and partial trial rema
 preserved. Completed non-TCN A trials are reused with full provenance checks.
 `results_review_v004.ipynb` is the read-only review and artifact-verification entry
 point. Validation evidence and the later all-labeled final fit are kept separate.
+
+
+### Completed v004 outcome
+
+The bounded A search selected 75% GRU continued at 1e-5 plus 25% LightGBM with
+2,500 trees / 511 leaves. It improved the old best GRU on both grouped splits:
+
+| Validation approach | A MAE | B MAE |
+|---|---:|---:|
+| Previous best GRU | .496273 | .522832 |
+| Current-rate continuation | .494150 | .520394 |
+| Selected blend | **.483719** | **.507593** |
+
+Bidirectional GRU, learned R/C embeddings and both TCN rates were worse on A
+under the tested budgets. The continuation and frozen blend passed B confirmation;
+weights were not tuned on B. All configs, seeds, timings, genuine implementation
+issues and limitations are in `INVESTIGATION_v004.md` and the executed notebooks.
+
+Fresh final fitting used all 67,905 approved labeled breaths, retaining A-selected
+budgets/LRs and fitting all-data scalers. These final models have no independent
+holdout. Final CSV: `outputs/sequence_v004b/final_all/submission.csv`, 603,600 finite
+rows in exact sample-ID order; SHA256:
+`e4baa82cf3d3b2f68d04cb91a62f22a7dd056f059018bb2634a8ea248c55d51d`.
+No new Gym score is available. Independent score/group/hash/scaler/CSV checks and
+visual QA passed; the complete 134-file archive is backed up locally. See
+`research/final_checks_v004b.json` and `PROCESS_STATUS.md`.

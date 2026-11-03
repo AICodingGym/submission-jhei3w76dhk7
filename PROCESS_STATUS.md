@@ -1,57 +1,48 @@
 # Process map
 
-Checked **November 3, 2026, 9:03 AM Pacific**. This is a timestamped snapshot;
-the JSONL epoch logs contain newer live progress.
+Checked **November 3, 2026, 9:24 AM Pacific**. All modeling, review and backup stages are complete.
 
 ```text
-Approved data + environment checks       COMPLETE
-  └─ v003: 27 experiments + verified CSV  COMPLETE
-      └─ v004 error analysis + plots     COMPLETE
-          └─ v004 model comparisons
-              ├─ Fine-tune LR 1e-5       COMPLETE — A MAE .49415
-              ├─ Fine-tune LR 1e-6       COMPLETE — A MAE .49583
-              ├─ Bidirectional GRU      COMPLETE — A MAE .56908
-              ├─ Learned R/C embeddings COMPLETE — A MAE .53517
-              ├─ TCN LR .0015           COMPLETE — A MAE .73033
-              └─ TCN LR .003            COMPLETE — A MAE .69590
-                  └─ A ensemble search  COMPLETE — A MAE .48372
-                      └─ B confirmation COMPLETE — blend B MAE .50759
-                          └─ Final all-labeled fit RUNNING
-                              └─ CSV + independent QA + backup WAITING
+Approved data + CUDA environment           COMPLETE
+  └─ v003: 27 controlled experiments       COMPLETE
+      └─ Error contributions + hard plots COMPLETE
+          └─ v004: six A comparisons      COMPLETE
+              └─ A ensemble weights       FROZEN
+                  └─ B confirmation       COMPLETE
+                      └─ All-labeled fit  COMPLETE — 67,905 breaths
+                          └─ CSV + QA     COMPLETE — 603,600 rows
+                              └─ Backup   VERIFIED on DataHub and Mac
 ```
 
-| Process / location | State |
+| Process / resource | Current state |
 |---|---|
-| SSH connection to `dsmlp-login.ucsd.edu` | Connected through the user's authenticated shared connection. |
-| Course GPU pod `v2gao-11673` | Running on `its-dsmlp-n05.ucsd.edu`, GTX 1080 Ti; deadline 1:52:57 PM Pacific. |
-| Notebook worker PID `925` | Running `setup/execute_sequence_v004b.py`; one active model-training process. |
-| Original notebook worker PID `119` | Stopped after preserving the slow TCN attempt. |
-| Pod startup shell PID `44` | Sleeping after the original worker stopped; the pod remains available. |
-| Temporary CPU staging pod | Released after successful staging/checks. |
-| Research agents | No agents currently training or doing research; completed review/analysis is incorporated. |
-| Read-only report worker PID `1190` | Waiting for model completion; then CPU verification, plots and archival. |
+| GPU training worker PID `925` | Finished successfully; all 18 modeling code cells completed. |
+| CPU review worker PID `1190` | Finished successfully; all five review code cells and backup completed. |
+| Mac verification | Passed: archive checksum, 17 checkpoint records, 14 prediction hashes, CSV alignment and plot inspection. |
+| Research agents | No active work; completed analysis/reviews incorporated. |
+| Course pod `v2gao-11673` | Running and idle; no GPU compute process. Deadline **1:52:57 PM Pacific November 3**. |
+| SSH connection | Connected through the user's authenticated shared connection. |
+| Earlier slow TCN worker PID `119` | Stopped; original notebook and partial trial preserved. |
+| Temporary CPU staging pod | Released. |
 
-The original dilated-convolution backend took 549.67 seconds for its first epoch.
-The verified equivalent implementation took 11.26 seconds. Four completed non-TCN
-comparisons are imported with source/recipe/split/hash/metric checks. No conclusion
-about TCN accuracy is drawn from the interrupted original run.
-
-A ensemble weights are frozen: 25% leaves-511 LightGBM + 75% GRU continued at LR
-1e-5. The pair passed B confirmation: A MAE .4837194726, B MAE .5075927078.
-Final fits use all 67,905 labeled breaths and have no independent A/B holdout.
+The selected recipe is **75% continued GRU + 25% larger LightGBM**.
+Earlier validation-model MAE: **A .4837194726 / B .5075927078**.
+The final models are fresh fits on all approved labeled breaths and have no
+independent A/B holdout. No new Gym upload or Gym score was produced.
 
 Persistent DataHub work directory:
 
 `/home/v2gao/dsc102/pa3/gym-workspace/ventilator-pressure-prediction`
 
-- Active notebook: `sequence_refinement_v004b.ipynb`
-- Live model logs: `outputs/sequence_v004b/experiments/*_epochs.jsonl`
-- Execution log: `/home/v2gao/dsc102/pa3/setup/sequence-v004b-execution.log`
-- Existing verified CSV: `outputs/controlled_v003/submission.csv`
-- Pending all-labeled CSV: `outputs/sequence_v004b/final_all/submission.csv`
-- Read-only review: `results_review_v004.ipynb`
-- Method/results record: `INVESTIGATION_v004.md`
+- Executed modeling notebook: `sequence_refinement_v004b.ipynb`
+- Executed results/plots/checks notebook: `results_review_v004.ipynb`
+- Final CSV: `outputs/sequence_v004b/final_all/submission.csv`
+- Validation evidence: `outputs/sequence_v004b/experiments/validation_selection.json`
+- Final model/data/CSV manifest: `outputs/sequence_v004b/final_all/final_manifest.json`
+- Local verification: `outputs/sequence_v004b/final_local_verification.json`
+- Complete local backup: `outputs/sequence_v004b/sequence-v004b-completed.tar.gz`
+- Model and review logs: `/home/v2gao/dsc102/pa3/setup/sequence-v004b-*.log`
+- Methods, results and remaining errors: `INVESTIGATION_v004.md`
 
-Home-directory files survive pod expiry. Earlier local backups are preserved.
-Current scores refer to validation models; the all-labeled final model will not
-have the same independent holdout.
+The same notebook/CSV paths exist under the local project. Persistent home files
+survive pod expiry, and the complete verified backup is already on the Mac.
