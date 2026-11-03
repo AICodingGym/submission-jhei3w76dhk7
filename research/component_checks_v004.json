@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "checks": {
+    "expected_parameter_counts": {
+      "GRU_NUMERIC_SPEC": 160833,
+      "BIGRU_SPEC": 170305,
+      "GRU_EMBEDDING_SPEC": 161613,
+      "TCN_SPEC": 161561
+    },
+    "training_only_statistics_and_native_target_scaling": true,
+    "all_four_forward_shapes_finite_and_cross_breath_independence": true,
+    "causal_tcn_prefix_invariance_and_receptive_field": {
+      "prefix_max_error": 0.0,
+      "receptive_field": 125
+    },
+    "bidirectional_gru_uses_future_inputs": {
+      "prefix_max_change": 0.012316837906837463
+    },
+    "embedding_codes_are_unscaled_and_unknown_values_rejected": true,
+    "cold_fit_best_checkpoint_metric_and_jsonl_roundtrip": {
+      "best_epoch": 3,
+      "validation_mae": 1.3721439779869147
+    },
+    "identical_seed_cold_fit_reproducible": true,
+    "fixed_fit_exactly_replays_selected_cold_weights_without_validation": true,
+    "warm_epoch_zero_is_eligible_and_matched_epoch_cap_ignores_stopping": true,
+    "fixed_warm_zero_epoch_roundtrip": true,
+    "matched_fresh_adam_warm_lr_arms": true,
+    "embedding_and_tcn_toy_gradient_fit_checkpoint_prediction_roundtrip": true,
+    "real_legacy_checkpoint_predict_and_warm_scalers_exact_unchanged": {
+      "source_sha256": "9e622dc44429cc6fc9b2405825a2b48d1d7193cf5c5a0d807ab2e51af55ac735"
+    },
+    "existing_output_preservation": true
+  },
+  "elapsed_seconds": 0.5158625829999437,
+  "notebook_sha256": "0457d5138a44c82ec69abd3970144e8b5d999c22f4b2b1f537a70d9d7becbbaa",
+  "torch_version": "2.15.0",
+  "numpy_version": "2.5.4",
+  "device": "cpu",
+  "assignment_training_performed": false,
+  "ssh_used": false,
+  "note": "Only synthetic arrays were fitted. The existing checkpoint was read for compatibility and not modified."
+}
