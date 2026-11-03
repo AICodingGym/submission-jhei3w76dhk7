@@ -1,6 +1,6 @@
 # Process map
 
-Checked **November 3, 2026, 2:21 PM Pacific**. Iteration v005 is active;
+Checked **November 3, 2026, 2:51 PM Pacific**. Iteration v005 is active;
 the official Gym target of MAE 0.20 has not been reached.
 
 ```text
@@ -9,8 +9,9 @@ Approved data + course CUDA environment       VERIFIED
   │   └─ all-data fit + Gym submission        ACCEPTED — official MAE .47462
   └─ v005 improvements                       ACTIVE
       ├─ CPU known-input feature comparisons COMPLETE — best A .503760
+      ├─ CPU tree count / leaf comparisons   ACTIVE — 5,000-tree A .484391 done; 1,023 leaves running
       ├─ GPU learning-rate comparisons       COMPLETE — cosine A .371982
-      ├─ GPU input-feature comparisons       ACTIVE — offline inputs first
+      ├─ GPU input-feature comparisons       ACTIVE — offline A .351865 complete; dynamics now
       ├─ GPU larger GRU / BiGRU / BiLSTM      WAITING for feature selection
       ├─ fresh grouped C confirmation        PREPARED; A selection not frozen
       └─ all-data refit + CSV + Gym score     WAITING for confirmed selection
@@ -19,8 +20,8 @@ Approved data + course CUDA environment       VERIFIED
 | Process / resource | Current state |
 |---|---|
 | Course pod `v2gao-306419` | Running on `its-dsmlp-n05.ucsd.edu`; NVIDIA GTX 1080 Ti verified. Started 2:00:05 PM; expected deadline 8:00:05 PM Pacific November 3. |
-| GPU sequence worker PID `142` | Resumed the interrupted patience-6 run; it completed 200 epochs. Cosine completed at A .371982; offline feature run is active. Phase limit is `capacity`. |
-| CPU tree worker | All three new feature comparisons complete; compatible finished artifacts reused after restart. |
+| GPU sequence worker PID `142` | Resumed the interrupted patience-6 run; it completed 200 epochs. Cosine completed at A .371982; offline feature run completed at A .351865; dynamics run is active. Phase limit is `capacity`. |
+| CPU tree worker | Feature comparisons complete. Additional tree-capacity worker PID `420` finished the combined-input 5,000-tree arm at A .484391; the separate 1,023-leaf arm is active; excluded from current confirmation inventory. |
 | Old pod `v2gao-11673` | Expired on schedule; pod logs archived and expired object removed before the replacement was officially launched. |
 | Progress backup | 43-file snapshot preserved on DataHub and Mac; archive SHA-256 verified. This is a progress snapshot, not a finished-run archive. |
 | SSH | Connected through the user's authenticated shared connection. |
@@ -33,6 +34,7 @@ breaths), native-unit inspiratory MAE:
 | GRU, plateau patience 1, 200 epochs | .565606 | Complete; worse than incumbent |
 | GRU, plateau patience 6, 200 epochs | .415483 | Complete; selected checkpoint epoch 193 |
 | GRU, warmup/cosine, 200 epochs | .371982 | Complete; selected checkpoint epoch 189; schedule winner; awaiting feature/capacity comparisons and C |
+| GRU, offline 34 inputs, 200 epochs | .351865 | Complete; selected checkpoint epoch 192; provisional feature leader |
 | LightGBM, causal 20 inputs | .618996 | Verified prior model reuse |
 | LightGBM, offline 34 inputs | .529058 | Complete |
 | LightGBM, dynamics 33 inputs | .575459 | Complete |

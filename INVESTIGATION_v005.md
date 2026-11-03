@@ -148,3 +148,54 @@ At 2:21 PM the cosine schedule completed 200 epochs in 914.16 seconds, best A
 full 200 learning rates are frozen for each feature comparison; selected epoch
 189 is relevant only to any subsequent fixed-duration refit of this candidate.
 The offline feature comparison is active. No C result or Gym upload exists yet.
+
+
+## Independent CPU tree capacity trials
+
+At 2:31 PM, `tree_capacity_v005b.ipynb` passed actual initialization guards and
+started its first CPU fit (PID 420, four threads), alongside GPU sequence work.
+The combined-input control is fixed at A .503760064. Two arms change only tree
+count (2,500 to 5,000) or only leaf count (511 to 1,023); all other parameters,
+input schema, seed and grouped A split remain fixed. Each uses a fixed budget
+and no validation feedback. A fixed training-sample diagnostic and R/C total
+error contributions will be logged. Partial interrupted fits are archived before
+restart. These extra exploratory A results are excluded from the current
+confirmation inventory; adopting them requires a later declared frozen round.
+Default mode, schema, source compilation and separate-parameter-change checks
+passed. No new tree result is claimed until the fit and aligned scoring finish.
+
+
+At 2:36 PM, the 34-input offline GRU completed its full 200-epoch comparison:
+A MAE .3518652 (display rounded; authoritative value in its record), selected
+checkpoint epoch 192. This improves the same-budget causal20 cosine control
+.371981592. The 33-input dynamics arm is active; the combined arm and capacity
+comparisons remain pending. No C confirmation or new official score exists.
+
+
+The 2:40 PM state archive is verified on DataHub and Mac: 32,278,043 bytes,
+SHA-256 cb30016546f5144caaa21001dbfca175ccd3d249d2a32753fbf843c42d23f8b6,
+61 manifest entries checked. Incoming notebook code matches existing source;
+prior file versions and older documentation are preserved separately.
+
+A local read-only review of eight completed A records passed 64 checks, with no
+missing or failed checks, and all five regenerated figures were visually checked.
+For the completed offline GRU, R=5/20/50 MAEs are .262008/.315486/.448856;
+R=50 contributes 51.57% of remaining total absolute error. Fixed hard examples
+show substantially corrected overprediction in several cases and persistent
+underprediction in others. These selected examples do not establish population
+performance by themselves. Original A scores and total-error tables provide
+the quantitative evidence. The local font-cache warnings affected cache writes;
+all figures rendered and were inspected successfully.
+
+
+The 5,000-tree combined-input arm completed at A .4843908 (rounded display),
+versus the fixed 2,500-tree control .503760064. Its 2,048-breath training-sample
+MAE is .2493583. This is a measurable held-out improvement but remains weaker
+than the sequence models; it does not enter the current frozen-confirmation
+universe. The separate 1,023-leaf / 2,500-tree arm is running.
+
+One snapshot-import issue was caught in the subsequent Git diff: an older
+DataHub orchestration-check summary replaced the richer local summary. The
+retained prior version was restored, and future differing research metadata is
+stored separately rather than replacing local records. No modeling source,
+fit, split, checkpoint or prediction was changed by this metadata correction.
