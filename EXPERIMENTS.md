@@ -66,3 +66,22 @@ Next experiments proposed for review (not run yet):
    grouped split/seed before considering an ensemble.
 
 No additional model variants have been trained after this first accepted CSV.
+
+## Notebook conversion — November 2, 2026
+
+At the user's request, `baseline_v001.ipynb` presents the same baseline as separate
+cells for configuration, feature construction, splitting, fitting, validation,
+prediction, metrics, and optional submission. The feature helpers and full
+training pipeline match the script. Hyperparameters, split seed, feature logic,
+and inspiratory scoring are unchanged.
+
+The notebook defaults to `RUN_TRAINING = False` and `SUBMIT_TO_GYM = False`. Its
+review cells load the accepted run, display the score, per-R/C errors, training
+curve, and prediction preview, and verify the saved CSV. An enabled new training
+run uses a separate output directory and refuses an existing directory. Optional
+upload is separately gated and refuses duplicate receipts/logs.
+
+Notebook schema/syntax validation, exact training-pipeline AST comparison, and
+local review-mode execution passed. The script and all accepted baseline
+artifacts retained their original hashes and modification times. This conversion
+did not retrain the model or make another Gym submission.

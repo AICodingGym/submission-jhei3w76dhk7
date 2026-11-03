@@ -101,6 +101,12 @@ Local copies are `datahub-verification.json`, `datahub-data-integrity.json`, and
 required AI interaction history; the optional Entire recorder is not installed.
 No session logs were uploaded by this setup.
 
-Setup is complete. The first accepted learned baseline is documented in
-`EXPERIMENTS.md`, with source in `train_baseline.py` and artifacts in
-`outputs/baseline_v001/`.
+Setup is complete. Open `baseline_v001.ipynb` to track the first baseline in cells:
+configuration, feature construction, grouped splitting, training, validation,
+predictions, and saved results. It defaults to review mode, loading the accepted
+run without retraining or submitting. For a new run, set `RUN_TRAINING = True`
+and choose a new `RUN_NAME`; the optional submission switch is separate and off.
+Use the project virtual-environment kernel when training.
+
+The original `train_baseline.py` is retained. `EXPERIMENTS.md` records the run,
+and `outputs/baseline_v001/` contains the accepted artifacts.
