@@ -32,17 +32,23 @@ data/models, or existing competition solutions. Keep the source data unchanged.
 
 ## Working environment
 
-The selected working environment is the running course DataHub GPU container,
-pod `v2gao-254347`. It was submitted with:
+The selected working environment is the course DataHub. The original container
+`v2gao-254347` expired at its six-hour deadline and was archived and removed.
+Replacement pod `v2gao-939516` was submitted at about 7:55 PM Pacific on November 2.
+It initially queued for an available course GPU. It was submitted with:
 
 ```bash
-launch-scipy-ml.sh -W DSC102_FA26_001 -g 1 -c 8 -m 16 -b
+launch-scipy-ml.sh -W DSC102_FA26_001 -g 1 -c 8 -m 16 -B /bin/sleep infinity
 ```
 
-It started at about 1:30 PM Pacific on November 2 after about 38 minutes queued.
-Verified hardware/software: GTX 1080 Ti (11 GB VRAM), Python 3.11.9, image PyTorch
-2.2.1+cu121 / CUDA 12.1, NumPy 1.26.4, pandas 2.2.2, and Gym CLI 1.1.0. CUDA
+The first container started at about 1:30 PM Pacific on November 2 after about
+38 minutes queued. Its verified hardware/software was GTX 1080 Ti (11 GB VRAM),
+Python 3.11.9, image PyTorch 2.2.1+cu121 / CUDA 12.1, NumPy 1.26.4, pandas 2.2.2,
+and Gym CLI 1.1.0. CUDA
 arithmetic, imports, Gym configuration, and approved data integrity all passed.
+A readiness worker will repeat these checks in the replacement container and save
+`/home/v2gao/dsc102/pa3/setup/restart-v2gao-939516.json` when they pass. A queued pod
+does not yet have a verified GPU; check `kubectl get pods` before connecting.
 CPU/RAM limits are 8 CPUs and 16 GiB; scheduling requests are 4 CPUs and 8 GiB.
 
 Connect from your Mac:
@@ -54,7 +60,7 @@ ssh v2gao@dsmlp-login.ucsd.edu
 Then, on the login server:
 
 ```bash
-kubesh v2gao-254347
+kubesh v2gao-939516
 ```
 
 Inside the container, activate the environment and enter the work directory:
@@ -74,10 +80,11 @@ Use official `kubesh`: it initializes DataHub's Unix user mapping. Plain raw
 `ssh-keygen`. This setup uses a batch/shell container; no Jupyter server or
 notebook URL was started.
 
-The current pod's six-hour deadline is approximately **7:30 PM Pacific on
-November 2, 2026**. Home-directory files persist after it stops. When finished
-with the GPU, exit to the login server and run `kubectl delete pod v2gao-254347`
-to release it. Do not run training on the login server.
+The replacement pod has a six-hour active deadline, measured from its eventual
+start time. Queue waiting does not consume this lifetime. Home-directory files
+persist after it stops. When finished with the GPU, exit to the login server and
+run `kubectl delete pod v2gao-939516` to release it. Do not run training on the
+login server.
 
 A separate local backup environment is available on this M3 Pro Mac:
 
