@@ -113,3 +113,31 @@ produced a C result or submission yet.
 
 No new official Gym score is claimed. The accepted score remains .47462; the
 target .20 remains an objective rather than a predicted outcome.
+
+
+## Schedule and diagnostic interpretation
+
+Within the new controlled backend, patience 1 reached the minimum rate at epoch
+54; patience 6 reached it at epoch 163. Their best first-100-epoch A MAEs were
+.577266766 and .424001165, versus .565606099 and .415483167 through 200. Allowing
+more useful-rate training is better supported here than attributing the full
+improvement to doubling epochs alone. This is a measured schedule weakness,
+not evidence of label leakage or a programming bug in the old model.
+
+The first completed-artifact review passed 48 checks with no missing/failed
+checks. Five plots were generated and visually inspected. R=50 MAE falls from
+.647677 in the old blend to .538759 in the new patience-6 GRU; it still contributes
+52.42% of total absolute error. Early/middle/late MAEs are .382536/.435865/.428806.
+Fixed difficult breaths still show both directions of error; no selective
+removal of difficult labels or guessed pressure offsets is justified.
+
+An exploratory A-only .75 GRU + .25 combined-tree blend reaches .399471, with
+residual correlation .56067. This is not a frozen final selection: the remaining
+schedule/feature/capacity models may supersede it, and no C outcomes were read.
+
+Real-data confirmation preflight verified nine completed old/new A records:
+source/data/group identities, checkpoints, preprocessing, prediction hashes,
+row alignment and recomputed native MAEs. It performed no assignment fitting,
+read no C outcomes and did not freeze a selection. A separate worker now waits
+for the full capacity phase and released A worker locks before starting the
+immutable A selection, C fits and final all-data fits. Upload remains separate.
