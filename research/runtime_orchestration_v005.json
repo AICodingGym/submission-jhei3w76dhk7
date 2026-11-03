@@ -1,0 +1,35 @@
+{
+  "status": "prepared",
+  "modeling_code_location": "notebooks only",
+  "helpers": [
+    {
+      "file": "outputs/improvements_v005/setup_helpers/pa3_start_v005.sh",
+      "sha256": "596a35a79f995e52ccc5d66543c718d3d1d17087447fefdac514a21ab20e0be4"
+    },
+    {
+      "file": "outputs/improvements_v005/setup_helpers/pa3_start_v005_before_confirmation.sh",
+      "sha256": "2eafad733c239698e2a8f43253251dfa8750c7cf32f1f5aea643830d82063a41"
+    },
+    {
+      "file": "outputs/improvements_v005/setup_helpers/pa3_execute_v005_notebook.py",
+      "sha256": "d26c5fa6d4e81eed8c6e844677d6e1e57b5dae0e127442d9ade207a51400420c"
+    },
+    {
+      "file": "outputs/improvements_v005/setup_helpers/pa3_execute_v005_confirmation.py",
+      "sha256": "9783b76387f1b672e8604b7f23ae6f96b1a5038ab7104ee39e1e54a328eb32ab"
+    },
+    {
+      "file": "outputs/improvements_v005/setup_helpers/pa3_preflight_confirmation_v005.py",
+      "sha256": "27d460f86e65003617a9b7e1c176f39e4821a21a6da11b7b47f8353337f615f1"
+    },
+    {
+      "file": "outputs/improvements_v005/setup_helpers/pa3_renew_v005.sh",
+      "sha256": "042f9bab0fc92ce19c2e1d30eff036af0c616d9d3f13671f60628024016d2109"
+    }
+  ],
+  "confirmation_waits_for": "Complete capacity A inventory and unlocked sequence/tree workers",
+  "confirmation_limit": "final",
+  "confirmation_source_code_sha256": "96e4206005bf03e279fc04c3d9f79ae75b930d30c4dab99e0b2a3fc85cd09174",
+  "submits_automatically": false,
+  "restarts_exact_V5_optimizer_rng": true
+}

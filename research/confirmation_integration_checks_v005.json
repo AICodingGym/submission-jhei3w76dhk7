@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "checked_A_records": [
+    {
+      "name": "nn__schedule_plateau_p1",
+      "A_mae": 0.5656060994626387
+    },
+    {
+      "name": "nn__schedule_plateau_p6",
+      "A_mae": 0.4154831670616888
+    },
+    {
+      "name": "tree__tree_causal20",
+      "A_mae": 0.6189958179541498
+    },
+    {
+      "name": "tree__tree_combined",
+      "A_mae": 0.5037600640558704
+    },
+    {
+      "name": "tree__tree_dynamics",
+      "A_mae": 0.5754591642777043
+    },
+    {
+      "name": "tree__tree_offline",
+      "A_mae": 0.5290584962773822
+    },
+    {
+      "name": "legacy__gru_s20261102",
+      "A_mae": 0.4962725305798752
+    },
+    {
+      "name": "legacy__warm_current",
+      "A_mae": 0.4941496740095073
+    },
+    {
+      "name": "legacy__tree_511",
+      "A_mae": 0.6189958179541498
+    }
+  ],
+  "checks": "source/data/group hashes, checkpoint/preprocessing/provenance, row and prediction hashes, native MAE, legacy adapter signatures",
+  "source_code_sha256": "96e4206005bf03e279fc04c3d9f79ae75b930d30c4dab99e0b2a3fc85cd09174",
+  "elapsed_seconds": 18.87639600969851,
+  "assignment_training_performed": false,
+  "C_scores_read": false,
+  "A_selection_locked": false
+}
