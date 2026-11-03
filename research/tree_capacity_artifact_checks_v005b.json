@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "source_code_sha256": "943ae0317f921385a4e9392d015cd6724c0c0136f54bf709ab0d9fef1786c714",
+  "approved_data_hash_passed": true,
+  "original_A_ids_match": true,
+  "serialized_model_budget_feature_schema_verified": true,
+  "checkpoint_prediction_ID_breakdown_hashes_verified": true,
+  "native_MAE_recomputed_from_approved_labels": true,
+  "records": [
+    {
+      "name": "tree_combined_5000",
+      "native_A_mae": 0.4843908105201644,
+      "trees": 5000,
+      "max_leaves": 511,
+      "n_features": 47,
+      "training_diagnostic_mae": 0.2493583049371416,
+      "runtime_seconds": 954.7913220822811,
+      "checkpoint_sha256": "7a6e61091fffe37eb0412ee2bce2872c10015781ee7edad9ec4e839ec2bd782d"
+    },
+    {
+      "name": "tree_combined_leaves1023",
+      "native_A_mae": 0.4813969457152611,
+      "trees": 2500,
+      "max_leaves": 1023,
+      "n_features": 47,
+      "training_diagnostic_mae": 0.2457248797254604,
+      "runtime_seconds": 637.9338708203286,
+      "checkpoint_sha256": "25d05b3c189ab561af31339f4653233c2d5196a66b2bb05a951e43372a24f111"
+    }
+  ],
+  "model_training_performed": false,
+  "C_outcomes_read": false,
+  "current_confirmation_inventory_unchanged": true
+}

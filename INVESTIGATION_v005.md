@@ -199,3 +199,35 @@ DataHub orchestration-check summary replaced the richer local summary. The
 retained prior version was restored, and future differing research metadata is
 stored separately rather than replacing local records. No modeling source,
 fit, split, checkpoint or prediction was changed by this metadata correction.
+
+
+At 2:59 PM both additional CPU capacity fits completed: 5,000 trees / 511 leaves
+A .4843908, training diagnostic .2493583; 2,500 trees / 1,023 leaves A .4813969,
+training diagnostic .2457249. Both improve the .503760064 combined-input control,
+but both remain weaker than the sequence candidates and have substantial
+training-versus-validation gaps. These A-only comparisons remain exploratory.
+The CPU worker has completed; model backup and independent aligned-score checks
+follow. The GPU combined-input comparison continues before larger architectures.
+
+
+Full-model state snapshot at 3:00 PM verified on both hosts and safely extracted:
+230,136,409 bytes, SHA-256
+5d76e98307747e7546b42daec54569cb4f052a3da6f5d3f5425bb8f23cab9388,
+77 entries including both larger tree model texts. Local independent checks
+confirmed serialized tree counts (5,000 / 2,500), leaf parameters (511 / 1,023),
+all 47 feature names, model/prediction/ID/breakdown hashes and original A alignment.
+Recomputed MAEs are .4843908105201644 and .4813969457152611. Total stage runtimes
+954.79 / 637.93 seconds include preprocessing and scoring; fit_seconds in this
+additional notebook also includes any first-arm feature-cache construction.
+These timings are operational measurements, not an isolated hardware benchmark.
+The dynamics GRU completed at A .3410362 (rounded), best epoch 192; combined is
+near completion. Larger sequence models and grouped C have not run yet.
+
+
+At 3:09 PM the final feature arm completed: combined 47 inputs A .3347733
+(rounded), best checkpoint epoch 193. The completed same-budget feature ranking
+is combined .3347733, dynamics .3410362, offline .3518652, causal20 .3719816.
+Combined wins A-only selection, and the 256-unit GRU capacity trial has started
+with the same frozen 200-rate schedule, original grouped A split, seed and loss.
+Its observed early throughput is about 8.2 seconds per epoch. Bidirectional GRU,
+bidirectional LSTM and deeper tapered LSTM remain queued in the same worker.
