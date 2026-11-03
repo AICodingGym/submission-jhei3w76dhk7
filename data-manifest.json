@@ -1,0 +1,32 @@
+{
+  "source": "aicodinggym mle download ventilator-pressure-prediction --workspace-dir /Users/generalclasher/Documents/dsc102/pa3",
+  "download_date": "2026-11-02",
+  "archive_crc_check": "PASS",
+  "archive": {
+    "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/data/ventilator-pressure-prediction.zip",
+    "bytes": 103595202,
+    "sha256": "3fcffb07e05042a7dc9027c8539f457bfab8acb673d2586304a782827d496814"
+  },
+  "files": [
+    {
+      "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/data/description.md",
+      "bytes": 5799,
+      "sha256": "1ab40a54a4acabbfedcad897b9a8d0e349c309dec78a578e5a48b3ed5687dbf0"
+    },
+    {
+      "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/data/sample_submission.csv",
+      "bytes": 5321307,
+      "sha256": "de4c137a22804654b597723f32470b24f23d9ef662205eca0fe31b68970f0594"
+    },
+    {
+      "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/data/test.csv",
+      "bytes": 25548506,
+      "sha256": "1ed86b32480e93397cc961dfd09af2d0bedfbab901921eac44de8ed78c3f1672"
+    },
+    {
+      "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/data/train.csv",
+      "bytes": 299670301,
+      "sha256": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7"
+    }
+  ]
+}

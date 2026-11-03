@@ -1,0 +1,87 @@
+{
+  "scope": "Setup-only CSV integrity validation; no EDA, features, modeling, or training.",
+  "description_read": "data/description.md",
+  "files": {
+    "train.csv": {
+      "expected_header": [
+        "id",
+        "breath_id",
+        "R",
+        "C",
+        "time_step",
+        "u_in",
+        "u_out",
+        "pressure"
+      ],
+      "header": [
+        "id",
+        "breath_id",
+        "R",
+        "C",
+        "time_step",
+        "u_in",
+        "u_out",
+        "pressure"
+      ],
+      "header_matches": true,
+      "rows": 5432400,
+      "malformed_rows": 0,
+      "empty_cells": 0,
+      "nonnumeric_cells": 0,
+      "nonfinite_cells": 0,
+      "issue_locations": []
+    },
+    "test.csv": {
+      "expected_header": [
+        "id",
+        "breath_id",
+        "R",
+        "C",
+        "time_step",
+        "u_in",
+        "u_out"
+      ],
+      "header": [
+        "id",
+        "breath_id",
+        "R",
+        "C",
+        "time_step",
+        "u_in",
+        "u_out"
+      ],
+      "header_matches": true,
+      "rows": 603600,
+      "malformed_rows": 0,
+      "empty_cells": 0,
+      "nonnumeric_cells": 0,
+      "nonfinite_cells": 0,
+      "issue_locations": []
+    },
+    "sample_submission.csv": {
+      "expected_header": [
+        "id",
+        "pressure"
+      ],
+      "header": [
+        "id",
+        "pressure"
+      ],
+      "header_matches": true,
+      "rows": 603600,
+      "malformed_rows": 0,
+      "empty_cells": 0,
+      "nonnumeric_cells": 0,
+      "nonfinite_cells": 0,
+      "issue_locations": []
+    }
+  },
+  "test_has_pressure_column": false,
+  "sample_test_row_counts_match": true,
+  "sample_ids_match_test_in_exact_row_order": true,
+  "id_mismatch_rows": 0,
+  "first_id_mismatch_row": null,
+  "input_sizes_and_modification_times_unchanged": true,
+  "id_uniqueness_checked": false,
+  "all_checks_passed": true
+}

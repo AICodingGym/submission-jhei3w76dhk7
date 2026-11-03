@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "pod": "v2gao-254347",
+  "checked_at_utc": "2026-11-02T21:39:43.123269+00:00",
+  "python": "3.11.9",
+  "python_executable": "/home/v2gao/dsc102/pa3/.venv/bin/python",
+  "versions": {
+    "torch": "2.2.1+cu121",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "ipykernel": "6.29.3",
+    "aicodinggym-cli": "1.1.0"
+  },
+  "cuda_runtime": "12.1",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce GTX 1080 Ti",
+  "gpu_total_memory_bytes": 11714887680,
+  "cuda_arithmetic_check": "PASS",
+  "numpy_pandas_check": "PASS",
+  "gym_config_check": "PASS",
+  "approved_data_check": "PASS: all hashes match locally validated files",
+  "project_root": "/home/v2gao/dsc102/pa3",
+  "working_directory": "/home/v2gao/dsc102/pa3/gym-workspace/ventilator-pressure-prediction",
+  "data_directory": "/home/v2gao/dsc102/pa3/gym-workspace/ventilator-pressure-prediction/data",
+  "venv": "/home/v2gao/dsc102/pa3/.venv",
+  "connection_mode": "batch shell via official kubesh",
+  "no_modeling_or_training": true
+}

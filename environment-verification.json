@@ -1,0 +1,22 @@
+{
+  "checked_date": "2026-11-02",
+  "python": "3.12.11",
+  "python_executable": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/.venv/bin/python",
+  "architecture": "arm64",
+  "versions": {
+    "aicodinggym-cli": "1.1.0",
+    "torch": "2.15.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "ipykernel": "7.4.0"
+  },
+  "mps_built": true,
+  "mps_available": true,
+  "cuda_available": false,
+  "mps_compute_check": "PASS: 4096 additions, CPU fallback disabled",
+  "numpy_pandas_check": "PASS",
+  "gym_config_present": true,
+  "gym_key_present": true,
+  "pip_check": "PASS: no broken requirements",
+  "modeling_or_training_performed": false
+}
