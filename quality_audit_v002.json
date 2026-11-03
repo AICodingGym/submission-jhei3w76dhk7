@@ -1,0 +1,386 @@
+{
+  "created_at_utc": "2026-11-03T02:27:21.195571+00:00",
+  "scope": "Read-only quality audit of official Gym CSVs; no data edits, imputation, row removal, scaling fit, modeling, or training.",
+  "source_provenance": "Only local data/ CSVs downloaded from official AI Coding Gym; no original Kaggle download or external competition solutions.",
+  "prior_data_validation_passed": true,
+  "files": {
+    "train.csv": {
+      "source": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/data/train.csv",
+      "sha256": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+      "rows": 5432400,
+      "header": [
+        "id",
+        "breath_id",
+        "R",
+        "C",
+        "time_step",
+        "u_in",
+        "u_out",
+        "pressure"
+      ],
+      "expected_schema_matches": true,
+      "columns": {
+        "id": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 1.0,
+          "max": 5432400.0
+        },
+        "breath_id": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 1.0,
+          "max": 125749.0
+        },
+        "R": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 5.0,
+          "max": 50.0
+        },
+        "C": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 10.0,
+          "max": 50.0
+        },
+        "time_step": {
+          "dtype": "float64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 0.0,
+          "max": 2.937237978
+        },
+        "u_in": {
+          "dtype": "float64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 0.0,
+          "max": 100.0
+        },
+        "u_out": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "pressure": {
+          "dtype": "float64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": -1.895744295,
+          "max": 64.82099174
+        }
+      },
+      "file_constant_columns": [],
+      "structure": {
+        "breaths": 67905,
+        "rows_per_breath": 80,
+        "all_blocks_have_constant_breath_id": true,
+        "breath_ids_unique": true,
+        "row_ids_strictly_increasing": true,
+        "row_ids_contiguous": true,
+        "R_C_constant_within_breath": true,
+        "R_values": [
+          5,
+          20,
+          50
+        ],
+        "C_values": [
+          10,
+          20,
+          50
+        ],
+        "RC_pairs": [
+          [
+            5,
+            10
+          ],
+          [
+            5,
+            20
+          ],
+          [
+            5,
+            50
+          ],
+          [
+            20,
+            10
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            20,
+            50
+          ],
+          [
+            50,
+            10
+          ],
+          [
+            50,
+            20
+          ],
+          [
+            50,
+            50
+          ]
+        ],
+        "time_strictly_increases_within_breath": true,
+        "time_starts_at_zero_all_breaths": true,
+        "minimum_positive_step": 0.03144001958999999,
+        "maximum_step": 0.25109314900000035
+      },
+      "range_violations": {
+        "R_nonpositive": 0,
+        "C_nonpositive": 0,
+        "time_negative": 0,
+        "u_in_outside_0_100": 0,
+        "u_out_not_binary": 0
+      },
+      "pressure_distribution_all_rows": {
+        "rows": 5432400,
+        "mean": 11.218069409525942,
+        "std_population": 8.10647323613728,
+        "quantiles": {
+          "0.0": -1.895744295,
+          "0.01": 4.079938069,
+          "0.25": 6.329606723,
+          "0.5": 7.032628178,
+          "0.75": 13.64102985,
+          "0.99": 37.12194643,
+          "1.0": 64.82099174
+        },
+        "negative_rows": 3625,
+        "zero_rows": 0,
+        "distinct_values": 950
+      },
+      "pressure_distribution_inspiration_u_out_0": {
+        "rows": 2061922,
+        "mean": 17.58973341482294,
+        "std_population": 9.2446497939118,
+        "quantiles": {
+          "0.0": -1.895744295,
+          "0.01": 4.501750941,
+          "0.25": 9.915016141,
+          "0.5": 15.82039636,
+          "0.75": 23.97544523,
+          "0.99": 42.25400305,
+          "1.0": 64.82099174
+        },
+        "negative_rows": 1385,
+        "zero_rows": 0,
+        "distinct_values": 950
+      }
+    },
+    "test.csv": {
+      "source": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/data/test.csv",
+      "sha256": "1ed86b32480e93397cc961dfd09af2d0bedfbab901921eac44de8ed78c3f1672",
+      "rows": 603600,
+      "header": [
+        "id",
+        "breath_id",
+        "R",
+        "C",
+        "time_step",
+        "u_in",
+        "u_out"
+      ],
+      "expected_schema_matches": true,
+      "columns": {
+        "id": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 1.0,
+          "max": 603600.0
+        },
+        "breath_id": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 2.0,
+          "max": 125726.0
+        },
+        "R": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 5.0,
+          "max": 50.0
+        },
+        "C": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 10.0,
+          "max": 50.0
+        },
+        "time_step": {
+          "dtype": "float64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 0.0,
+          "max": 2.92800498
+        },
+        "u_in": {
+          "dtype": "float64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 0.0,
+          "max": 100.0
+        },
+        "u_out": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "file_constant_columns": [],
+      "structure": {
+        "breaths": 7545,
+        "rows_per_breath": 80,
+        "all_blocks_have_constant_breath_id": true,
+        "breath_ids_unique": true,
+        "row_ids_strictly_increasing": true,
+        "row_ids_contiguous": true,
+        "R_C_constant_within_breath": true,
+        "R_values": [
+          5,
+          20,
+          50
+        ],
+        "C_values": [
+          10,
+          20,
+          50
+        ],
+        "RC_pairs": [
+          [
+            5,
+            10
+          ],
+          [
+            5,
+            20
+          ],
+          [
+            5,
+            50
+          ],
+          [
+            20,
+            10
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            20,
+            50
+          ],
+          [
+            50,
+            10
+          ],
+          [
+            50,
+            20
+          ],
+          [
+            50,
+            50
+          ]
+        ],
+        "time_strictly_increases_within_breath": true,
+        "time_starts_at_zero_all_breaths": true,
+        "minimum_positive_step": 0.03147864300000003,
+        "maximum_step": 0.24995326900000014
+      },
+      "range_violations": {
+        "R_nonpositive": 0,
+        "C_nonpositive": 0,
+        "time_negative": 0,
+        "u_in_outside_0_100": 0,
+        "u_out_not_binary": 0
+      }
+    },
+    "sample_submission.csv": {
+      "source": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/data/sample_submission.csv",
+      "sha256": "de4c137a22804654b597723f32470b24f23d9ef662205eca0fe31b68970f0594",
+      "rows": 603600,
+      "header": [
+        "id",
+        "pressure"
+      ],
+      "expected_schema_matches": true,
+      "columns": {
+        "id": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 1.0,
+          "max": 603600.0
+        },
+        "pressure": {
+          "dtype": "int64",
+          "missing": 0,
+          "nonfinite": 0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "file_constant_columns": [
+        "pressure"
+      ]
+    }
+  },
+  "total_missing_cells": 0,
+  "total_nonfinite_cells": 0,
+  "train_test_breath_id_overlap_count": 0,
+  "sample_test_ids_exact_row_order_match": true,
+  "sample_ids_unique": true,
+  "duplicate_method": "SHA-256 of C-order little-endian float64 arrays per 80-row breath, excluding id and breath_id. Features are R,C,time_step,u_in,u_out; target added for labeled comparison.",
+  "exact_input_breath_duplicates": {
+    "train.csv": {
+      "duplicate_breaths_beyond_first": 0,
+      "duplicate_groups": 0,
+      "max_multiplicity": 1
+    },
+    "test.csv": {
+      "duplicate_breaths_beyond_first": 0,
+      "duplicate_groups": 0,
+      "max_multiplicity": 1
+    }
+  },
+  "exact_input_plus_target_train_breath_duplicates": {
+    "duplicate_breaths_beyond_first": 0,
+    "duplicate_groups": 0,
+    "max_multiplicity": 1
+  },
+  "test_breaths_with_exact_input_match_in_train": 0,
+  "cleaning_decision": {
+    "imputation_needed": false,
+    "rows_removed": 0,
+    "outlier_rows_removed": 0,
+    "reason": "No missing/nonfinite cells found. Preserve finite negative/extreme pressures and input-control extremes; no verified measurement-error rule justifies removing them. R/C are legitimate discrete settings. Range violations, if any, must be reported rather than silently clipped."
+  },
+  "scaling_guidance": {
+    "LightGBM": "No numerical standardization needed for axis-aligned tree splits; keep physical units.",
+    "ExtraTrees": "No numerical standardization needed for axis-aligned tree splits; keep physical units.",
+    "GRU_or_other_neural_network": "Standardize continuous features using statistics fitted only on selected training breaths; apply the same transform to validation/test. Scale targets from training labels only if useful, and invert predictions before pressure MAE/submission. Treat R/C as categories or scale their numeric representations deliberately. Keep binary masks and metric logic intact.",
+    "leakage_guard": "Reuse the saved baseline breath split, fit preprocessing on training breaths only, reset sequence/history at every breath, and evaluate only u_out==0 rows."
+  },
+  "quality_status": "numeric_and_schema_checks_passed; review documented finite control-range exceptions"
+}

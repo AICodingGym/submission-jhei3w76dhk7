@@ -110,3 +110,12 @@ Use the project virtual-environment kernel when training.
 
 The original `train_baseline.py` is retained. `EXPERIMENTS.md` records the run,
 and `outputs/baseline_v001/` contains the accepted artifacts.
+
+For the later model comparison, open `model_tuning_v002.ipynb`. It defaults to
+reviewing saved results; `PA3_RUN_TUNING=1` enables a new search and
+`PA3_RESUME_TUNING=1` resumes compatible completed work. Use a new RUN_NAME for an
+independent new search. Results and the selected submission are in
+`outputs/tuning_v002/`; quality and resistance diagnostics are separate JSON files.
+The comparison includes larger LightGBM models, ExtraTrees, GRUs, a training-size
+ablation, and confirmation on previously unused breaths. See `EXPERIMENTS.md`
+for all settings, limitations, and results.
