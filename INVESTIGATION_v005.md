@@ -141,3 +141,10 @@ row alignment and recomputed native MAEs. It performed no assignment fitting,
 read no C outcomes and did not freeze a selection. A separate worker now waits
 for the full capacity phase and released A worker locks before starting the
 immutable A selection, C fits and final all-data fits. Upload remains separate.
+
+
+At 2:21 PM the cosine schedule completed 200 epochs in 914.16 seconds, best A
+.371981592 at epoch 189. It wins the three-way A-only schedule comparison. Its
+full 200 learning rates are frozen for each feature comparison; selected epoch
+189 is relevant only to any subsequent fixed-duration refit of this candidate.
+The offline feature comparison is active. No C result or Gym upload exists yet.

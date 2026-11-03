@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "schema": true,
+  "all_code_compiles": true,
+  "default_no_fitting": true,
+  "tree_count_only_change": true,
+  "leaf_count_only_change": true,
+  "unchanged_approved_feature_definitions": true,
+  "original_A_group_guards": true,
+  "current_C_protocol_unchanged": true,
+  "assignment_training_performed": false,
+  "source_sha256": "943ae0317f921385a4e9392d015cd6724c0c0136f54bf709ab0d9fef1786c714"
+}
