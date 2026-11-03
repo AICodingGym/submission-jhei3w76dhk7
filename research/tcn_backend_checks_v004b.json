@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "course_torch_version": "2.2.1+cu121",
+  "gpu": "NVIDIA GeForce GTX 1080 Ti",
+  "cpu_float64_output_max_error": 0.0,
+  "cpu_float64_parameter_gradient_max_error": 6.938893903907228e-17,
+  "cpu_float64_input_gradient_max_error": 1.6263032587282567e-18,
+  "parameter_count": 161561,
+  "state_keys_identical": true,
+  "native_synthetic_batch_seconds": [
+    2.3438573218882084,
+    2.0882027614861727,
+    2.0657699164003134,
+    2.042226715013385
+  ],
+  "gemm_synthetic_batch_seconds": [
+    0.0488805677741766,
+    0.03892596252262592,
+    0.037857411429286,
+    0.037233516573905945
+  ],
+  "synthetic_batch_speedup_last": 54.848,
+  "first_real_epoch_seconds": 11.262937678024173,
+  "old_first_real_epoch_seconds": 549.6689267493784,
+  "course_schema_compilation_and_default_review": "passed",
+  "parent_imports_source_recipe_split_hashes_and_metrics": "passed for four completed non-TCN comparisons",
+  "note": "Equivalence is of the convolution function and gradients within floating-point tolerance, not a promise of identical stochastic training trajectories. The interrupted original TCN is not used as accuracy evidence.",
+  "cuda_float32_forward_max_error": 3.5762786865234375e-07,
+  "cuda_float32_input_gradient_max_error": 1.4260876923799515e-09,
+  "cuda_all_parameter_gradients_passed": true,
+  "cuda_causal_prefix_max_error": 0.0
+}

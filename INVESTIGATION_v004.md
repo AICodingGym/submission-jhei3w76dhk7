@@ -122,4 +122,40 @@ the reviewed source. The matched warm starts both reproduced baseline A MAE
 Both changes are small. Reducing the already-low rate another tenfold did not
 beat continuation at the current rate in this matched comparison. Neither warm
 arm is adopted before the remaining A search and B confirmation finish.
-Bidirectional GRU, learned R/C embeddings, and TCN runs remain in progress.
+The bidirectional GRU completed 100 epochs in 561.98 seconds (selected epoch 99,
+A MAE 0.5690773345). Learned R/C embeddings selected epoch 72, scoring
+0.5351712787 in 364.72 seconds. Neither improves the reference on A.
+
+### TCN throughput mistake and correction
+
+The original TCN implementation was functionally valid but impractical on the
+course GPU/software combination: its first full epoch took 549.67 seconds.
+The time cap is checked between epochs, so it did not provide a strict 600-second
+wall-clock bound. The run was paused and stopped, retaining its partial checkpoint
+and logs; its severely undertrained result is not evidence against TCNs.
+
+A synthetic profiler identified the slow dilated convolution fallback: 147,520
+copy operations and 164,295 kernel launches in one batch. Disabling cuDNN did not
+help. Isolated dilation-16 convolution took about .342 seconds per batch, while
+ordinary convolution and LayerNorm were around .0015 seconds each.
+
+`sequence_refinement_v004b.ipynb` is a separate continuation with its own output
+directory. It computes the same causal windows with a matrix multiplication;
+parameters, receptive field and model capacity are unchanged. Float64 output,
+input gradient and every parameter gradient passed equivalence checks. The course
+GPU's steady synthetic batch improved from 2.04 seconds to .0372 seconds. The
+first actual epoch took 11.26 seconds. Floating-point summation and stochastic
+training trajectories need not be identical across implementations.
+
+The four completed non-TCN candidates are reused only after verifying unchanged
+GRU/preprocessing/training source, matching recipes/data/group hashes, checkpoint
+hashes, prediction hashes, row IDs, and recomputed MAE. They remain the original
+experiments, not four additional fits. Neither original source nor outputs are
+overwritten. The verified optimized TCN trials are now running, followed by the
+same A ensemble search, frozen B confirmation and all-labeled final fit.
+
+Operational mistakes during diagnosis were confined to checks: one synthetic
+benchmark omitted the deterministic CUDA workspace variable and failed explicitly;
+it was rerun with the real notebook's setting. Local notebook generation lacked
+nbformat, so local compilation used JSON and the course environment then performed
+the actual nbformat schema and default-review execution checks. Both passed.

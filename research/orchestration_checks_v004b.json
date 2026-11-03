@@ -1,0 +1,20 @@
+{
+  "parent_code_sha256": "e07698f167857f7171c91f915cbc8814b483e2bd3173f5846241968985347377",
+  "non_TCN_model_defs_unchanged": true,
+  "feature_preprocessing_validation_and_fixed_training_source_unchanged": true,
+  "candidate_recipes_unchanged": true,
+  "new_artifact_directory": "outputs/sequence_v004b",
+  "imported_candidates": [
+    "warm_current",
+    "warm_tenth",
+    "bigru80",
+    "gru_embedding"
+  ],
+  "imported_metrics_and_hashes_checked_at_execution": true,
+  "source_compiles": true,
+  "notebook_schema_passed": true,
+  "course_environment_schema_check_required": false,
+  "notebook_sha256": "dd138d60d1046a5fbfa746a8f7c927deb328871b365a078a0f9a637ca2bb5fc3",
+  "course_default_review_execution": "passed",
+  "four_parent_stages_reused_with_verified_provenance": true
+}

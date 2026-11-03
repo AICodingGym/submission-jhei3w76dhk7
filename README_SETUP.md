@@ -32,28 +32,28 @@ data/models, or existing competition solutions. Keep the source data unchanged.
 
 ## Working environment
 
-The selected working environment is the course DataHub. The original container
-`v2gao-254347` expired at its six-hour deadline and was archived and removed.
-Replacement pod `v2gao-939516` was submitted at about 7:55 PM Pacific on November 2.
-It started at **9:10:09 PM Pacific**, after about 75 minutes queued, and passed
-CUDA and persistent-file verification. It was submitted with:
+The active course GPU container is **`v2gao-11673`**, started at **7:52:57 AM
+Pacific on November 3, 2026**, on `its-dsmlp-n05.ucsd.edu`. It passed CUDA
+arithmetic and the current notebook started automatically. Its launch uses one
+GPU, 8 CPU/16 GiB limits (scheduling requests 4 CPU/8 GiB), and the official
+DataHub user initialization before `setup/start_sequence_v004.sh`.
 
-```bash
-launch-scipy-ml.sh -W DSC102_FA26_001 -g 1 -c 8 -m 16 -B /bin/sleep infinity
-```
+Verified environment: GTX 1080 Ti (11 GB VRAM), Python 3.11.9, Torch 2.2.1+cu121 /
+CUDA 12.1, NumPy 1.26.4, pandas 2.2.2, LightGBM 4.6.0 and nbformat 5.10.4. The
+project environment was reused without upgrades. Verification and execution logs
+are in `/home/v2gao/dsc102/pa3/setup/v004-startup-verification.json` and
+`setup/sequence-v004-execution.log` at that project root.
 
-The first container started at about 1:30 PM Pacific on November 2 after about
-38 minutes queued. Its verified hardware/software was GTX 1080 Ti (11 GB VRAM),
-Python 3.11.9, image PyTorch 2.2.1+cu121 / CUDA 12.1, NumPy 1.26.4, pandas 2.2.2,
-and Gym CLI 1.1.0. CUDA
-arithmetic, imports, Gym configuration, and approved data integrity all passed.
-A readiness worker repeated these checks in the replacement container and saved
-`/home/v2gao/dsc102/pa3/setup/restart-v2gao-939516.json`.
-CPU/RAM limits are 8 CPUs and 16 GiB; scheduling requests are 4 CPUs and 8 GiB.
+The active continuation is now `sequence_refinement_v004b.ipynb`, worker PID 925,
+with `setup/sequence-v004b-execution.log`. It replaces the inefficient TCN
+convolution backend with a verified equivalent implementation. Four completed
+non-TCN comparisons are reused with provenance checks. Original v004 files are
+preserved. See `PROCESS_STATUS.md` for a timestamped map and
+`INVESTIGATION_v004.md` for the diagnosis.
 
-Replacement verification is complete: GTX 1080 Ti (11 GB VRAM), driver
-580.126.20, the same project Python/Torch/CUDA versions, working CUDA arithmetic,
-matching approved-data/notebook/submission hashes, and the saved Gym identity.
+Earlier containers `v2gao-254347` and `v2gao-939516` expired and were archived and
+removed. Their completed models, notebooks and data remain in persistent home
+storage. The temporary CPU staging pod has also been released.
 
 Connect from your Mac:
 
@@ -64,7 +64,7 @@ ssh v2gao@dsmlp-login.ucsd.edu
 Then, on the login server:
 
 ```bash
-kubesh v2gao-939516
+kubesh v2gao-11673
 ```
 
 Inside the container, activate the environment and enter the work directory:
@@ -84,10 +84,10 @@ Use official `kubesh`: it initializes DataHub's Unix user mapping. Plain raw
 `ssh-keygen`. This setup uses a batch/shell container; no Jupyter server or
 notebook URL was started.
 
-The replacement pod's six-hour active deadline is **3:10:09 AM Pacific on
+The current pod's six-hour active deadline is **1:52:57 PM Pacific on
 November 3, 2026**. Queue waiting did not consume this lifetime. Home-directory files
 persist after it stops. When finished with the GPU, exit to the login server and
-run `kubectl delete pod v2gao-939516` to release it. Do not run training on the
+run `kubectl delete pod v2gao-11673` to release it. Do not run training on the
 login server.
 
 A separate local backup environment is available on this M3 Pro Mac:
@@ -144,3 +144,19 @@ arms while the GPU queued. Its execution snapshot is
 `controlled_improvements_v003_cpu_screen.ipynb` on DataHub; that pod has been
 released. The GPU notebook reuses the verified fits. Visible-conversation
 snapshots are preserved in `interaction-history/`.
+
+The subsequent offline sequence investigation is `sequence_refinement_v004.ipynb`.
+It compares matched low-rate continuation, a compact bidirectional GRU, R/C
+embeddings, a causal TCN, and A-selected error-diverse pairs. The separate final
+fit on all 67,905 approved labeled breaths is explicitly authorized by the user's
+later request; its checkpoint will have no independent A/B holdout. Validation
+evidence stays separate in `outputs/sequence_v004/experiments/`; the final all-data
+CSV will now be `outputs/sequence_v004b/final_all/submission.csv`. Review is the default;
+`PA3_RUN_V004=1` enables training and `PA3_RESUME_V004=1` reuses compatible completed
+stages. `error_analysis_v004.ipynb` contains the executed error-contribution and
+hard-breath plots. See `INVESTIGATION_v004.md` for methodology and current results.
+
+For the optimized continuation, use `PA3_RUN_V004B=1` and
+`PA3_RESUME_V004B=1` only when intentionally continuing a compatible run.
+`results_review_v004.ipynb` reviews saved results and verifies artifact alignment
+without training or uploading a submission.
