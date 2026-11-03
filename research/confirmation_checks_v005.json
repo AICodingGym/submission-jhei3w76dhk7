@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": 12,
+  "source_compiles": true,
+  "notebook_schema_passed": true,
+  "default_review_no_fitting": true,
+  "A_frozen_C_gating": true,
+  "same_run_dependency_cache": true,
+  "strict_expected_A_inventory": true,
+  "prior_review_fixes_applied": true,
+  "independent_source_review": "Core groups/schedules/legacy adapter/selection/bootstrap/CSV reviewed; root applied reported hardening",
+  "assignment_model_training_performed": false,
+  "source_code_sha256": "96e4206005bf03e279fc04c3d9f79ae75b930d30c4dab99e0b2a3fc85cd09174"
+}

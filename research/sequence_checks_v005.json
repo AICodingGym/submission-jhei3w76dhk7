@@ -1,0 +1,349 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "dynamic_input_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_numeric_features_retained",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "train_only_means",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "joint_codes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "masked_metric",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "target_roundtrip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase_scaling_columns",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase_scaling_mean",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "phase_excluded_columns_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "profile_training_counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "profile_unsupported_group_fallback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "profile_unsupported_step_global_fallback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "residual_target_roundtrip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_False_plain_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_False_plain_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_False_embedding_heads_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_False_embedding_heads_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_False_tapered_skip_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_False_tapered_skip_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_True_plain_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_True_plain_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_True_embedding_heads_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_True_embedding_heads_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_True_tapered_skip_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gru_True_tapered_skip_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_False_plain_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_False_plain_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_False_embedding_heads_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_False_embedding_heads_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_False_tapered_skip_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_False_tapered_skip_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_True_plain_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_True_plain_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_True_embedding_heads_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_True_embedding_heads_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_True_tapered_skip_shape",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lstm_True_tapered_skip_cross_breath_independence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "baseline_parameter_count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "bigru128_parameter_count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "legacy_eval_function_and_weights_equivalent",
+      "passed": true,
+      "details": 0.0
+    },
+    {
+      "name": "unidirectional_prefix_causality",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "bidirectional_offline_future_access",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cosine_endpoints",
+      "passed": true,
+      "details": [
+        0.002,
+        0.002,
+        0.00105,
+        0.0001
+      ]
+    },
+    {
+      "name": "plateau_schedule_requires_feedback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "replay_schedule_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "zero_cosine_floor_replay_consistent",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_budget_no_early_stop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "native_train_eval_logged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "saved_native_mae_roundtrip",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "validation_exact_resume_weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "validation_exact_resume_predictions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "validation_exact_resume_history",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_rng_and_optimizer_states_saved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "A_upfront_replay_exact_weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "fixed_frozen_A_best_exact_weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "fixed_no_validation_and_selected_budget",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "fixed_exact_resume_weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "time_cap_explicitly_incomplete",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "time_cap_resumes_full_budget",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "time_cap_resume_exact_predictions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "resume_rejects_changed_data",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "optional_training_recipe_finite",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "optional_profiles_train_only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "definitions_no_assignment_data_reads",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_definition_cells_tagged",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "check_count": 65,
+  "torch_version": "2.15.0",
+  "numpy_version": "2.5.4",
+  "execution_device": "cpu",
+  "synthetic_only": true,
+  "source_sha256": "d86330669115534a683c14a8186ff7bf3f437ca0b28666303b8d1422155a54df",
+  "notebook_sha256": "d20e92eec5889b094a87486f876c3e1a8ae1d7eb2aa096fa5dd530b64c914b4e",
+  "test_script_sha256": "db5628f263c2c040078ade5e9880bc2a9022fe5b4d39434303beec9b5601d7fe",
+  "exact_resume_scope": "CPU epoch-boundary proven; course CUDA fresh-process check still required",
+  "limitations": [
+    "No assignment training, validation, SSH, data downloads, or submissions.",
+    "Explicit inter-layer Torch dropout may change seeded trajectories versus fused legacy cuDNN recurrent dropout.",
+    "Callers must enforce grouped disjointness and lock source hashes; arrays do not carry breath IDs."
+  ]
+}

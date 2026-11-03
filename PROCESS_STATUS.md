@@ -1,49 +1,61 @@
 # Process map
 
-Checked **November 3, 2026, 9:33 AM Pacific**. All modeling, review, backup and Gym submission stages are complete.
+Checked **November 3, 2026, 2:10 PM Pacific**. Iteration v005 is active;
+the official Gym target of MAE 0.20 has not been reached.
 
 ```text
-Approved data + CUDA environment           COMPLETE
-  └─ v003: 27 controlled experiments       COMPLETE
-      └─ Error contributions + hard plots COMPLETE
-          └─ v004: six A comparisons      COMPLETE
-              └─ A ensemble weights       FROZEN
-                  └─ B confirmation       COMPLETE
-                      └─ All-labeled fit  COMPLETE — 67,905 breaths
-                          └─ CSV + QA     COMPLETE — 603,600 rows
-                              └─ Backup   VERIFIED on DataHub and Mac
-                                  └─ Gym  ACCEPTED — MAE .47462
+Approved data + course CUDA environment       VERIFIED
+  ├─ v003 / v004 comparisons + A/B validation COMPLETE
+  │   └─ all-data fit + Gym submission        ACCEPTED — official MAE .47462
+  └─ v005 improvements                       ACTIVE
+      ├─ CPU known-input feature comparisons COMPLETE — best A .503760
+      ├─ GPU learning-rate comparisons       ACTIVE — completed p6 A .415483
+      ├─ GPU input-feature comparisons       WAITING for schedule selection
+      ├─ GPU larger GRU / BiGRU / BiLSTM      WAITING for feature selection
+      ├─ fresh grouped C confirmation        PREPARED; A selection not frozen
+      └─ all-data refit + CSV + Gym score     WAITING for confirmed selection
 ```
 
 | Process / resource | Current state |
 |---|---|
-| GPU training worker PID `925` | Finished successfully; all 18 modeling code cells completed. |
-| CPU review worker PID `1190` | Finished successfully; all five review code cells and backup completed. |
-| Mac verification | Passed: archive checksum, 17 checkpoint records, 14 prediction hashes, CSV alignment and plot inspection. |
-| Research agents | No active work; completed analysis/reviews incorporated. |
-| Course pod `v2gao-11673` | Running and idle; no GPU compute process. Deadline **1:52:57 PM Pacific November 3**. |
-| SSH connection | Connected through the user's authenticated shared connection. |
-| Earlier slow TCN worker PID `119` | Stopped; original notebook and partial trial preserved. |
-| Temporary CPU staging pod | Released. |
+| Course pod `v2gao-306419` | Running on `its-dsmlp-n05.ucsd.edu`; NVIDIA GTX 1080 Ti verified. Started 2:00:05 PM; expected deadline 8:00:05 PM Pacific November 3. |
+| GPU sequence worker PID `142` | Resumed the interrupted patience-6 run; it completed 200 epochs. Cosine schedule is active. Phase limit is `capacity`. |
+| CPU tree worker | All three new feature comparisons complete; compatible finished artifacts reused after restart. |
+| Old pod `v2gao-11673` | Expired on schedule; pod logs archived and expired object removed before the replacement was officially launched. |
+| Progress backup | 43-file snapshot preserved on DataHub and Mac; archive SHA-256 verified. This is a progress snapshot, not a finished-run archive. |
+| SSH | Connected through the user's authenticated shared connection. |
 
-The selected recipe is **75% continued GRU + 25% larger LightGBM**.
-Earlier validation-model MAE: **A .4837194726 / B .5075927078**.
-The final models are fresh fits on all approved labeled breaths and have no
-independent A/B holdout. Gym submission is now accepted: **official MAE 0.47462**. Source code was archived by the CLI.
+Completed v005 comparisons on the same A split (61,114 fitting / 6,791 validation
+breaths), native-unit inspiratory MAE:
 
-Persistent DataHub work directory:
+| Candidate | A MAE | Status |
+|---|---:|---|
+| GRU, plateau patience 1, 200 epochs | .565606 | Complete; worse than incumbent |
+| GRU, plateau patience 6, 200 epochs | .415483 | Complete; selected checkpoint epoch 193; awaiting other comparisons and C confirmation |
+| LightGBM, causal 20 inputs | .618996 | Verified prior model reuse |
+| LightGBM, offline 34 inputs | .529058 | Complete |
+| LightGBM, dynamics 33 inputs | .575459 | Complete |
+| LightGBM, combined 47 inputs | .503760 | Complete |
 
+These A scores describe validation models. They are not official Gym scores and
+do not yet establish that a final all-data model improves on the accepted CSV.
+
+Persistent DataHub project:
 `/home/v2gao/dsc102/pa3/gym-workspace/ventilator-pressure-prediction`
 
-- Executed modeling notebook: `sequence_refinement_v004b.ipynb`
-- Executed results/plots/checks notebook: `results_review_v004.ipynb`
-- Final CSV: `outputs/sequence_v004b/final_all/submission.csv`
-- Validation evidence: `outputs/sequence_v004b/experiments/validation_selection.json`
-- Final model/data/CSV manifest: `outputs/sequence_v004b/final_all/final_manifest.json`
-- Local verification: `outputs/sequence_v004b/final_local_verification.json`
-- Complete local backup: `outputs/sequence_v004b/sequence-v004b-completed.tar.gz`
-- Model and review logs: `/home/v2gao/dsc102/pa3/setup/sequence-v004b-*.log`
-- Methods, results and remaining errors: `INVESTIGATION_v004.md`
+The local project contains the same source notebooks. Work next in
+`iterative_improvements_v005.ipynb`; inspect evidence in
+`results_review_v005.ipynb`. The separate `confirmation_final_v005.ipynb` freezes
+a completed A phase before fitting C and then all approved labeled breaths.
 
-The same notebook/CSV paths exist under the local project. Persistent home files
-survive pod expiry, and the complete verified backup is already on the Mac.
+- Active GPU artifacts: `outputs/improvements_v005/sequence/`
+- Completed CPU artifacts: `outputs/improvements_v005/tree_context/`
+- GPU log: `/home/v2gao/dsc102/pa3/setup/v005-sequence-execution.log`
+- Current progress archive: `outputs/improvements_v005/v005-progress-20261103T214805Z.tar.gz`
+- Accepted fallback CSV: `outputs/sequence_v004b/final_all/submission.csv`
+- Accepted receipt: `research/submission_receipt_v004b.json`
+
+Persistent home files survive pod expiry. Every completed GPU epoch also saves
+optimizer and RNG state for continuation. The current replacement coordinator
+has finished its one replacement; another container will be needed if work runs
+past the current deadline.
