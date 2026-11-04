@@ -231,3 +231,58 @@ Combined wins A-only selection, and the 256-unit GRU capacity trial has started
 with the same frozen 200-rate schedule, original grouped A split, seed and loss.
 Its observed early throughput is about 8.2 seconds per epoch. Bidirectional GRU,
 bidirectional LSTM and deeper tapered LSTM remain queued in the same worker.
+
+
+At 3:37 PM the 256-unit, two-layer GRU completed 200 epochs. A MAE .2685072
+(rounded), selected checkpoint epoch 198; same combined 47 inputs, fixed 200
+learning rates, seed and grouped A split as the 128-unit .3347733 control. This
+is a substantial capacity improvement. The BiGRU128 arm has started at roughly
+7.2 seconds per epoch. It reads the complete known input sequence in both
+directions, never pressure labels; the offline test inputs support that access.
+The new GRU result is not a C confirmation or official Gym score.
+
+
+At 6:57 PM, BiGRU128 completed at A .2623263 (best epoch 191), BiLSTM128 at
+A .2141656 (best epoch 193). The deeper tapered BiLSTM was at epoch 197/200,
+best A .2115441; it remains provisional until its full record is completed.
+The user explicitly requested quiet waiting to conserve tokens; checks are now
+made at expected stage boundaries or when operational action is necessary.
+
+Because C/final fitting will exceed the current 8:00 PM pod deadline, a one-shot
+login-side coordinator was started for v2gao-306419. It waits for a terminal pod
+phase, archives pod metadata/logs, then uses the official course launcher for one
+replacement with the saved three-worker startup script. It performs no training
+on the login node. A cancellation marker is checked before launch; externally
+removed pods do not trigger a replacement. All model data and epoch states are
+persistent. A fresh source/data/group/metric check still precedes any C fit.
+
+
+At 7:00 PM all four capacity arms completed. Deep BiLSTM A .2115441, best epoch
+189, versus BiLSTM128 .2141656, BiGRU128 .2623263, uniGRU256 .2685072. The C
+launcher then exposed a genuine orchestration mistake: exclusive NFS flock probes
+used read-only descriptors, which this NFS mount rejects with EBADF. C had not
+initialized, fitted a model, locked a choice or opened C outcomes. Both readiness
+and notebook lock probes now open the existing files read/write. Original source
+and failed logs are archived. A model/source/data/group/metric preflight passed
+for all 17 completed A descriptors; actual course NFS probes and 12 local logical
+checks passed. Confirmation source fingerprint changed to
+21415181cbfc698d857ab71dc75403018e3184ead4466ac9ab1bb4f540bc89df.
+A models, source, splits and predictions are unchanged. The confirmation worker
+was restarted with the corrected source; the saved startup path uses that fix.
+
+
+A second orchestration bug then stopped the first C member before model training:
+logger event(kind, **values) collided with fixed_fit_started metadata kind=.
+Renamed the positional argument event_name and added a regression call with
+kind metadata. The failed pre-fit round and executed source/logs are archived.
+No C model had trained or produced a score. The A lock was reissued under the
+corrected source and explicitly compared with the archived one: approaches,
+weights and required members are identical before any C fit. Source SHA is now
+ddd2179e1f453252e112ee2f99083a5e3da3ce04468c4f877893ebb21720f2ae.
+Local logical/schema checks and the logger regression passed; actual C training
+was observed at legacy-base epoch 32. The saved startup helper uses this source.
+
+Frozen A choices: best individual deep BiLSTM .21154409731752422; equal-weight
+BiLSTM128/deep-BiLSTM pair .19656260982217663; incumbent blend .4837194725640346.
+The pair crosses .20 on A only. Official MAE remains .47462; C confirmation,
+all-approved-data refitting and a fresh Gym submission are still required.

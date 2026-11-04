@@ -29,7 +29,7 @@
   ],
   "confirmation_waits_for": "Complete capacity A inventory and unlocked sequence/tree workers",
   "confirmation_limit": "final",
-  "confirmation_source_code_sha256": "96e4206005bf03e279fc04c3d9f79ae75b930d30c4dab99e0b2a3fc85cd09174",
+  "confirmation_source_code_sha256": "ddd2179e1f453252e112ee2f99083a5e3da3ce04468c4f877893ebb21720f2ae",
   "submits_automatically": false,
   "restarts_exact_V5_optimizer_rng": true,
   "additional_helpers": [
@@ -49,5 +49,6 @@
       "file": "outputs/improvements_v005/setup_helpers/pa3_v005_status.sh",
       "sha256": "f63d863e1af28f27ce171c2c824bb715dffbb3c7179c75aff7edcc6b795d1309"
     }
-  ]
+  ],
+  "NFS_lock_probe_fix": "Read/write pre-existing descriptors for exclusive probes, fixed before any C initialization"
 }

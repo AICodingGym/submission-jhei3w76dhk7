@@ -1,0 +1,8 @@
+{
+  "status": "source_corrected_pending_course_check",
+  "source_code_sha256": "21415181cbfc698d857ab71dc75403018e3184ead4466ac9ab1bb4f540bc89df",
+  "issue": "NFS exclusive flock requires a writable file descriptor; read-only probes raised EBADF before C initialization",
+  "changes": "Open pre-existing lock files r+ in the launcher readiness probe and notebook snapshot guard",
+  "A_training_unchanged": true,
+  "C_fitting_or_outcomes_before_fix": false
+}

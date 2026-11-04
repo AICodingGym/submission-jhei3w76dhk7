@@ -1,6 +1,6 @@
 # Process map
 
-Checked **November 3, 2026, 3:13 PM Pacific**. Iteration v005 is active;
+Checked **November 3, 2026, 6:59 PM Pacific**. Iteration v005 is active;
 the official Gym target of MAE 0.20 has not been reached.
 
 ```text
@@ -12,7 +12,7 @@ Approved data + course CUDA environment       VERIFIED
       ├─ CPU tree count / leaf comparisons   COMPLETE — best A .481397; exploratory
       ├─ GPU learning-rate comparisons       COMPLETE — cosine A .371982
       ├─ GPU input-feature comparisons       COMPLETE — combined A .334773
-      ├─ GPU larger GRU / BiGRU / BiLSTM      ACTIVE — GRU256 first
+      ├─ GPU larger GRU / BiGRU / BiLSTM      ACTIVE — BiLSTM128 A .214166 done; deep LSTM near completion
       ├─ fresh grouped C confirmation        PREPARED; A selection not frozen
       └─ all-data refit + CSV + Gym score     WAITING for confirmed selection
 ```
@@ -20,7 +20,7 @@ Approved data + course CUDA environment       VERIFIED
 | Process / resource | Current state |
 |---|---|
 | Course pod `v2gao-306419` | Running on `its-dsmlp-n05.ucsd.edu`; NVIDIA GTX 1080 Ti verified. Started 2:00:05 PM; expected deadline 8:00:05 PM Pacific November 3. |
-| GPU sequence worker PID `142` | Resumed the interrupted patience-6 run; it completed 200 epochs. Cosine completed at A .371982; all feature arms completed; combined A .334773 won. GRU256 capacity trial is active. Phase limit is `capacity`. |
+| GPU sequence worker PID `142` | Resumed the interrupted patience-6 run; it completed 200 epochs. Cosine completed at A .371982; all feature arms completed; combined A .334773 won. BiGRU128 completed at A .262326 and BiLSTM128 at A .214166; deep LSTM is near completion. Phase limit is `capacity`. |
 | CPU tree worker | Feature comparisons complete. Additional tree-capacity worker PID `420` completed both arms: A .484391 (5,000 trees), .481397 (1,023 leaves); excluded from current confirmation inventory. |
 | Old pod `v2gao-11673` | Expired on schedule; pod logs archived and expired object removed before the replacement was officially launched. |
 | Progress backup | 43-file snapshot preserved on DataHub and Mac; archive SHA-256 verified. This is a progress snapshot, not a finished-run archive. |
@@ -37,6 +37,7 @@ breaths), native-unit inspiratory MAE:
 | GRU, offline 34 inputs, 200 epochs | .351865 | Complete; selected checkpoint epoch 192; provisional feature leader |
 | GRU, dynamics 33 inputs, 200 epochs | .341036 | Complete; checkpoint epoch 192 |
 | GRU, combined 47 inputs, 200 epochs | .334773 | Complete; checkpoint epoch 193; feature winner |
+| GRU256, combined 47 inputs, 200 epochs | .268507 | Complete; checkpoint epoch 198; provisional capacity leader |
 | LightGBM, causal 20 inputs | .618996 | Verified prior model reuse |
 | LightGBM, offline 34 inputs | .529058 | Complete |
 | LightGBM, dynamics 33 inputs | .575459 | Complete |
@@ -61,6 +62,6 @@ a completed A phase before fitting C and then all approved labeled breaths.
 - Accepted receipt: `research/submission_receipt_v004b.json`
 
 Persistent home files survive pod expiry. Every completed GPU epoch also saves
-optimizer and RNG state for continuation. The current replacement coordinator
-has finished its one replacement; another container will be needed if work runs
-past the current deadline.
+optimizer and RNG state for continuation. A one-shot replacement coordinator is now waiting for this pod to terminate.
+It will archive the old pod and use the official course launcher to resume the
+saved workers in one replacement. Cancellation is supported by a login-stage flag.

@@ -10,5 +10,5 @@
   "prior_review_fixes_applied": true,
   "independent_source_review": "Core groups/schedules/legacy adapter/selection/bootstrap/CSV reviewed; root applied reported hardening",
   "assignment_model_training_performed": false,
-  "source_code_sha256": "96e4206005bf03e279fc04c3d9f79ae75b930d30c4dab99e0b2a3fc85cd09174"
+  "source_code_sha256": "ddd2179e1f453252e112ee2f99083a5e3da3ce04468c4f877893ebb21720f2ae"
 }

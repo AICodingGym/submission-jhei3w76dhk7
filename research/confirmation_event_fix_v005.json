@@ -1,0 +1,11 @@
+{
+  "status": "passed_actual_C_training_started",
+  "source_code_sha256": "ddd2179e1f453252e112ee2f99083a5e3da3ce04468c4f877893ebb21720f2ae",
+  "issue": "event(kind, **values) collided with fixed_fit_started kind= metadata",
+  "change": "Rename the logger positional argument event_name",
+  "A_choice_and_training_budgets_unchanged": true,
+  "C_models_trained_before_fix": 0,
+  "local_logger_regression_passed": true,
+  "frozen_A_approaches_identical": true,
+  "actual_C_progress_observed": "legacy base epoch 32"
+}
