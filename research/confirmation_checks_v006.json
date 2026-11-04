@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "CPU_setup_only": true,
+  "assignment_data_model_fits": 0,
+  "all_three_A_metrics_independently_recomputed": true,
+  "checkpoint_prediction_and_group_hashes_verified": true,
+  "A_selected": "H1_slowcosine300",
+  "selected_epochs": 285,
+  "A_decision": {
+    "name": "H1_slowcosine300",
+    "mae": 0.1931450767567959,
+    "eligible": true,
+    "interval": {
+      "difference_first_minus_second": -0.0034175330653807194,
+      "bootstrap_95_low": -0.005498554955525017,
+      "bootstrap_95_high": -0.0013141151097969006,
+      "repeats": 1000,
+      "unit": "whole breath",
+      "point_count_weighted": true
+    },
+    "record_sha256": "79a726bea486140e7ad7afedf5f0781345f44208c650a12eb1d304df8f065c0b"
+  },
+  "component_definitions_reused_unchanged": true,
+  "source_sha256": "0b70251ac5203c6e4749e04cd88c24c74e6f371d8128e5d6915c937e6133f7f5",
+  "bootstrap_constant_difference_test_passed": true
+}

@@ -1,6 +1,6 @@
 # Process map
 
-Checked **November 4, 2026, 8:24 AM Pacific**.
+Checked **November 4, 2026, 8:35 AM Pacific**.
 
 | Process | Status | Result / next step |
 |---|---|---|
@@ -11,13 +11,12 @@ Checked **November 4, 2026, 8:24 AM Pacific**.
 | v005 final submission | Accepted | **Official MAE .18550**, 4.8% lower than interim .19486; exact rows/IDs/model hashes and independent inference verified |
 | H1: extend original compact LSTM by 100 epochs | Complete | Individual A MAE **.213908**, best epoch 294; small change from .214166 |
 | H1: fresh 300-epoch slower cosine | Complete | Individual A MAE **.206321**, best epoch 285; fixed-pair comparison pending retrieval |
-| H2: R/C-specific output heads | Started | Last result pending login renewal; same 200-epoch schedule, head change only |
-| Additional grouped confirmation | Conditional | Only promising approved pilots; no C weight tuning |
+| H2: R/C-specific output heads | Complete | Individual A **.224617**, fixed pair **.201662**; worse, rejected |
+| Additional grouped confirmation | Running | Slower-cosine candidate only: A pair **.193145**, 95% paired-bootstrap improvement interval [-.00550, -.00131]; 285 frozen epochs |
 
 Current course pod: `v2gao-1042868` on `its-dsmlp-n05.ucsd.edu`,
 GTX 1080 Ti. Started about **6:25 AM Pacific**; expected six-hour expiry about
-**12:25 PM**. Password/Duo renewal is now required to retrieve the last pilot result.
-The reconnection command has been requested; server-side work continues.
+**12:25 PM**. Password/Duo renewed by the user; SSH connected.
 
 The prior pod expired at 2:02 AM. Its final fits and CSV completed beforehand.
 The pilot's split check rejected an identical split because it compared two

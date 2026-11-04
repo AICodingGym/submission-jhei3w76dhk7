@@ -140,3 +140,19 @@ compact baseline is .21416556794777317. Duration alone showed little gain;
 slower decay is more promising. Fixed equal-pair comparisons, runtime records
 and H2 completion still need server retrieval; no C decision is made yet.
 All-data v005 official MAE .18550 is accepted and preserved.
+
+
+Completed A screen verified after reconnection:
+
+| Approved trial | Individual A MAE | Fixed equal-pair A MAE | New training time |
+|---|---:|---:|---:|
+| Duration 200+100 | .213908 | .196437 | 17.75 min |
+| Slower 300-epoch cosine | .206321 | .193145 | 52.96 min |
+| R/C output heads, 200 epochs | .224617 | .201662 | 36.15 min |
+
+Original compact .214166; original pair .196563. Only slower cosine passed the
+frozen minimum .003 pair improvement and whole-breath bootstrap requirement.
+Its pair-vs-original MAE difference is -.00341753, 95% interval
+[-.00549855, -.00131412]. Selected A checkpoint epoch285. One fresh grouped-C
+candidate fit started using this exact rate prefix; existing deep C partner
+and .5/.5 weights retained. No runner-up or weight search if C rejects it.
