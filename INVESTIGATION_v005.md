@@ -336,3 +336,24 @@ C is resampling confirmation, not a pristine final test. Fresh all-67,905-breath
 fits began using the selected A epoch budgets/rates and their own all-data
 preprocessing. Earlier A/C scores describe validation models, not those final
 models. Interim official MAE .19486 remains accepted and unchanged.
+
+
+## November 4 morning recovery and final artifact preservation
+
+The original final pipeline completed overnight before pod expiry. Both LSTM
+members were freshly fitted on all 67,905 breaths (193 and 189 fixed epochs).
+The final 603,600-row CSV SHA-256 is
+`ff149f3ab87e1e52b948f536c9fdf9a526471ac0723b6b785bf84c053ebed607`.
+The 76,116,474-byte final archive SHA-256 is
+`4b31b09cb15f81cac4bedb710af2d51d70d5cbe13ed809ced304ace571d99676`.
+All 16 archive files and the 38-file C backup were verified after local transfer.
+
+A genuine pilot setup mistake compared metadata-inclusive array hashes to the
+original design's raw-byte group hashes. This rejected the correct split and
+stopped before assignment-data pilot training. Original executed source and
+logs were preserved. Only that hash convention was corrected; every group,
+recipe, data file and model seed remains unchanged. Corrected source SHA-256:
+`627d48f7726e919a21f10884c2d557132f8f8eef1c9a56fb34316829e3dd6920`.
+Actual-course preflight verified all group hashes, the exact original A model
+fingerprint, and 840 exact CUDA continuation checks. Approved H1/H2 trials
+resumed in official course pod `v2gao-1042868`; H3/H4 remain unstarted.

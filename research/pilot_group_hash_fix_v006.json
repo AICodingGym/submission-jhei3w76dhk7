@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "genuine_mistake": "Pilot compared metadata-inclusive array hashes with established raw-byte group hashes. Identical split was rejected before dataset model fitting.",
+  "old_source_sha256": "601948212a5ca1df9c746c386145ee99d43d9793a1be8ea7daca2c3d6f51813c",
+  "new_source_sha256": "627d48f7726e919a21f10884c2d557132f8f8eef1c9a56fb34316829e3dd6920",
+  "changed_only": "Group identity hash uses established raw-byte convention",
+  "original_split_unchanged": true,
+  "approved_data_models_trained_before_fix": false,
+  "course_cuda_exact_continuation_checks": 840
+}

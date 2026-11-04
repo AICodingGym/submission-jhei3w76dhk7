@@ -1,12 +1,12 @@
 {
-  "status": "queued_after_current_final_fits",
-  "pilot_waiter_PID": 365,
+  "status": "running_after_verified_group_hash_fix",
+  "pilot_waiter_PID": 214,
   "renewal_coordinator_PID": 512373,
-  "active_pod": "v2gao-486950",
-  "current_deadline_Pacific": "2026-11-04 02:02:23",
+  "active_pod": "v2gao-1042868",
+  "current_deadline_Pacific": "2026-11-04 12:25 approximate",
   "gate": "complete final manifest, successful old controller, released NFS locks",
   "fitting_before_gate": false,
-  "source_code_sha256": "601948212a5ca1df9c746c386145ee99d43d9793a1be8ea7daca2c3d6f51813c",
+  "source_code_sha256": "627d48f7726e919a21f10884c2d557132f8f8eef1c9a56fb34316829e3dd6920",
   "helpers": [
     {
       "file": "outputs/approved_pilots_v006/setup_helpers/pa3_execute_pilot_v006.py",
@@ -22,5 +22,8 @@
     }
   ],
   "one_extra_official_container_if_unfinished_at_expiry": true,
-  "no_extra_container_if_screen_complete_or_application_error": true
+  "no_extra_container_if_screen_complete_or_application_error": true,
+  "prior_pipeline_complete": true,
+  "one_shot_renewal_stopped_on_application_error": true,
+  "renewal_coordinator_currently_active": false
 }

@@ -1,88 +1,39 @@
 # Process map
 
-Checked **November 3, 2026, 9:43 PM Pacific**. Iteration v005 is active;
-the official Gym target of MAE 0.20 has been reached by the interim ensemble: **0.19486**. Grouped C and final all-data refitting remain active.
+Checked **November 4, 2026, 6:31 AM Pacific**.
 
-```text
-Approved data + course CUDA environment       VERIFIED
-  ├─ v003 / v004 comparisons + A/B validation COMPLETE
-  │   └─ all-data fit + Gym submission        ACCEPTED — official MAE .47462
-  └─ v005 improvements                       ACTIVE
-      ├─ CPU known-input feature comparisons COMPLETE — best A .503760
-      ├─ CPU tree count / leaf comparisons   COMPLETE — best A .481397; exploratory
-      ├─ GPU learning-rate comparisons       COMPLETE — cosine A .371982
-      ├─ GPU input-feature comparisons       COMPLETE — combined A .334773
-      ├─ GPU larger GRU / BiGRU / BiLSTM      COMPLETE — deep A .211544; frozen pair A .196563
-      ├─ fresh grouped C confirmation        COMPLETE — pair C .210612
-      └─ all-data refit + CSV + Gym score     ACTIVE — both models fit 67,905 breaths
-```
+| Process | Status | Result / next step |
+|---|---|---|
+| Accepted interim submission | Complete | Official MAE **0.19486**; retained |
+| v005 A comparisons | Complete | Frozen equal LSTM pair MAE **0.196563** |
+| v005 grouped C confirmation | Complete | Same pair **0.210612**; beats individual .231627 and reference .514886 |
+| v005 all-data final fits | Complete | Two fresh models fitted on all **67,905** approved breaths; 193 / 189 epochs |
+| v005 final CSV | Downloaded | 603,600 rows; independent local verification before submission |
+| H1: extend original compact LSTM by 100 epochs | Running | Exact saved model, Adam, RNG, scaler and split preserved |
+| H1: fresh 300-epoch slower cosine | Pending | Same model and split; matched 300-epoch budget |
+| H2: R/C-specific output heads | Pending | Same model, split and 200-epoch schedule; head change only |
+| Additional grouped confirmation | Conditional | Only promising approved pilots; no C weight tuning |
 
-| Process / resource | Current state |
-|---|---|
-| Course pod `v2gao-486950` | Running on its-dsmlp-n06; started 8:02:23 PM Pacific. GTX 1080 Ti/CUDA proof passed. Expected deadline 2:02:23 AM November 4. Deep C resumed at epoch 21. |
-| GPU sequence worker PID `142` | Resumed the interrupted patience-6 run; it completed 200 epochs. Cosine completed at A .371982; all feature arms completed; combined A .334773 won. BiGRU128 completed at A .262326 and BiLSTM128 at A .214166; deep LSTM is near completion. Phase limit is `capacity`. |
-| CPU tree worker | Feature comparisons complete. Additional tree-capacity worker PID `420` completed both arms: A .484391 (5,000 trees), .481397 (1,023 leaves); excluded from current confirmation inventory. |
-| Old pod `v2gao-11673` | Expired on schedule; pod logs archived and expired object removed before the replacement was officially launched. |
-| Progress backup | 43-file snapshot preserved on DataHub and Mac; archive SHA-256 verified. This is a progress snapshot, not a finished-run archive. |
-| SSH | Connected through the user's authenticated shared connection. |
+Current course pod: `v2gao-1042868` on `its-dsmlp-n05.ucsd.edu`,
+GTX 1080 Ti. Started about **6:25 AM Pacific**; expected six-hour expiry about
+**12:25 PM**. Password/Duo reauthentication is not currently needed.
 
-Completed v005 comparisons on the same A split (61,114 fitting / 6,791 validation
-breaths), native-unit inspiratory MAE:
+The prior pod expired at 2:02 AM. Its final fits and CSV completed beforehand.
+The pilot's split check rejected an identical split because it compared two
+hash formats. It stopped before any assignment-data pilot fitting. The source
+and failure log are preserved. The corrected check, original checkpoint
+fingerprint and 840 exact CUDA continuation checks passed before restart.
 
-| Candidate | A MAE | Status |
-|---|---:|---|
-| GRU, plateau patience 1, 200 epochs | .565606 | Complete; worse than incumbent |
-| GRU, plateau patience 6, 200 epochs | .415483 | Complete; selected checkpoint epoch 193 |
-| GRU, warmup/cosine, 200 epochs | .371982 | Complete; selected checkpoint epoch 189; schedule winner; awaiting feature/capacity comparisons and C |
-| GRU, offline 34 inputs, 200 epochs | .351865 | Complete; selected checkpoint epoch 192; provisional feature leader |
-| GRU, dynamics 33 inputs, 200 epochs | .341036 | Complete; checkpoint epoch 192 |
-| GRU, combined 47 inputs, 200 epochs | .334773 | Complete; checkpoint epoch 193; feature winner |
-| GRU256, combined 47 inputs, 200 epochs | .268507 | Complete; checkpoint epoch 198; provisional capacity leader |
-| LightGBM, causal 20 inputs | .618996 | Verified prior model reuse |
-| LightGBM, offline 34 inputs | .529058 | Complete |
-| LightGBM, dynamics 33 inputs | .575459 | Complete |
-| LightGBM, combined 47 inputs | .503760 | Complete |
+Work is stored in persistent DataHub home and backed up locally:
+`/home/v2gao/dsc102/pa3/gym-workspace/ventilator-pressure-prediction`.
 
-These A scores describe validation models. They are not official Gym scores and
-do not yet establish that a final all-data model improves on the accepted CSV.
+- Completed final notebook: `confirmation_final_v005.ipynb`
+- Final CSV: `outputs/improvements_v005/confirmation_round1/final_all/submission.csv`
+- Approved experiments: `approved_pilots_v006.ipynb`
+- Pilot log: `/home/v2gao/dsc102/pa3/setup/v006-pilot-execution.log`
+- Pilot results: `outputs/approved_pilots_v006/`
+- Accepted interim receipt: `research/submission_receipt_v005_interim.json`
 
-Persistent DataHub project:
-`/home/v2gao/dsc102/pa3/gym-workspace/ventilator-pressure-prediction`
-
-The local project contains the same source notebooks. Work next in
-`iterative_improvements_v005.ipynb`; inspect evidence in
-`results_review_v005.ipynb`. The separate `confirmation_final_v005.ipynb` freezes
-a completed A phase before fitting C and then all approved labeled breaths.
-
-- Active GPU artifacts: `outputs/improvements_v005/sequence/`
-- Completed CPU artifacts: `outputs/improvements_v005/tree_context/`
-- GPU log: `/home/v2gao/dsc102/pa3/setup/v005-sequence-execution.log`
-- Current progress archive: `outputs/improvements_v005/v005-progress-20261103T214805Z.tar.gz`
-- Accepted fallback CSV: `outputs/sequence_v004b/final_all/submission.csv`
-- Accepted receipt: `research/submission_receipt_v004b.json`
-
-Persistent home files survive pod expiry. Every completed GPU epoch also saves
-optimizer and RNG state for continuation. A one-shot replacement coordinator is now waiting for this pod to terminate.
-It will archive the old pod and use the official course launcher to resume the
-saved workers in one replacement. Cancellation is supported by a login-stage flag.
-
-
-User-requested interim submission accepted: **official MAE .19486**, CSV
-`outputs/improvements_v005/interim_A_ensemble/submission.csv`. It uses the two
-A-fit checkpoints (61,114 breaths each); C and final all-data refits continue.
-Receipt: `research/submission_receipt_v005_interim.json`.
-
-
-Approved H1/H2 follow-up: `approved_pilots_v006.ipynb` is prepared, source and
-840-check artificial-data continuation proof passed. Waiter PID 365 holds until
-this current C/final pipeline succeeds and releases its locks. Three trials only:
-exact 200+100 continuation, matched 300-epoch slower cosine, R/C output heads at
-200 epochs. H3/H4 are not approved. A cancelable one-shot coordinator can resume
-unfinished approved work after the 2:02 AM deadline; it stops if the screen is
-complete or an application error requires review. No new data-model fit has begun.
-
-
-Grouped C confirmation complete: reference .514886, selected individual .231627,
-frozen .5/.5 LSTM pair .210612. Pair-vs-individual whole-breath bootstrap 95%
-interval for MAE difference is [-.02490, -.01762]. Weights were not tuned on C.
-Final all-data fits are active. Approved v006 pilots wait for their completion.
+C is resampling confirmation, not a pristine untouched test set. Validation
+scores belong to earlier validation fits; final all-data models have no
+independent holdout. No H3/H4 experiments are authorized or running.

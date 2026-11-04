@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "check": "Independent CPU inference against GPU-generated CSV",
+  "breaths": 32,
+  "points": 2560,
+  "max_absolute_difference": 1.3350585938098902e-05,
+  "mean_absolute_difference": 1.0500842323079434e-06,
+  "tolerance": 0.0005,
+  "exact_row_ids": true,
+  "equal_weights_fixed_on_A": true,
+  "training_performed": false
+}

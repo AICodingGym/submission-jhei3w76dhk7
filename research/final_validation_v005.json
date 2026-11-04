@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "C_models": [
+    {
+      "name": "legacy__gru_s20261102",
+      "C_mae_recomputed": 0.5283364207192384,
+      "record_model_prediction_hashes_verified": true
+    },
+    {
+      "name": "legacy__tree_511",
+      "C_mae_recomputed": 0.6399438498887723,
+      "record_model_prediction_hashes_verified": true
+    },
+    {
+      "name": "legacy__warm_current",
+      "C_mae_recomputed": 0.5265312681785901,
+      "record_model_prediction_hashes_verified": true
+    },
+    {
+      "name": "nn__capacity_bilstm128",
+      "C_mae_recomputed": 0.2242713074710794,
+      "record_model_prediction_hashes_verified": true
+    },
+    {
+      "name": "nn__capacity_deep_bilstm",
+      "C_mae_recomputed": 0.2316267258871465,
+      "record_model_prediction_hashes_verified": true
+    }
+  ],
+  "final_models": [
+    {
+      "name": "nn__capacity_bilstm128",
+      "epochs": 193,
+      "training_breaths": 67905,
+      "training_inspiratory_points": 2061922,
+      "target_scaler_independently_verified": true,
+      "model_sha256": "19897b624599c57f2e4a7f976b2d2fdd4d0b5b1ba3f3dbf6884198ebdef23883"
+    },
+    {
+      "name": "nn__capacity_deep_bilstm",
+      "epochs": 189,
+      "training_breaths": 67905,
+      "training_inspiratory_points": 2061922,
+      "target_scaler_independently_verified": true,
+      "model_sha256": "591e3a778af84bfe7fa0f6592f8595fa2c969bdbb37fc0a36a2a251eacb4aad0"
+    }
+  ],
+  "C_pair_mae": 0.21061234304757373,
+  "A_pair_mae": 0.19656260982217663,
+  "C_is_resampling_confirmation": true,
+  "final_has_independent_holdout": false,
+  "approved_data_hashes_verified": true,
+  "complete_notebook_has_no_error_outputs": true,
+  "submission_rows": 603600,
+  "submission_ids_exactly_match_sample_and_test": true,
+  "submission_sha256": "ff149f3ab87e1e52b948f536c9fdf9a526471ac0723b6b785bf84c053ebed607",
+  "archive_sha256": "4b31b09cb15f81cac4bedb710af2d51d70d5cbe13ed809ced304ace571d99676"
+}
