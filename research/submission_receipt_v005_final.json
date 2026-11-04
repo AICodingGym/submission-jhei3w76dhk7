@@ -1,0 +1,37 @@
+{
+  "status": "accepted",
+  "recorded_at_utc": "2026-11-04T14:32:27.388542+00:00",
+  "competition": "ventilator-pressure-prediction",
+  "user_id": "jhei3w76dhk7",
+  "official_MAE": 0.1855,
+  "prior_official_MAE": 0.19486,
+  "relative_error_reduction_percent": 4.803448629785489,
+  "kind": "Fresh all-approved-data equal BiLSTM ensemble",
+  "training_breaths_per_member": 67905,
+  "epochs": [
+    193,
+    189
+  ],
+  "prior_A_validation_MAE": 0.19656260982217663,
+  "prior_C_resampling_MAE": 0.21061234304757373,
+  "final_refit_has_independent_holdout": false,
+  "members": [
+    "nn__capacity_bilstm128",
+    "nn__capacity_deep_bilstm"
+  ],
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "submission_file": "outputs/improvements_v005/confirmation_round1/final_all/submission.csv",
+  "submission_rows": 603600,
+  "submission_sha256": "ff149f3ab87e1e52b948f536c9fdf9a526471ac0723b6b785bf84c053ebed607",
+  "CLI_log_file": "outputs/improvements_v005/confirmation_round1/final_all/submission_cli.log",
+  "source_archived_reported_by_CLI": true,
+  "source_branch": "ventilator-pressure-prediction",
+  "local_prepared_source_commit": "896c579e316a1cc8f9d2a5d75a78f34e3274f26d",
+  "remote_archive_commit_not_returned_in_CLI_output": true,
+  "optional_AI_log_upload": false,
+  "visible_history_committed": true,
+  "approved_H1_H2_pilots_still_running": true
+}

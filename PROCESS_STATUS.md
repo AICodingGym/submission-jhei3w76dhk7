@@ -1,6 +1,6 @@
 # Process map
 
-Checked **November 4, 2026, 6:31 AM Pacific**.
+Checked **November 4, 2026, 6:33 AM Pacific**.
 
 | Process | Status | Result / next step |
 |---|---|---|
@@ -8,7 +8,7 @@ Checked **November 4, 2026, 6:31 AM Pacific**.
 | v005 A comparisons | Complete | Frozen equal LSTM pair MAE **0.196563** |
 | v005 grouped C confirmation | Complete | Same pair **0.210612**; beats individual .231627 and reference .514886 |
 | v005 all-data final fits | Complete | Two fresh models fitted on all **67,905** approved breaths; 193 / 189 epochs |
-| v005 final CSV | Downloaded | 603,600 rows; independent local verification before submission |
+| v005 final submission | Accepted | **Official MAE .18550**, 4.8% lower than interim .19486; exact rows/IDs/model hashes and independent inference verified |
 | H1: extend original compact LSTM by 100 epochs | Running | Exact saved model, Adam, RNG, scaler and split preserved |
 | H1: fresh 300-epoch slower cosine | Pending | Same model and split; matched 300-epoch budget |
 | H2: R/C-specific output heads | Pending | Same model, split and 200-epoch schedule; head change only |

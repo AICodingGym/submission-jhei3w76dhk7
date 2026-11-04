@@ -357,3 +357,10 @@ recipe, data file and model seed remains unchanged. Corrected source SHA-256:
 Actual-course preflight verified all group hashes, the exact original A model
 fingerprint, and 840 exact CUDA continuation checks. Approved H1/H2 trials
 resumed in official course pod `v2gao-1042868`; H3/H4 remain unstarted.
+
+Final all-data submission accepted: **official MAE .18550**, compared with
+interim .19486 (4.80% lower error). No weights or model choices were changed
+using this official score. Independent CPU inference on 32 test breaths
+(2,560 points) agreed with GPU CSV within 1.34e-5 absolute pressure; approved
+file hashes, C metrics/model hashes, final scaler fitting counts and exact
+sample/test IDs were verified. Receipt: `research/submission_receipt_v005_final.json`.
