@@ -1,6 +1,6 @@
 # Process map
 
-Checked **November 3, 2026, 6:59 PM Pacific**. Iteration v005 is active;
+Checked **November 3, 2026, 8:12 PM Pacific**. Iteration v005 is active;
 the official Gym target of MAE 0.20 has not been reached.
 
 ```text
@@ -12,14 +12,14 @@ Approved data + course CUDA environment       VERIFIED
       ├─ CPU tree count / leaf comparisons   COMPLETE — best A .481397; exploratory
       ├─ GPU learning-rate comparisons       COMPLETE — cosine A .371982
       ├─ GPU input-feature comparisons       COMPLETE — combined A .334773
-      ├─ GPU larger GRU / BiGRU / BiLSTM      ACTIVE — BiLSTM128 A .214166 done; deep LSTM near completion
-      ├─ fresh grouped C confirmation        PREPARED; A selection not frozen
+      ├─ GPU larger GRU / BiGRU / BiLSTM      COMPLETE — deep A .211544; frozen pair A .196563
+      ├─ fresh grouped C confirmation        ACTIVE — deep C resumed at epoch 21 in replacement
       └─ all-data refit + CSV + Gym score     WAITING for confirmed selection
 ```
 
 | Process / resource | Current state |
 |---|---|
-| Course pod `v2gao-306419` | Running on `its-dsmlp-n05.ucsd.edu`; NVIDIA GTX 1080 Ti verified. Started 2:00:05 PM; expected deadline 8:00:05 PM Pacific November 3. |
+| Course pod `v2gao-486950` | Running on its-dsmlp-n06; started 8:02:23 PM Pacific. GTX 1080 Ti/CUDA proof passed. Expected deadline 2:02:23 AM November 4. Deep C resumed at epoch 21. |
 | GPU sequence worker PID `142` | Resumed the interrupted patience-6 run; it completed 200 epochs. Cosine completed at A .371982; all feature arms completed; combined A .334773 won. BiGRU128 completed at A .262326 and BiLSTM128 at A .214166; deep LSTM is near completion. Phase limit is `capacity`. |
 | CPU tree worker | Feature comparisons complete. Additional tree-capacity worker PID `420` completed both arms: A .484391 (5,000 trees), .481397 (1,023 leaves); excluded from current confirmation inventory. |
 | Old pod `v2gao-11673` | Expired on schedule; pod logs archived and expired object removed before the replacement was officially launched. |

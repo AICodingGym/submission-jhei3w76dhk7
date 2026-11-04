@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "rows": 603600,
+  "source_code_matches": true,
+  "archive_sha256": "af85b9926eed497dd7fa73b9c82291d1cc71e982d46dc8140efdf8576e8afed0",
+  "CSV_sha256": "914bf5eff4ff9c0cbd05ef8b35e9da7fd44b99e1036ed04e306ba88559ed503c",
+  "exact_sample_ID_order": true,
+  "finite_native_predictions": true,
+  "training_breaths_per_member": 61114,
+  "A_validation_MAE": 0.19656260982217663,
+  "C_and_all_data_pipeline_continues": true
+}

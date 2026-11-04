@@ -286,3 +286,34 @@ Frozen A choices: best individual deep BiLSTM .21154409731752422; equal-weight
 BiLSTM128/deep-BiLSTM pair .19656260982217663; incumbent blend .4837194725640346.
 The pair crosses .20 on A only. Official MAE remains .47462; C confirmation,
 all-approved-data refitting and a fresh Gym submission are still required.
+
+
+At 8:00 PM the expected lifetime limit ended pod v2gao-306419. The renewal
+coordinator archived its pod metadata/logs, deleted the expired object and used
+the official course launcher to queue one replacement v2gao-486950 at 8:00:30.
+C legacy controls and the small BiLSTM C fit had completed; the deep C fit was
+checkpointing (last observed epoch 15 at 7:57 PM). Persistent home and all-data
+source remain intact. The new startup resumes compatible completed/partial
+states. This coordinator has finished its one replacement, not a perpetual loop.
+
+
+Replacement v2gao-486950 started November 3 at 8:02:23 PM Pacific on
+its-dsmlp-n06, GTX 1080 Ti, Torch 2.2.1+cu121/CUDA 12.1; arithmetic check passed.
+Expected deadline November 4 at 2:02:23 AM. The completed A fits were verified
+and reused in 8.57 seconds. C completed records were verified/reused; deep C
+restored its optimizer/RNG/epoch state and resumed at epoch 21 (epoch 33 observed
+at 8:11 PM). The GPU hardware/software family matches; cross-node bitwise
+trajectory equality is not assumed. Final model selection still depends on the
+completed grouped C check, followed by all-data refitting and official scoring.
+
+
+At the user's explicit request, an interim submission was generated from the
+frozen A-selected .5/.5 LSTM pair while grouped C continues. The new notebook
+`interim_submission_v005.ipynb` performs inference only; it uses the A checkpoints
+fitted on 61,114 breaths each and their own A-training preprocessing. It does not
+claim an all-data final fit or completed C confirmation. Recomputed A MAE is
+.19656260982217663. Approved train/test/sample hashes, model/record hashes and
+sample ID alignment were checked; CSV 603,600 finite native-unit predictions,
+SHA-256 914bf5eff4ff9c0cbd05ef8b35e9da7fd44b99e1036ed04e306ba88559ed503c.
+Independent Mac transfer/source/CSV checks passed. C and final all-data fitting
+remain unchanged; this interim Gym result will not retune the locked C recipe.
