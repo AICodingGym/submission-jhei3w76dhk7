@@ -1,0 +1,234 @@
+{
+  "schema": "regularization_engine_proof_v007",
+  "scope": "synthetic only; no assignment-data fits",
+  "python_version": "3.12.11",
+  "torch_version": "2.15.0",
+  "numpy_version": "2.5.4",
+  "device": "cpu",
+  "cuda_version": null,
+  "device_name": "arm64",
+  "engine_function_overrides": 0,
+  "engine_function_identities_unchanged": true,
+  "baseline_original_vs_extension": {
+    "best_checkpoint": {
+      "state_dict": true,
+      "optimizer_state": true,
+      "rng_state": true,
+      "preprocess": true,
+      "model_spec": true,
+      "config": true,
+      "fingerprint": true,
+      "epoch": true,
+      "optimizer_steps": true,
+      "completed": true,
+      "termination": true,
+      "scheduler_state": true,
+      "epoch_numerics": true,
+      "best_selection": true
+    },
+    "last_checkpoint": {
+      "state_dict": true,
+      "optimizer_state": true,
+      "rng_state": true,
+      "preprocess": true,
+      "model_spec": true,
+      "config": true,
+      "fingerprint": true,
+      "epoch": true,
+      "optimizer_steps": true,
+      "completed": true,
+      "termination": true,
+      "scheduler_state": true,
+      "epoch_numerics": true
+    }
+  },
+  "optimizer_classes": {
+    "Adam": "Adam",
+    "AdamW": "AdamW"
+  },
+  "recipe_checks": {
+    "arms": [
+      "original_adam",
+      "adamw_zero",
+      "adamw_1e4",
+      "adamw_1e3",
+      "dropout_025"
+    ],
+    "epoch_count": 200,
+    "seed": 20261102,
+    "original_recipe_unchanged": true,
+    "original_frozen_rates_preserved": true,
+    "deep_architecture_preserved": true,
+    "independent_decay_and_dropout": true,
+    "dropout_model_changes": [
+      "dropout"
+    ],
+    "decay_comparison_reference": "adamw_zero",
+    "dropout_comparison_reference": "original_adam"
+  },
+  "adamw_zero_vs_adam_zero": {
+    "tolerances": {
+      "parameter_atol": 1e-07,
+      "parameter_rtol": 1e-06,
+      "prediction_atol": 1e-06,
+      "prediction_rtol": 1e-06
+    },
+    "parameter_allclose": true,
+    "prediction_allclose": true,
+    "adequate_synthetic_zero_decay_control": true,
+    "parameter_max_abs_difference": 0.0,
+    "prediction_max_abs_difference": 0.0,
+    "adam_validation_mae": 0.36942193305717325,
+    "adamw_validation_mae": 0.36942193305717325
+  },
+  "adamw_nonzero_decay": {
+    "weight_decay": 0.001,
+    "parameter_max_abs_difference": 2.9206275939941406e-06,
+    "distinct_from_adamw_zero": true,
+    "checkpoint_and_optimizer_record_decay": true
+  },
+  "dropout_025": {
+    "explicit_stack": true,
+    "probability": 0.25,
+    "stochastic_in_train": true,
+    "deterministic_in_eval": true
+  },
+  "changed_recipe_resume_rejected": {
+    "optimizer": true,
+    "weight_decay": true,
+    "dropout": true
+  },
+  "exact_adamw_resume": {
+    "validation_best": {
+      "state_dict": true,
+      "optimizer_state": true,
+      "rng_state": true,
+      "preprocess": true,
+      "model_spec": true,
+      "config": true,
+      "fingerprint": true,
+      "epoch": true,
+      "optimizer_steps": true,
+      "completed": true,
+      "termination": true,
+      "scheduler_state": true,
+      "epoch_numerics": true,
+      "best_selection": true
+    },
+    "validation_last": {
+      "state_dict": true,
+      "optimizer_state": true,
+      "rng_state": true,
+      "preprocess": true,
+      "model_spec": true,
+      "config": true,
+      "fingerprint": true,
+      "epoch": true,
+      "optimizer_steps": true,
+      "completed": true,
+      "termination": true,
+      "scheduler_state": true,
+      "epoch_numerics": true
+    },
+    "fixed": {
+      "state_dict": true,
+      "optimizer_state": true,
+      "rng_state": true,
+      "preprocess": true,
+      "model_spec": true,
+      "config": true,
+      "fingerprint": true,
+      "epoch": true,
+      "optimizer_steps": true,
+      "completed": true,
+      "termination": true,
+      "scheduler_state": true,
+      "epoch_numerics": true
+    },
+    "fixed_last": {
+      "state_dict": true,
+      "optimizer_state": true,
+      "rng_state": true,
+      "preprocess": true,
+      "model_spec": true,
+      "config": true,
+      "fingerprint": true,
+      "epoch": true,
+      "optimizer_steps": true,
+      "completed": true,
+      "termination": true,
+      "scheduler_state": true,
+      "epoch_numerics": true
+    }
+  },
+  "synthetic_shape": [
+    8,
+    80,
+    5
+  ],
+  "synthetic_model_spec": {
+    "family": "lstm",
+    "hidden": 6,
+    "layers": 3,
+    "dropout": 0.15,
+    "bidirectional": true,
+    "joint_embedding_dim": 0,
+    "rc_heads": false,
+    "residual": true,
+    "head_width": 5,
+    "widths": [
+      6,
+      5,
+      4
+    ],
+    "output_concat": true
+  },
+  "synthetic_train_cfg": {
+    "lr": 0.001,
+    "batch_size": 2,
+    "max_epochs": 3,
+    "patience": 0,
+    "min_delta": 1e-06,
+    "max_seconds": null,
+    "min_lr": 1e-05,
+    "scheduler": "replay",
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 6,
+    "scheduler_threshold": 0.0001,
+    "warmup_epochs": 0,
+    "prediction_batch_size": 2,
+    "gradient_clip": 1.0,
+    "optimizer": "Adam",
+    "weight_decay": 0.0,
+    "loss": "l1",
+    "native_beta": 0.1,
+    "scaler_phase": "all",
+    "residual_baseline": false,
+    "frozen_lr_schedule": [
+      0.001,
+      0.0007,
+      0.0002
+    ]
+  },
+  "temporary_checkpoints_removed": true,
+  "elapsed_seconds": 3.3422977924346924,
+  "v005_engine_file_sha256": "d20e92eec5889b094a87486f876c3e1a8ae1d7eb2aa096fa5dd530b64c914b4e",
+  "v007_components_file_sha256": "cdbb6cd3f80b6467249947bd597b0021aca31eb9790007735124db4be214a573",
+  "literal_before_after_extension_CPU_test": {
+    "checks": {
+      "state_dict": true,
+      "optimizer_state": true,
+      "rng_state": true,
+      "preprocess": true,
+      "config": true,
+      "fingerprint": true,
+      "engine_function_identity_unchanged": true,
+      "validation_mae_equal": true
+    },
+    "scope": "tiny synthetic Adam0 fit completed before defining extension, repeated after defining extension",
+    "no_approved_data_fits": true
+  },
+  "notebook_structure_and_compilation_valid": true,
+  "definitions_only_no_execution_outputs": true,
+  "nbformat_schema_validated": "5.10.4"
+}

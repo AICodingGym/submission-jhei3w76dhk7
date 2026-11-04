@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "actual_course_proofs_verified": 6,
+  "source_code_unchanged": true,
+  "artifact_archive_sha256": "2fde5413bb0955ce5d9ba6637b800a57ed806d8401a3d7f2b7fd1fb291660758",
+  "pressure_cuda_resume_checks": 27,
+  "pressure_profile_success": true,
+  "LightGBM_production_smoke_success": true,
+  "approved_data_training_started": true,
+  "stage": "OOF compact fold0, 193-epoch fixed-budget no validation feedback"
+}

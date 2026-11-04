@@ -1,0 +1,28 @@
+{
+  "status": "running_A_screen",
+  "active_pod": "v2gao-1273870",
+  "node": "its-dsmlp-n06.ucsd.edu",
+  "worker_PID": 260,
+  "wrapper_PID": 258,
+  "initial_container_started_UTC": "2026-11-04T17:37:29Z",
+  "expected_initial_expiry_Pacific": "2026-11-04 15:37:29",
+  "recovery": "at most one official replacement after >=5h50 and terminal exit143; OOM or application errors stop",
+  "manual_cancellation_flag": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v005-deploy-20261103/cancel-v007",
+  "completion": "archive persistent source/models/logs; copy to login and verify SHA256; release idle GPU",
+  "A_results_not_complete": true,
+  "grouped_confirmation_pending_A_selection": true,
+  "source_code_sha256": "ae56fcbb7a8c5a0088ab1f876c7bf6bc0a667c08934e111f50585cbe3edd250e",
+  "helpers": {
+    "pa3_snapshot_v007.py": "8121150080ca35232a990c500bb9f98ece2d6b916de350d4105e34b5badcc32b",
+    "pa3_start_v007.sh": "df1f1d0c95601e53e023c5ed500b1da11ab8e9b0860fd3d1a83bfc010f3dc316",
+    "pa3_execute_v007.py": "921c418ee3ee214a90240d3f46f0ac1b45454192e254607df6521e47e9355b86",
+    "pa3_renew_v007.sh": "8f928529e2e269513370f927c454877d23e6a05e2da566480a34c13cf4f0e1ad"
+  },
+  "recovery_coordinator_PID": 1279505,
+  "recovery_log": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v005-deploy-20261103/renew-v007-guarded.log",
+  "course_proofs_passed": true,
+  "current_stage": "residual_oof_fold0_training",
+  "actual_pressure_training_peak_GPU_bytes": 759182336,
+  "actual_pressure_resume_exact_checks": 27,
+  "actual_residual_LightGBM_smoke_checks": 10
+}

@@ -1,0 +1,30 @@
+{
+  "approved_ideas": [
+    1,
+    3,
+    5
+  ],
+  "user_message": "Yes I agree. Ideas 1,3 and 5 are logical for the current state. Start it.",
+  "scope": {
+    "residual": "3fold OOF compact193 inside originalAfit, fixed smallLightGBM correction, gamma0/.5/1; correctedcompact plusunchangeddeep",
+    "pressure": "training-only categorical pressure codebook, compactBiLSTM backbone, maskedCE, posterior median; fixed200rates andbatch256",
+    "regularization": "deepBiLSTM200 originalrates, separate AdamW1e-4 anddropout.25; AdamW0control ifcoursezeroequivalencecheckfails"
+  },
+  "original_A_validation_never_in_screen_training": true,
+  "only_assignment_approved_data": true,
+  "modeling_in_notebooks": true,
+  "existing_files_preserved": true,
+  "official_baseline_MAE": 0.1855,
+  "screen_confirmation_rule": {
+    "minimum_fixed_pair_A_gain": 0.003,
+    "whole_breath_bootstrap_upper95_below_zero": true,
+    "best_A_candidate_only": true,
+    "fresh_grouped_confirmation_seed": 20261202,
+    "confirmation_training_breaths": 54323,
+    "confirmation_validation_breaths": 6791,
+    "resampling_confirmation_not_pristine_test": true,
+    "no_official_score_tuning": true
+  },
+  "no_ideas_2_4_6_started": true,
+  "screen_only_not_automatic_submission": true
+}

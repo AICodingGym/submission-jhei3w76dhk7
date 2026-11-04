@@ -1,0 +1,14 @@
+{
+  "genuine_setup_issue": "Torch2.2.1 strict deterministic CUDA cumsum is unavailable",
+  "stage": "synthetic pressure resume proof before dataset fitting",
+  "approved_data_fits_before_fix": 0,
+  "old_main_code_sha256": "7d219689d120020ed1413ee02f0e7bc754380f42740e17695e8c538734c76a70",
+  "new_main_code_sha256": "ae56fcbb7a8c5a0088ab1f876c7bf6bc0a667c08934e111f50585cbe3edd250e",
+  "old_pressure_code_sha256": "4814a98e6dba95531e88a39030b3a92e5b085f313ec59ae95bea168a9ecfdee5",
+  "new_pressure_code_sha256": "7ce65834e329d6c24d156a8607c6a2757902bba6314360888b5481bbe8ffb356",
+  "fix": "Keep GPU softmax and CE/backprop unchanged; deterministic CPU cumulative sum for detached median decoding; return indices to originaldevice",
+  "determinism_disabled": false,
+  "recipe_changed": false,
+  "new_CPU_checks_passed": 49,
+  "shared_namespace_resume_checks_passed": 27
+}
