@@ -1,0 +1,26 @@
+{
+  "status": "queued_after_current_final_fits",
+  "pilot_waiter_PID": 365,
+  "renewal_coordinator_PID": 512373,
+  "active_pod": "v2gao-486950",
+  "current_deadline_Pacific": "2026-11-04 02:02:23",
+  "gate": "complete final manifest, successful old controller, released NFS locks",
+  "fitting_before_gate": false,
+  "source_code_sha256": "601948212a5ca1df9c746c386145ee99d43d9793a1be8ea7daca2c3d6f51813c",
+  "helpers": [
+    {
+      "file": "outputs/approved_pilots_v006/setup_helpers/pa3_execute_pilot_v006.py",
+      "sha256": "c8306be95b4eb06469b87a678c38f165aea8f961e6769548a82f200d1dea03e6"
+    },
+    {
+      "file": "outputs/approved_pilots_v006/setup_helpers/pa3_start_v006_chain.sh",
+      "sha256": "48267f41b68a3bed2c014fcb5e040a7243184aa0c9640342f58e84733a752d39"
+    },
+    {
+      "file": "outputs/approved_pilots_v006/setup_helpers/pa3_renew_v006.sh",
+      "sha256": "b1bf5868be926c26b943b848c30362ff3888939f7b25aeb63a4da3b536c30213"
+    }
+  ],
+  "one_extra_official_container_if_unfinished_at_expiry": true,
+  "no_extra_container_if_screen_complete_or_application_error": true
+}

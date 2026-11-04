@@ -325,3 +325,14 @@ numerical <= .20 objective. CSV hash unchanged; source archive confirmed by CLI.
 Separate receipt records upload status; creation manifest remains unchanged.
 C confirmation and final all-approved-data fits continue without retuning from
 the interim test result. They remain required work in the planned pipeline.
+
+
+At 9:41 PM the fresh grouped C comparison completed. The old reference scored
+.5148863604280497, locked best individual .2316267258871465, and fixed .5/.5
+LSTM pair .21061234304757373. The pair passed the declared A/C eligibility rule;
+weights remained A-selected. Whole-breath paired bootstrap pair-minus-individual
+MAE difference -.02101438, 95% interval [-.02489869,-.01762333], 1,000 repeats.
+C is resampling confirmation, not a pristine final test. Fresh all-67,905-breath
+fits began using the selected A epoch budgets/rates and their own all-data
+preprocessing. Earlier A/C scores describe validation models, not those final
+models. Interim official MAE .19486 remains accepted and unchanged.

@@ -1,6 +1,6 @@
 # Process map
 
-Checked **November 3, 2026, 8:39 PM Pacific**. Iteration v005 is active;
+Checked **November 3, 2026, 9:43 PM Pacific**. Iteration v005 is active;
 the official Gym target of MAE 0.20 has been reached by the interim ensemble: **0.19486**. Grouped C and final all-data refitting remain active.
 
 ```text
@@ -13,8 +13,8 @@ Approved data + course CUDA environment       VERIFIED
       ├─ GPU learning-rate comparisons       COMPLETE — cosine A .371982
       ├─ GPU input-feature comparisons       COMPLETE — combined A .334773
       ├─ GPU larger GRU / BiGRU / BiLSTM      COMPLETE — deep A .211544; frozen pair A .196563
-      ├─ fresh grouped C confirmation        ACTIVE — deep C resumed at epoch 21 in replacement
-      └─ all-data refit + CSV + Gym score     WAITING for confirmed selection
+      ├─ fresh grouped C confirmation        COMPLETE — pair C .210612
+      └─ all-data refit + CSV + Gym score     ACTIVE — both models fit 67,905 breaths
 ```
 
 | Process / resource | Current state |
@@ -71,3 +71,18 @@ User-requested interim submission accepted: **official MAE .19486**, CSV
 `outputs/improvements_v005/interim_A_ensemble/submission.csv`. It uses the two
 A-fit checkpoints (61,114 breaths each); C and final all-data refits continue.
 Receipt: `research/submission_receipt_v005_interim.json`.
+
+
+Approved H1/H2 follow-up: `approved_pilots_v006.ipynb` is prepared, source and
+840-check artificial-data continuation proof passed. Waiter PID 365 holds until
+this current C/final pipeline succeeds and releases its locks. Three trials only:
+exact 200+100 continuation, matched 300-epoch slower cosine, R/C output heads at
+200 epochs. H3/H4 are not approved. A cancelable one-shot coordinator can resume
+unfinished approved work after the 2:02 AM deadline; it stops if the screen is
+complete or an application error requires review. No new data-model fit has begun.
+
+
+Grouped C confirmation complete: reference .514886, selected individual .231627,
+frozen .5/.5 LSTM pair .210612. Pair-vs-individual whole-breath bootstrap 95%
+interval for MAE difference is [-.02490, -.01762]. Weights were not tuned on C.
+Final all-data fits are active. Approved v006 pilots wait for their completion.
