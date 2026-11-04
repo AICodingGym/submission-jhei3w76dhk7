@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "all_archive_file_hashes_verified": true,
+  "source_code_unchanged": true,
+  "model_report_and_lock_hashes_verified": true,
+  "training_breaths": 54323,
+  "epochs": 285,
+  "seed": 20261102,
+  "training_only_target_scaler_verified": true,
+  "C_candidate_MAE": 0.21905701292442242,
+  "C_pair_MAE": 0.208748405436997,
+  "paired_bootstrap_recomputed": {
+    "difference_first_minus_second": -0.001863937610576738,
+    "bootstrap_95_low": -0.004325443157257687,
+    "bootstrap_95_high": 0.0006301680567410932,
+    "repeats": 1000,
+    "unit": "whole breath",
+    "point_count_weighted": true
+  },
+  "confirmation_passed": false,
+  "final_fit_correctly_skipped": true,
+  "independent_CPU_inference_breaths": 16,
+  "max_native_prediction_difference": 1.1444091796875e-05,
+  "official_best_MAE": 0.1855,
+  "official_best_unchanged": true
+}

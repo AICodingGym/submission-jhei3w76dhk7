@@ -370,3 +370,9 @@ Local review refreshed after full A/C transfer: 14 completed A records,
 and six preselected hard-breath plots visually inspected; source code unchanged.
 Final official receipt and partial approved-pilot results added to the review
 notebook as documented results, with validation/final-fit distinction explicit.
+
+Approved v006 pilot and confirmation completed November 4. All three A
+comparisons and the single frozen C decision are logged in HYPOTHESES_v006.md.
+Slower cosine reduced pair A by .003418 but C by only .001864; the C interval
+[-.004325,+.000630] crosses zero. Correctly retained accepted official .18550.
+No extra all-data fit or submission after failed confirmation; no H3/H4 runs.

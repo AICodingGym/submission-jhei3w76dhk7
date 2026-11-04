@@ -156,3 +156,20 @@ Its pair-vs-original MAE difference is -.00341753, 95% interval
 [-.00549855, -.00131412]. Selected A checkpoint epoch285. One fresh grouped-C
 candidate fit started using this exact rate prefix; existing deep C partner
 and .5/.5 weights retained. No runner-up or weight search if C rejects it.
+
+
+Final grouped confirmation outcome: the slower candidate itself scored
+.219057 (prior compact .224271); the frozen equal pair scored .208748 vs
+prior .210612. Difference -.00186394, whole-breath bootstrap 95% interval
+[-.00432544, +.00063017]. The interval includes zero, so the predeclared rule
+rejects promotion. No additional all-data fit, runner-up search, weight tuning
+or new submission occurred. This is inconclusive evidence of a small gain,
+not proof the candidate is worse. Best accepted official MAE remains .18550.
+
+The C candidate used fresh training-only statistics on 54,323 breaths, seed
+20261102, 285 A-selected epochs and a frozen rate prefix. Runtime 44.24 minutes.
+Model/report/lock hashes, full native-unit C MAEs, bootstrap interval, target
+scaler statistics and exact row alignment were independently verified locally.
+CPU inference on 16 complete C breaths agreed with saved CUDA predictions
+within 1.15e-5 pressure units. All source notebooks, logs, checkpoints and
+predictions are preserved. No .10 result has been achieved or claimed.

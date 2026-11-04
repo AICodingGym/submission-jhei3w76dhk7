@@ -1,8 +1,8 @@
 {
-  "status": "running_after_verified_group_hash_fix",
+  "status": "complete_no_candidate_promoted",
   "pilot_waiter_PID": 214,
   "renewal_coordinator_PID": 512373,
-  "active_pod": "v2gao-1042868",
+  "active_pod": null,
   "current_deadline_Pacific": "2026-11-04 12:25 approximate",
   "gate": "complete final manifest, successful old controller, released NFS locks",
   "fitting_before_gate": false,
@@ -25,5 +25,12 @@
   "no_extra_container_if_screen_complete_or_application_error": true,
   "prior_pipeline_complete": true,
   "one_shot_renewal_stopped_on_application_error": true,
-  "renewal_coordinator_currently_active": false
+  "renewal_coordinator_currently_active": false,
+  "last_pod": "v2gao-1042868",
+  "GPU_released_at_utc": "2026-11-04T17:22:53.031803+00:00",
+  "local_and_server_backups_verified": true,
+  "C_confirmation_passed": false,
+  "additional_final_fit_performed": false,
+  "additional_submission_performed": false,
+  "best_accepted_official_MAE": 0.1855
 }

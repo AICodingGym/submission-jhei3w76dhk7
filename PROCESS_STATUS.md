@@ -1,39 +1,36 @@
 # Process map
 
-Checked **November 4, 2026, 8:35 AM Pacific**.
+Checked **November 4, 2026, 9:22 AM Pacific**. All approved experiments finished.
 
-| Process | Status | Result / next step |
+| Process | Status | Result |
 |---|---|---|
-| Accepted interim submission | Complete | Official MAE **0.19486**; retained |
-| v005 A comparisons | Complete | Frozen equal LSTM pair MAE **0.196563** |
-| v005 grouped C confirmation | Complete | Same pair **0.210612**; beats individual .231627 and reference .514886 |
-| v005 all-data final fits | Complete | Two fresh models fitted on all **67,905** approved breaths; 193 / 189 epochs |
-| v005 final submission | Accepted | **Official MAE .18550**, 4.8% lower than interim .19486; exact rows/IDs/model hashes and independent inference verified |
-| H1: extend original compact LSTM by 100 epochs | Complete | Individual A MAE **.213908**, best epoch 294; small change from .214166 |
-| H1: fresh 300-epoch slower cosine | Complete | Individual A MAE **.206321**, best epoch 285; fixed-pair comparison pending retrieval |
-| H2: R/C-specific output heads | Complete | Individual A **.224617**, fixed pair **.201662**; worse, rejected |
-| Additional grouped confirmation | Running | Slower-cosine candidate only: A pair **.193145**, 95% paired-bootstrap improvement interval [-.00550, -.00131]; 285 frozen epochs |
+| v005 final all-data ensemble | Accepted | **Official MAE .18550**; both members trained freshly on 67,905 breaths |
+| Earlier interim ensemble | Preserved | Official MAE .19486 |
+| H1: 200+100 epochs | Complete | Individual A .213908; fixed pair .196437; negligible gain |
+| H1: slower 300-epoch cosine | Complete | Individual A .206321; fixed pair .193145; qualified for confirmation |
+| H2: R/C-specific output heads | Complete | Individual A .224617; fixed pair .201662; worse |
+| Fresh grouped C confirmation | Complete | Slower pair .208748 vs reference .210612; improvement interval crosses zero, so not confirmed |
+| v006 additional all-data fit / submission | Correctly skipped | Frozen confirmation rule did not pass; no runner-up or weight search |
+| Artifact verification | Complete | Hash-verified local/server backups; independent C metrics, bootstrap and CPU inference passed |
 
-Current course pod: `v2gao-1042868` on `its-dsmlp-n05.ucsd.edu`,
-GTX 1080 Ti. Started about **6:25 AM Pacific**; expected six-hour expiry about
-**12:25 PM**. Password/Duo renewed by the user; SSH connected.
+Best submission:
+`outputs/improvements_v005/confirmation_round1/final_all/submission.csv`
 
-The prior pod expired at 2:02 AM. Its final fits and CSV completed beforehand.
-The pilot's split check rejected an identical split because it compared two
-hash formats. It stopped before any assignment-data pilot fitting. The source
-and failure log are preserved. The corrected check, original checkpoint
-fingerprint and 840 exact CUDA continuation checks passed before restart.
+Official receipt: `research/submission_receipt_v005_final.json`.
 
-Work is stored in persistent DataHub home and backed up locally:
+Review the work in `results_review_v005.ipynb`, `approved_pilots_v006.ipynb`,
+and `confirmation_final_v006.ipynb`. Full configurations, seeds, timings and
+predictions are preserved under `outputs/approved_pilots_v006/`.
+
+The grouped C difference was -.001864 with a 95% whole-breath interval
+[-.004325, +.000630]. Its lower average error is promising but insufficient
+under the rule committed before results. No new official score was used to tune
+this decision. C is resampling confirmation; final all-data models have no
+independent holdout. H3/H4 were neither authorized nor started. The .10 target
+has not been reached.
+
+Persistent DataHub project:
 `/home/v2gao/dsc102/pa3/gym-workspace/ventilator-pressure-prediction`.
-
-- Completed final notebook: `confirmation_final_v005.ipynb`
-- Final CSV: `outputs/improvements_v005/confirmation_round1/final_all/submission.csv`
-- Approved experiments: `approved_pilots_v006.ipynb`
-- Pilot log: `/home/v2gao/dsc102/pa3/setup/v006-pilot-execution.log`
-- Pilot results: `outputs/approved_pilots_v006/`
-- Accepted interim receipt: `research/submission_receipt_v005_interim.json`
-
-C is resampling confirmation, not a pristine untouched test set. Validation
-scores belong to earlier validation fits; final all-data models have no
-independent holdout. No H3/H4 experiments are authorized or running.
+Course pod `v2gao-1042868` was released after verified evidence sync at about
+9:22 AM Pacific. Kubernetes reports no remaining pods; no training is running.
+Persistent files survive pod deletion; all completed results are also on the Mac.
