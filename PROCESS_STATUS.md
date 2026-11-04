@@ -1,7 +1,7 @@
 # Process map
 
-Checked **November 3, 2026, 8:12 PM Pacific**. Iteration v005 is active;
-the official Gym target of MAE 0.20 has not been reached.
+Checked **November 3, 2026, 8:39 PM Pacific**. Iteration v005 is active;
+the official Gym target of MAE 0.20 has been reached by the interim ensemble: **0.19486**. Grouped C and final all-data refitting remain active.
 
 ```text
 Approved data + course CUDA environment       VERIFIED
@@ -65,3 +65,9 @@ Persistent home files survive pod expiry. Every completed GPU epoch also saves
 optimizer and RNG state for continuation. A one-shot replacement coordinator is now waiting for this pod to terminate.
 It will archive the old pod and use the official course launcher to resume the
 saved workers in one replacement. Cancellation is supported by a login-stage flag.
+
+
+User-requested interim submission accepted: **official MAE .19486**, CSV
+`outputs/improvements_v005/interim_A_ensemble/submission.csv`. It uses the two
+A-fit checkpoints (61,114 breaths each); C and final all-data refits continue.
+Receipt: `research/submission_receipt_v005_interim.json`.

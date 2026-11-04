@@ -1,0 +1,32 @@
+{
+  "status": "accepted",
+  "recorded_at_utc": "2026-11-04T04:38:43.038824+00:00",
+  "competition": "ventilator-pressure-prediction",
+  "user_id": "jhei3w76dhk7",
+  "official_MAE": 0.19486,
+  "prior_official_MAE": 0.47462,
+  "relative_error_reduction_percent": 58.94399730310564,
+  "target_official_MAE": 0.2,
+  "target_reached": true,
+  "kind": "interim A-fit ensemble",
+  "training_breaths_per_member": 61114,
+  "A_validation_MAE": 0.19656260982217663,
+  "members": [
+    "nn__capacity_bilstm128",
+    "nn__capacity_deep_bilstm"
+  ],
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "submission_file": "outputs/improvements_v005/interim_A_ensemble/submission.csv",
+  "submission_rows": 603600,
+  "submission_sha256": "914bf5eff4ff9c0cbd05ef8b35e9da7fd44b99e1036ed04e306ba88559ed503c",
+  "source_archived_reported_by_CLI": true,
+  "source_branch": "ventilator-pressure-prediction",
+  "local_prepared_source_commit": "3c6babdc03679d3c62b6384f1d02dbe10eacda82",
+  "remote_archive_commit_not_returned_in_CLI_output": true,
+  "optional_AI_log_upload": false,
+  "visible_history_committed": true,
+  "grouped_C_and_final_all_data_fits_still_running": true
+}

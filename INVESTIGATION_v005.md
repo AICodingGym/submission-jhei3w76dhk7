@@ -317,3 +317,11 @@ sample ID alignment were checked; CSV 603,600 finite native-unit predictions,
 SHA-256 914bf5eff4ff9c0cbd05ef8b35e9da7fd44b99e1036ed04e306ba88559ed503c.
 Independent Mac transfer/source/CSV checks passed. C and final all-data fitting
 remain unchanged; this interim Gym result will not retune the locked C recipe.
+
+
+The requested interim submission was accepted: **official Gym MAE .19486**,
+versus prior .47462, a 58.94% reduction in official error. This achieves the
+numerical <= .20 objective. CSV hash unchanged; source archive confirmed by CLI.
+Separate receipt records upload status; creation manifest remains unchanged.
+C confirmation and final all-approved-data fits continue without retuning from
+the interim test result. They remain required work in the planned pipeline.
