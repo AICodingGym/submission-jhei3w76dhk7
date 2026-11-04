@@ -119,3 +119,15 @@ than a tiny gain in a small cherry-picked group. Preserve configurations, seeds,
 checkpoints, runtime, source hashes, failed runs and visible interaction history.
 
 H3/H4 are proposals for a later decision, not approval to implement them now.
+
+
+Conditional confirmation rule frozen before completed pilot results: fixed equal
+pair A MAE must improve by at least .003, with whole-breath paired-bootstrap
+95% interval entirely below zero. Send only the lowest-A eligible candidate to
+the existing grouped C split. Fit it freshly on C training breaths, replay the
+A-selected best-epoch rate prefix, retain the existing deep C member and .5/.5
+weights. Require lower pair C MAE and a paired-bootstrap interval below zero;
+no runner-up search if it fails. Only after confirmation fit that candidate on
+all approved breaths and retain the unchanged hash-verified deep final member.
+C remains resampling evidence, not an untouched test set. Protocol:
+`research/pilot_confirmation_protocol_v006.json`. No official score tunes choices.

@@ -1,0 +1,20 @@
+{
+  "status": "frozen_before_completed_pilot_results",
+  "scope": "Three approved H1/H2 pilots only",
+  "A_reference_equal_pair_MAE": 0.19656260982217663,
+  "A_minimum_pair_MAE_reduction": 0.003,
+  "A_required_whole_breath_bootstrap_upper95_difference_below_zero": true,
+  "bootstrap_repeats": 1000,
+  "bootstrap_seed": 20261128,
+  "A_selection": "Choose lowest fixed-equal-pair A MAE among eligible completed approved pilots; at most one new candidate goes to C",
+  "C_group": "Reuse exact previously recorded grouped C fit/validation breath IDs; C is resampling confirmation",
+  "C_training": "Fresh candidate on C_fit only with its own training-only statistics; fixed A-selected best epoch and learning-rate prefix; no C feedback",
+  "C_unchanged_partner": "Reuse hash-verified existing deep BiLSTM C predictions; fixed weights .5/.5",
+  "C_reference_pair_MAE": 0.21061234304757373,
+  "C_required_pair_MAE_lower_than_reference": true,
+  "C_required_whole_breath_bootstrap_upper95_difference_below_zero": true,
+  "no_runner_up_search_if_C_fails": true,
+  "final_if_confirmed": "Fresh compact candidate fit on all 67905 approved breaths for A-selected duration and rate prefix; combine .5/.5 with hash-verified unchanged deep all-data member",
+  "official_score_used_for_tuning": false,
+  "H3_H4_in_scope": false
+}
