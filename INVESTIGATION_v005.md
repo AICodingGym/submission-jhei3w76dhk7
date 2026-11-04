@@ -364,3 +364,9 @@ using this official score. Independent CPU inference on 32 test breaths
 (2,560 points) agreed with GPU CSV within 1.34e-5 absolute pressure; approved
 file hashes, C metrics/model hashes, final scaler fitting counts and exact
 sample/test IDs were verified. Receipt: `research/submission_receipt_v005_final.json`.
+
+Local review refreshed after full A/C transfer: 14 completed A records,
+112 artifact checks passed, zero missing/failed, no warnings. Learning curves
+and six preselected hard-breath plots visually inspected; source code unchanged.
+Final official receipt and partial approved-pilot results added to the review
+notebook as documented results, with validation/final-fit distinction explicit.

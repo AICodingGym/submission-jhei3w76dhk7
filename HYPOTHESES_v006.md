@@ -131,3 +131,12 @@ no runner-up search if it fails. Only after confirmation fit that candidate on
 all approved breaths and retain the unchanged hash-verified deep final member.
 C remains resampling evidence, not an untouched test set. Protocol:
 `research/pilot_confirmation_protocol_v006.json`. No official score tunes choices.
+
+
+Partial results received before eight-hour SSH renewal (November 4, 8:22 AM
+Pacific): H1 duration300 individual A MAE .21390772492253804 at epoch294;
+H1 slower cosine300 individual A MAE .20632121376945084 at epoch285. The
+compact baseline is .21416556794777317. Duration alone showed little gain;
+slower decay is more promising. Fixed equal-pair comparisons, runtime records
+and H2 completion still need server retrieval; no C decision is made yet.
+All-data v005 official MAE .18550 is accepted and preserved.

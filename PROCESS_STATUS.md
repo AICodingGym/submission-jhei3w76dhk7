@@ -1,6 +1,6 @@
 # Process map
 
-Checked **November 4, 2026, 6:33 AM Pacific**.
+Checked **November 4, 2026, 8:24 AM Pacific**.
 
 | Process | Status | Result / next step |
 |---|---|---|
@@ -9,14 +9,15 @@ Checked **November 4, 2026, 6:33 AM Pacific**.
 | v005 grouped C confirmation | Complete | Same pair **0.210612**; beats individual .231627 and reference .514886 |
 | v005 all-data final fits | Complete | Two fresh models fitted on all **67,905** approved breaths; 193 / 189 epochs |
 | v005 final submission | Accepted | **Official MAE .18550**, 4.8% lower than interim .19486; exact rows/IDs/model hashes and independent inference verified |
-| H1: extend original compact LSTM by 100 epochs | Running | Exact saved model, Adam, RNG, scaler and split preserved |
-| H1: fresh 300-epoch slower cosine | Pending | Same model and split; matched 300-epoch budget |
-| H2: R/C-specific output heads | Pending | Same model, split and 200-epoch schedule; head change only |
+| H1: extend original compact LSTM by 100 epochs | Complete | Individual A MAE **.213908**, best epoch 294; small change from .214166 |
+| H1: fresh 300-epoch slower cosine | Complete | Individual A MAE **.206321**, best epoch 285; fixed-pair comparison pending retrieval |
+| H2: R/C-specific output heads | Started | Last result pending login renewal; same 200-epoch schedule, head change only |
 | Additional grouped confirmation | Conditional | Only promising approved pilots; no C weight tuning |
 
 Current course pod: `v2gao-1042868` on `its-dsmlp-n05.ucsd.edu`,
 GTX 1080 Ti. Started about **6:25 AM Pacific**; expected six-hour expiry about
-**12:25 PM**. Password/Duo reauthentication is not currently needed.
+**12:25 PM**. Password/Duo renewal is now required to retrieve the last pilot result.
+The reconnection command has been requested; server-side work continues.
 
 The prior pod expired at 2:02 AM. Its final fits and CSV completed beforehand.
 The pilot's split check rejected an identical split because it compared two
