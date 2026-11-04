@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "exact_state_checks": 840,
+  "direct_6_equals_prefix4_plus2": true,
+  "changed_loss_rejected": true,
+  "assignment_data_used": false,
+  "source_code_sha256": "601948212a5ca1df9c746c386145ee99d43d9793a1be8ea7daca2c3d6f51813c",
+  "notebook_compiles": true,
+  "notebook_schema_checked_at_build": true,
+  "elapsed_seconds": 2.994038291006291,
+  "default_review_no_fitting": true,
+  "controller_waits_for_prior_final_and_released_locks": true,
+  "controller_compiles": true,
+  "startup_shell_syntax_passed": true
+}

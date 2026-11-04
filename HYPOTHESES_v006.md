@@ -1,6 +1,7 @@
-# Proposed next experiments — approval pending
+# Approved next experiments — H1 and H2
 
-No new modeling experiments have been implemented or started for this proposal.
+The user approved the recommended H1/H2 screen. Implementation is being prepared;
+actual trial fitting waits for the current C/final pipeline to finish.
 The existing frozen C confirmation and final all-approved-data refits continue.
 Only the approved Gym data and our own completed experiment artifacts informed
 this analysis. The accepted official score is .19486; .10 is a research target.

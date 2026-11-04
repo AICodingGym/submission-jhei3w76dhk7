@@ -1,0 +1,13 @@
+{
+  "approved_at_utc": "2026-11-04T05:07:17.639739+00:00",
+  "user_reply": "Approve hypotheses 1 and 2 (Recommended)",
+  "scope": [
+    "H1 duration-only 200+100 epochs",
+    "H1 matched-budget slower cosine 300 epochs",
+    "H2 compact BiLSTM R/C-specific output heads 200 epochs"
+  ],
+  "timing": "after current confirmation and final fits finish",
+  "estimated_A_screen_GPU_hours": 2,
+  "additional_grouped_confirmation": "only promising results",
+  "H3_H4_approved": false
+}
