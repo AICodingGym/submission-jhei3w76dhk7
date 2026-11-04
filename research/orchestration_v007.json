@@ -1,7 +1,7 @@
 {
-  "status": "running_A_screen",
-  "active_pod": "v2gao-1273870",
-  "node": "its-dsmlp-n06.ucsd.edu",
+  "status": "queued_for_scheduled_recovery",
+  "active_pod": "v2gao-1454657",
+  "node": null,
   "worker_PID": 260,
   "wrapper_PID": 258,
   "initial_container_started_UTC": "2026-11-04T17:37:29Z",
@@ -21,8 +21,15 @@
   "recovery_coordinator_PID": 1279505,
   "recovery_log": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v005-deploy-20261103/renew-v007-guarded.log",
   "course_proofs_passed": true,
-  "current_stage": "residual_oof_fold0_training",
+  "current_stage": "regularization_dropout_025_checkpoint_resume_pending",
   "actual_pressure_training_peak_GPU_bytes": 759182336,
   "actual_pressure_resume_exact_checks": 27,
-  "actual_residual_LightGBM_smoke_checks": 10
+  "actual_residual_LightGBM_smoke_checks": 10,
+  "previous_pod": "v2gao-1273870",
+  "replacement_queued_Pacific": "2026-11-04 15:38",
+  "completed_candidate_records": 5,
+  "independent_artifact_checks_passed": 169,
+  "current_qualifying_candidates": 0,
+  "resource_wait": "Insufficient CPU/GPU capacity; scheduler provides no start estimate",
+  "one_official_replacement_used": true
 }

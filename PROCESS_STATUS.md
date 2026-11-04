@@ -39,3 +39,9 @@ Do not change the screening threshold or rank an unfinished dropout trial as fin
 
 Live check at 3:12 PM: dropout 54/200, approximately 99 remaining GPU minutes,
 plus any replacement scheduling delay. The original 200-epoch budget is unchanged.
+
+Recovery update, 3:40 PM Pacific: the original pod expired on schedule and was
+archived/deleted. Replacement `v2gao-1454657` was officially queued at 3:38 PM.
+It is pending because eligible course nodes lack CPU/GPU capacity. The saved
+dropout state will resume; queue wait has no reliable estimate. No new model
+family, threshold change or candidate promotion was introduced.
