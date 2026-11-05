@@ -1,18 +1,18 @@
 # Process map
 
-November5, approximately6:45AM Pacific. Best accepted official MAE remains **0.18550**.
+November5 morning, Pacific. **Best accepted official MAE remains0.18550.**
 
-| Process | Status |
-|---|---|
-| User authorization | This batch and future controlled iterations approved |
-| New attention and learned-memory notebook components | CPU checks passed |
-| Shared trainer and exact checkpoint recovery | CPU and actual-course CUDA integration checks passed |
-| Course GPU request | Running: v2gao-2239777 on n05, GTX1080Ti11GB |
-| Actual-GPU determinism, resume, training/inference profiling | Passed, strict determinism and exact resume for all three arms |
-| Pressure-curve consistency / learned-memory / attention A fits | Curve arm active; memory and attention follow, separate200-epoch recipes |
-| Fresh grouped D confirmation | Only if a candidate passes frozen A gate |
-| New all-data fit and submission | Only after successful confirmation |
+| Original A validation comparison | Individual MAE | Equal pair MAE | Decision |
+|---|---:|---:|---|
+| Original compact + deep | .214166 compact | .196563 | Preserved baseline |
+| Curve consistency | .212034 | .195988 | Gain too small; interval crosses zero |
+| Learned response memory | .213157 | .196303 | Gain too small; interval crosses zero |
+| Compact residual attention | .225971 | .202850 | Worse |
 
-Three A fits estimated2–4GPUhours after runtime checks, plus queue time. The accepted .18550 model, CSV, receipt and all previous artifacts are preserved. No .10 MAE claim is made. Code: controlled_experiments_v008.ipynb; protocol: NEXT_EXPERIMENTS_v008.md.
+V008 all200-epoch fits complete; no qualifier, no D confirmation, no all-data refit or new submission. Server summary received; independent local audit is waiting for archive transfer. Server guardian verified43-file backup,63,940,755bytes,SHA25601d005f2e7b6ce42d59e5eaa7d85880e88a71baa85fd88b2735d67cd4d6218e6.
 
-GPU profile: curve .99x, learned memory1.29x, attention1.15x baseline step time; each below785.5MB allocated peak at training256/inference512. No recipe/batch/data reduction needed. Coordinator backs up and verifies all artifacts before releasing idle GPU; lease termination requires review before another allocation.
+V009: approved shared-breath offset and full-context TCN notebooks prepared and independently checked on CPU. Sequential server pipeline verified v008 backup before dispatching v009 around9:07AM. Last observed v009 state: actual-GPU synthetic proof cell running; subsequent fit progress is unverified until reconnection. Each arm must pass strictdeterminism, exactresume and training256/inference512 capacity gates before any approved-data fitting.
+
+DataHub now requires eight-hour password/Duo renewal. User has been sent the existing shared-SSH command; passwords/Duo stay in Terminal. Server jobs and backup/release guardian continue without the Mac connection. The pod lease ends approximately12:39PM Pacific; persistent course files/checkpoints survive. No blind automatic replacement allocations.
+
+Code: controlled_experiments_v008.ipynb and controlled_experiments_v009.ipynb. Protocols: NEXT_EXPERIMENTS_v008.md and NEXT_EXPERIMENTS_v009.md. Only approved data; standing approval covers future controlled iterations. The .10 target is not reached.
