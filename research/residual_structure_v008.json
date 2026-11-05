@@ -1,0 +1,225 @@
+{
+  "schema": "read_only_residual_diagnosis_v008_v1",
+  "scope": "Existing frozen A baseline predictions plus approved train labels only; no model fit, inference, or predictor created.",
+  "native_A_pair_mae": 0.19656260982217663,
+  "inspiratory_points": 206098,
+  "validation_breaths": 6791,
+  "inspiratory_length_quantiles": {
+    "p10": 29.0,
+    "p25": 29.0,
+    "p50": 30.0,
+    "p75": 31.0,
+    "p90": 32.0,
+    "p95": 32.0,
+    "p99": 32.0
+  },
+  "verification": {
+    "train_sha256": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+    "expected_train_sha256": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+    "A_validation_breath_ids_raw_sha256": "d98c222e543627a447e4886d00d5b48a458203df2f2ef43b362fcbac52e86840",
+    "A_validation_row_ids_raw_sha256": "66102743f174be75c19d5e244b83d7e2b3021b682ceedd115ae21cc59f265711",
+    "ids_equal_original_v005": true,
+    "ids_equal_v007": true,
+    "capacity_bilstm128": {
+      "raw_prediction_sha256": "e946c640477c53410dce3512f06b8ec0a3cd966a5b89cf564c5a71ffc78abdda",
+      "dtype": "float64",
+      "individual_mae": 0.21416556794777317
+    },
+    "capacity_deep_bilstm": {
+      "raw_prediction_sha256": "474d9a9a8b9b41d13bbeb2701fcea8db2b6959da81608d4ca83d71f833b37c90",
+      "dtype": "float64",
+      "individual_mae": 0.21154409731752422
+    }
+  },
+  "residual_definition": "prediction - float32 pressure cast to float64; only u_out==0 scored",
+  "lag1": {
+    "adjacent_inspiratory_pairs": 199307,
+    "pooled_pearson": 0.9114234784322266,
+    "pooled_after_subtracting_each_breath_mean": 0.7156413728772488,
+    "pooled_after_subtracting_each_breath_median": 0.732246315515325,
+    "same_nonzero_sign_fraction": 0.775170967402048,
+    "per_breath_pearson_quantiles": {
+      "p10": 0.0549741863731538,
+      "p25": 0.2622199835216279,
+      "p50": 0.4956428792678128,
+      "p75": 0.695809247111624,
+      "p90": 0.8508978430667294,
+      "p95": 0.9096267117509282,
+      "p99": 0.9703469144652517
+    }
+  },
+  "label_only_pressure_change": {
+    "definition": "Absolute backward one-step pressure difference at consecutive inspired points; first inspired point excluded. Diagnostic uses validation labels and is not a candidate input.",
+    "eligible_points": 199307,
+    "eligible_point_fraction": 0.9670496559888985,
+    "eligible_error_fraction": 0.97450291684212,
+    "absolute_step_quantiles": {
+      "p10": 0.07030200958251953,
+      "p25": 0.210906982421875,
+      "p50": 0.7030200958251953,
+      "p75": 1.4060430526733398,
+      "p90": 3.1635961532592773,
+      "p95": 5.764776229858398,
+      "p99": 12.865291595458984
+    },
+    "absolute_step_vs_absolute_error_pearson": 0.024944488990952078,
+    "high_change_concentration": [
+      {
+        "threshold_quantile": 0.5,
+        "absolute_pressure_step_threshold": 0.7030200958251953,
+        "points": 99735,
+        "fraction_eligible_points": 0.5004089168970483,
+        "fraction_all_inspiratory_points": 0.4839202709390678,
+        "fraction_eligible_absolute_error": 0.523130574338141,
+        "fraction_all_inspiratory_absolute_error": 0.5097922705818119,
+        "mae": 0.20707150576329442
+      },
+      {
+        "threshold_quantile": 0.75,
+        "absolute_pressure_step_threshold": 1.4060430526733398,
+        "points": 50551,
+        "fraction_eligible_points": 0.2536338412599658,
+        "fraction_all_inspiratory_points": 0.2452765189375928,
+        "fraction_eligible_absolute_error": 0.2895219003242151,
+        "fraction_all_inspiratory_absolute_error": 0.2821399363556211,
+        "mae": 0.22610465308843633
+      },
+      {
+        "threshold_quantile": 0.8,
+        "absolute_pressure_step_threshold": 1.6872520446777344,
+        "points": 40541,
+        "fraction_eligible_points": 0.2034098150090062,
+        "fraction_all_inspiratory_points": 0.19670739162922493,
+        "fraction_eligible_absolute_error": 0.23729965872810208,
+        "fraction_all_inspiratory_absolute_error": 0.23124920959617512,
+        "mae": 0.23107900410381144
+      },
+      {
+        "threshold_quantile": 0.9,
+        "absolute_pressure_step_threshold": 3.1635961532592773,
+        "points": 19937,
+        "fraction_eligible_points": 0.1000316095270111,
+        "fraction_all_inspiratory_points": 0.0967355335811119,
+        "fraction_eligible_absolute_error": 0.11086131555731667,
+        "fraction_all_inspiratory_absolute_error": 0.10803467537555979,
+        "mae": 0.21952199938304806
+      },
+      {
+        "threshold_quantile": 0.95,
+        "absolute_pressure_step_threshold": 5.764776229858398,
+        "points": 10046,
+        "fraction_eligible_points": 0.05040465211959439,
+        "fraction_all_inspiratory_points": 0.04874380149249386,
+        "fraction_eligible_absolute_error": 0.05190149028804451,
+        "fraction_all_inspiratory_absolute_error": 0.050578153674152346,
+        "mae": 0.2039597565591893
+      },
+      {
+        "threshold_quantile": 0.99,
+        "absolute_pressure_step_threshold": 12.865291595458984,
+        "points": 2002,
+        "fraction_eligible_points": 0.010044805250191914,
+        "fraction_all_inspiratory_points": 0.009713825461673573,
+        "fraction_eligible_absolute_error": 0.011405362203785449,
+        "fraction_all_inspiratory_absolute_error": 0.01111455873522979,
+        "mae": 0.2249069309139347
+      }
+    ],
+    "first_inspired_point_mae": 0.1521007855540873,
+    "first_inspired_point_error_fraction": 0.025497083157879994
+  },
+  "label_oracle_per_breath_constant_correction": {
+    "mean": {
+      "mae": 0.12317749092086683,
+      "absolute_mae_reduction": 0.0733851189013098,
+      "fraction_absolute_error_removed": 0.3733422087125256,
+      "absolute_offset_quantiles": {
+        "p10": 0.0111115296681722,
+        "p25": 0.02847832465364087,
+        "p50": 0.06779481518653131,
+        "p75": 0.1506185950904057,
+        "p90": 0.32608975133588236,
+        "p95": 0.5504432032185216,
+        "p99": 1.376302055293518
+      },
+      "breath_mae_gain_quantiles": {
+        "p10": -0.0014675458272298176,
+        "p25": 0.001185488332324305,
+        "p50": 0.013324730354094727,
+        "p75": 0.0596245140231499,
+        "p90": 0.1788883951983185,
+        "p95": 0.34021608898964684,
+        "p99": 0.9884596677107444
+      },
+      "fraction_breaths_improved": 0.8255043439846856,
+      "requires_validation_labels": true,
+      "usable_predictor": false
+    },
+    "median_L1_optimal": {
+      "mae": 0.11880331595057671,
+      "absolute_mae_reduction": 0.07775929387159992,
+      "fraction_absolute_error_removed": 0.39559555065913127,
+      "absolute_offset_quantiles": {
+        "p10": 0.009553909301757812,
+        "p25": 0.025671005249023438,
+        "p50": 0.061482906341552734,
+        "p75": 0.14245939254760742,
+        "p90": 0.32510972023010254,
+        "p95": 0.5526026487350464,
+        "p99": 1.5045619249343885
+      },
+      "breath_mae_gain_quantiles": {
+        "p10": 0.0005803108215332031,
+        "p25": 0.0032543182373046876,
+        "p50": 0.016011595726013184,
+        "p75": 0.06196563474593624,
+        "p90": 0.18258033260222403,
+        "p95": 0.34678534634651675,
+        "p99": 1.014211612939839
+      },
+      "fraction_breaths_improved": 0.9877779413930202,
+      "requires_validation_labels": true,
+      "usable_predictor": false
+    }
+  },
+  "high_error_breath_concentration": [
+    {
+      "threshold_quantile": 0.8,
+      "breaths": 1359,
+      "point_fraction": 0.20195246921367505,
+      "absolute_error_fraction": 0.5511673909382252,
+      "mean_mae": 0.536457421063121,
+      "median_absolute_oracle_offset": 0.32510972023010254
+    },
+    {
+      "threshold_quantile": 0.9,
+      "breaths": 680,
+      "point_fraction": 0.10153907364457686,
+      "absolute_error_fraction": 0.4051900042976823,
+      "mean_mae": 0.7843798634346238,
+      "median_absolute_oracle_offset": 0.5526026487350464
+    },
+    {
+      "threshold_quantile": 0.95,
+      "breaths": 340,
+      "point_fraction": 0.050995157643451174,
+      "absolute_error_fraction": 0.28904963174527787,
+      "mean_mae": 1.1141518647954858,
+      "median_absolute_oracle_offset": 0.9009941816329956
+    },
+    {
+      "threshold_quantile": 0.99,
+      "breaths": 68,
+      "point_fraction": 0.0102912206814234,
+      "absolute_error_fraction": 0.10928768596671663,
+      "mean_mae": 2.087397932669061,
+      "median_absolute_oracle_offset": 1.9957036972045898
+    }
+  ],
+  "limitations": [
+    "Oracle corrections use each validation breath's true residual and cannot be used for scoring unseen data. Their MAEs are diagnostic only, not performance claims, model candidates, or a noise floor.",
+    "Serial correlation does not identify its cause: coherent offsets, timing mismatch, smooth shape error, and correlated label disturbances can coexist.",
+    "Backward pressure changes are validation-label diagnostics only, not permissible inference inputs.",
+    "A has already been used for model selection; these are descriptive A diagnostics, not fresh confirmation."
+  ]
+}
