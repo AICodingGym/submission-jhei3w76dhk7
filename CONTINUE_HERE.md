@@ -290,6 +290,9 @@ large expected gain. No exact replicate-input noise-floor estimate exists.
 
 ## AI history and portable context
 
+Original assignment/discussion PDFs are copied in `handoff/course_context/` when
+available; the original copies also remain in the parent assignment folder.
+
 `interaction-history/` contains cumulative visible user/assistant snapshots with
 hash manifests. The latest is noted in `handoff/context_manifest.json`. System/
 developer text, hidden reasoning, tool payloads and account secrets are excluded.
