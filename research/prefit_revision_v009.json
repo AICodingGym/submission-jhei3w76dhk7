@@ -9,5 +9,6 @@
   "CPU_trainer_resume_checks": 49,
   "actual_GPU_gate_still_required": true,
   "no_approved_data_fit_before_revision": true,
-  "old_files_preserved": true
+  "old_files_preserved": true,
+  "revised_notebook_code_sha256": "85bd183bf01223517036231f23073579d292a137f1d3c6ca664aa044dda9bcb8"
 }
