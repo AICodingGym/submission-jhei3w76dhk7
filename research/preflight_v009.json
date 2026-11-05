@@ -1,0 +1,10 @@
+{
+  "status": "CPU_proofs_passed_GPU_required",
+  "offset_model_checks": 36,
+  "tcn_model_checks": 46,
+  "trainer_exact_resume_checks_per_arm": 49,
+  "scope": "Synthetic CPU checks plus independent code/protocol review, no approved-data fitting",
+  "source_code_sha256": "035f579fae78c892e13c5095bb179ded6de562374e9887f0e34b1e0873ca6faa",
+  "conditional_start": "completed v008 screen selects no candidate",
+  "standing_approval_source": "research/authorization_v008.json"
+}

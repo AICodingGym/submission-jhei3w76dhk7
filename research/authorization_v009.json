@@ -1,0 +1,21 @@
+{
+  "version": "v009",
+  "user_reply": "Approve this batch and future controlled iterations",
+  "standing_approval_for_controlled_iterations": true,
+  "approved_batch": [
+    "shared_breath_offset_centered_local",
+    "full_context_residual_tcn"
+  ],
+  "only_assignment_approved_data": true,
+  "modeling_in_notebooks": true,
+  "preserve_best_model_and_existing_files": true,
+  "grouped_validation_before_promotion": true,
+  "original_A_validation_excluded_from_screen_training": true,
+  "minimum_fixed_pair_A_gain": 0.003,
+  "whole_breath_bootstrap_upper95_below_zero": true,
+  "fresh_confirmation_seed": 20261202,
+  "official_best_MAE_before_batch": 0.1855,
+  "no_official_hidden_score_tuning": true,
+  "authorization_source": "research/authorization_v008.json",
+  "conditional_start": "Only if completed v008 screen selects no candidate; otherwise confirm v008 winner first"
+}
