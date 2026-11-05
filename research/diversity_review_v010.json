@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "check_count": 58,
+  "checks": {
+    "exactly_two_predeclared": true,
+    "file:research/ENSEMBLE_HYPOTHESES_v010.md": true,
+    "file:research/screen_review_v008.json": true,
+    "file:outputs/controlled_experiments_v008/review/audit_script.py": true,
+    "file:outputs/controlled_experiments_v008/design.json": true,
+    "file:outputs/improvements_v005/sequence/design.json": true,
+    "file:research/authorization_v008.json": true,
+    "file:data/train.csv": true,
+    "file:research/feature_components_v005.ipynb": true,
+    "file:research/sequence_components_v005.ipynb": true,
+    "file:research/attention_components_v008.ipynb": true,
+    "file:research/memory_components_v008.ipynb": true,
+    "file:research/training_components_v008.ipynb": true,
+    "file:controlled_experiments_v008.ipynb": true,
+    "file:iterative_improvements_v005.ipynb": true,
+    "file:outputs/improvements_v005/sequence/split_breath_ids.npz": true,
+    "file:outputs/improvements_v005/sequence/A_validation_row_ids.npy": true,
+    "file:outputs/controlled_experiments_v008/A_row_ids.npy": true,
+    "file:outputs/improvements_v005/sequence/record_A_capacity_deep_bilstm.json": true,
+    "file:outputs/improvements_v005/sequence/A_capacity_deep_bilstm.pt": true,
+    "file:outputs/improvements_v005/sequence/A_capacity_deep_bilstm_predictions.npy": true,
+    "file:outputs/improvements_v005/sequence/record_A_capacity_bilstm128.json": true,
+    "file:outputs/improvements_v005/sequence/A_capacity_bilstm128.pt": true,
+    "file:outputs/improvements_v005/sequence/A_capacity_bilstm128_predictions.npy": true,
+    "file:outputs/controlled_experiments_v008/record_A_curve_consistency.json": true,
+    "file:outputs/controlled_experiments_v008/curve_consistency/model.pt": true,
+    "file:outputs/controlled_experiments_v008/A_curve_consistency_predictions.npy": true,
+    "file:outputs/controlled_experiments_v008/record_A_learned_memory.json": true,
+    "file:outputs/controlled_experiments_v008/learned_memory/model.pt": true,
+    "file:outputs/controlled_experiments_v008/A_learned_memory_predictions.npy": true,
+    "file:outputs/controlled_experiments_v008/record_A_residual_attention.json": true,
+    "file:outputs/controlled_experiments_v008/residual_attention/model.pt": true,
+    "file:outputs/controlled_experiments_v008/A_residual_attention_predictions.npy": true,
+    "source:research/feature_components_v005.ipynb": true,
+    "source:research/sequence_components_v005.ipynb": true,
+    "source:research/attention_components_v008.ipynb": true,
+    "source:research/memory_components_v008.ipynb": true,
+    "source:research/training_components_v008.ipynb": true,
+    "source:controlled_experiments_v008.ipynb": true,
+    "source:iterative_improvements_v005.ipynb": true,
+    "source_unchanged": true,
+    "exact_rows": true,
+    "truth_hash": true,
+    "pred:original_deep": true,
+    "pred:original_compact": true,
+    "pred:curve_consistency": true,
+    "pred:learned_memory": true,
+    "pred:residual_attention": true,
+    "deep_half_compact_curve_memory:fixed_weights": true,
+    "deep_half_compact_curve_memory:metrics": true,
+    "deep_half_compact_curve_memory:bootstrap": true,
+    "deep_half_compact_curve_memory:gain": true,
+    "deep_half_compact_curve_memory:qualifier": true,
+    "deep_half_compact_curve_memory_attention:fixed_weights": true,
+    "deep_half_compact_curve_memory_attention:metrics": true,
+    "deep_half_compact_curve_memory_attention:bootstrap": true,
+    "deep_half_compact_curve_memory_attention:gain": true,
+    "deep_half_compact_curve_memory_attention:qualifier": true
+  },
+  "results": [
+    {
+      "name": "deep_half_compact_curve_memory",
+      "weights": {
+        "original_deep": 0.5,
+        "original_compact": 0.16666666666666666,
+        "curve_consistency": 0.16666666666666666,
+        "learned_memory": 0.16666666666666666
+      },
+      "metrics": {
+        "mae": 0.19223025527099424,
+        "median_absolute_error": 0.09869654973347997,
+        "p90_absolute_error": 0.42529333432515376,
+        "median_breath_mae": 0.1161311631915207
+      },
+      "gain": 0.004332354551182388,
+      "interval": {
+        "difference": -0.004332354551182387,
+        "bootstrap_95_low": -0.005840202264254222,
+        "bootstrap_95_high": -0.003035466675114652,
+        "unit": "whole breath",
+        "repeats": 1000,
+        "point_count_weighted": true
+      }
+    },
+    {
+      "name": "deep_half_compact_curve_memory_attention",
+      "weights": {
+        "original_deep": 0.5,
+        "original_compact": 0.125,
+        "curve_consistency": 0.125,
+        "learned_memory": 0.125,
+        "residual_attention": 0.125
+      },
+      "metrics": {
+        "mae": 0.1923034622071585,
+        "median_absolute_error": 0.09920674562454224,
+        "p90_absolute_error": 0.4258637428283693,
+        "median_breath_mae": 0.11542906612157822
+      },
+      "gain": 0.004259147615018138,
+      "interval": {
+        "difference": -0.004259147615018138,
+        "bootstrap_95_low": -0.005772480799311261,
+        "bootstrap_95_high": -0.0029327633241882874,
+        "unit": "whole breath",
+        "repeats": 1000,
+        "point_count_weighted": true
+      }
+    }
+  ],
+  "source_code_sha256": "6762d765e70aee25eb722de1098ccba111539bedc29f55dd16bf2ae6aee8b397",
+  "results_sha256": "949999795892ada6a2b28191df998ef3548a4772ae940e2450dee02667eea7bd",
+  "scope": "Exactly two predeclared candidates independently recomputed; no extra weights, model loading, inference, training, D data or GPU work",
+  "selection_deferred_until_v009_complete": true
+}
