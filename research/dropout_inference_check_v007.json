@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "Independent CPU inference on saved final dropout checkpoint vs recorded CUDA validation predictions",
+  "breaths": 16,
+  "scored_points": 490,
+  "max_native_prediction_difference": 1.1444091796875e-05,
+  "mean_native_prediction_difference": 1.4236995152064732e-06,
+  "tolerance": 0.0005,
+  "model_training_performed": false
+}

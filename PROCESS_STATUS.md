@@ -1,47 +1,40 @@
 # Process map
 
-Checked **November 4, 2026, 3:12 PM Pacific**. V007 screen is partially complete.
-Best accepted official MAE **.18550** remains unchanged.
+Checked **November 4, 2026, 10:00 PM Pacific**. All approved v007 tests finished.
+Best accepted official MAE remains **0.18550**. No training is running.
 
-| Candidate on identical held-out A breaths | Ensemble A MAE | Status |
+| Fixed equal-pair candidate on the same A validation breaths | A MAE | Result |
 |---|---:|---|
-| Original compact/deep equal pair | .196563 | Verified baseline |
-| Full residual correction | .195584 | Small .000979 gain; below frozen .003 threshold |
-| Half residual correction | .195912 | Small .000650 gain; below threshold |
-| Pressure-level probability model | .204355 | Worse under this recipe |
-| Deep LSTM AdamW1e-4 | .198516 | No demonstrated improvement |
-| Deep LSTM dropout.25 | Pending | Still running original200-epoch budget |
+| Original compact/deep ensemble | .196563 | Verified baseline |
+| Full residual correction | .195584 | .000979 gain, below frozen .003 threshold |
+| Half residual correction | .195912 | .000650 gain, below threshold |
+| Pressure-level probabilities | .204355 | Worse under this recipe |
+| Deep LSTM AdamW 1e-4 | .198516 | No demonstrated improvement |
+| Deep LSTM dropout .25 | .201479 | Worse under this recipe |
 
-Independent local audit: **169 checks passed, zero failures**. Exact A row IDs,
-OOF complement exclusions and aggregate predictions, saved checkpoint/report
-hashes, label fingerprints, training-only pressure codebook and native MAE /
-median / p90 / whole-breath bootstrap scores checked. Residual pickle verified
-by SHA without unpickling. See `research/screen_review_v007.json`.
+**199 independent checks passed**, zero missing artifacts. OOF exclusions,
+row alignment, codebook, label fingerprints and file hashes verified. Dropout
+input fingerprints and every preprocessing field exactly match the original
+deep A model. Independent CPU inference on 16 validation breaths agreed with
+saved CUDA predictions within 1.15e-5 native pressure units.
 
-Residual full-strength difference vs baseline: -.000979, bootstrap 95% interval
-[-.001319,-.000645]. This is a small consistent A gain, not a confirmed promotion.
-Median absolute point error .100364 vs baseline .100946. The .10 target is not
-achieved. No new candidate has been selected for grouped confirmation or submitted.
+The full correction's MAE difference interval is [-.001319,-.000645]. Its A gain
+is consistent but only .50%, below the predeclared minimum. Median absolute
+point error is .100364 versus baseline .100946. The .10 target is not reached.
 
-Review: `results_review_v007.ipynb`; experiment source: `approved_experiments_v007.ipynb`.
-Current pod `v2gao-1273870` expires about 3:37 PM Pacific. The guarded coordinator
-can officially queue one replacement and resume saved model/optimizer/RNG state.
-Last snapshot 3:03 PM: dropout 41/200, approximately40.7 sec/epoch. Remaining time
-then about108 GPU minutes, excluding scheduling delay. All earlier stages complete.
+No candidate qualified for grouped confirmation. No extra all-data fit, threshold
+change, runner-up search or new submission occurred. Accepted .18550 retained.
 
-The user renewed SSH/Duo for this review. Server jobs remain detached from the Mac.
-Partial archive 53 files SHA599bb0832683b22e8b0892237b42e6df84c5f2ad41f8cab2a62f57ffa8c33f79;
-OOF supplement 2 files SHAcfb4b702057800f6bcb3aa0333b861e3edd70aa414c63813e9437a254d61e9fa.
-Both downloaded and per-file hashes verified, with prior versions preserved.
+Review: `results_review_v007.ipynb`; source: `approved_experiments_v007.ipynb`.
+Audit: `research/screen_review_v007.json`; decision: `research/decision_v007.json`.
+Best CSV: `outputs/improvements_v005/confirmation_round1/final_all/submission.csv`.
+Receipt: `research/submission_receipt_v005_final.json`.
 
-Only approved ideas 1, 3, 5 run; no unapproved model family or data source added.
-Do not change the screening threshold or rank an unfinished dropout trial as final.
+Original pod expired 3:37 PM. One official replacement waited about five hours,
+then started 8:36 PM and resumed at epoch 92. Dropout finished 200 epochs, selecting
+194. Coordinator verified an 81-file archive and released GPU about 9:54 PM.
+The 280,134,657-byte archive was downloaded and per-file hashes checked on Mac:
+SHA256 `059ceb600a94b20d42b64be8ab46c7c8748bfd5b293f699b4f472afdbf4504a1`.
 
-Live check at 3:12 PM: dropout 54/200, approximately 99 remaining GPU minutes,
-plus any replacement scheduling delay. The original 200-epoch budget is unchanged.
-
-Recovery update, 3:40 PM Pacific: the original pod expired on schedule and was
-archived/deleted. Replacement `v2gao-1454657` was officially queued at 3:38 PM.
-It is pending because eligible course nodes lack CPU/GPU capacity. The saved
-dropout state will resume; queue wait has no reliable estimate. No new model
-family, threshold change or candidate promotion was introduced.
+Prior files and changed snapshots were preserved. Persistent course files survive
+pod deletion. Only assignment-approved data and approved ideas 1, 3, 5 were used.

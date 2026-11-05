@@ -1,9 +1,9 @@
 {
   "schema": "independent_v007_screen_audit_v1",
-  "audit_time_utc": "2026-11-04T23:08:12.201490+00:00",
+  "audit_time_utc": "2026-11-05T06:00:04.531370+00:00",
   "project": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction",
   "screen_directory": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007",
-  "status": "incomplete",
+  "status": "complete_verified",
   "expected_candidates": [
     "correction_gamma_0p0",
     "correction_gamma_0p5",
@@ -12,12 +12,10 @@
     "regularization_adamw_1e4",
     "regularization_dropout_025"
   ],
-  "missing_candidate_records": [
-    "regularization_dropout_025"
-  ],
+  "missing_candidate_records": [],
   "AdamW_zero_control_reused": true,
-  "whole_batch_complete_and_verified": false,
-  "screen_complete": false,
+  "whole_batch_complete_and_verified": true,
+  "screen_complete": true,
   "reference_A_pair_MAE": 0.19656260982217663,
   "candidates": [
     {
@@ -85,6 +83,24 @@
         "difference": 0.001953769382350565,
         "bootstrap_95_low": -0.00037690424749429205,
         "bootstrap_95_high": 0.004218001116733265,
+        "unit": "whole breath",
+        "seed": 20261201,
+        "repeats": 1000,
+        "point_count_weighted": true
+      },
+      "eligible": false
+    },
+    {
+      "name": "regularization_dropout_025",
+      "individual_A_MAE": 0.22078939615284016,
+      "pair_A_MAE": 0.20147876213502894,
+      "median_absolute_error": 0.10236406326293945,
+      "p90_absolute_error": 0.4333940505981449,
+      "gain": -0.004916152312852307,
+      "interval": {
+        "difference": 0.004916152312852318,
+        "bootstrap_95_low": 0.0025545944493757062,
+        "bootstrap_95_high": 0.00730476965378352,
         "unit": "whole breath",
         "seed": 20261201,
         "repeats": 1000,
@@ -225,6 +241,35 @@
         "difference": 0.001953769382350565,
         "bootstrap_95_low": -0.00037690424749429205,
         "bootstrap_95_high": 0.004218001116733265,
+        "unit": "whole breath",
+        "seed": 20261201,
+        "repeats": 1000,
+        "point_count_weighted": true
+      },
+      "meets_numeric_confirmation_gate": false
+    },
+    {
+      "name": "regularization_dropout_025",
+      "record_file": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/record_A_regularization_dropout_025.json",
+      "record_sha256": "43687a5425e5188965893ae880238485ab49e85a31adbb72bbc36a98b8ff375c",
+      "numerically_audited": true,
+      "individual": {
+        "mae": 0.22078939615284016,
+        "median_absolute_error": 0.11634945869445801,
+        "p90_absolute_error": 0.4744398117065432,
+        "median_breath_mae": 0.13569838425208783
+      },
+      "fixed_pair": {
+        "mae": 0.20147876213502894,
+        "median_absolute_error": 0.10236406326293945,
+        "p90_absolute_error": 0.4333940505981449,
+        "median_breath_mae": 0.12009689884801064
+      },
+      "gain": -0.004916152312852307,
+      "interval": {
+        "difference": 0.004916152312852318,
+        "bootstrap_95_low": 0.0025545944493757062,
+        "bootstrap_95_high": 0.00730476965378352,
         "unit": "whole breath",
         "seed": 20261201,
         "repeats": 1000,
@@ -1117,17 +1162,157 @@
       }
     },
     {
+      "name": "candidate_record_name:regularization_dropout_025",
+      "passed": true
+    },
+    {
+      "name": "candidate_fixed_pair_design:regularization_dropout_025",
+      "passed": true
+    },
+    {
+      "name": "candidate_design_hash:regularization_dropout_025",
+      "passed": true
+    },
+    {
+      "name": "candidate_original_A_row_hash:regularization_dropout_025",
+      "passed": true
+    },
+    {
+      "name": "candidate_prediction_raw_hash:regularization_dropout_025",
+      "passed": true,
+      "actual": "501442b18328fbb4804cd501dd2678dbe29cbe1a499b1234d79cbe11cd062753",
+      "expected": "501442b18328fbb4804cd501dd2678dbe29cbe1a499b1234d79cbe11cd062753",
+      "metadata_prefixed_hash": "8473a0ae9a9ec7fbb1ec3f03e165058040c4a9ed272d3bcfa335895a46d08650"
+    },
+    {
+      "name": "file_sha256:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/model.pt",
+      "passed": true,
+      "actual": "26ffcf968914bd844c8443bd3a4cdaa349ac336c45e2a95df169db6075646668",
+      "expected": "26ffcf968914bd844c8443bd3a4cdaa349ac336c45e2a95df169db6075646668"
+    },
+    {
+      "name": "file_sha256:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/report.json",
+      "passed": true,
+      "actual": "50c4a7dd1bc4937ae184f2b15669559a88da181e22cc060f24bc69e4e6b013d8",
+      "expected": "50c4a7dd1bc4937ae184f2b15669559a88da181e22cc060f24bc69e4e6b013d8"
+    },
+    {
+      "name": "candidate_completed200:regularization_dropout_025",
+      "passed": true
+    },
+    {
+      "name": "candidate_report_metrics:regularization_dropout_025",
+      "passed": true
+    },
+    {
+      "name": "checkpoint:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/model.pt:preprocessor_training_counts",
+      "passed": true,
+      "training_breaths": 61114,
+      "inspiratory_points": 1855824
+    },
+    {
+      "name": "checkpoint:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/model.pt:training_label_and_mask_fingerprints",
+      "passed": true,
+      "expected_label_metadata_hash": "61c55ef8ded66312a71a2e2fa238276d5951a96e90d9ff8c7963c898dcfd0085",
+      "expected_mask_metadata_hash": "4af750946c82cfd337a9ee3ca2a5e0a2b3de704369e52de43cb3eb4460ec28e4",
+      "original_A_validation_breaths_excluded": true
+    },
+    {
+      "name": "checkpoint:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/model.pt:stage_mode",
+      "passed": true,
+      "actual": "validation",
+      "expected": "validation"
+    },
+    {
+      "name": "checkpoint:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/model.pt:original_A_validation_fingerprints",
+      "passed": true
+    },
+    {
+      "name": "checkpoint:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/model.pt:training_only_target_normalization",
+      "passed": true
+    },
+    {
+      "name": "checkpoint:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/model.pt:report_checkpoint_identity",
+      "passed": true
+    },
+    {
+      "name": "candidate_regularization_frozen_recipe:regularization_dropout_025",
+      "passed": true
+    },
+    {
+      "name": "dropout_original_deep_A_input_fingerprint_exact",
+      "passed": true
+    },
+    {
+      "name": "dropout_original_deep_A_preprocessor_exact",
+      "passed": true,
+      "original_input_mean_hash": "36d99f9e3fbb26b40b4aaf5b3340a1e91190a936ee9338175a3eb81e3daebed1",
+      "dropout_input_mean_hash": "36d99f9e3fbb26b40b4aaf5b3340a1e91190a936ee9338175a3eb81e3daebed1",
+      "original_input_std_hash": "ae4839de93ffcf1f9549ff1d862520cef7a887e77060637a37d1eadcfb590bd2",
+      "dropout_input_std_hash": "ae4839de93ffcf1f9549ff1d862520cef7a887e77060637a37d1eadcfb590bd2"
+    },
+    {
+      "name": "candidate_prediction_shape_finite:regularization_dropout_025",
+      "passed": true
+    },
+    {
+      "name": "candidate_recomputed_native_metrics:regularization_dropout_025",
+      "passed": true,
+      "recomputed": {
+        "validation_mae": 0.22078939615284016,
+        "pair_validation_mae": 0.20147876213502894,
+        "pair_median_absolute_error": 0.10236406326293945,
+        "pair_median_breath_MAE": 0.12009689884801064,
+        "pair_p90_absolute_error": 0.4333940505981449
+      }
+    },
+    {
       "name": "only_approved_screen_candidates",
       "passed": true,
       "unexpected": []
-    }
-  ],
-  "missing_artifacts": [
+    },
     {
-      "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/screen_summary.json",
-      "purpose": "whole-batch screen completion summary"
+      "name": "summary_complete_status",
+      "passed": true
+    },
+    {
+      "name": "summary_reference_MAE",
+      "passed": true
+    },
+    {
+      "name": "summary_candidate_coverage",
+      "passed": true
+    },
+    {
+      "name": "summary_recomputed_metrics:correction_gamma_0p0",
+      "passed": true
+    },
+    {
+      "name": "summary_recomputed_metrics:correction_gamma_0p5",
+      "passed": true
+    },
+    {
+      "name": "summary_recomputed_metrics:correction_gamma_1p0",
+      "passed": true
+    },
+    {
+      "name": "summary_recomputed_metrics:pressure_levels",
+      "passed": true
+    },
+    {
+      "name": "summary_recomputed_metrics:regularization_adamw_1e4",
+      "passed": true
+    },
+    {
+      "name": "summary_recomputed_metrics:regularization_dropout_025",
+      "passed": true
+    },
+    {
+      "name": "summary_selected_best_eligible",
+      "passed": true
     }
   ],
+  "missing_artifacts": [],
   "artifact_hashes": [
     {
       "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/research/authorization_v007.json",
@@ -1257,6 +1442,16 @@
     {
       "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_adamw_1e4/report.json",
       "file_sha256": "81d9e26d0d24f0a80d3f6621ab0f8fb1eb33b34223d3236cd5880a5f550c144d",
+      "purpose": "candidate training report"
+    },
+    {
+      "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/model.pt",
+      "file_sha256": "26ffcf968914bd844c8443bd3a4cdaa349ac336c45e2a95df169db6075646668",
+      "purpose": "candidate checkpoint"
+    },
+    {
+      "path": "/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/approved_experiments_v007/regularization_dropout_025/report.json",
+      "file_sha256": "50c4a7dd1bc4937ae184f2b15669559a88da181e22cc060f24bc69e4e6b013d8",
       "purpose": "candidate training report"
     }
   ],
