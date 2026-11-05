@@ -1,8 +1,9 @@
 # Proposed next controlled batch
 
-Status: proposed; no new model code or training started. The user requested
-continued iterative improvement. Their earlier per-hypothesis approval rule is
-being clarified before implementation. Best accepted official MAE is .18550.
+Status: approved and being implemented. The user explicitly answered
+"Approve this batch and future controlled iterations." This grants standing
+approval within the approved-data, grouped-validation and preservation controls
+below. Best accepted official MAE is .18550.
 
 ## Why change direction
 

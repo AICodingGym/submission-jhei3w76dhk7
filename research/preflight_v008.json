@@ -1,0 +1,18 @@
+{
+  "status": "CPU_checks_passed_GPU_checks_required",
+  "attention_model_checks": 36,
+  "memory_model_checks": 27,
+  "training_resume_checks_per_arm": 49,
+  "unchanged_L1_baseline_parity_checks": 12,
+  "scope": "Synthetic CPU checks reported by implementation and independent reviewing agents; no approved-data training",
+  "source_hashes": {
+    "controlled_experiments_v008.ipynb": "b1caeab8121e479185ffa57116b62d37dce1daca2914acbe65baa08c67e493fc",
+    "research/attention_components_v008.ipynb": "47c43f75bf58385771de89e37b0fed05054f8a6d6e5bd1ac3e15f4891111625b",
+    "research/memory_components_v008.ipynb": "b7dd6c6434ada27ae5cee3e098aa113614ac891e0ecd4e7e25917ab92ad47d8a",
+    "research/training_components_v008.ipynb": "a65618d1886a7ad3d1753f1f752b449114a57dcb75084f4f6cd11fc084228bda"
+  },
+  "gpu_pod": "v2gao-2239777",
+  "torch_local": "2.15.0",
+  "course_torch": "2.2.1+cu121",
+  "actual_gpu_pending": true
+}
