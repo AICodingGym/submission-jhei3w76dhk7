@@ -48,3 +48,6 @@ outputs/
 artifacts/
 models/
 *.log
+
+# Generated migration checkpoint identifier
+/handoff/git_checkpoint.txt

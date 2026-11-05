@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-11-05T23:34:10.104962+00:00",
+  "start_here": "CONTINUE_HERE.md",
+  "prompt": "START_NEXT_AGENT.txt",
+  "visible_history_file": "interaction-history/visible_conversation_20261105T233410Z.md",
+  "visible_history_sha256": "73a257cc96568e93a18aafe3d0e33d0b48ddfc220ffd1f4e712d96a8932b321d",
+  "visible_messages": 388,
+  "best_official_MAE": 0.1855,
+  "best_CSV_sha256": "ff149f3ab87e1e52b948f536c9fdf9a526471ac0723b6b785bf84c053ebed607",
+  "best_new_validation_MAE": 0.19085102921770208,
+  "pending_confirmation": true,
+  "D_created": false,
+  "final_fit_started": false,
+  "migration_state": {
+    "prepared": true,
+    "dispatched": false,
+    "training_started": false,
+    "payload_file": "outputs/confirmation_v011/setup_helpers/v011-deploy.tar.gz",
+    "payload_sha256": "f1f1b5c24635a06c1ec7ae9b5c0b24b8b3eb14ee59e5db26fcfd71849d849b04",
+    "payload_bytes": 1377634,
+    "project_files": 25,
+    "setup_files": 8,
+    "confirmation_code_sha256": "0208428c5ef3407990d05a4b7f08a9c46b9df4465680957b236b95fccf370c2d",
+    "final_code_sha256": "f81befd83ede7d65dbce816f430f028256b140cc16903ace047205029b22b83a",
+    "pod": "v2gao-2729938",
+    "pod_start_utc": "2026-11-05T23:16:48Z",
+    "pod_expected_lease_end_utc": "2026-11-06T05:16:48Z",
+    "next_action": "Review prepared source and start guardian on login node; no D split/lock/result exists yet"
+  },
+  "git_checkpoint_file": "handoff/git_checkpoint.txt",
+  "credentials_or_raw_Codex_sessions_included": false
+}

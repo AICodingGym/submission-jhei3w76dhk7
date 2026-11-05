@@ -1,0 +1,303 @@
+# Continue this project here
+
+Prepared November 5, 2026, afternoon Pacific, for a move to another Codex account.
+Read this file before performing setup or launching experiments. This is a record
+of user instructions, work, evidence and remaining actions, not an internal reasoning trace.
+
+## Immediate state
+
+- Best accepted official Gym MAE: **0.18550**. Preserve its CSV, weights and receipt.
+- Best new A-validation candidate: **0.19085102921770208**, versus original pair
+  **0.19656260982217663**. Those are validation scores, not new official scores.
+- New candidate median point absolute error: **0.09816378355**. Official metric is mean MAE.
+- It is the fixed mixture: deep **0.5**; original compact, curve-consistency,
+  learned-memory and shared-offset members **0.125 each**.
+- Its gain is .005711580604474548; whole-breath95% interval for candidate minus
+  reference is **[-.007219534875537107,-.004389991151684003]**.
+- V012 screen181 checks plus independent118 checks passed. No weights/rosters
+  were fitted: exactly one additional named mixture was declared before calculation.
+- **No actual D split, locked D selection, D training, D outcome or V011 final fit exists.**
+- Prepared confirmation/final notebooks and deployment payload are ready. They
+  have **not been dispatched**. Do not claim these stages completed.
+- Latest user request: preserve everything for another Codex account to continue.
+  Work stopped at this handoff; no new model training was launched for migration.
+
+## Live GPU: attend to this first
+
+Course pod **v2gao-2729938**, node **its-dsmlp-n06.ucsd.edu**, was running and idle
+when checked. It started **2026-11-05T23:16:48Z =3:16:48PM Pacific**. Its six-hour
+lease should end **9:16:48PM Pacific November5**. Recheck current state and clock;
+this document will become stale. GPU GTX1080Ti11GB,0MiB/0% utilization at handoff.
+
+Environment verified: Python3.11.9, Torch2.2.1+cu121, CUDA12.1, cuDNN8902,
+numpy1.26.4,pandas2.2.2. Local Mac is M3Pro18GB without NVIDIA/CUDA.
+
+Do not reserve a second GPU while this one is available. If this pod expires,
+use the ordinary course launcher and resume preserved checkpoints. No quota,
+priority, toleration or lifetime bypass. If migration is delayed and the GPU is
+unused, release it after preserving its metadata; persistent course files remain.
+
+## User authorization and preferences
+
+The user explicitly answered **"Approve this batch and future controlled iterations"**.
+See research/authorization_v008.json and the visible conversation snapshots.
+Standing approval covers controlled research, grouped confirmation, all-approved
+final fits and validated submission within this task. Do not ask for routine
+hypothesis approval again. Ask for missing password/Duo/login steps only when
+necessary; passwords and Duo responses must be entered by the user in Terminal.
+
+Only assignment-approved Gym data. Never download original Kaggle data, existing
+competition solutions, pretrained solutions or unrelated datasets. Modeling code
+must be in `.ipynb`; operational execution/audit helpers may be Python/shell.
+Preserve previous files/models/CSVs. Log configurations, seeds, runtime, scores,
+genuine mistakes, source/data/model hashes and visible AI interactions.
+
+Keep status checks about **every10minutes** and updates brief. While models run,
+wait instead of repeatedly reasoning or polling. Subagents may be used for useful
+independent tasks. Goal is continued improvement toward .10 mean MAE; there is no
+claim that .10 is achievable. Earlier official <=.20 objective was achieved.
+
+## Workspace and account connection
+
+Local parent: `/Users/generalclasher/Documents/dsc102/pa3`
+Local Git project: `/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction`
+Branch: `master`. Git commits preserve source and reports; large outputs/data are ignored.
+The latest handoff commit is recorded in `handoff/git_checkpoint.txt`.
+
+UCSD username `v2gao`; Gym user ID `jhei3w76dhk7`.
+Course project: `/home/v2gao/dsc102/pa3/gym-workspace/ventilator-pressure-prediction`
+Course Python: `/home/v2gao/dsc102/pa3/.venv/bin/python`
+Course setup: `/home/v2gao/dsc102/pa3/setup`
+Login-node home is different: `/dsmlp/home-fs03/08/308/v2gao`.
+Do not assume login `$HOME/dsc102/...` is the mounted course home.
+
+Shared SSH socket: `/Users/generalclasher/Documents/dsc102/pa3/.datahub-ssh/control`.
+It was renewed during this conversation. Check it first; renew only if needed:
+
+```bash
+ssh -M -S /Users/generalclasher/Documents/dsc102/pa3/.datahub-ssh/control -o ControlPersist=7200 -o ServerAliveInterval=60 -o UserKnownHostsFile=/Users/generalclasher/Documents/dsc102/pa3/.datahub-ssh/known_hosts -o StrictHostKeyChecking=yes v2gao@dsmlp-login.ucsd.edu
+```
+
+The user completes password/Duo there and leaves the window open. For automation:
+
+```bash
+ssh -S /Users/generalclasher/Documents/dsc102/pa3/.datahub-ssh/control -o BatchMode=yes -o ConnectTimeout=10 -o UserKnownHostsFile=/Users/generalclasher/Documents/dsc102/pa3/.datahub-ssh/known_hosts -o StrictHostKeyChecking=yes v2gao@dsmlp-login.ucsd.edu 'KUBECONFIG=/home/linux/dsmlp/08/308/v2gao/.kube/config TERM=dumb /usr/bin/kubectl get pods -o wide'
+```
+
+Use `kubectl exec -i` when forwarding a Python/heredoc stdin to the pod. Without
+`-i`, Python may quietly read EOF. Never train on the login node.
+
+Official replacement launcher, when needed:
+
+```bash
+/opt/launch-sh/bin/launch-scipy-ml.sh -W DSC102_FA26_001 -g 1 -c 8 -m 16 -i ghcr.io/ucsd-ets/scipy-ml-notebook:stable -B /opt/k8s-support/bin/initenv-createhomedir.sh /bin/sleep infinity
+```
+
+## Prepared next action
+
+Read `HANDOFF_CONFIRMATION_V011.md`, `HANDOFF_FINAL_FIT_V011.md`, and
+`HANDOFF_OPERATIONS_V011.md`. Authoritative notebooks:
+
+- `confirmation_v011.ipynb`: codeSHA
+  `0208428c5ef3407990d05a4b7f08a9c46b9df4465680957b236b95fccf370c2d`.
+ 23 synthetic protocol checks and independent review passed.
+- `final_fit_v011.ipynb`: codeSHA
+  `f81befd83ede7d65dbce816f430f028256b140cc16903ace047205029b22b83a`.
+ 20 synthetic protocol checks, metadata checks, inference interruption recovery
+ checks and independent review passed.
+
+The fully prepared source payload and operational helpers are under
+`outputs/confirmation_v011/setup_helpers/`. Models remain notebook code.
+`v011-deploy.tar.gz` is1,377,634bytes, SHA256
+`f1f1b5c24635a06c1ec7ae9b5c0b24b8b3eb14ee59e5db26fcfd71849d849b04`.
+`v011-pinned-sources.json` binds source hashes and all archive dependencies.
+`research/migration_state_v011.json` records the preparation state.
+
+The login staging directory is
+`$HOME/.pa3-setup-control.gty67K/v011-deploy-20261105`.
+After confirming the staged files/SHA and reviewing the helpers, this command
+starts the already-approved sequential pipeline without needing the Mac online:
+
+```bash
+ssh -S /Users/generalclasher/Documents/dsc102/pa3/.datahub-ssh/control -o BatchMode=yes -o ConnectTimeout=10 -o UserKnownHostsFile=/Users/generalclasher/Documents/dsc102/pa3/.datahub-ssh/known_hosts -o StrictHostKeyChecking=yes v2gao@dsmlp-login.ucsd.edu 'PA3_STAGE="$HOME/.pa3-setup-control.gty67K/v011-deploy-20261105"; nohup /bin/bash "$PA3_STAGE/guardian_v011.sh" > "$PA3_STAGE/guardian.log" 2>&1 < /dev/null & echo $! > "$PA3_STAGE/guardian.pid"'
+```
+
+The guardian is hardcoded to pod2729938. If replacing the pod, preserve the old
+script and update that ID before dispatch. It serializes supervisors; waits for
+Ready; preserves changed old files; deploys the reviewed source; starts D;
+starts final fits only if D passes; and archives all artifacts, verifies safe
+regular tar members plus every individual file hash before deleting the idle GPU.
+It never allocates replacement resources automatically. It has been compiled/
+reviewed, but this V011 end-to-end pipeline has **not yet run**.
+
+Confirmation is roughly4GPUhours; final new-member fits roughly2 more if passed.
+A second lease may be necessary. Do not shorten epochs or silently drop a member
+just to fit the lease. Checkpoints and datasets persist in course storage. On a
+lease interruption, inspect status/logs, preserve terminal pod metadata, use the
+normal launcher, update guardian pod ID, and resume the exact frozen stages.
+
+## Scientific protocol: do not change mid-confirmation
+
+Original grouped A:61,114fit /6,791validation, all80 rows per breath remain together.
+Combined47 known features, seed20261102,batch256, Adam/no decay, original full200
+replay rates. Metric is native point-weighted inspiration-only MAE (`u_out==0`).
+Training-only input mean/std and target median/IQR. State resets between breaths.
+Future known controls are allowed in this offline task; pressure labels are never inputs.
+
+Five completed fixed A candidates are compared before creating D. The lowest
+eligible one is V012's five-member blend. Minimum A gain.003 AND whole-breath95%
+bootstrap upper difference<0;1000draws/seed20261201. No median-based promotion.
+
+D uses sklearn train_test_split, random_state20261202,test_size6791, stratified
+by known joint R/C inside original Afit. Dfit54,323/Dvalidation6,791; original
+Avalidation excluded from both. **Cold-fit every D member** with own Dfit-only
+statistics. Existing A models trained on these D breaths and cannot score D.
+Frozen epoch/rate prefixes:
+
+| Member | Epochs | Candidate weight |
+|---|---:|---:|
+| Original compact BiLSTM128x2 |193|.125|
+| Original deep BiLSTM |189|.5|
+| Curve-consistency compact |193|.125|
+| Learned-memory compact |191|.125|
+| Shared-offset compact |193|.125|
+
+D reference is cold compact/deep .5/.5. D passes only positive gain and whole-breath
+95% upper difference<0. No D-based epoch/weight search and no runner-up if it fails.
+D is resampling confirmation, not a pristine untouched test: A was used repeatedly
+for research. No actual D outcome has yet been accessed.
+
+Immutable artifacts will live under `outputs/confirmation_v011/`:
+`D_split.json`, `locked_before_D.json`, `confirmation_result.json`, member
+checkpoints/reports/predictions. Lock binds all five A alternatives, chosen recipe,
+source/inputs, split hashes, weights and budgets. Canonical lock digest has no
+self-reference. On D pass, final fitting uses all67,905approved breaths for the
+three new members. Reuse the already accepted all67,905-trained original compact
+and deep ONLY after exact manifest/weight/recipe/rate/data/count/stat verification.
+This saves hours. Reuse is allowed only for final inference, never D scoring.
+
+Expected new output: `outputs/confirmation_v011/final_all/submission.csv`,
+603,600 rows in exact approved sample/test ID alignment, finite native pressure.
+There is no new CSV yet. Root must independently verify it and its evidence before
+Gym submission. The pipeline deliberately does not submit automatically.
+
+## Best official artifact: do not overwrite
+
+`outputs/improvements_v005/confirmation_round1/final_all/submission.csv`
+SHA256 `ff149f3ab87e1e52b948f536c9fdf9a526471ac0723b6b785bf84c053ebed607`.
+Receipt: `research/submission_receipt_v005_final.json` (official.18550).
+All-data compact weightSHA
+`19897b624599c57f2e4a7f976b2d2fdd4d0b5b1ba3f3dbf6884198ebdef23883`;
+deep `591e3a778af84bfe7fa0f6592f8595fa2c969bdbb37fc0a36a2a251eacb4aad0`.
+Manifest: `outputs/improvements_v005/confirmation_round1/final_all/final_manifest.json`.
+
+For a verified validated new CSV only, existing local CLI:
+
+```bash
+.venv/bin/aicodinggym mle submit ventilator-pressure-prediction -F <new_verified.csv> --user-id jhei3w76dhk7 --workspace-dir /Users/generalclasher/Documents/dsc102/pa3 --no-upload-logs -m '<verified description>'
+```
+
+Commit reviewed source first; CLI may push competition source. Preserve receipt,
+CSV/model/source hashes, official result and visible history. Do not use hidden
+scores to tune weights. Keep .18550 as best if the new official result is worse.
+
+## Data and files preserved
+
+Approved train5,432,400rows=67,905breaths; test/sample603,600rows=7,545breaths.
+Each breath80steps. R{5,20,50};C{10,20,50}. Original audits found no missing/nonfinite
+values, valid grouping/increasing times, no exact duplicate or train/test matching
+input breaths. Negative pressure retained. IDs are alignment keys, never predictors.
+
+Approved hashes:
+
+- train.csv `2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7`
+- test.csv `1ed86b32480e93397cc961dfd09af2d0bedfbab901921eac44de8ed78c3f1672`
+- sample `de4c137a22804654b597723f32470b24f23d9ef662205eca0fe31b68970f0594`
+
+Full existing data/weights/predictions/logs remain in the local project and
+persistent course home. `handoff/workspace_inventory.json` lists local files;
+large ignored outputs are not in Git. If moving computers, copy the whole project
+including ignored data/outputs; a source/context-only bundle is not the dataset
+or all model weights. Switching Codex accounts on this Mac leaves these files intact.
+
+Completed archives copied locally and per-file verified:
+
+| Batch | Local directory | Archive bytes | SHA256 |
+|---|---|---:|---|
+| V008 |outputs/controlled_experiments_v008|63,940,755|01d005f2e7b6ce42d59e5eaa7d85880e88a71baa85fd88b2735d67cd4d6218e6|
+| V009 |outputs/controlled_experiments_v009|33,555,353|42a2389402af8a09ae90675caaf49e6124114720b0962f04f849338609443676|
+
+Each has server_snapshot_completed with preserved executed notebooks and
+per-file manifest. V008 audited403/403. V009 trained200epochs per arm; its old
+failed prefit source/profiles/logs are also retained. Prior V007 full81-file archive
+280,134,657B SHA059ceb600a94b20d42b64be8ab46c7c8748bfd5b293f699b4f472afdbf4504a1
+is preserved under outputs/approved_experiments_v007. Login staging for V008/009:
+`$HOME/.pa3-setup-control.gty67K/v008-deploy-20261105`.
+
+## Results already established: avoid rerunning them
+
+All figures below are original A fixed equal pairs with unchanged deep unless noted.
+
+| Test | A pair MAE | Outcome |
+|---|---:|---|
+| Original compact/deep |.196562610|Reference; official all-data result.18550|
+| V006 slower300compact |.193145077|Fresh C confirmation CI crossed0; not promoted|
+| V007 OOF residual correction |.195583736|Gain.000979 below frozen.003gate|
+| V007 pressure-category head |.204354648|Worse|
+| V007 deep AdamW1e-4 |.198516379|No demonstrated gain|
+| V007 deep dropout.25 |.201478762|Worse|
+| V008 curve consistency |.195987534|Small gain, CI crosses0|
+| V008 learned memory |.196302779|Small gain, CI crosses0|
+| V008 attention |.202850346|Worse|
+| V009 shared offset |.194224170|Gain.002338, CI upper.000112; insufficient alone|
+| V009 full-context TCN |.270269705|Worse; train MAE.349 suggests underfitting this recipe|
+| V010 deep.5 +compact/curve/memory thirds of.5 |.192230255|Provisional gate passed, independently verified58checks|
+| V010 includeattention quartershares |.192303462|Provisional gate passed; worse than previous mixture|
+| V012 replaceattention withoffset quartershares |.190851029|Current lowest candidate; independent118checks|
+
+Read `results_review_v008.ipynb`, research/diversity_screen_v010.ipynb,
+research/diversity_screen_v012.ipynb and their independent JSON reviews.
+Older V005 components/history contain previous GRU/TCN/schedule/features/scaling/
+R-C/seed experiments. Generic lag/future-input/standardization ideas are already
+implemented, not new work. Target pressure quantization alone cannot explain a
+large expected gain. No exact replicate-input noise-floor estimate exists.
+
+## Genuine issues and recovery knowledge
+
+- Strict deterministic Torch2.2 CUDA floating cumsum was unsupported in V007
+  probability decoding; CPU detached median decoding fixed it. Do not disable determinism.
+- Original Conv1d TCN was84.42x baseline on this GPU. Capacity gate stopped before
+  any data fit. Exact shifted-input linear convolution reduced it to1.028x;
+  CPU107checks compare outputs/all gradients; GPU proofs/resume passed. Original
+  source and failed-stage evidence retained. Architecture/capacity were unchanged.
+- A final prediction .npy orphan before its JSON metadata used to break resume;
+  now recover/recompute only with exact matching identities, preserve conflicts.
+- Notebook execution outputs change raw file hashes. Whitelisted notebook
+  provenance permits differing raw bytes only if exact executable code matches;
+  binary/data/report hashes remain strict. Actual raw hashes then freeze in the
+  D lock. Never casually waive a failed fingerprint.
+- CodeSHA for orchestration is SHA256 of newline-joined code-cell sources.
+  Training v008 internally uses a different explicit cell delimiter; its own
+  helper is self-consistent. Prediction/row hashes in records are raw contiguous
+  array bytes; V5 data fingerprints include shape/dtype. Preserve these conventions.
+- Final env Dresult hash is the raw JSON fileSHA; selection hash is compact sorted
+  canonical JSONSHA (no self-reference). They are different quantities.
+- The guardian snapshots only after worker and wrapper locks release, archives
+  symlink targets as regular files, includes explicitly listed operational helpers,
+  and verifies every safe tar member before deleting the idle GPU.
+- Account usage-limit approval review interrupted earlier monitoring. Server
+  training completed and archived/released safely. This was not loss of data.
+
+## AI history and portable context
+
+`interaction-history/` contains cumulative visible user/assistant snapshots with
+hash manifests. The latest is noted in `handoff/context_manifest.json`. System/
+developer text, hidden reasoning, tool payloads and account secrets are excluded.
+Run `outputs/confirmation_v011/setup_helpers/export_visible_history.py` on this
+Mac if available; the raw Codex session path may not exist in another account.
+Use the saved visible snapshot as the portable history rather than copying raw
+Codex session internals. Parent SETUP_LOG.md is append-only context.
+
+Paste `START_NEXT_AGENT.txt` into the new account and open this same project.
+Do not infer final completion from a source notebook existing: D and final CSV
+are still pending. Start from the live pod/status and prepared payload above.

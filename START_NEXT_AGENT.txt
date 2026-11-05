@@ -1,0 +1,11 @@
+Continue my DSC102 ventilator-pressure-prediction project from this preserved checkpoint.
+
+Open /Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction and read CONTINUE_HERE.md first, then HANDOFF_CONFIRMATION_V011.md, HANDOFF_FINAL_FIT_V011.md and HANDOFF_OPERATIONS_V011.md. Follow the existing project AGENTS.md.
+
+I approve continuing the already authorized controlled iterations, grouped confirmation, all-approved final fitting and validated submission using only the assignment-approved Gym data. Preserve all previous files and the accepted official MAE0.18550 result. Modeling must stay in notebooks. Do not download original Kaggle data, existing solutions or unrelated data.
+
+First check the live DataHub pod v2gao-2729938 and its lease (started Nov5 3:16:48PM Pacific, expected end9:16:48PM). It was idle at handoff. A fully prepared source/deployment payload is staged; no D split, D fit or D outcome exists yet. Review the frozen sources/pins and launch the prepared sequential confirmation/final pipeline when ready. Ask me only for login/Duo steps that you cannot perform; I enter passwords in Terminal.
+
+The best new fixed ensemble has A-validation MAE0.190851029 and median absolute error0.098163784. It combines deep.5 plus compact/curve/memory/offset .125 each. It is not a new official score. Compare all five predeclared A alternatives and freeze only the lowest eligible recipe before any D labels/outcomes. Cold-fit all D members; never reuse original A models for D validation. Reuse accepted all-data compact/deep only for the conditional final fit, after all hash/recipe/data checks.
+
+Check jobs about every10minutes and wait between checks to conserve usage. Keep configurations, seeds, runtime, scores, genuine errors, source/data/model hashes and visible AI history. Continue toward lower mean MAE without promising0.10. Read the handoff for the exact commands, scripts, artifacts and recovery rules; do not redo completed setup/screens. Resume from actual live state rather than stale timestamps in these notes.

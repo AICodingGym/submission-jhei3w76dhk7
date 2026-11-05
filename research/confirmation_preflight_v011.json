@@ -1,0 +1,119 @@
+{
+  "status": "prepared_not_executed",
+  "notebook": "confirmation_v011.ipynb",
+  "source_code_sha256": "0208428c5ef3407990d05a4b7f08a9c46b9df4465680957b236b95fccf370c2d",
+  "notebook_file_sha256": "b2fe48b833e9950d60a0f15aca4191347709acdd3e6b37e82e99db5518e66fd8",
+  "nbformat_valid": true,
+  "default_guard_no_csv_reads": true,
+  "synthetic_protocol": {
+    "status": "passed",
+    "checks": {
+      "immutable_exact_rerun_no_change": true,
+      "immutable_changed_recipe_rejected": true,
+      "compact_external_digest": true,
+      "digest_excludes_self_reference": true,
+      "whitelisted_notebook_metadata_only_variation_accepted": true,
+      "whitelisted_notebook_changed_code_rejected": true,
+      "non_notebook_artifact_mismatch_rejected": true,
+      "nonwhitelisted_notebook_metadata_drift_rejected": true,
+      "fixed_weights_sum_one:deep_half_compact_curve_memory": true,
+      "fixed_weights_sum_one:deep_half_compact_curve_memory_attention": true,
+      "fixed_weights_sum_one:shared_breath_offset": true,
+      "fixed_weights_sum_one:full_context_tcn": true,
+      "fixed_weights_sum_one:deep_half_compact_curve_memory_offset": true,
+      "exact_five_candidate_complete_set_required": true,
+      "new_fifth_lowest_A_choice_and_locked_weights": true,
+      "incomplete_five_candidate_screen_rejected": true,
+      "bootstrap_primary_difference_point_weighted": true,
+      "bootstrap_repeat_seed_reproducible": true,
+      "bootstrap_whole_breath_protocol": true,
+      "synthetic_split_counts_and_exclusion": true,
+      "synthetic_split_reproducible": true,
+      "synthetic_indices_sorted": true,
+      "split_no_pressure_fields": true
+    },
+    "check_count": 23,
+    "synthetic_only": true,
+    "assignment_data_read": false,
+    "actual_D_split_constructed": false,
+    "training_performed": false,
+    "GPU_work": false
+  },
+  "completed_A_recipe_provenance_checks": {
+    "original_compact": 193,
+    "deep": 189,
+    "curve": 193,
+    "memory": 191,
+    "attention": 196
+  },
+  "independent_source_review": {
+    "passed": true,
+    "source_code_sha256": "90985dd4a07ec95fd4f338ac90cadfdc19b39eae5b48c1cf22e32bdd55ca7f84",
+    "review_scope": "Selection/lock/RCsplit/coldroster/fixedbudget/resume/source/native-bootstrap guards",
+    "note": "Prior protocol review; subsequent output/metadata portability guard covered by four added synthetic checks"
+  },
+  "source_fingerprints": {
+    "feature_components_v005.ipynb": "eb19eed69eb54cd5d087a9a678cf98701fbe9bc1a3cf85016270754c014593a6",
+    "sequence_components_v005.ipynb": "e6698a7f6e931af8a066c227058203b7e29ada68624833b700293532a30bf1b2",
+    "training_components_v008.ipynb": "a65618d1886a7ad3d1753f1f752b449114a57dcb75084f4f6cd11fc084228bda",
+    "attention_components_v008.ipynb": "47c43f75bf58385771de89e37b0fed05054f8a6d6e5bd1ac3e15f4891111625b",
+    "memory_components_v008.ipynb": "b7dd6c6434ada27ae5cee3e098aa113614ac891e0ecd4e7e25917ab92ad47d8a",
+    "offset_components_v009.ipynb": "1000c5311fcf4cfc348fd5b99975fcd5816650d1616ace31eace5407ccd2a1b3",
+    "tcn_components_v009.ipynb": "d4e08e56a78a8d1d8e45ee0843302d7d2a1c9b35ccc1ed8628ae4f1239da486e",
+    "tcn_fast_components_v009.ipynb": "51d7438d2bd719e5609ed8530a4ad9cf9009943498641bf9488c9e81b1a5024d"
+  },
+  "actual_D_split_constructed": false,
+  "D_pressure_labels_read": false,
+  "D_training_performed": false,
+  "final_all_work_performed": false,
+  "mandatory_run_environment": {
+    "PA3_RUN_CONFIRM_V011": "1",
+    "PA3_CONFIRM_V011_SOURCE_SHA256": "0208428c5ef3407990d05a4b7f08a9c46b9df4465680957b236b95fccf370c2d",
+    "PA3_RESUME_CONFIRM_V011": "1 only for checkpoint recovery"
+  },
+  "remaining": [
+    "Actual D split/fits/metrics have not been run; D acceptance remains unknown",
+    "Production must validate and freeze all five completed A candidates and the exact source hash first"
+  ],
+  "metadata_portability_fix": {
+    "whitelist": "Only declared V010 source_manifest entries whose paths are known notebook sources",
+    "code_hash": "Exact executable code hash required",
+    "strict_artifacts": "Data/model/report/array full-file hashes remain exact",
+    "lock_behavior": "Observed raw hashes included in selection_input_files and immutable on resume",
+    "D_artifacts_read": false
+  },
+  "allowed_A_candidates": [
+    "deep_half_compact_curve_memory",
+    "deep_half_compact_curve_memory_attention",
+    "shared_breath_offset",
+    "full_context_tcn",
+    "deep_half_compact_curve_memory_offset"
+  ],
+  "V012_independent_review": {
+    "file": "research/diversity_review_v012.json",
+    "file_sha256": "3b35a1c5b36c2c44f6632b4ddcfa1180d2e743a4dbdeabdcc415ba3e7b9c388a",
+    "checks": 118,
+    "status": "passed"
+  },
+  "A_only_selection_guard": {
+    "passed": true,
+    "CSV_parsing_blocked": true,
+    "candidate_count": 5,
+    "winner": "deep_half_compact_curve_memory_offset",
+    "weights": {
+      "deep": 0.5,
+      "original_compact": 0.125,
+      "curve": 0.125,
+      "memory": 0.125,
+      "offset": 0.125
+    },
+    "selected_epochs": {
+      "original_compact": 193,
+      "deep": 189,
+      "curve": 193,
+      "memory": 191,
+      "offset": 193
+    },
+    "actual_D_split_constructed": false
+  }
+}
