@@ -1,0 +1,2003 @@
+{
+  "schema": "independent_v008_artifact_audit",
+  "created_at_utc": "2026-11-05T17:37:31.087736+00:00",
+  "status": "passed",
+  "passed": true,
+  "check_count": 403,
+  "failed_checks": [],
+  "checks": [
+    {
+      "name": "complete_component_manifest",
+      "passed": true
+    },
+    {
+      "name": "source_code_hash:feature_components_v005.ipynb",
+      "passed": true,
+      "actual": "eb19eed69eb54cd5d087a9a678cf98701fbe9bc1a3cf85016270754c014593a6",
+      "expected": "eb19eed69eb54cd5d087a9a678cf98701fbe9bc1a3cf85016270754c014593a6"
+    },
+    {
+      "name": "source_code_hash:sequence_components_v005.ipynb",
+      "passed": true,
+      "actual": "e6698a7f6e931af8a066c227058203b7e29ada68624833b700293532a30bf1b2",
+      "expected": "e6698a7f6e931af8a066c227058203b7e29ada68624833b700293532a30bf1b2"
+    },
+    {
+      "name": "source_code_hash:attention_components_v008.ipynb",
+      "passed": true,
+      "actual": "47c43f75bf58385771de89e37b0fed05054f8a6d6e5bd1ac3e15f4891111625b",
+      "expected": "47c43f75bf58385771de89e37b0fed05054f8a6d6e5bd1ac3e15f4891111625b"
+    },
+    {
+      "name": "source_code_hash:memory_components_v008.ipynb",
+      "passed": true,
+      "actual": "b7dd6c6434ada27ae5cee3e098aa113614ac891e0ecd4e7e25917ab92ad47d8a",
+      "expected": "b7dd6c6434ada27ae5cee3e098aa113614ac891e0ecd4e7e25917ab92ad47d8a"
+    },
+    {
+      "name": "source_code_hash:training_components_v008.ipynb",
+      "passed": true,
+      "actual": "a65618d1886a7ad3d1753f1f752b449114a57dcb75084f4f6cd11fc084228bda",
+      "expected": "a65618d1886a7ad3d1753f1f752b449114a57dcb75084f4f6cd11fc084228bda"
+    },
+    {
+      "name": "main_notebook_source_hash",
+      "passed": true
+    },
+    {
+      "name": "standing_authorization_file_hash",
+      "passed": true,
+      "actual": "2d96547220eda461a3edd7579b6558016d79bf862d5140b1f1b6fe1e94a5de7f",
+      "expected": "2d96547220eda461a3edd7579b6558016d79bf862d5140b1f1b6fe1e94a5de7f"
+    },
+    {
+      "name": "standing_authorization_and_approved_data",
+      "passed": true
+    },
+    {
+      "name": "approved_training_data_hash",
+      "passed": true,
+      "actual": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+      "expected": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7"
+    },
+    {
+      "name": "approved_training_data_matches_original",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:arms",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:loss_kinds",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:curve_weight",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:memory_channels",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:attention_heads",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:seed",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:A_fit_breaths",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:A_val_breaths",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:features",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:epochs",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:full_original_schedule",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:pair_weights",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:partner",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:minimum_pair_gain",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:bootstrap_seed",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:bootstrap_draws",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:confirmation_seed",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:final_fits_in_this_notebook",
+      "passed": true
+    },
+    {
+      "name": "frozen_plan:automatic_submission",
+      "passed": true
+    },
+    {
+      "name": "frozen_group_hashes_match_original",
+      "passed": true
+    },
+    {
+      "name": "baseline_record_hash:capacity_bilstm128",
+      "passed": true,
+      "actual": "f72d75088e2ba28a1868747aa0fa822e03e74934e7f905b9eece48747446cbe5",
+      "expected": "f72d75088e2ba28a1868747aa0fa822e03e74934e7f905b9eece48747446cbe5"
+    },
+    {
+      "name": "baseline_model_hash:capacity_bilstm128",
+      "passed": true,
+      "actual": "53dbce6656e8733678be20d49d4deb470780cc0de6080bc1984037b7bc795f5a",
+      "expected": "53dbce6656e8733678be20d49d4deb470780cc0de6080bc1984037b7bc795f5a"
+    },
+    {
+      "name": "baseline_prediction_hash:capacity_bilstm128",
+      "passed": true
+    },
+    {
+      "name": "baseline_prediction_shape_finite:capacity_bilstm128",
+      "passed": true
+    },
+    {
+      "name": "baseline_record_hash:capacity_deep_bilstm",
+      "passed": true,
+      "actual": "b59916d79a7472c199dedba734f0593ca8044269ed8570ee5ece5d7025012f79",
+      "expected": "b59916d79a7472c199dedba734f0593ca8044269ed8570ee5ece5d7025012f79"
+    },
+    {
+      "name": "baseline_model_hash:capacity_deep_bilstm",
+      "passed": true,
+      "actual": "403d9df06195f863921cf27523a0f9bca503c8d769cd4855614151bde2bdb6ac",
+      "expected": "403d9df06195f863921cf27523a0f9bca503c8d769cd4855614151bde2bdb6ac"
+    },
+    {
+      "name": "baseline_prediction_hash:capacity_deep_bilstm",
+      "passed": true
+    },
+    {
+      "name": "baseline_prediction_shape_finite:capacity_deep_bilstm",
+      "passed": true
+    },
+    {
+      "name": "original_compact_controls",
+      "passed": true
+    },
+    {
+      "name": "baseline_model_recipe_matches_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "approved_row_count",
+      "passed": true
+    },
+    {
+      "name": "complete_unique_grouped_breath_blocks",
+      "passed": true
+    },
+    {
+      "name": "pressure_dtype_is_float32_before_native_metric",
+      "passed": true
+    },
+    {
+      "name": "valid_binary_phase_mask",
+      "passed": true
+    },
+    {
+      "name": "group_alignment:A_fit",
+      "passed": true
+    },
+    {
+      "name": "group_alignment:A_validation",
+      "passed": true
+    },
+    {
+      "name": "group_alignment:C_fit",
+      "passed": true
+    },
+    {
+      "name": "group_alignment:C_validation",
+      "passed": true
+    },
+    {
+      "name": "A_group_counts_disjoint",
+      "passed": true
+    },
+    {
+      "name": "A_scored_alignment_and_count",
+      "passed": true
+    },
+    {
+      "name": "original_training_fingerprint_recomputed:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "original_training_fingerprint_recomputed:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "original_validation_fingerprint_recomputed:val_y_sha256",
+      "passed": true
+    },
+    {
+      "name": "original_validation_fingerprint_recomputed:val_out_sha256",
+      "passed": true
+    },
+    {
+      "name": "reference_pair_MAE_exact_native_labels",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.19656260982217663,
+      "expected": 0.19656260982217663
+    },
+    {
+      "name": "reference_pair_MAE_matches_summary",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.19656260982217663,
+      "expected": 0.19656260982217663
+    },
+    {
+      "name": "baseline_native_MAE:capacity_bilstm128",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21416556794777317,
+      "expected": 0.21416556794777317
+    },
+    {
+      "name": "baseline_native_MAE:capacity_deep_bilstm",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21154409731752422,
+      "expected": 0.21154409731752422
+    },
+    {
+      "name": "summary_has_exact_three_arms",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:summary_record_file_hash",
+      "passed": true,
+      "actual": "2032e6aa37417b4acd0b81f3af4a28c06eaf1f4a5d708d427f17850e58602275",
+      "expected": "2032e6aa37417b4acd0b81f3af4a28c06eaf1f4a5d708d427f17850e58602275"
+    },
+    {
+      "name": "curve_consistency:report_file_hash",
+      "passed": true,
+      "actual": "144d384d9369fabdf7256be0a78e59466426b1c98764d068086108b032a411a0",
+      "expected": "144d384d9369fabdf7256be0a78e59466426b1c98764d068086108b032a411a0"
+    },
+    {
+      "name": "curve_consistency:model_file_hash",
+      "passed": true,
+      "actual": "f496eac207bfd18e8e0ed2096e908e5d1cf7450b74464b8f87afeefc8e231562",
+      "expected": "f496eac207bfd18e8e0ed2096e908e5d1cf7450b74464b8f87afeefc8e231562"
+    },
+    {
+      "name": "curve_consistency:report_model_file_hash",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:artifact_paths",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:saved_prediction_hash",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:native_prediction_shape_dtype_finite",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:row_ids_and_design_hash",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:same_original_compact_recipe",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:fixed_pair_no_weight_search",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:individual_MAE_expected",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21203379888928203,
+      "expected": 0.21203379888928203
+    },
+    {
+      "name": "curve_consistency:pair_MAE_expected",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.19598753411402914,
+      "expected": 0.19598753411402914
+    },
+    {
+      "name": "curve_consistency:individual_MAE_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21203379888928203,
+      "expected": 0.21203379888928203
+    },
+    {
+      "name": "curve_consistency:individual_MAE_report",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21203379888928203,
+      "expected": 0.21203379888928203
+    },
+    {
+      "name": "curve_consistency:pair_MAE_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.19598753411402914,
+      "expected": 0.19598753411402914
+    },
+    {
+      "name": "curve_consistency:pair_median_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.10069751739501953,
+      "expected": 0.10069751739501953
+    },
+    {
+      "name": "curve_consistency:pair_p90_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.43018083572387766,
+      "expected": 0.43018083572387766
+    },
+    {
+      "name": "curve_consistency:pair_median_breath_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.11815644954812937,
+      "expected": 0.11815644954812937
+    },
+    {
+      "name": "curve_consistency:bootstrap:difference",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": -0.0005750757081474782,
+      "expected": -0.0005750757081474782
+    },
+    {
+      "name": "curve_consistency:bootstrap:bootstrap_95_low",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": -0.002980911576376798,
+      "expected": -0.002980911576376798
+    },
+    {
+      "name": "curve_consistency:bootstrap:bootstrap_95_high",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.0017114253575065273,
+      "expected": 0.0017114253575065273
+    },
+    {
+      "name": "curve_consistency:bootstrap:unit",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:bootstrap:repeats",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:bootstrap:point_count_weighted",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:gain_matches_summary",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.0005750757081474933,
+      "expected": 0.0005750757081474933
+    },
+    {
+      "name": "curve_consistency:pair_matches_summary",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.19598753411402914,
+      "expected": 0.19598753411402914
+    },
+    {
+      "name": "curve_consistency:frozen_promotion_gate",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:format_and_recipe",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:source_arm_loss_identity",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:preprocessing_exact_original_compact",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:preprocessing_hash",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:original_fingerprint:mode",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:original_fingerprint:model_spec",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:original_fingerprint:train_cfg",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:original_fingerprint:seed",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:original_fingerprint:feature_names",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:original_fingerprint:x_sha256",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:original_fingerprint:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:original_fingerprint:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:original_fingerprint:extra",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:actual_GPU_runtime",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best:all_model_state_tensors_finite",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:format_and_recipe",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:source_arm_loss_identity",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:preprocessing_exact_original_compact",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:preprocessing_hash",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:original_fingerprint:mode",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:original_fingerprint:model_spec",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:original_fingerprint:train_cfg",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:original_fingerprint:seed",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:original_fingerprint:feature_names",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:original_fingerprint:x_sha256",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:original_fingerprint:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:original_fingerprint:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:original_fingerprint:extra",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:actual_GPU_runtime",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last:all_model_state_tensors_finite",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:format_and_recipe",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:source_arm_loss_identity",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:preprocessing_exact_original_compact",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:preprocessing_hash",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:original_fingerprint:mode",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:original_fingerprint:model_spec",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:original_fingerprint:train_cfg",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:original_fingerprint:seed",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:original_fingerprint:feature_names",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:original_fingerprint:x_sha256",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:original_fingerprint:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:original_fingerprint:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:original_fingerprint:extra",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:actual_GPU_runtime",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:nested_best:all_model_state_tensors_finite",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:state_dict",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:optimizer_state",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:scheduler_state",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:rng_state",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:preprocess",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:fingerprint",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:model_spec",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:config",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:seed",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:epoch",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:epochs",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:optimizer_steps",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:best_epoch",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:best_val_mae",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:selected_lr_schedule",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:validation_used",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:training_eval_mae",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:public_best_matches_authoritative_snapshot:v008",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best_epoch_consistent",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best_prefix_and_executed_full_budget",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:last_is_authoritative_epoch200",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:all_report_records_200_original_rates",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:report_recipe_and_schedule",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:report_preprocessing_exact_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:epoch_history_matches_report",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:every_epoch_complete_and_original_rates",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best_selection_min_delta_rule",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:best_saved_native_metric",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21203379888928203,
+      "expected": 0.21203379888928203
+    },
+    {
+      "name": "curve_consistency:best_metric_from_epoch_history",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21203379888928203,
+      "expected": 0.21203379888928203
+    },
+    {
+      "name": "curve_consistency:epoch_log_full_history",
+      "passed": true
+    },
+    {
+      "name": "curve_consistency:report_v008_metadata",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:summary_record_file_hash",
+      "passed": true,
+      "actual": "74e0787ed6fdbe932b59688fa51b2996d0969ad6e2499e436491c591fd249fbc",
+      "expected": "74e0787ed6fdbe932b59688fa51b2996d0969ad6e2499e436491c591fd249fbc"
+    },
+    {
+      "name": "learned_memory:report_file_hash",
+      "passed": true,
+      "actual": "7c5faf2abb135486293737b6d8ff4ebf0315b047ebadc5a97b91e723b187267e",
+      "expected": "7c5faf2abb135486293737b6d8ff4ebf0315b047ebadc5a97b91e723b187267e"
+    },
+    {
+      "name": "learned_memory:model_file_hash",
+      "passed": true,
+      "actual": "bd8ba525986f44d6d97935c4b77861dc21a588678baad8ad9b1f20e1405eb106",
+      "expected": "bd8ba525986f44d6d97935c4b77861dc21a588678baad8ad9b1f20e1405eb106"
+    },
+    {
+      "name": "learned_memory:report_model_file_hash",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:artifact_paths",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:saved_prediction_hash",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:native_prediction_shape_dtype_finite",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:row_ids_and_design_hash",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:same_original_compact_recipe",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:fixed_pair_no_weight_search",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:individual_MAE_expected",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21315668942556573,
+      "expected": 0.21315668942556573
+    },
+    {
+      "name": "learned_memory:pair_MAE_expected",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.19630277916686395,
+      "expected": 0.19630277916686395
+    },
+    {
+      "name": "learned_memory:individual_MAE_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21315668942556573,
+      "expected": 0.21315668942556573
+    },
+    {
+      "name": "learned_memory:individual_MAE_report",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21315668942556573,
+      "expected": 0.21315668942556573
+    },
+    {
+      "name": "learned_memory:pair_MAE_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.19630277916686395,
+      "expected": 0.19630277916686395
+    },
+    {
+      "name": "learned_memory:pair_median_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.10152816772460938,
+      "expected": 0.10152816772460938
+    },
+    {
+      "name": "learned_memory:pair_p90_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.4320048332214358,
+      "expected": 0.4320048332214358
+    },
+    {
+      "name": "learned_memory:pair_median_breath_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.11977522075176239,
+      "expected": 0.11977522075176239
+    },
+    {
+      "name": "learned_memory:bootstrap:difference",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": -0.0002598306553126669,
+      "expected": -0.0002598306553126669
+    },
+    {
+      "name": "learned_memory:bootstrap:bootstrap_95_low",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": -0.0026666704586720243,
+      "expected": -0.0026666704586720243
+    },
+    {
+      "name": "learned_memory:bootstrap:bootstrap_95_high",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.0018565288180904171,
+      "expected": 0.0018565288180904171
+    },
+    {
+      "name": "learned_memory:bootstrap:unit",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:bootstrap:repeats",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:bootstrap:point_count_weighted",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:gain_matches_summary",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.0002598306553126817,
+      "expected": 0.0002598306553126817
+    },
+    {
+      "name": "learned_memory:pair_matches_summary",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.19630277916686395,
+      "expected": 0.19630277916686395
+    },
+    {
+      "name": "learned_memory:frozen_promotion_gate",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:format_and_recipe",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:source_arm_loss_identity",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:preprocessing_exact_original_compact",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:preprocessing_hash",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:original_fingerprint:mode",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:original_fingerprint:model_spec",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:original_fingerprint:train_cfg",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:original_fingerprint:seed",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:original_fingerprint:feature_names",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:original_fingerprint:x_sha256",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:original_fingerprint:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:original_fingerprint:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:original_fingerprint:extra",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:actual_GPU_runtime",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best:all_model_state_tensors_finite",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:format_and_recipe",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:source_arm_loss_identity",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:preprocessing_exact_original_compact",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:preprocessing_hash",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:original_fingerprint:mode",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:original_fingerprint:model_spec",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:original_fingerprint:train_cfg",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:original_fingerprint:seed",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:original_fingerprint:feature_names",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:original_fingerprint:x_sha256",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:original_fingerprint:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:original_fingerprint:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:original_fingerprint:extra",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:actual_GPU_runtime",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last:all_model_state_tensors_finite",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:format_and_recipe",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:source_arm_loss_identity",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:preprocessing_exact_original_compact",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:preprocessing_hash",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:original_fingerprint:mode",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:original_fingerprint:model_spec",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:original_fingerprint:train_cfg",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:original_fingerprint:seed",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:original_fingerprint:feature_names",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:original_fingerprint:x_sha256",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:original_fingerprint:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:original_fingerprint:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:original_fingerprint:extra",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:actual_GPU_runtime",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:nested_best:all_model_state_tensors_finite",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:state_dict",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:optimizer_state",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:scheduler_state",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:rng_state",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:preprocess",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:fingerprint",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:model_spec",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:config",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:seed",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:epoch",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:epochs",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:optimizer_steps",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:best_epoch",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:best_val_mae",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:selected_lr_schedule",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:validation_used",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:training_eval_mae",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:public_best_matches_authoritative_snapshot:v008",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best_epoch_consistent",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best_prefix_and_executed_full_budget",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:last_is_authoritative_epoch200",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:all_report_records_200_original_rates",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:report_recipe_and_schedule",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:report_preprocessing_exact_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:epoch_history_matches_report",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:every_epoch_complete_and_original_rates",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best_selection_min_delta_rule",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:best_saved_native_metric",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21315668942556573,
+      "expected": 0.21315668942556573
+    },
+    {
+      "name": "learned_memory:best_metric_from_epoch_history",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.21315668942556573,
+      "expected": 0.21315668942556573
+    },
+    {
+      "name": "learned_memory:epoch_log_full_history",
+      "passed": true
+    },
+    {
+      "name": "learned_memory:report_v008_metadata",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:summary_record_file_hash",
+      "passed": true,
+      "actual": "8c169d5c055cd96826887b3d62e52d1cae97401e9cce9492b90d38381da11079",
+      "expected": "8c169d5c055cd96826887b3d62e52d1cae97401e9cce9492b90d38381da11079"
+    },
+    {
+      "name": "residual_attention:report_file_hash",
+      "passed": true,
+      "actual": "f580f057bbbe9d53e5330474b5efa841e7e2be4a2299e25d62b6bab41a72180d",
+      "expected": "f580f057bbbe9d53e5330474b5efa841e7e2be4a2299e25d62b6bab41a72180d"
+    },
+    {
+      "name": "residual_attention:model_file_hash",
+      "passed": true,
+      "actual": "7e0af462d479eb396e9d7a450dcad2a4a7d018a08effec35bbc243115fbd0822",
+      "expected": "7e0af462d479eb396e9d7a450dcad2a4a7d018a08effec35bbc243115fbd0822"
+    },
+    {
+      "name": "residual_attention:report_model_file_hash",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:artifact_paths",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:saved_prediction_hash",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:native_prediction_shape_dtype_finite",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:row_ids_and_design_hash",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:same_original_compact_recipe",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:fixed_pair_no_weight_search",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:individual_MAE_expected",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.22597073899743542,
+      "expected": 0.22597073899743542
+    },
+    {
+      "name": "residual_attention:pair_MAE_expected",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.20285034613392725,
+      "expected": 0.20285034613392725
+    },
+    {
+      "name": "residual_attention:individual_MAE_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.22597073899743542,
+      "expected": 0.22597073899743542
+    },
+    {
+      "name": "residual_attention:individual_MAE_report",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.22597073899743542,
+      "expected": 0.22597073899743542
+    },
+    {
+      "name": "residual_attention:pair_MAE_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.20285034613392725,
+      "expected": 0.20285034613392725
+    },
+    {
+      "name": "residual_attention:pair_median_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.10639739036560059,
+      "expected": 0.10639739036560059
+    },
+    {
+      "name": "residual_attention:pair_p90_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.4500843048095705,
+      "expected": 0.4500843048095705
+    },
+    {
+      "name": "residual_attention:pair_median_breath_record",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.1245400987822434,
+      "expected": 0.1245400987822434
+    },
+    {
+      "name": "residual_attention:bootstrap:difference",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.006287736311750628,
+      "expected": 0.006287736311750628
+    },
+    {
+      "name": "residual_attention:bootstrap:bootstrap_95_low",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.003805092929864767,
+      "expected": 0.003805092929864767
+    },
+    {
+      "name": "residual_attention:bootstrap:bootstrap_95_high",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.00851130473414757,
+      "expected": 0.00851130473414757
+    },
+    {
+      "name": "residual_attention:bootstrap:unit",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:bootstrap:repeats",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:bootstrap:point_count_weighted",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:gain_matches_summary",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": -0.0062877363117506135,
+      "expected": -0.0062877363117506135
+    },
+    {
+      "name": "residual_attention:pair_matches_summary",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.20285034613392725,
+      "expected": 0.20285034613392725
+    },
+    {
+      "name": "residual_attention:frozen_promotion_gate",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:format_and_recipe",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:source_arm_loss_identity",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:preprocessing_exact_original_compact",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:preprocessing_hash",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:original_fingerprint:mode",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:original_fingerprint:model_spec",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:original_fingerprint:train_cfg",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:original_fingerprint:seed",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:original_fingerprint:feature_names",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:original_fingerprint:x_sha256",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:original_fingerprint:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:original_fingerprint:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:original_fingerprint:extra",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:actual_GPU_runtime",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best:all_model_state_tensors_finite",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:format_and_recipe",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:source_arm_loss_identity",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:preprocessing_exact_original_compact",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:preprocessing_hash",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:original_fingerprint:mode",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:original_fingerprint:model_spec",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:original_fingerprint:train_cfg",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:original_fingerprint:seed",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:original_fingerprint:feature_names",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:original_fingerprint:x_sha256",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:original_fingerprint:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:original_fingerprint:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:original_fingerprint:extra",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:actual_GPU_runtime",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last:all_model_state_tensors_finite",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:format_and_recipe",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:source_arm_loss_identity",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:preprocessing_exact_original_compact",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:preprocessing_hash",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:original_fingerprint:mode",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:original_fingerprint:model_spec",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:original_fingerprint:train_cfg",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:original_fingerprint:seed",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:original_fingerprint:feature_names",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:original_fingerprint:x_sha256",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:original_fingerprint:y_sha256",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:original_fingerprint:out_sha256",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:original_fingerprint:extra",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:actual_GPU_runtime",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:nested_best:all_model_state_tensors_finite",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:state_dict",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:optimizer_state",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:scheduler_state",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:rng_state",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:preprocess",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:fingerprint",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:model_spec",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:config",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:seed",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:epoch",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:epochs",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:optimizer_steps",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:parameter_count",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:best_epoch",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:best_val_mae",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:selected_lr_schedule",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:validation_used",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:training_eval_mae",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:public_best_matches_authoritative_snapshot:v008",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best_epoch_consistent",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best_prefix_and_executed_full_budget",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:last_is_authoritative_epoch200",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:all_report_records_200_original_rates",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:report_recipe_and_schedule",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:report_preprocessing_exact_checkpoint",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:epoch_history_matches_report",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:every_epoch_complete_and_original_rates",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best_selection_min_delta_rule",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:best_saved_native_metric",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.22597073899743542,
+      "expected": 0.22597073899743542
+    },
+    {
+      "name": "residual_attention:best_metric_from_epoch_history",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.22597073899743542,
+      "expected": 0.22597073899743542
+    },
+    {
+      "name": "residual_attention:epoch_log_full_history",
+      "passed": true
+    },
+    {
+      "name": "residual_attention:report_v008_metadata",
+      "passed": true
+    },
+    {
+      "name": "frozen_selection_recomputed",
+      "passed": true
+    },
+    {
+      "name": "completed_screen_without_confirmation_or_submission",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_proof_manifest",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_saved_proof:learned_memory_resume",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_exact_resume_saved_proof:learned_memory_resume",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_saved_proof:residual_attention_resume",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_exact_resume_saved_proof:residual_attention_resume",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_saved_proof:memory",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_saved_proof:curve_consistency_resume",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_exact_resume_saved_proof:curve_consistency_resume",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_saved_proof:attention",
+      "passed": true
+    },
+    {
+      "name": "capacity_profile_manifest",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_fixed_batches_deterministic:baseline",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_fixed_batches_deterministic:curve_consistency",
+      "passed": true
+    },
+    {
+      "name": "profile_ratio:curve_consistency",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 0.9904436901488317,
+      "expected": 0.9904436901488317
+    },
+    {
+      "name": "capacity_frozen_2x_9GiB_gate:curve_consistency",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_fixed_batches_deterministic:learned_memory",
+      "passed": true
+    },
+    {
+      "name": "profile_ratio:learned_memory",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 1.288185577601918,
+      "expected": 1.288185577601918
+    },
+    {
+      "name": "capacity_frozen_2x_9GiB_gate:learned_memory",
+      "passed": true
+    },
+    {
+      "name": "actual_GPU_fixed_batches_deterministic:residual_attention",
+      "passed": true
+    },
+    {
+      "name": "profile_ratio:residual_attention",
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "actual": 1.149072208276309,
+      "expected": 1.149072208276309
+    },
+    {
+      "name": "capacity_frozen_2x_9GiB_gate:residual_attention",
+      "passed": true
+    }
+  ],
+  "results": {
+    "reference": {
+      "mae": 0.19656260982217663,
+      "median_absolute_error": 0.10094594955444336,
+      "p90_absolute_error": 0.42833137512207065,
+      "median_breath_mae": 0.11881432039984341
+    },
+    "curve_consistency": {
+      "individual": {
+        "mae": 0.21203379888928203,
+        "median_absolute_error": 0.10910654067993164,
+        "p90_absolute_error": 0.46006326675415055,
+        "median_breath_mae": 0.12958794255410472
+      },
+      "fixed_equal_pair": {
+        "mae": 0.19598753411402914,
+        "median_absolute_error": 0.10069751739501953,
+        "p90_absolute_error": 0.43018083572387766,
+        "median_breath_mae": 0.11815644954812937
+      },
+      "gain": 0.0005750757081474933,
+      "interval": {
+        "difference": -0.0005750757081474782,
+        "bootstrap_95_low": -0.002980911576376798,
+        "bootstrap_95_high": 0.0017114253575065273,
+        "unit": "whole breath",
+        "repeats": 1000,
+        "point_count_weighted": true
+      },
+      "eligible": false,
+      "best_epoch": 193,
+      "executed_epochs": 200,
+      "parameter_count": 584769
+    },
+    "learned_memory": {
+      "individual": {
+        "mae": 0.21315668942556573,
+        "median_absolute_error": 0.11076366901397705,
+        "p90_absolute_error": 0.4616859436035159,
+        "median_breath_mae": 0.13208384811878204
+      },
+      "fixed_equal_pair": {
+        "mae": 0.19630277916686395,
+        "median_absolute_error": 0.10152816772460938,
+        "p90_absolute_error": 0.4320048332214358,
+        "median_breath_mae": 0.11977522075176239
+      },
+      "gain": 0.0002598306553126817,
+      "interval": {
+        "difference": -0.0002598306553126669,
+        "bootstrap_95_low": -0.0026666704586720243,
+        "bootstrap_95_high": 0.0018565288180904171,
+        "unit": "whole breath",
+        "repeats": 1000,
+        "point_count_weighted": true
+      },
+      "eligible": false,
+      "best_epoch": 191,
+      "executed_epochs": 200,
+      "parameter_count": 584970
+    },
+    "residual_attention": {
+      "individual": {
+        "mae": 0.22597073899743542,
+        "median_absolute_error": 0.1197967529296875,
+        "p90_absolute_error": 0.5023897171020513,
+        "median_breath_mae": 0.1396689261159589
+      },
+      "fixed_equal_pair": {
+        "mae": 0.20285034613392725,
+        "median_absolute_error": 0.10639739036560059,
+        "p90_absolute_error": 0.4500843048095705,
+        "median_breath_mae": 0.1245400987822434
+      },
+      "gain": -0.0062877363117506135,
+      "interval": {
+        "difference": 0.006287736311750628,
+        "bootstrap_95_low": 0.003805092929864767,
+        "bootstrap_95_high": 0.00851130473414757,
+        "unit": "whole breath",
+        "repeats": 1000,
+        "point_count_weighted": true
+      },
+      "eligible": false,
+      "best_epoch": 196,
+      "executed_epochs": 200,
+      "parameter_count": 651265
+    },
+    "actual_gpu_profiles": {
+      "baseline": {
+        "batch_size": 256,
+        "loss_kind": "l1",
+        "steps": 12,
+        "step_seconds": 0.03906066265578071,
+        "inference_batch_size": 512,
+        "inference_seconds": 0.024452099576592445,
+        "peak_allocated_bytes": 784418304,
+        "peak_reserved_bytes": 1488977920,
+        "total_device_bytes": 11707809792,
+        "parameter_count": 584769,
+        "strict_determinism": true
+      },
+      "curve_consistency": {
+        "batch_size": 256,
+        "loss_kind": "curve_l1",
+        "steps": 12,
+        "step_seconds": 0.03868738686045011,
+        "inference_batch_size": 512,
+        "inference_seconds": 0.024390654638409615,
+        "peak_allocated_bytes": 784418304,
+        "peak_reserved_bytes": 1461714944,
+        "total_device_bytes": 11707809792,
+        "parameter_count": 584769,
+        "strict_determinism": true,
+        "relative_step_seconds": 0.9904436901488317,
+        "passed": true
+      },
+      "learned_memory": {
+        "batch_size": 256,
+        "loss_kind": "l1",
+        "steps": 12,
+        "step_seconds": 0.05031738228475054,
+        "inference_batch_size": 512,
+        "inference_seconds": 0.02501055784523487,
+        "peak_allocated_bytes": 784434176,
+        "peak_reserved_bytes": 1476395008,
+        "total_device_bytes": 11707809792,
+        "parameter_count": 584970,
+        "strict_determinism": true,
+        "relative_step_seconds": 1.288185577601918,
+        "passed": true
+      },
+      "residual_attention": {
+        "batch_size": 256,
+        "loss_kind": "l1",
+        "steps": 12,
+        "step_seconds": 0.0448835218946139,
+        "inference_batch_size": 512,
+        "inference_seconds": 0.029537567868828773,
+        "peak_allocated_bytes": 785483264,
+        "peak_reserved_bytes": 1463812096,
+        "total_device_bytes": 11707809792,
+        "parameter_count": 651265,
+        "strict_determinism": true,
+        "relative_step_seconds": 1.149072208276309,
+        "passed": true
+      }
+    }
+  },
+  "scope": "Independent saved-artifact verification and native-label metric/bootstrap recomputation only",
+  "feature_matrix_recomputed": false,
+  "feature_verification": "Exact source/data hashes and X fingerprints matched original A compact; fitted preprocessing compared exactly, without rebuilding the full feature matrix",
+  "missing_artifacts": [],
+  "inference_performed": false,
+  "training_performed": false,
+  "gpu_work_performed": false,
+  "saved_actual_gpu_proofs_verified": true,
+  "confirmation_performed": false,
+  "selected_for_confirmation": null,
+  "official_best_preserved": 0.1855,
+  "source_script_sha256": "2f9b1dab18716d9bea25a68fb59d4f502195eb69716671a815eb2aad0cde451f",
+  "verified_file_sha256": {
+    "research/authorization_v008.json": "2d96547220eda461a3edd7579b6558016d79bf862d5140b1f1b6fe1e94a5de7f",
+    "data/train.csv": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+    "outputs/improvements_v005/sequence/record_A_capacity_bilstm128.json": "f72d75088e2ba28a1868747aa0fa822e03e74934e7f905b9eece48747446cbe5",
+    "outputs/improvements_v005/sequence/A_capacity_bilstm128.pt": "53dbce6656e8733678be20d49d4deb470780cc0de6080bc1984037b7bc795f5a",
+    "outputs/improvements_v005/sequence/record_A_capacity_deep_bilstm.json": "b59916d79a7472c199dedba734f0593ca8044269ed8570ee5ece5d7025012f79",
+    "outputs/improvements_v005/sequence/A_capacity_deep_bilstm.pt": "403d9df06195f863921cf27523a0f9bca503c8d769cd4855614151bde2bdb6ac",
+    "outputs/controlled_experiments_v008/record_A_curve_consistency.json": "2032e6aa37417b4acd0b81f3af4a28c06eaf1f4a5d708d427f17850e58602275",
+    "outputs/controlled_experiments_v008/curve_consistency/report.json": "144d384d9369fabdf7256be0a78e59466426b1c98764d068086108b032a411a0",
+    "outputs/controlled_experiments_v008/curve_consistency/model.pt": "f496eac207bfd18e8e0ed2096e908e5d1cf7450b74464b8f87afeefc8e231562",
+    "outputs/controlled_experiments_v008/record_A_learned_memory.json": "74e0787ed6fdbe932b59688fa51b2996d0969ad6e2499e436491c591fd249fbc",
+    "outputs/controlled_experiments_v008/learned_memory/report.json": "7c5faf2abb135486293737b6d8ff4ebf0315b047ebadc5a97b91e723b187267e",
+    "outputs/controlled_experiments_v008/learned_memory/model.pt": "bd8ba525986f44d6d97935c4b77861dc21a588678baad8ad9b1f20e1405eb106",
+    "outputs/controlled_experiments_v008/record_A_residual_attention.json": "8c169d5c055cd96826887b3d62e52d1cae97401e9cce9492b90d38381da11079",
+    "outputs/controlled_experiments_v008/residual_attention/report.json": "f580f057bbbe9d53e5330474b5efa841e7e2be4a2299e25d62b6bab41a72180d",
+    "outputs/controlled_experiments_v008/residual_attention/model.pt": "7e0af462d479eb396e9d7a450dcad2a4a7d018a08effec35bbc243115fbd0822"
+  },
+  "runtime": {
+    "python": "3.12.11",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "torch": "2.15.0"
+  },
+  "error": null
+}

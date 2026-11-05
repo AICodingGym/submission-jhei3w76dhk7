@@ -11,7 +11,7 @@ Two separate arms against the original compact model, without combining branches
    BiLSTM/scalar head and add offset + local - mean_inspiration(local). Predict
    the shared offset from known-input encoder states pooled over inspiration
    (mean and max), with width16 hidden layers. Both added final projections start
-   at zero. Approximately12,354 additional parameters. Inspiration masking reads
+   at zero. Exactly12,353 additional parameters. Inspiration masking reads
    known u_out reconstructed using the training-only feature scaler. All output
    pressures remain predictions; no target-derived offset enters inference.
 2. Full-context residual TCN: project combined47 to96 channels; six residual
@@ -43,3 +43,16 @@ No runner-up after failed confirmation and no hidden-score tuning. All-approved
 refit/aligned CSV/submission only after a validated improvement. Log configurations,
 seeds, runtime, native/median/tail/R-C/phase scores, hashes, mistakes and visible
 AI interactions. Keep existing files, checkpoints and accepted receipt.
+
+## Prefit backend revision
+
+Original Conv1d profile was3.35931s/step versus baseline.03979s (84.42x),
+so the fixed2x gate stopped the entire batch before approved-data fitting.
+Retain that source, executed notebook, profiles and logs in failure_before_fast_backend.
+Versionr2 implements the same kernel3 cross-correlation with shifted inputs and
+linear matrix multiplication. Width, blocks, dilation, parameter values/keys,
+dropout, RNG initialization, data, schedules, loss and gates stay fixed.
+CPU107checks cover float64/float32 output and every input/parameter gradient
+against original convolution; exact bitwise trajectory equivalence is not claimed
+between different arithmetic kernels. ActualGPU speed and exact within-backend
+resume proofs remain mandatory. No validation result motivated this revision.

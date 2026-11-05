@@ -1,0 +1,13 @@
+{
+  "reason": "Original deterministic Conv1d is 84.4244x baseline on course GPU; resource gate stopped before data fits",
+  "old_version": "v009-r1",
+  "new_version": "v009-r2",
+  "old_TCN_step_seconds": 3.3593100203822055,
+  "baseline_step_seconds": 0.03979074954986572,
+  "only_model_change": "Equivalent shifted-linear convolution execution backend; architecture/state keys/initial weights retained",
+  "CPU_model_parity_checks": 107,
+  "CPU_trainer_resume_checks": 49,
+  "actual_GPU_gate_still_required": true,
+  "no_approved_data_fit_before_revision": true,
+  "old_files_preserved": true
+}
