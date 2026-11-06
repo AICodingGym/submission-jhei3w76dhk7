@@ -1,5 +1,9 @@
 # Continue this project here
 
+## Actual running pod correction — November6~3:12PM Pacific
+
+V014 is now dispatched on **v2gao-3904789**, n06, start3:11:37PM Pacific, expected6hleaseend9:11:37PM. Old3870381neverstarted and waspreserved/deletedafter~58minpendingCPUcapacity. Normalcourse launcher reduced-c8to-c4 (actualrequests4to2cores, limits8to4; torchthreads4unchanged), no priority/affinity/toleration/leasechanges. Newstage `$HOME/.pa3-setup-control.gty67K/v014-cpu4-20261106`; updatedhelpers `outputs/confirmation_v014/cpu4_setup/`; payload19066B SHA2f5859c482fe8603978fd0646672901db5fa135ffb2b3d6026eb36fbbfbb2d44. Guardian deployed identicalscientificsources and startedmaincell; actualGPUverifiedGTX1080Ti. NoEfitprogressoroutcomeobservedyet. Model/protocolhashesbelowunchanged. Oldpendingstagecancelled/preserved; do notmonitoroldpod. See `research/orchestration_v014.json` and newestPROCESS_STATUS. New userrequesttoinspectMLEvolve/Disarraymethodologycompletedin `research/METHOD_REVIEW_MLEVOLVE_DISARRAY.md`; findingsapplytofutureexperiments, notfrozenE. Exactcompetitorventilatorrecipesnotfound; officialDisarraylistingseparatestest-feedbackruns. Noexternaldata/solutioncodedownloads.
+
 ## Latest active state — V014, November6~2:14PM Pacific
 
 Read newest `PROCESS_STATUS.md` and `results_review_v013.ipynb`. V013 completed and independently audited74/74. Winning deep curve-loss mixture A MAE.1862642374201326 vs.19085102921770208; it passed frozen.003gain/negativebootstrapgate. Seed-only.189368987 belowgate; combined.186703791 worse thanwinner. Best official remains.18025, not thisA score. V013archive54files177513224B SHA8b41b24ac327a37691f4a75d14b8f1f53f0d69dff41a0b8e5c4ef8b45016a177, local `outputs/controlled_experiments_v013/completed_archive/` including safe mirror; oldGPUreleased.

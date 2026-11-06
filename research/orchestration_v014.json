@@ -1,0 +1,43 @@
+{
+  "status": "running_at_startup",
+  "pod": "v2gao-3904789",
+  "node": "its-dsmlp-n06.ucsd.edu",
+  "start_utc": "2026-11-06T23:11:37Z",
+  "expected_six_hour_end_utc": "2026-11-07T05:11:37+00:00",
+  "old_pending_pod": "v2gao-3870381",
+  "old_resources": {
+    "limits": {
+      "cpu": "8",
+      "memory": "16Gi",
+      "nvidia.com/gpu": "1"
+    },
+    "requests": {
+      "cpu": "4",
+      "memory": "8Gi",
+      "nvidia.com/gpu": "1"
+    }
+  },
+  "new_resources": {
+    "limits": {
+      "cpu": "4",
+      "memory": "16Gi",
+      "nvidia.com/gpu": "1"
+    },
+    "requests": {
+      "cpu": "2",
+      "memory": "8Gi",
+      "nvidia.com/gpu": "1"
+    }
+  },
+  "ordinary_launcher": true,
+  "no_priority_affinity_toleration_or_lifetime_changes": true,
+  "model_source_unchanged": true,
+  "model_code_sha256": "0f22f8168da6e9304c541ab8415c573d6ad4efdf31d5a1391619448c8d478719",
+  "protocol_sha256": "dee5840ee16262dc282ebeb98643cb24e312e55761634f8fae074ed6c921f6f1",
+  "training_threads_unchanged": 4,
+  "stage": ".pa3-setup-control.gty67K/v014-cpu4-20261106",
+  "payload_sha256": "2f5859c482fe8603978fd0646672901db5fa135ffb2b3d6026eb36fbbfbb2d44",
+  "GPU": "GTX1080Ti 11GB",
+  "official_best_preserved": 0.18025,
+  "terminology_correction": "Launcher -c is a CPU limit; scheduler request is half. The reduction was 4-to-2 requested cores, 8-to-4 limit, not 8-to-4 reserved cores."
+}
