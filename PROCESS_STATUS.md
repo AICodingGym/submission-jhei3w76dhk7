@@ -1,5 +1,7 @@
 # Process map
 
+November 6, 6:26 AM Pacific: DataHub requires fresh password/Duo authentication. Final server completion has not been retrieved; the user has been given the renewal command. The last verified observation had curve and memory final fits complete and offset at 16/193 epochs. Detached work is not cancelled. See `research/RESULTS_V011.md` for verified A/D results and the remaining retrieval/audit/submission steps. No new official score is available locally.
+
 November5 evening Pacific: grouped D confirmation passed.
 
 - Frozen five-member ensemble D MAE **.1969622704** vs reference **.2035085659**, gain **.0065462954** (3.22%).
