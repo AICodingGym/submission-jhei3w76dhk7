@@ -1,7 +1,7 @@
 {
   "prepared": true,
-  "dispatched": false,
-  "training_started": false,
+  "dispatched": true,
+  "training_started": "Runner dispatched; first epoch confirmation pending",
   "payload_file": "outputs/confirmation_v011/setup_helpers/v011-deploy.tar.gz",
   "payload_sha256": "f1f1b5c24635a06c1ec7ae9b5c0b24b8b3eb14ee59e5db26fcfd71849d849b04",
   "payload_bytes": 1377634,
@@ -12,5 +12,5 @@
   "pod": "v2gao-2729938",
   "pod_start_utc": "2026-11-05T23:16:48Z",
   "pod_expected_lease_end_utc": "2026-11-06T05:16:48Z",
-  "next_action": "Review prepared source and start guardian on login node; no D split/lock/result exists yet"
+  "next_action": "Monitor frozen D confirmation and conditional final fit; no submission until final CSV/evidence verified"
 }

@@ -1,14 +1,15 @@
-# Migration checkpoint
+# Process map
 
-November5 afternoon Pacific. User requested preservation for another Codex account.
-Read **CONTINUE_HERE.md** first; paste START_NEXT_AGENT.txt in the new account.
+Resumed November5 afternoon Pacific under explicit user continuation.
 
-- Best official MAE **.18550**, CSV/weights/receipt preserved.
-- Best new fixed A blend **.1908510292**, median absolute error **.09816378355**; not official.
-- V012181checks plus independent118checks passed. Allfive completed A candidates have been compared by the prepared selector.
-- NoactualDsplit/lock/training/outcome orV011finalfit/CSVexists.
-- Confirmation/final notebooks frozen:23/20 protocolchecks pass, independent reviews complete.
-- Prepared source payload and sequential backup guardian are under outputs/confirmation_v011/setup_helpers. **Not dispatched.**
-- Livepod **v2gao-2729938**, n06GTX1080Ti11GB, runningidle. Started3:16:48PM; expectedleaseend9:16:48PMPacific. Recheckliveclock/state.
-- Payload and context backup are staged onlogin under .pa3-setup-control.gty67K/v011-deploy-20261105; see CONTINUE_HERE.md for exactresumecommand.
-- Existing data/models/predictions/logs stay in this workspace and persistentcoursehome. Switching Codexaccountsdoesnotrequire rerunning setup.
+- Accepted official MAE.18550 remains preserved. Best provisional A candidate.1908510292 (median.09816378355): deep.5; compact/curve/memory/offset .125 each.
+- Live pod v2gao-2729938, n06GTX1080Ti11GB; lease began3:16:48PM and is expected to end9:16:48PM Pacific. Idle at initial resumed check.
+- Frozen confirmation/final source hashes and every deployment member verified locally.
+- Prepared sources deployed for prelaunch review. V009 archived evidence mirror restored from original SHA-verified47-file archive at the paths required by V012 provenance. No model/selection/source changes.
+- A-only prelaunch selector is being validated with CSV parsing forcibly blocked before D dispatch. D and final progress will be recorded below after actual start.
+- Full confirmation then conditional all-data pipeline remains authorized; no new model code, data download or repeated screens.
+
+Dispatched the pinned sequential pipeline on the existing pod around4:36PM Pacific.
+A-onlyprelaunch passedall5candidates/114inputhashes withCSVparsingblocked,
+selecting deep_half_compact_curve_memory_offset and allfivefrozenprefixes.
+Serverrunnerbeganconfirmation; no source/promotion-rule changes.
