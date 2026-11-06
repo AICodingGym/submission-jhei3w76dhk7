@@ -1,0 +1,10 @@
+{
+  "genuine_mistake": "Final reuse precheck compared legacy canonical lock digest with raw file SHA256",
+  "old_source_sha256": "f81befd83ede7d65dbce816f430f028256b140cc16903ace047205029b22b83a",
+  "revised_source_sha256": "35abc3371ddaf717ca3fc7ff908f4e06517e642c0d0fc6b089342870f533c6de",
+  "expected_legacy_digest": "244c1a53936b227c2bb2f361777f7cfdb4b1667584aa21218b12c09ea8d67026",
+  "correct_convention": "SHA256(json.dumps(lock excluding lock_sha256, sort_keys=True).encode())",
+  "preserved_all_model_data_recipe_source_checks": true,
+  "no_all_data_fit_started_before_fix": true,
+  "D_choice_and_result_unchanged": true
+}
