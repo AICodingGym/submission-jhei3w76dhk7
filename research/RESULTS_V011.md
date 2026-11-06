@@ -1,6 +1,6 @@
 # V011 verified results
 
-Updated November 6, 2026, 6:27 AM Pacific. Final server artifacts are awaiting a renewed password/Duo connection; completion and a new official score are not yet verified.
+Updated November 6, 2026, 6:38 AM Pacific. Final fitting and local artifact verification are complete; official submission is next.
 
 | Evaluation | Previous pair mean MAE | Frozen five-member mean MAE | Relative improvement |
 | --- | ---: | ---: | ---: |
@@ -15,8 +15,10 @@ Median point absolute error was 0.098163784 on A and 0.100096941 on D. These des
 
 The best accepted official Gym MAE remains **0.18550**, preserved in `research/submission_receipt_v005_final.json`. Validation and official test scores use different breaths and cannot be directly compared as evidence of improvement.
 
-Final all-approved fitting uses 67,905 labeled breaths. The last verified live observation on November 5 had curve complete (193 epochs), memory complete (191 epochs), and offset at 16/193 epochs. Accepted all-data compact/deep checkpoints were verified for reuse. No final-stage completion, new CSV, or new official submission has been retrieved locally yet. The server pipeline runs independently of the Mac and should archive results before releasing its idle GPU; actual state must be checked after login.
+Final all-approved fitting used 67,905 labeled breaths. Curve completed 193 epochs in 38.85 minutes, memory 191 in 47.92 minutes, and offset 193 in 41.90 minutes. Accepted all-data compact/deep checkpoints were verified for reuse. The pipeline finished November 5 at 10:58 PM Pacific, and its guardian verified the archive before releasing the idle GPU. No pods remain. Final refitting has no independent holdout.
+
+The 129-file archive (180,449,172 bytes) passed every per-file hash and safe-member check. Its SHA256 is `3415bb3005a9dcd4f1c7df45791efc3b5b0039ea6c96253b19306ed64a939ff6`. An independent final audit passed 146 checks, including approved data/checkpoint/source hashes, all-training counts, frozen epoch/LR budgets, preprocessing equality, exact native weighted predictions and CSV alignment. See `research/final_review_v011.json`. The final CSV contains 603,600 rows; SHA256 `c344a485f5ef1290aadf5dfd379333009efab674b7ccdff6f361e225a4b8b77a`.
 
 One genuine operational error was corrected before final fitting: the verifier compared a legacy canonical JSON lock digest with a raw file digest. The corrected verifier checks the original canonical convention and rejects changed content. Previous sources/logs were retained. Model recipes, D evidence, and frozen weights were unchanged.
 
-Next: renew DataHub access, retrieve and verify the archive, audit all-data training provenance and exact test/sample CSV alignment, then submit the validated CSV using the existing authorization. Preserve the 0.18550 artifact regardless of the new score.
+Next: submit the verified CSV using the existing authorization and record its official receipt. Preserve the 0.18550 artifact regardless of the new score.

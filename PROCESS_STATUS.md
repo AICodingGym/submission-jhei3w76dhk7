@@ -1,5 +1,7 @@
 # Process map
 
+November 6, 6:38 AM Pacific: retrieved completed V011 final fits. Pipeline exited 0 at November 5, 10:58 PM Pacific; verified 129-file/180,449,172-byte archive SHA `3415bb3005a9dcd4f1c7df45791efc3b5b0039ea6c96253b19306ed64a939ff6`. Guardian released pod2927534; no pods remain. All 67,905 breaths were used for curve193/memory191/offset193; verified accepted compact/deep reused. Independent final audit146/146 passed, including source/data/model hashes, frozen recipe/budgets, native blend and exact603600-row CSV alignment. New CSV SHA `c344a485f5ef1290aadf5dfd379333009efab674b7ccdff6f361e225a4b8b77a`; submission is next. Original official.18550 artifact unchanged.
+
 November 6, 6:26 AM Pacific: DataHub requires fresh password/Duo authentication. Final server completion has not been retrieved; the user has been given the renewal command. The last verified observation had curve and memory final fits complete and offset at 16/193 epochs. Detached work is not cancelled. See `research/RESULTS_V011.md` for verified A/D results and the remaining retrieval/audit/submission steps. No new official score is available locally.
 
 November5 evening Pacific: grouped D confirmation passed.
