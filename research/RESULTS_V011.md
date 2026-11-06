@@ -1,6 +1,6 @@
 # V011 verified results
 
-Updated November 6, 2026, 6:38 AM Pacific. Final fitting and local artifact verification are complete; official submission is next.
+Updated November 6, 2026, morning Pacific. Final fitting, verification and official submission are complete. **New official Gym MAE: 0.18025**, improving on 0.18550 by 0.00525 (2.83%). Receipt: `research/submission_receipt_v011_final.json`.
 
 | Evaluation | Previous pair mean MAE | Frozen five-member mean MAE | Relative improvement |
 | --- | ---: | ---: | ---: |
@@ -13,7 +13,7 @@ The frozen blend is deep BiLSTM 0.5, with original compact, curve-consistency, l
 
 Median point absolute error was 0.098163784 on A and 0.100096941 on D. These describe typical errors; they are not official mean MAE scores and do not establish a 0.10 mean MAE result.
 
-The best accepted official Gym MAE remains **0.18550**, preserved in `research/submission_receipt_v005_final.json`. Validation and official test scores use different breaths and cannot be directly compared as evidence of improvement.
+The best official Gym MAE is now **0.18025**. The previous **0.18550** result, CSV and checkpoints remain preserved, with its original receipt at `research/submission_receipt_v005_final.json`. Validation and official test scores use different breaths; compare old versus new within the same evaluation.
 
 Final all-approved fitting used 67,905 labeled breaths. Curve completed 193 epochs in 38.85 minutes, memory 191 in 47.92 minutes, and offset 193 in 41.90 minutes. Accepted all-data compact/deep checkpoints were verified for reuse. The pipeline finished November 5 at 10:58 PM Pacific, and its guardian verified the archive before releasing the idle GPU. No pods remain. Final refitting has no independent holdout.
 
@@ -21,4 +21,4 @@ The 129-file archive (180,449,172 bytes) passed every per-file hash and safe-mem
 
 One genuine operational error was corrected before final fitting: the verifier compared a legacy canonical JSON lock digest with a raw file digest. The corrected verifier checks the original canonical convention and rejects changed content. Previous sources/logs were retained. Model recipes, D evidence, and frozen weights were unchanged.
 
-Next: submit the verified CSV using the existing authorization and record its official receipt. Preserve the 0.18550 artifact regardless of the new score.
+The verified CSV was submitted using the existing authorization. Gym returned 0.18025 and reported that source was pushed to the competition branch. The CLI log is `outputs/confirmation_v011/final_all/submission_cli.log`; the new receipt records CSV/model-manifest/log hashes and validation evidence. All previous artifacts remain preserved. No training or queued GPU jobs remain. Mean MAE 0.10 has not been achieved.

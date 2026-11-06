@@ -1,5 +1,11 @@
 # Continue this project here
 
+## Current status override — November 6, 2026
+
+V011 has completed. New official Gym **MAE0.18025**, improving on the preserved0.18550 result by2.83%. See `research/RESULTS_V011.md`, `research/submission_receipt_v011_final.json` and `PROCESS_STATUS.md` first. All five cold D fits completed and confirmed the frozen ensemble:0.196962270 versus reference0.203508566. Independent D audit211/211 passed. All-approved final curve193/memory191/offset193 fits completed; accepted all-data compact/deep reused after exact checks. Final artifact audit146 plus5 full-configuration checks passed before submission. New CSV603600rows SHA `c344a485f5ef1290aadf5dfd379333009efab674b7ccdff6f361e225a4b8b77a` is at `outputs/confirmation_v011/final_all/submission.csv`. Final source codeSHA `35abc3371ddaf717ca3fc7ff908f4e06517e642c0d0fc6b089342870f533c6de` fixes only the documented legacy canonical-lock verifier. Original pre-fix sources/logs remain preserved.
+
+No current GPU pod or queued training remains. Guardian archived and per-file verified all results before deleting pod2927534. Recovery archive under `outputs/confirmation_v011/completed_recovery_archive/`, SHA `3415bb3005a9dcd4f1c7df45791efc3b5b0039ea6c96253b19306ed64a939ff6`,129files/180449172bytes. Do not rerun D or final fitting. Mean MAE0.10 has not been achieved; the0.098 A median was not an official score. Earlier account-migration instructions below and the three HANDOFF documents describe a historical checkpoint, not current live state.
+
 Prepared November 5, 2026, afternoon Pacific, for a move to another Codex account.
 Read this file before performing setup or launching experiments. This is a record
 of user instructions, work, evidence and remaining actions, not an internal reasoning trace.
