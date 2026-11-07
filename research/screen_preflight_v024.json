@@ -1,0 +1,16 @@
+{
+  "status": "source_prepared_before_approved_A_fits",
+  "created_utc": "2026-11-07T21:26:47.698440+00:00",
+  "source_code_sha256": "bb0fb51555f1c931fcdab683f2d46bb7fb6f34ef1e797bd1af5f97790e8738ee",
+  "protocol_sha256": "4b18cf799c974bbfae02bce20dc65bdc42f9668c17d5fd809839090c0e2ccbe5",
+  "checks": {
+    "driver_compiles": true,
+    "default_inert": true,
+    "no_old_mixup_or_onehot_path": true,
+    "stable_factory_module": true,
+    "all_44_CPU_checks_pass": true
+  },
+  "actual_GPU_preflight_completed": false,
+  "approved_data_fits": 0,
+  "deployment_payload_prepared": false
+}

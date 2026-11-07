@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-07T21:30:12.563610+00:00",
+  "component_pins_match": true,
+  "driver_style_import_factory_identity_matches_saved_CPU_checkpoint": true,
+  "factory_module": "ventilator_v024_components",
+  "genuine_operational_error": "First identity validation command used system python3, which lacks torch, and failed before any source/data load. Repeated using project .venv/bin/python successfully. No model source, protocol, proof or data fit changed."
+}
