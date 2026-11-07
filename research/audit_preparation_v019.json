@@ -1,0 +1,11 @@
+{
+  "status": "prepared_not_executed",
+  "created_utc": "2026-11-07T08:08:45.960656+00:00",
+  "file": "outputs/controlled_experiments_v019/review/audit_A_v019.py",
+  "sha256": "6a3e1d92413122d387b8a6507efc356681829d6b780b7e399c6de2863175498f",
+  "checks": [
+    "Python parse"
+  ],
+  "actual_V019_A_outcome_reads": 0,
+  "model_fitting_or_inference": false
+}

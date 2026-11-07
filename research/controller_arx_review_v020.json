@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-07T08:04:59.692531+00:00",
+  "checks": {
+    "decay_sum_constant_reference:physical_identity": true,
+    "decay_sum_linear_step_reference:physical_identity": true,
+    "decay_dt_constant_reference:physical_identity": true,
+    "frozen_protocol": true,
+    "original_Afit_only": true,
+    "only_sampled_breaths": true,
+    "decay_sum_constant_reference:0:training_only_RANSAC64": true,
+    "decay_sum_constant_reference:0:ordinary_least_squares": true,
+    "decay_sum_linear_step_reference:0:training_only_RANSAC64": true,
+    "decay_sum_linear_step_reference:0:ordinary_least_squares": true,
+    "decay_dt_constant_reference:0:ordinary_least_squares": true,
+    "decay_dt_constant_reference:0:training_only_RANSAC64": true,
+    "decay_dt_constant_reference:1:ordinary_least_squares": true,
+    "decay_dt_constant_reference:1:training_only_RANSAC64": true,
+    "decay_sum_constant_reference:1:ordinary_least_squares": true,
+    "decay_sum_constant_reference:1:training_only_RANSAC64": true,
+    "decay_sum_linear_step_reference:1:ordinary_least_squares": true,
+    "decay_sum_linear_step_reference:1:training_only_RANSAC64": true,
+    "gate_exact": true,
+    "predeclared_RANSAC_selection_corrected": true
+  },
+  "check_count": 20,
+  "source_code_sha256": "fd0cbfb776b05175f84a706d53ff5e74eb75f43f8d9242882325ca0a48bcbeaa",
+  "summary_sha256": "5214637fd8f81521c98910ec83fd369b9fcd7b07c05154945fb935f2bd286d41",
+  "best_near_exact_count": 31,
+  "sample_breaths": 576,
+  "feasibility_gate_passed": false,
+  "E_resampling_overlap": 72,
+  "original_A_validation_overlap": 0,
+  "interpretation": "No input-only pressure predictor or pressure MAE. Exact gate failed; no promotion. Original A validation excluded. E resampling is inside Afit and is not a pristine unseen-label test.",
+  "corrections": [
+    "Initial RANSAC physical-first ranking corrected to declared fit-inlier/median ranking; old source/results preserved",
+    "Earlier V015 documentation incorrectly claimed E-validation exclusion; actual576-Afit sample overlaps72E-resampling breath labels. No E prediction score was used by the controller diagnostics."
+  ]
+}

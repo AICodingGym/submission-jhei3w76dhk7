@@ -1,0 +1,56 @@
+{
+  "schema": "v020-training-only-decay-controller-feasibility-v1",
+  "created_utc": "2026-11-07T07:58:54.013011+00:00",
+  "priority": "Updated user objective: inspire methods from ranked winner1 first, then2,3,etc. This diagnostic addresses controller matching shared by reports S01/S02/S04.",
+  "source_document": "../kagglediscussion.md",
+  "source_document_sha256": "195e535ce76460231654b2faeb5805d49b52f7fb2b679f545e0813c091484288",
+  "source_scope": "User-provided synthesis only; no linked solution code, original Kaggle data or pretrained models downloaded; equations independently derived.",
+  "approved_train_sha256": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+  "sample_source": "outputs/controller_feasibility_v015/summary.json",
+  "sample_source_sha256": "8d9f4429694587644491804d3f43de0c74f8cde81289557b74e62d63c5dfe687",
+  "original_A_split_file": "outputs/improvements_v005/sequence/split_breath_ids.npz",
+  "A_split_file_sha256": "1bb6143f16b7b8834a99a17495e9c05e8f52e6a00a797710f0bfba91ba8ffa08",
+  "sample_training_breaths": 576,
+  "same_sample_as_V015": true,
+  "sample_balance": 64,
+  "pressure_parse": "Only the576original-Afitbreaths, rawfloat64; skip every other breath before parsing pressure",
+  "families": [
+    "decay_sum_constant_reference",
+    "decay_sum_linear_step_reference",
+    "decay_dt_constant_reference"
+  ],
+  "pressure_lags": [
+    0,
+    1
+  ],
+  "estimators": [
+    "ordinary_least_squares",
+    "training_only_RANSAC64"
+  ],
+  "minimum_eligible_points": 14,
+  "chronological_fit_fraction": 0.7,
+  "minimum_held_control_points": 3,
+  "clipped_u_exclusion": [
+    1e-06,
+    99.999999
+  ],
+  "maximum_condition": 10000000000.0,
+  "RANSAC_draws": 64,
+  "RANSAC_seed": 20262001,
+  "RANSAC_selection": "Fit portion only: maximize absolute-control-residual<1e-4 count, then minimize fit median absolute residual; never select using later control rows.",
+  "physical_coefficient_tolerance": 1e-06,
+  "reference_pressure_range": [
+    0.0,
+    100.0
+  ],
+  "near_exact_held_median_control_residual": 0.0001,
+  "minimum_held_control_inlier_fraction": 0.8,
+  "promotion_fraction_of_576_training_breaths": 0.1,
+  "diagnostic_units": "valve-control units, NOT pressure MAE",
+  "next_if_pass": "Develop input-only reconstruction with training-derived pressure grid and fresh group evaluation; no labels may become ordinary inference inputs.",
+  "no_A_validation_pressure_reads": true,
+  "no_test_data_reads": true,
+  "no_pressure_predictor": true,
+  "no_GPU_work": true,
+  "no_submission": true
+}
