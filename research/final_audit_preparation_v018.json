@@ -1,0 +1,12 @@
+{
+  "status": "source_prepared_not_executed",
+  "created_utc": "2026-11-07T07:02:05.074769+00:00",
+  "file": "outputs/confirmation_v014/review/audit_final_v018.py",
+  "sha256": "d60c1aebd3bf86c6bf664e9aa8277f5f344b09fb40f9ed98b011804fdc2199a6",
+  "checks": [
+    "Python parse"
+  ],
+  "actual_final_results_read": false,
+  "model_fits_or_inference": false,
+  "scope": "Full approved training feature/statistics rebuilding, six checkpoint recipes/budgets/provenance, independent output policy and exact CSV contract"
+}
