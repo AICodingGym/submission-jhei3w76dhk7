@@ -1,0 +1,29 @@
+{
+  "status": "completed_archive_recovered_and_independently_audited",
+  "recorded_utc": "2026-11-07T15:43:38.887771+00:00",
+  "training_worker_exit_code": 0,
+  "training_completed_utc": "2026-11-07T12:36:30.310009+00:00",
+  "archive_file": "outputs/controlled_experiments_v019/completed_archive/pipeline-archive-recovered.tar.gz",
+  "archive_bytes": 180006932,
+  "archive_sha256": "f823e55f72c932c084bf11ff90841d08773d7c72b6d74cb3b85b39ea35a908f2",
+  "archive_members": 70,
+  "partial_transfer_bytes": 176711163,
+  "missing_partial_bytes": 3295769,
+  "transfer_error": "kubectl cp unexpected EOF at2026-11-07T12:37:48Z",
+  "old_pod_reason": "DeadlineExceeded",
+  "old_pod_container_exit_code": 143,
+  "old_pod_finished_utc": "2026-11-07T13:48:53Z",
+  "recovery_pod": "v2gao-501472",
+  "recovery_GPU_count": 0,
+  "recovery_limits": {
+    "cpu": "2",
+    "memory": "4Gi"
+  },
+  "no_retraining": true,
+  "local_and_remote_all_file_hashes_verified": true,
+  "independent_A_audit_checks": 98,
+  "all_pods_released": true,
+  "no_candidate_eligible": true,
+  "official_best_preserved": 0.17427,
+  "needed_operations_fix": "Retry transient status/copy failures; verify size/SHA/all archive members before release; preserve partial attempts and never auto-allocate replacements"
+}

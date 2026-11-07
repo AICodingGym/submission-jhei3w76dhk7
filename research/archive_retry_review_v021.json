@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checks": [
+    "truncated transfer retried",
+    "complete bytes with EOF exit accepted only after full verification",
+    "partial attempts preserved",
+    "valid existing archive reused without copying",
+    "missing proof recreated from full verification",
+    "unverified copies never published or released"
+  ],
+  "helper_sha256": "becb28972b980532934f7c645028ec6a6d386dc0a48b0717dbe44eacffb7d56c",
+  "synthetic_only": true,
+  "no_pod_mutations": true,
+  "guardian_file": "outputs/operations_v021/guardian_v021.sh",
+  "guardian_sha256": "7ace8139934aad8ce02bb1ffd5929424f2c0a8c3f00e55c4af9a18970c1e8f4f",
+  "guardian_shell_syntax_passed": true,
+  "guardian_not_deployed": true,
+  "notes": "Future guardian retries transient pod/worker observation and snapshot responses, accepts any numeric terminal worker code for archival, and calls the verified-copy helper before releasing idle GPU. No automatic resource allocation."
+}
