@@ -1,0 +1,49 @@
+{
+  "status": "running",
+  "created_utc": "2026-11-07T05:17:34.822422+00:00",
+  "pod": "v2gao-4079254",
+  "node": "its-dsmlp-n05.ucsd.edu",
+  "pod_start_utc": "2026-11-07T05:14:57Z",
+  "expected_six_hour_lease_end_utc": "2026-11-07T11:14:57+00:00",
+  "login_stage": "$HOME/.pa3-setup-control.gty67K/v018-final-20261106",
+  "source_code_sha256": "b960eb2976962a1d8a2fee7b6a9633fba74b018190a07d9b89977eea0768b06d",
+  "payload_bytes": 114607,
+  "payload_sha256": "fd9c9767025889dedc32d8fea323acd6994e5b6d3338d74c4e2503519b52191e",
+  "gates": {
+    "PA3_V018_PRIMARY_SHA256": "6e6051a017cff11d18c2b8624c2aa6ea714277c0314786c0d5af83a29453300c",
+    "PA3_V018_PRIMARY_AUDIT_SHA256": "812d8254ecec9cbcfcb1dcf7194e70b550b586a0b6586ad99b55bfdc7fa8bfe6",
+    "PA3_V018_SECONDARY_SHA256": "bb4224f2e3d130d54bae0a0c3bd1a5b5f3c8cbb0d53e3d76002772fcc993eedc",
+    "PA3_V018_SECONDARY_AUDIT_SHA256": "4d256d5ea53958f05a233561f506e5e4d8095c614a3d6ad708acd203a8af133a",
+    "PA3_V018_SOURCE_SHA256": "b960eb2976962a1d8a2fee7b6a9633fba74b018190a07d9b89977eea0768b06d"
+  },
+  "independent_primary_checks": 173,
+  "independent_secondary_checks": 16,
+  "observed_final_fit_started_utc": "2026-11-07T05:15:40.071824+00:00",
+  "actual_CUDA": "NVIDIA GeForce GTX1080Ti,93percent utilization at first training observation",
+  "actual_all_training_reuse_preflight_passed_before_training": true,
+  "all_training_breaths": 67905,
+  "deep_curve_fixed_epochs": 196,
+  "reused_accepted_members": [
+    "deep",
+    "original_compact",
+    "curve",
+    "memory",
+    "offset"
+  ],
+  "no_final_holdout": true,
+  "official_best_preserved": 0.18025,
+  "output_dir": "outputs/confirmation_v014/final_all_v018",
+  "operational_helper_sha256": {
+    "execute_final_v018.py": "3088c436facd005b4bc3f287425d6aa7b626b53be7eccd9ae24acfaa03aa793c",
+    "snapshot_v018.py": "00fb4223c94005ba27804057ca1cd7ff4d32a242a49360b83cf16250d0425b66",
+    "build_payload_v018.py": "17582fe0a8f7ff5eef5e0f2509ecc87a7ebcafa05de650edf68df0fdd0ae3bd5",
+    "start_v018.sh": "21255d9ede7826fc7ea68bc6dec8793e6007c95f74d14e157939965be28708f9",
+    "verify_archive_v018.py": "e34b0304487f589b0bb1e106fc07d6910ea80528f5a91d5d9f3cab6311c040b2",
+    "deploy_v018.py": "16f59049ec6917ffafaf065278e22b4a3762115a692655027dd3b7147087f352",
+    "guardian_v018.sh": "c21369f7cfb744bcf682cb71af4ffe277d92fb95995a2c460d8c00694cc32c85"
+  },
+  "archive_then_release_gpu": true,
+  "no_automatic_submission": true,
+  "training_continues_during_Mac_sleep": true,
+  "model_source_unchanged": true
+}

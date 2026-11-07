@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-07T05:13:14.137416+00:00",
+  "check_count": 16,
+  "checks": {
+    "primary_passed_and_bound": true,
+    "protocol_bound": true,
+    "prospective_timing": true,
+    "timing_report": true,
+    "group_disjoint": true,
+    "training_only_grid": true,
+    "independent_integer_weight_median_grid": true,
+    "prediction_hashes": true,
+    "exact_rows": true,
+    "native_mean": true,
+    "native_median": true,
+    "six_member_mean:score": true,
+    "six_member_mean:independent_bootstrap": true,
+    "five_member_baseline:score": true,
+    "five_member_baseline:independent_bootstrap": true,
+    "fixed_acceptance": true
+  },
+  "confirmation_result_sha256": "bb4224f2e3d130d54bae0a0c3bd1a5b5f3c8cbb0d53e3d76002772fcc993eedc",
+  "secondary_passed": true,
+  "native_mean_MAE": 0.19479229679931323,
+  "comparisons": {
+    "six_member_mean": {
+      "gain": 0.00281365477995954,
+      "difference": -0.002813654779959528,
+      "low": -0.004246089108746484,
+      "high": -0.0014540483057515036,
+      "seed": 20261701,
+      "draws": 1000,
+      "unit": "whole breath",
+      "point_weighted": true
+    },
+    "five_member_baseline": {
+      "gain": 0.00811675587475813,
+      "difference": -0.00811675587475811,
+      "low": -0.010012878972397827,
+      "high": -0.00630109055576033,
+      "seed": 20261701,
+      "draws": 1000,
+      "unit": "whole breath",
+      "point_weighted": true
+    }
+  },
+  "audit_source_sha256": "865120515ba5f72858085fe82a33bccf47ed9ff163a6efa90b7221e3ae246a4a",
+  "no_fits_or_inference": true,
+  "no_policy_search": true
+}
