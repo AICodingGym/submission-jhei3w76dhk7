@@ -1,0 +1,34 @@
+{
+  "status": "deployment_prepared_not_dispatched",
+  "created_utc": "2026-11-07T07:33:51.094056+00:00",
+  "source_code_sha256": "f7f7e39e71ee9601a2e8fef084333bed727d772ef497b2c164d8d919dc0795ae",
+  "protocol_sha256": "4953b71fdf2cab19f8ada746350f01f22de43046bc641b57399ff836cf7e4769",
+  "payload_file": "outputs/controlled_experiments_v019/setup_helpers/v019-deploy.tar.gz",
+  "payload_bytes": 5784665,
+  "payload_sha256": "e7a7b786df9899ce1cf04a5bdf7d7d8086dc2e7b1cc77b6b28aaf87f0d9f276c",
+  "payload_members": 33,
+  "helper_sha256": {
+    "execute_screen_v019.py": "a0cf589a7a2c9deb335344de416f4b7afa412b0561a37035f7fd227377da1fd2",
+    "course_preflight_v019.py": "28177fc058046331a509a44a47f5950d5006c9c2e6e86bbdf8e7900ccef81ed5",
+    "start_v019.sh": "3038b4eeebe2d5d6aa704dd16c92e200cf95969097f997f2547d21b825d5a2b2",
+    "snapshot_v019.py": "40f4d44b289029dc045e11840ab16fdde6b9fe740bc1c809436a341f0336cfd8",
+    "guardian_v019.sh": "82ad5d1d6991205c9b2e0328e3e314fe3c1471f013c695783d45534c62601419",
+    "deploy_v019.py": "d327b07c773097904c3d4a38001df780a376999fb43bc6d7f81c7ac4d7f65189",
+    "verify_archive_v019.py": "8bb6b3893328668ed1a58d2bf7745abee1e99e89580b32ceb639b3e02bc4191c"
+  },
+  "Python_compile_and_shell_syntax_passed": true,
+  "actual_CUDA_preflight_not_run": true,
+  "approved_data_model_fits": 0,
+  "resource_requests": 0,
+  "dispatch_rule": "Finish retrieving/auditing/submitting current V018 first; continue this frozen batch only if official target remains unmet. Do not alter hypotheses/weights/rates using official feedback.",
+  "resources": {
+    "gpus": 1,
+    "cpu_limit": 4,
+    "memory_limit_Gi": 16,
+    "training_threads": 4
+  },
+  "new_login_stage_not_created": true,
+  "guardian_takes_stage_and_pod_arguments": true,
+  "archive_before_release": true,
+  "no_automatic_submission": true
+}
