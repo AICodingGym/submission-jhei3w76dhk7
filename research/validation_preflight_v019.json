@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-07T07:12:46.099618+00:00",
+  "checks": {
+    "validation_metric_native": true,
+    "best_checkpoint_restored": true,
+    "selected_epoch_prefix": true,
+    "training_only_scaler": true,
+    "three_epochs": true,
+    "all_epochs_auxiliary_logged": true,
+    "screen_default_inert": true
+  },
+  "component_code_sha256": "48e09c7fbe8ae1e843d39ed2093cc67a96a96c5bc36433f8081a616c034e6346",
+  "screen_source_code_sha256": "f7f7e39e71ee9601a2e8fef084333bed727d772ef497b2c164d8d919dc0795ae",
+  "approved_data_fits": 0,
+  "synthetic_only": true,
+  "actual_GPU_checks_pending": true
+}

@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-07T07:06:28.024802+00:00",
+  "checks": {
+    "base_parameters_identical": true,
+    "auxiliary_initialization_preserves_rng": true,
+    "pressure_forward_matches_base": true,
+    "breath_memory_resets": true,
+    "native_scaled_loss_formula": true,
+    "auxiliary_gradients_exist": true,
+    "phase_and_first_step_ignored": true,
+    "expiration_labels_do_not_change_loss": true,
+    "no_adjacent_pairs_finite": true,
+    "zero_aux_training_pressure_control": true,
+    "intentional_interrupt": true,
+    "resume_exact_parameters": true,
+    "resume_optimizer_steps": true,
+    "objective_identity_saved": true,
+    "auxiliary_logging": true,
+    "reject_changed_loss_on_resume": true,
+    "label_free_native_inference": true,
+    "reject_changed_loss_on_load": true
+  },
+  "check_count": 18,
+  "component_code_sha256": "48e09c7fbe8ae1e843d39ed2093cc67a96a96c5bc36433f8081a616c034e6346",
+  "source_fingerprints": {
+    "feature_components_v005.ipynb": "eb19eed69eb54cd5d087a9a678cf98701fbe9bc1a3cf85016270754c014593a6",
+    "sequence_components_v005.ipynb": "e6698a7f6e931af8a066c227058203b7e29ada68624833b700293532a30bf1b2",
+    "training_components_v008.ipynb": "a65618d1886a7ad3d1753f1f752b449114a57dcb75084f4f6cd11fc084228bda",
+    "auxiliary_difference_components_v019.ipynb": "48e09c7fbe8ae1e843d39ed2093cc67a96a96c5bc36433f8081a616c034e6346"
+  },
+  "approved_data_fits": 0,
+  "approved_data_reads": 0,
+  "synthetic_only": true,
+  "actual_GPU_checks_pending": true
+}

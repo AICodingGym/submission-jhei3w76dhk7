@@ -1,0 +1,32 @@
+{
+  "status": "source_and_CPU_synthetic_preflight_passed_not_dispatched",
+  "created_utc": "2026-11-07T07:14:18.766756+00:00",
+  "protocol_sha256": "4953b71fdf2cab19f8ada746350f01f22de43046bc641b57399ff836cf7e4769",
+  "source_code_sha256": "f7f7e39e71ee9601a2e8fef084333bed727d772ef497b2c164d8d919dc0795ae",
+  "component_code_sha256": "48e09c7fbe8ae1e843d39ed2093cc67a96a96c5bc36433f8081a616c034e6346",
+  "component_checks": 18,
+  "validation_checks": 7,
+  "default_screen_inert": true,
+  "protocol_input_hashes_checked": 16,
+  "candidate_weights_checked": true,
+  "minimal_feature_names_order_checked": true,
+  "CUDA_preflight_helper": "outputs/controlled_experiments_v019/setup_helpers/course_preflight_v019.py",
+  "CUDA_preflight_helper_sha256": "28177fc058046331a509a44a47f5950d5006c9c2e6e86bbdf8e7900ccef81ed5",
+  "actual_GPU_preflight_pending": true,
+  "approved_data_fits": 0,
+  "approved_data_results": 0,
+  "operational_deployment_payload_pending": true,
+  "prior_final_v018_unchanged": true,
+  "genuine_prototype_errors": [
+    {
+      "error": "Earlier epochs lacked auxiliary diagnostics",
+      "fix": "Mutate authoritative history before checkpoint deep copy",
+      "preserved": "outputs/controlled_experiments_v019/preflight/failed_logging_v1"
+    },
+    {
+      "error": "Numpy boolean in validation preflight report was not JSON serializable",
+      "fix": "Convert check values to native bool; verified saved artifacts without another fit",
+      "preserved": "outputs/controlled_experiments_v019/preflight_validation/export_failure.json"
+    }
+  ]
+}
