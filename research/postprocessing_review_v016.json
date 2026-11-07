@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "check_count": 21,
+  "checks": {
+    "frozen_protocol": true,
+    "toy_weighted_interval": true,
+    "reject_nonfinite": true,
+    "fit_val_disjoint": true,
+    "row_alignment": true,
+    "train_only_codebook": true,
+    "reference_hash": true,
+    "reference_MAE": true,
+    "independent_weighted_median_definition_256_points": true,
+    "nearest_training_pressure_codebook:exact_policy": true,
+    "nearest_training_pressure_codebook:score": true,
+    "nearest_training_pressure_codebook:independent_bootstrap": true,
+    "nearest_training_pressure_codebook:gate": true,
+    "weighted_median_midpoint:exact_policy": true,
+    "weighted_median_midpoint:score": true,
+    "weighted_median_midpoint:independent_bootstrap": true,
+    "weighted_median_midpoint:gate": true,
+    "weighted_median_midpoint_then_nearest_training_pressure_codebook:exact_policy": true,
+    "weighted_median_midpoint_then_nearest_training_pressure_codebook:score": true,
+    "weighted_median_midpoint_then_nearest_training_pressure_codebook:independent_bootstrap": true,
+    "weighted_median_midpoint_then_nearest_training_pressure_codebook:gate": true
+  },
+  "selected": {
+    "name": "weighted_median_midpoint_then_nearest_training_pressure_codebook",
+    "MAE": 0.18292209456473527,
+    "median_absolute_error": 0.07030296325683594,
+    "gain": 0.0033421428553973287,
+    "bootstrap_95": [
+      -0.004566308001583076,
+      -0.0022364000194397405
+    ],
+    "eligible": true,
+    "prediction_file": "outputs/postprocessing_screen_v016/weighted_median_midpoint_then_nearest_training_pressure_codebook_A_predictions.npy",
+    "prediction_sha256": "a308ddf9df0f14732d6c44c2e2cb2af1a655c5d0ce6b5f8d43ee415c346187ac"
+  },
+  "screen_results_sha256": "22715ab9533b147de33ac738fd352eb87ce9de238b21e6b7026335d8db4a7abc",
+  "protocol_sha256": "e91b66f4d7047dc0991f7735955d3f3a594073806bc443e206720f641b73b040",
+  "component_code_sha256": "4ee67389039846557d74cc1c55884c9a99f0e571745af4febefa4b5c3bce6a0b",
+  "no_model_fits": true,
+  "no_E_outcome_access": true
+}

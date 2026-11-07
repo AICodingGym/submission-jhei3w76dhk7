@@ -1,0 +1,49 @@
+{
+  "schema": "v017-pre-outcome-secondary-E-confirmation-v1",
+  "created_utc": "2026-11-07T02:25:08.402487+00:00",
+  "source_note": "Additional fixed postprocessing hypothesis preregistered before E outcomes; primary V014 pipeline remains immutable.",
+  "selected_policy": "weighted_median_midpoint_then_nearest_training_pressure_codebook",
+  "A_MAE": 0.18292209456473527,
+  "A_reference_MAE": 0.1862642374201326,
+  "A_gain": 0.0033421428553973287,
+  "weights": {
+    "original_compact": 0.125,
+    "curve": 0.125,
+    "memory": 0.125,
+    "offset": 0.125,
+    "deep": 0.25,
+    "deep_curve": 0.25
+  },
+  "input_hashes": {
+    "research/postprocessing_protocol_v016.json": "e91b66f4d7047dc0991f7735955d3f3a594073806bc443e206720f641b73b040",
+    "research/postprocessing_review_v016.json": "e3048c98f68437698d9796067c9101d7a1cfd929f507c4544713554bf750e20e",
+    "research/postprocessing_components_v016.ipynb": "489550954a13a3dfe8f4002fd1b440991533cf0040175f8e8f89eb53547a5f03",
+    "outputs/postprocessing_screen_v016/results.json": "22715ab9533b147de33ac738fd352eb87ce9de238b21e6b7026335d8db4a7abc",
+    "research/confirmation_protocol_v014.json": "dee5840ee16262dc282ebeb98643cb24e312e55761634f8fae074ed6c921f6f1",
+    "confirmation_v014.ipynb": "a2e19547e4e5cf7a69908882af581c237d806ac77243e2928da6083b5acfdc4c"
+  },
+  "component_code_sha256": "4ee67389039846557d74cc1c55884c9a99f0e571745af4febefa4b5c3bce6a0b",
+  "E_source_code_sha256": "0f22f8168da6e9304c541ab8415c573d6ad4efdf31d5a1391619448c8d478719",
+  "E_protocol_sha256": "dee5840ee16262dc282ebeb98643cb24e312e55761634f8fae074ed6c921f6f1",
+  "timing_gate": "created_utc must precede first recorded cold_E_fit_started for deep_curve, which source-pinned V014 runs before any E prediction or scoring; also precede E completed_utc",
+  "must_have_independent_primary_E_audit": true,
+  "require_primary_E_pass": true,
+  "reuse": "Only already cold E-fit trained models that exclude all E-validation breaths; never original A models.",
+  "codebook": "unique float32 inspiratory pressures from E-fit only; derive anew, never reuse A codebook",
+  "comparisons": [
+    "selected_policy versus fixed six-member E mean",
+    "selected_policy versus fixed five-member E baseline"
+  ],
+  "acceptance": "positive native mean MAE gain and whole-breath bootstrap upper95<0 for BOTH fixed comparisons; primary E must also pass",
+  "bootstrap_seed": 20261701,
+  "bootstrap_draws": 1000,
+  "no_alternative_V016_policy_after_failure": true,
+  "no_weight_or_threshold_fitting_on_E": true,
+  "no_model_retraining": true,
+  "primary_V014_source_weights_epochs_unchanged": true,
+  "if_timing_or_provenance_gate_fails": "No E confirmation claim for the secondary policy; require a separate split.",
+  "if_secondary_fails": "Do not promote any V016 policy; original independently predeclared V014 primary workflow is unchanged.",
+  "final_rule_if_confirmed": "Use the same fixed weighted median and nearest training-only grid on inspiratory test rows; use base fixed weighted mean on unscored u_out=1 rows; fit final grid on all approved labeled training breaths only.",
+  "no_automatic_submission": true,
+  "official_best_preserved": 0.18025
+}

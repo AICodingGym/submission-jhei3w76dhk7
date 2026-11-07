@@ -1,0 +1,36 @@
+{
+  "schema": "v016-fixed-A-postprocessing-screen",
+  "created_utc": "2026-11-07T02:19:16.194330+00:00",
+  "source_document_sha256": "195e535ce76460231654b2faeb5805d49b52f7fb2b679f545e0813c091484288",
+  "source_document_supplied_by_user": true,
+  "course_rule_conflict_recorded": "research/DISCUSSION_INSPIRED_ROADMAP_v015.md",
+  "reference": "V013 A-selected deep_curve_average, provisional until V014 E confirmation",
+  "reference_MAE": 0.1862642374201326,
+  "reference_array": "outputs/controlled_experiments_v013/deep_curve_average_A_predictions.npy",
+  "reference_sha256": "50f5260c4039cb781912e839ede5180d2db93e858fcfd57b3450b2efd509df2f",
+  "weights": {
+    "original_compact": 0.125,
+    "curve": 0.125,
+    "memory": 0.125,
+    "offset": 0.125,
+    "deep": 0.25,
+    "deep_curve": 0.25
+  },
+  "candidate_policies": [
+    "nearest_training_pressure_codebook",
+    "weighted_median_midpoint",
+    "weighted_median_midpoint_then_nearest_training_pressure_codebook"
+  ],
+  "codebook": "unique float32 inspiratory pressures from original A-fit only, never A-validation labels",
+  "weighted_median": "midpoint of the weighted median interval; no fitted model weights",
+  "bootstrap_seed": 20261601,
+  "bootstrap_draws": 1000,
+  "minimum_A_gain": 0.003,
+  "require_upper95_negative": true,
+  "current_E_pipeline_unchanged": true,
+  "no_current_E_outcome_reads": true,
+  "no_rescue_or_runner_up_if_primary_E_fails": true,
+  "separate_future_grouped_confirmation_required": true,
+  "official_best_preserved": 0.18025,
+  "model_fits": 0
+}
