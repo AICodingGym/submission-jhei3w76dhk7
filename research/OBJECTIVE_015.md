@@ -1,6 +1,6 @@
 # Active objective: official mean MAE at or below 0.15
 
-The user explicitly updated the active objective on November 6, 2026: try to reach 0.15 MAE first, then lower, using a broad range of methods. This is a target, not a guarantee. Median error does not satisfy it. Best accepted official score remains 0.18025 until a verified better submission is scored.
+The user explicitly updated the active objective on November 6, 2026: try to reach 0.15 MAE first, then lower, using a broad range of methods. This is a target, not a guarantee. Median error does not satisfy it. Best accepted official score is now0.17427 (V018; receipt submission_receipt_v018_final.json). The0.15target remains unmet.
 
 Continue the already frozen V014 cold E confirmation without changing its hypotheses, weights, epochs, split or acceptance rule. It directly serves this objective. See PROCESS_STATUS.md for actual pod/progress, and CONTINUE_HERE.md for recovery details. Preserve every earlier file and submission.
 
