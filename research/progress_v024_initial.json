@@ -1,0 +1,17 @@
+{
+  "observed_utc": "2026-11-07T21:42:38.440189+00:00",
+  "pod": "v2gao-823946",
+  "state": "Running",
+  "conv3_epoch": 13,
+  "epochs_per_arm": 200,
+  "last_epoch_seconds": 42.732564844191074,
+  "conv7_status": "pending sequential fit",
+  "estimated_first_finish_Pacific": "about 4 PM November7",
+  "estimated_full_screen_finish_Pacific": "about 6:20–6:40 PM November7",
+  "lease_end_Pacific": "7:31:28 PM November7",
+  "frozen_sources_and_gates_unchanged": true,
+  "raw_observation": {
+    "exit_code": 0,
+    "output": "NAME           READY   STATUS    RESTARTS   AGE   IP              NODE                     NOMINATED NODE   READINESS GATES\nv2gao-823946   1/1     Running   0          11m   10.39.225.245   its-dsmlp-n05.ucsd.edu   <none>           <none>\nutc 2026-11-07T21:42:38.440189+00:00\nCUDA_PROOF {'status': 'passed', 'checks': 51, 'GPU': 'NVIDIA GeForce GTX 1080 Ti'}\nconv3_curve epoch {'epoch': 13, 'epoch_seconds': 42.732564844191074, 'elapsed_seconds': 569.5618369467556} budget 200\n2026-11-07T21:39:46Z state=pending\n2026-11-07T21:40:48Z state=pending\n2026-11-07T21:41:50Z state=pending\n"
+  }
+}
