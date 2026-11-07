@@ -1,0 +1,17 @@
+{
+  "status": "prepared_not_executed",
+  "created_utc": "2026-11-07T03:02:52.861581+00:00",
+  "files": {
+    "outputs/confirmation_v014/review/audit_E.py": "651abe762cc0af3d482387673fda2c6c6c993662df420a16db50d8e016701e3f",
+    "outputs/confirmation_v014/final_v018_setup/build_payload_v018.py": "923f6a2fb881f864553c0063709499fa24287fc39892a9776a321d94adbcf2c0"
+  },
+  "checks": [
+    "both operational Python helpers parse",
+    "V8 payload schema checked against preserved actual checkpoint; metadata lives in v008"
+  ],
+  "actual_E_outcomes_read": false,
+  "actual_audit_run": false,
+  "final_payload_built": false,
+  "model_fits": false,
+  "note": "Builder refuses absent or failed primary/secondary independently bound audits. It generates reviewed-adapted preserving deployment/archive helpers and no resource requests. Run and review generated shell/helpers after gates, before deployment."
+}
