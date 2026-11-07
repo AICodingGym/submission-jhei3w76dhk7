@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-11-07T20:42:27.783818+00:00",
+  "scope": "Historical already completed V013 learning curve only; no new fit, V021 outcome, test score tuning or recipe change",
+  "source_file": "outputs/controlled_experiments_v013/deep_curve/epochs.jsonl",
+  "source_sha256": "4babd1532c1052aa699393797b576bfb3dd9dfe45f2fe3552778b722f3635d14",
+  "points": [
+    {
+      "epoch": 100,
+      "lr_used": 0.0007911788554752641,
+      "training_eval_inspiratory_mae": 0.20480277638494557,
+      "validation_inspiratory_mae": 0.28065486547946483,
+      "best_val_mae": 0.25814209626067136,
+      "best_epoch": 98
+    },
+    {
+      "epoch": 125,
+      "lr_used": 0.0004951630613242376,
+      "training_eval_inspiratory_mae": 0.1472726412607247,
+      "validation_inspiratory_mae": 0.23303342942755606,
+      "best_val_mae": 0.22929667668085513,
+      "best_epoch": 124
+    },
+    {
+      "epoch": 150,
+      "lr_used": 0.0002411557859278123,
+      "training_eval_inspiratory_mae": 0.11282190344462363,
+      "validation_inspiratory_mae": 0.2134689694303104,
+      "best_val_mae": 0.2134689694303104,
+      "best_epoch": 150
+    },
+    {
+      "epoch": 175,
+      "lr_used": 7.022305110212e-05,
+      "training_eval_inspiratory_mae": 0.09528656432105144,
+      "validation_inspiratory_mae": 0.2055127571839957,
+      "best_val_mae": 0.2055127571839957,
+      "best_epoch": 175
+    },
+    {
+      "epoch": 190,
+      "lr_used": 1.9747051993251426e-05,
+      "training_eval_inspiratory_mae": 0.09083176046371358,
+      "validation_inspiratory_mae": 0.20424598711273012,
+      "best_val_mae": 0.20424598711273012,
+      "best_epoch": 190
+    },
+    {
+      "epoch": 196,
+      "lr_used": 1.1562394452904822e-05,
+      "training_eval_inspiratory_mae": 0.09029808132188491,
+      "validation_inspiratory_mae": 0.2038295445051591,
+      "best_val_mae": 0.2038295445051591,
+      "best_epoch": 196
+    },
+    {
+      "epoch": 200,
+      "lr_used": 1e-05,
+      "training_eval_inspiratory_mae": 0.08975320441480887,
+      "validation_inspiratory_mae": 0.20389253154144832,
+      "best_val_mae": 0.2038295445051591,
+      "best_epoch": 196
+    }
+  ],
+  "best_validation_gain_epoch150_to175": 0.007956212246314709,
+  "best_validation_gain_epoch175_to200": 0.0016832126788365875,
+  "training_diagnostic_gain_epoch175_to200": 0.005533359906242569,
+  "training_diagnostic_is_2048_training_breath_sample": true,
+  "conclusion": "Deep curve model still improved late, but validation gains diminished and a substantial train-diagnostic/validation gap persisted. A bounded longer-training test is distinct from prior compact300 experiment, but does not justify promising a large MAE reduction or an unbounded longer run. Review completed V021 augmentation before committing GPU time; keep longer duration and changed LR schedule separate.",
+  "new_protocol_frozen": false,
+  "new_model_implemented": false,
+  "new_GPU_job_launched": false,
+  "access": "SSH still requires password/Duo; renewal request remains pending."
+}
