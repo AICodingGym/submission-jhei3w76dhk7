@@ -1,0 +1,18 @@
+{
+  "status": "frozen_before_approved_data_diagnostic",
+  "created_utc": "2026-11-07T21:15:24.280580+00:00",
+  "source_code_sha256": "0463dd70feee7636c4ce111872064a1ec4fce8941c3d5372efa477bc993a4429",
+  "component_code_sha256": "6ac59b9dab1e0049fa624db9ae9a25bc47a4e235f54455bf6bbc0015f5986fdf",
+  "protocol_sha256": "2c28eaf78fdcf94eed25b172bfef86c14168d81b4a73b086663f92dfbe7fba62",
+  "checks": {
+    "driver_compiles_and_default_inert": true,
+    "component_matches_frozen_plan": true,
+    "protocol_bound_by_driver": true,
+    "all_38_component_checks_pass": true,
+    "held_controls_only_scored_after_selection": true,
+    "no_GPU_import_or_fit": true,
+    "no_test_data_path": true
+  },
+  "actual_data_diagnostic_runs": 0,
+  "GPU_jobs_requested": 0
+}

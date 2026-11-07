@@ -1,0 +1,66 @@
+{
+  "source_document": "../kagglediscussion.md",
+  "source_document_sha256": "195e535ce76460231654b2faeb5805d49b52f7fb2b679f545e0813c091484288",
+  "approved_train_sha256": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+  "sample_source": "outputs/controller_feasibility_v015/summary.json",
+  "sample_source_sha256": "8d9f4429694587644491804d3f43de0c74f8cde81289557b74e62d63c5dfe687",
+  "original_A_split_file": "outputs/improvements_v005/sequence/split_breath_ids.npz",
+  "A_split_file_sha256": "1bb6143f16b7b8834a99a17495e9c05e8f52e6a00a797710f0bfba91ba8ffa08",
+  "schema": "v023-training-only-PI-versus-PID-feasibility-v1",
+  "created_utc": "2026-11-07T21:13:44.015205+00:00",
+  "hypothesis": "A derivative term in a stable discrete feedback controller could explain why the previous proportional/integral families matched few breaths. Test a nested PI/PID comparison on identical eligible rows; do not loosen prior near-exact thresholds.",
+  "provenance": "Independent equations inspired by supplied S01/S02 feedback-matching synthesis only; no linked solution code, original Kaggle data or pretrained solution downloaded.",
+  "component_file": "research/controller_pid_components_v023.ipynb",
+  "component_code_sha256": "6ac59b9dab1e0049fa624db9ae9a25bc47a4e235f54455bf6bbc0015f5986fdf",
+  "preflight_file": "research/controller_pid_preflight_v023.json",
+  "preflight_file_sha256": "7497462b47aa665f724c6a8efa1fcc08c8cb0abca7de2b31816556c048c7c8eb",
+  "sample_training_breaths": 576,
+  "sample_balance_per_RC": 64,
+  "same_sample_as_V015_and_V020": true,
+  "pressure_parse": "Raw float64 only for the 576 original-A-fit breaths; skip other breath rows before parsing pressure. Original A validation/test excluded. E was a resampling inside Afit; 72 sampled training breaths overlap its validation IDs, as already disclosed. This is not a fresh holdout evaluation.",
+  "families": [
+    "pi_constant",
+    "pi_linear",
+    "pid_constant",
+    "pid_linear"
+  ],
+  "pressure_lags": [
+    0,
+    1
+  ],
+  "estimators": [
+    "ordinary_least_squares",
+    "training_only_RANSAC64"
+  ],
+  "shared_eligible_rows": "All families require current/previous unclipped controls and all pressure lags within the same inspiratory breath; same chronological cut.",
+  "minimum_eligible_points": 18,
+  "chronological_fit_fraction": 0.7,
+  "minimum_fitting_points": 8,
+  "minimum_held_control_points": 3,
+  "clipped_u_exclusion": [
+    1e-06,
+    99.999999
+  ],
+  "maximum_condition": 10000000000.0,
+  "RANSAC_draws": 64,
+  "RANSAC_seed": 20262302,
+  "RANSAC_selection": "Fitting-control inlier count abs(residual)<1e-4, then fitting median absolute residual. Physical admissibility gates the selected candidate afterward. No held-control candidate selection or refit.",
+  "physical_coefficient_tolerance": 1e-06,
+  "reference_pressure_range": [
+    0.0,
+    100.0
+  ],
+  "near_exact_held_median_control_residual": 0.0001,
+  "minimum_held_control_inlier_fraction": 0.8,
+  "minimum_PID_near_exact_fraction_of_576": 0.1,
+  "minimum_PID_fraction_gain_over_matched_PI": 0.02,
+  "diagnostic_units": "Valve-control units using known training pressures, NOT pressure MAE or input-only recovery coverage.",
+  "gate": "A PID family/lag/estimator must meet both >=10% near-exact sample fraction and >=2 percentage-point improvement over the matched PI case. No threshold/family retuning on outcomes.",
+  "next_if_pass": "Develop and independently test an input-only pressure reconstruction with fit-only parameters/grid, then prospective grouped validation. Passing this conditional training diagnostic alone cannot promote a model or authorize a submission.",
+  "no_A_validation_pressure_reads": true,
+  "no_test_data_reads": true,
+  "no_pressure_predictor": true,
+  "no_GPU_work": true,
+  "no_submission": true,
+  "no_approved_data_diagnostic_yet": true
+}
