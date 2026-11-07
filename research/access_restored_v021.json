@@ -1,0 +1,14 @@
+{
+  "observed_utc": "2026-11-07T20:44:20.810762+00:00",
+  "access": "restored_after_user_Terminal_Duo",
+  "pod": "v2gao-517608",
+  "pod_state": "Running",
+  "mixup_epoch": 175,
+  "epoch_budget": 200,
+  "last_epoch_seconds": 43.21444922499359,
+  "raw_onehot_completed": true,
+  "raw_onehot_reported_A_mean_MAE": 0.22768928771851515,
+  "ensemble_result": "not yet complete",
+  "no_restart_or_recipe_change": true,
+  "supersedes_access_block": "research/access_block_v021.json"
+}
