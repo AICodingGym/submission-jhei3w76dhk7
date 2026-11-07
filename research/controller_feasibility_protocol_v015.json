@@ -1,0 +1,36 @@
+{
+  "schema": "v015-training-only-controller-feasibility-v1",
+  "created_utc": "2026-11-07T01:40:33.518454+00:00",
+  "source_document": "/Users/generalclasher/Documents/dsc102/pa3/kagglediscussion.md",
+  "source_document_sha256": "195e535ce76460231654b2faeb5805d49b52f7fb2b679f545e0813c091484288",
+  "source_is_user_supplied_external_discussion_synthesis": true,
+  "course_rule_conflict_noted": true,
+  "current_V014_unchanged": true,
+  "approved_train_sha256": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+  "original_A_split_file": "outputs/improvements_v005/sequence/split_breath_ids.npz",
+  "A_split_file_sha256": "1bb6143f16b7b8834a99a17495e9c05e8f52e6a00a797710f0bfba91ba8ffa08",
+  "sample_seed": 20261501,
+  "breaths_per_RC_group": 64,
+  "sampling_population": "original A fit only",
+  "equations": [
+    "P_current",
+    "P_lag1",
+    "PI_current",
+    "PI_lag1"
+  ],
+  "assumptions": [
+    "linear desired-pressure trajectory over tested interval",
+    "constant proportional/integral parameters within a breath",
+    "uninjected interior valve-control observations"
+  ],
+  "exclude_valve_clipped": true,
+  "training_rows_fraction": 0.7,
+  "minimum_eligible_rows": 12,
+  "minimum_training_rows": 8,
+  "dtypes": "float64 raw CSV numeric precision",
+  "diagnostic_units": "valve-control units, not pressure MAE",
+  "feasibility_gate": "at least10percent of sampled training breaths have within-breath held-out median absolute valve-control residual<1e-4 for one declared equation, with positive proportional coefficient; gate guides further research only",
+  "new_validation_pressure_labels_used": false,
+  "pressure_prediction_model_or_submission_created": false,
+  "no_external_data_or_code_downloads": true
+}

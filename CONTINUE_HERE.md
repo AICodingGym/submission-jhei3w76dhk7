@@ -1,5 +1,7 @@
 # Continue this project here
 
+**Latest user-supplied research:** `../kagglediscussion.md` SHA195e535ce76460231654b2faeb5805d49b52f7fb2b679f545e0813c091484288 read by explicit user request. See `research/DISCUSSION_INSPIRED_ROADMAP_v015.md` for source/rule-conflict provenance, prioritized genuinelynew methods and completed cheap controllerfeasibilitycheck. The576-Afit-breath controllerdiagnostic did notpass its10%consistencygate and didnotproducepressureMAE/predictor. Separateauxdifferenceheads, restrictedmixup, LaplaceNLL, minimaldeepinputs andtraining-neighborcontext remain proposed; no new GPU batch for them yet. V014unchanged. LatestGPUobservation~5:28PM: deepcompleted189,compact178/193. SSHsinceended; no cancellation. Avoidrepeatedloginrequestswhileittrains; retrieveactualstatebeforelease9:11PM/expectedfinish~9PM. NoEoutcomesyetobserved.
+
 **Active user-edited objective:** official mean MAE<=0.15 first, then lower, with broader controlled methods. See `research/OBJECTIVE_015.md`. Best official.18025; median errors do not satisfy this target. Continue current V014 unchanged because it serves this objective; do not declare completion after screening or validation alone.
 
 ## Actual running pod correction — November6~3:12PM Pacific
