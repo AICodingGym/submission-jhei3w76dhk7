@@ -1,0 +1,11 @@
+# Active objective: official mean MAE at or below 0.15
+
+The user explicitly updated the active objective on November 6, 2026: try to reach 0.15 MAE first, then lower, using a broad range of methods. This is a target, not a guarantee. Median error does not satisfy it. Best accepted official score remains 0.18025 until a verified better submission is scored.
+
+Continue the already frozen V014 cold E confirmation without changing its hypotheses, weights, epochs, split or acceptance rule. It directly serves this objective. See PROCESS_STATUS.md for actual pod/progress, and CONTINUE_HERE.md for recovery details. Preserve every earlier file and submission.
+
+After that stage, broaden controlled experiments instead of indefinitely increasing the same model's size. Prioritize explicit new hypotheses grounded in our results: deep curve consistency combined separately with response memory or a breath-level pressure correction, and a simpler input representation. These are candidate directions, not claims of efficacy or descriptions of competitor solutions. Freeze each actual batch before obtaining its new outcomes. Use bounded pilots when their learning curves can meaningfully screen candidates; do not mistake an early training proxy for a final MAE result.
+
+Only assignment-approved Gym data; modeling in notebooks; fit preprocessing on training breaths only; group validation by complete breath; inspiration-only point-weighted native mean MAE; frozen promotion rules and another grouped confirmation before promotion; no tuning using official test scores. Record configs, seeds, runtimes, sources/data/model hashes, genuine errors and visible AI history. Use ordinary course resources and exact checkpoint recovery, without quota/priority/lease bypass. Check running jobs around every ten minutes and wait between checks.
+
+Standing user approval covers continued controlled iterations, grouped confirmation, all-approved final fitting and validated submission. Ask only necessary login/Duo steps or genuinely missing information. User enters credentials in Terminal. Do not stop or mark the goal complete simply because a batch finishes, no candidate qualifies, or progress is slow. Completion requires an actually scored official mean MAE <=0.15.
