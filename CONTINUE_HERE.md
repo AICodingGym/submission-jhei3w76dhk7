@@ -1,3 +1,5 @@
+Latest V021 monitoring: last successful actualcheck2026-11-07T20:15:48Z (12:15PM Pacific), pod517608 Running, mixup136/200; onehotcomplete0.227689288. At12:25PM sharedSSHexpired(Duo once8h), renewalrequested; remotejob/guardianindependent, no restart. Estimatedfinish~1:05PM basedonlastpace, notverifiedcompletion. Preparedindependentauditseedtypo corrected BEFOREcompletedoutcomeaccess; frozenprotocol/source unchanged. Correction+newauditSHA research/audit_pre_execution_fix_v021.json; originalpreserved. Periodicrawobservations research/progress_v021_periodic_20261107.json. Awaitloginthenretrievescreen/archive; target<=.15stillunmet,official.17427preserved.
+
 # Continue this project here
 
 LatestliveV021check10:40AMPacificNov7: onehotcompleted200,reportedindividualA0.227689288,best195,runtime8470.5s; raw-numericalcontrol0.229696833 (smallencodinggain), stillworsethan47-featurecurvecontrol0.203829545. Individualreportnotindependentlyauditedyet. Mixup4/200,43.03s/epoch; expectedfullscreen~1PMPacific. No completeensembleoutcomes/selection yet; keepfrozenrulesunchanged. Actualpod517608Running,lease2:13:42PM. Detailsresearch/progress_v021_first_fit.json.

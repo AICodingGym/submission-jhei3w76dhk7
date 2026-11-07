@@ -1,0 +1,50 @@
+{
+  "status": "SSH authentication renewal requested; last successful authoritative pod observation Running at 20:15:48Z, second arm136/200. No restart.",
+  "observations": [
+    {
+      "monitor_check": 1,
+      "exit_code": 0,
+      "output": "NAME           READY   STATUS    RESTARTS   AGE    IP              NODE                     NOMINATED NODE   READINESS GATES\nv2gao-517608   1/1     Running   0          171m   10.39.225.241   its-dsmlp-n05.ucsd.edu   <none>           <none>\nutc 2026-11-07T19:05:12.242575+00:00\nraw_onehot_curve finished {'epoch': 200, 'epoch_seconds': 42.04831130430102, 'elapsed_seconds': 8467.61060849391} budget 200\nCOMPLETED_MODEL raw_onehot_curve {'completed': True, 'validation_mae': 0.22768928771851515, 'best_epoch': 195, 'elapsed_seconds': 8470.504906089976}\nphase_RC_mixup_curve epoch {'epoch': 39, 'epoch_seconds': 43.97803574055433, 'elapsed_seconds': 1704.3813258707523} budget 200\n2026-11-07T19:03:28Z state=pending\n2026-11-07T19:04:29Z state=pending\n"
+    },
+    {
+      "monitor_check": 2,
+      "exit_code": 0,
+      "output": "NAME           READY   STATUS    RESTARTS   AGE    IP              NODE                     NOMINATED NODE   READINESS GATES\nv2gao-517608   1/1     Running   0          3h1m   10.39.225.241   its-dsmlp-n05.ucsd.edu   <none>           <none>\nutc 2026-11-07T19:15:17.150141+00:00\nraw_onehot_curve finished {'epoch': 200, 'epoch_seconds': 42.04831130430102, 'elapsed_seconds': 8467.61060849391} budget 200\nCOMPLETED_MODEL raw_onehot_curve {'completed': True, 'validation_mae': 0.22768928771851515, 'best_epoch': 195, 'elapsed_seconds': 8470.504906089976}\nphase_RC_mixup_curve epoch {'epoch': 52, 'epoch_seconds': 43.3187900763005, 'elapsed_seconds': 2272.504497991875} budget 200\n2026-11-07T19:13:48Z state=pending\n2026-11-07T19:14:50Z state=pending\n"
+    },
+    {
+      "monitor_check": 3,
+      "exit_code": 0,
+      "output": "NAME           READY   STATUS    RESTARTS   AGE     IP              NODE                     NOMINATED NODE   READINESS GATES\nv2gao-517608   1/1     Running   0          3h11m   10.39.225.241   its-dsmlp-n05.ucsd.edu   <none>           <none>\nutc 2026-11-07T19:25:22.858204+00:00\nraw_onehot_curve finished {'epoch': 200, 'epoch_seconds': 42.04831130430102, 'elapsed_seconds': 8467.61060849391} budget 200\nCOMPLETED_MODEL raw_onehot_curve {'completed': True, 'validation_mae': 0.22768928771851515, 'best_epoch': 195, 'elapsed_seconds': 8470.504906089976}\nphase_RC_mixup_curve epoch {'epoch': 66, 'epoch_seconds': 43.42356518097222, 'elapsed_seconds': 2884.2325662393123} budget 200\n2026-11-07T19:24:06Z state=pending\n2026-11-07T19:25:07Z state=pending\n"
+    },
+    {
+      "monitor_check": 4,
+      "exit_code": 0,
+      "output": "NAME           READY   STATUS    RESTARTS   AGE     IP              NODE                     NOMINATED NODE   READINESS GATES\nv2gao-517608   1/1     Running   0          3h21m   10.39.225.241   its-dsmlp-n05.ucsd.edu   <none>           <none>\nutc 2026-11-07T19:35:28.667728+00:00\nraw_onehot_curve finished {'epoch': 200, 'epoch_seconds': 42.04831130430102, 'elapsed_seconds': 8467.61060849391} budget 200\nCOMPLETED_MODEL raw_onehot_curve {'completed': True, 'validation_mae': 0.22768928771851515, 'best_epoch': 195, 'elapsed_seconds': 8470.504906089976}\nphase_RC_mixup_curve epoch {'epoch': 80, 'epoch_seconds': 42.966746831312776, 'elapsed_seconds': 3491.171734496951} budget 200\n2026-11-07T19:34:23Z state=pending\n2026-11-07T19:35:26Z state=pending\n"
+    },
+    {
+      "monitor_check": 5,
+      "exit_code": 0,
+      "output": "NAME           READY   STATUS    RESTARTS   AGE     IP              NODE                     NOMINATED NODE   READINESS GATES\nv2gao-517608   1/1     Running   0          3h31m   10.39.225.241   its-dsmlp-n05.ucsd.edu   <none>           <none>\nutc 2026-11-07T19:45:33.657073+00:00\nraw_onehot_curve finished {'epoch': 200, 'epoch_seconds': 42.04831130430102, 'elapsed_seconds': 8467.61060849391} budget 200\nCOMPLETED_MODEL raw_onehot_curve {'completed': True, 'validation_mae': 0.22768928771851515, 'best_epoch': 195, 'elapsed_seconds': 8470.504906089976}\nphase_RC_mixup_curve epoch {'epoch': 94, 'epoch_seconds': 44.04006318934262, 'elapsed_seconds': 4106.069120872766} budget 200\n2026-11-07T19:43:44Z state=pending\n2026-11-07T19:44:46Z state=pending\n"
+    },
+    {
+      "monitor_check": 6,
+      "exit_code": 0,
+      "output": "NAME           READY   STATUS    RESTARTS   AGE     IP              NODE                     NOMINATED NODE   READINESS GATES\nv2gao-517608   1/1     Running   0          3h41m   10.39.225.241   its-dsmlp-n05.ucsd.edu   <none>           <none>\nutc 2026-11-07T19:55:39.470438+00:00\nraw_onehot_curve finished {'epoch': 200, 'epoch_seconds': 42.04831130430102, 'elapsed_seconds': 8467.61060849391} budget 200\nCOMPLETED_MODEL raw_onehot_curve {'completed': True, 'validation_mae': 0.22768928771851515, 'best_epoch': 195, 'elapsed_seconds': 8470.504906089976}\nphase_RC_mixup_curve epoch {'epoch': 108, 'epoch_seconds': 42.987226240336895, 'elapsed_seconds': 4716.608960334212} budget 200\n2026-11-07T19:54:18Z state=pending\n2026-11-07T19:55:20Z state=pending\n"
+    },
+    {
+      "monitor_check": 7,
+      "exit_code": 0,
+      "output": "NAME           READY   STATUS    RESTARTS   AGE     IP              NODE                     NOMINATED NODE   READINESS GATES\nv2gao-517608   1/1     Running   0          3h52m   10.39.225.241   its-dsmlp-n05.ucsd.edu   <none>           <none>\nutc 2026-11-07T20:05:44.047020+00:00\nraw_onehot_curve finished {'epoch': 200, 'epoch_seconds': 42.04831130430102, 'elapsed_seconds': 8467.61060849391} budget 200\nCOMPLETED_MODEL raw_onehot_curve {'completed': True, 'validation_mae': 0.22768928771851515, 'best_epoch': 195, 'elapsed_seconds': 8470.504906089976}\nphase_RC_mixup_curve epoch {'epoch': 122, 'epoch_seconds': 42.97069448046386, 'elapsed_seconds': 5323.172904543579} budget 200\n2026-11-07T20:04:37Z state=pending\n2026-11-07T20:05:39Z state=pending\n"
+    },
+    {
+      "monitor_check": 8,
+      "exit_code": 0,
+      "output": "NAME           READY   STATUS    RESTARTS   AGE    IP              NODE                     NOMINATED NODE   READINESS GATES\nv2gao-517608   1/1     Running   0          4h2m   10.39.225.241   its-dsmlp-n05.ucsd.edu   <none>           <none>\nutc 2026-11-07T20:15:48.736587+00:00\nraw_onehot_curve finished {'epoch': 200, 'epoch_seconds': 42.04831130430102, 'elapsed_seconds': 8467.61060849391} budget 200\nCOMPLETED_MODEL raw_onehot_curve {'completed': True, 'validation_mae': 0.22768928771851515, 'best_epoch': 195, 'elapsed_seconds': 8470.504906089976}\nphase_RC_mixup_curve epoch {'epoch': 136, 'epoch_seconds': 42.98746423982084, 'elapsed_seconds': 5929.184115931392} budget 200\n2026-11-07T20:13:53Z state=pending\n2026-11-07T20:14:55Z state=pending\n"
+    },
+    {
+      "monitor_check": 9,
+      "exit_code": 255,
+      "output": "Duo is required to log into this system, please check for a Duo push after authentication. You are required to use Duo once every 8 hours.\nv2gao@dsmlp-login.ucsd.edu: Permission denied (publickey,password).\r\n"
+    }
+  ]
+}

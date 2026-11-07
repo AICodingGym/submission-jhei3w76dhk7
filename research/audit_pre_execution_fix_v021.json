@@ -1,0 +1,20 @@
+{
+  "status": "corrected_before_completed_outcome_access",
+  "created_utc": "2026-11-07T20:39:56.978289+00:00",
+  "error": "Prepared independent V021 audit inherited V019 bootstrap seed20261901 instead of frozen V021 seed20262101. Found by source review while SSH renewal pending. Audit had never run on completed V021 outcomes.",
+  "correction": "Independent audit now reads bootstrap seed/draws/minimum gain from unchanged frozen V021 protocol. Training, predictions, scientific sources and selection gates unchanged.",
+  "preserved_original": "outputs/controlled_experiments_v021/review/pre_execution_seed_fix/audit_A_v021.py",
+  "original_sha256": "c7600ce7164c84d83b99a67d7a876c4773f19a75584621eb997cba1b40817fe5",
+  "corrected_audit_sha256": "c5623f0f3ff2ce544679e43f2380a88182dc46aff1659abb393311e344aa0d66",
+  "checks": {
+    "audit_compiles": true,
+    "protocol_bootstrap_seed_used": true,
+    "protocol_draws_used": true,
+    "native_frozen_bootstrap_matches": true,
+    "old_seed_detectably_differs": true,
+    "protocol_unchanged": true
+  },
+  "actual_completed_V021_outcome_reads": 0,
+  "no_model_fitting_or_inference": true,
+  "validation_export_error": "First metadata JSON serialization failed on numpy boolean; converted check values to native bool and repeated only synthetic checks. No model fitting or completed outcomes involved."
+}
