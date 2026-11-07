@@ -1,0 +1,22 @@
+{
+  "recorded_utc": "2026-11-07T20:43:16.173347+00:00",
+  "state": "blocked_pending_user_Terminal_password_Duo_renewal",
+  "same_blocker_consecutive_goal_turns": 3,
+  "verified_error": "Duo is required to log into this system ... required once every 8 hours; Permission denied (publickey,password).",
+  "latest_ssh_exit_code": 255,
+  "last_successful_pod_observation_utc": "2026-11-07T20:15:48.736587+00:00",
+  "last_successful_pod_state": "Running",
+  "last_successful_mixup_epoch": 136,
+  "budget_epochs": 200,
+  "current_remote_state": "Not observable without renewed authentication; SSH failure is not evidence that training stopped.",
+  "local_completed_screen_summary_exists": false,
+  "local_completed_screen_audit_exists": false,
+  "local_verified_completed_archive_exists": false,
+  "official_best_preserved": 0.17427,
+  "target_mean_MAE": 0.15,
+  "target_achieved": false,
+  "offline_work_completed": "Prepared audit seed corrected/preserved with six checks; historical optimization evidence saved. Need completed V021 screen/archive before promotion or next GPU decision.",
+  "resume": "User runs existing shared SSH master command in Terminal, enters password/Duo there and replies connected. Recheck actual pod/stage, retrieve and verify archive; never restart solely due SSH observation failure. Run corrected independent A audit SHA c5623f0f3ff2ce544679e43f2380a88182dc46aff1659abb393311e344aa0d66; honor frozen candidate gates.",
+  "remote_jobs_cancelled_or_modified": false,
+  "user_reconnection_question_already_pending": true
+}
