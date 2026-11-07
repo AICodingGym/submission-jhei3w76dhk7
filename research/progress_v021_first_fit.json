@@ -1,0 +1,19 @@
+{
+  "status": "first_fit_complete_second_running",
+  "observed_utc": "2026-11-07T18:40:04.992165+00:00",
+  "pod": "v2gao-517608",
+  "first_model": "raw_onehot_curve",
+  "first_executed_epochs": 200,
+  "first_best_epoch": 195,
+  "reported_first_A_MAE": 0.22768928771851515,
+  "numerical_raw_input_control_A_MAE": 0.22969683347129077,
+  "strong_engineered_curve_control_A_MAE": 0.2038295445051591,
+  "first_runtime_seconds": 8470.504906089976,
+  "second_model": "phase_RC_mixup_curve",
+  "second_epoch": 4,
+  "second_epoch_seconds": 43.034124394878745,
+  "individual_report_not_independently_audited_yet": true,
+  "no_completed_ensemble_outcomes": true,
+  "no_promotion_or_submission": true,
+  "current_official_best_MAE": 0.17427
+}
