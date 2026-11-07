@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-07T15:59:01.531150+00:00",
+  "checks": {
+    "non_self_compatible_pairing": true,
+    "unaugmented_native_validation": true,
+    "train_only_scaler": true,
+    "best_checkpoint_restored": true
+  },
+  "component_code_sha256": "dbe65fb696db7e91bcc26ce498a5a971fe605513f58657b5533febcc77e238e6",
+  "approved_data_reads": 0,
+  "approved_data_fits": 0,
+  "actual_GPU_preflight_pending": true
+}

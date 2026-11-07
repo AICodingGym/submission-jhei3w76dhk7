@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-07T15:57:27.323107+00:00",
+  "checks": {
+    "separate_onehot_width": true,
+    "separate_onehot_categories": true,
+    "onehot_controls_and_code_unchanged": true,
+    "onehot_breath_state_resets": true,
+    "mixup_protected_inputs_exact": true,
+    "same_coefficient_input_and_target": true,
+    "partners_same_RC_and_entire_phase": true,
+    "singleton_unmixed": true,
+    "zero_probability_identity_and_rng": true,
+    "zero_mixup_exact_curve_training_control": true,
+    "controlled_interrupt_saved": true,
+    "exact_resume_parameters": true,
+    "exact_resume_optimizer": true,
+    "exact_resume_rng": true,
+    "mixup_identity_and_all_epoch_logging": true,
+    "changed_mixup_recipe_rejected": true,
+    "native_unaugmented_inference": true,
+    "onehot_validation_metric_and_train_only_scaler": true
+  },
+  "check_count": 18,
+  "component_code_sha256": "dbe65fb696db7e91bcc26ce498a5a971fe605513f58657b5533febcc77e238e6",
+  "source_fingerprints": {
+    "feature_components_v005.ipynb": "eb19eed69eb54cd5d087a9a678cf98701fbe9bc1a3cf85016270754c014593a6",
+    "sequence_components_v005.ipynb": "e6698a7f6e931af8a066c227058203b7e29ada68624833b700293532a30bf1b2",
+    "training_components_v008.ipynb": "a65618d1886a7ad3d1753f1f752b449114a57dcb75084f4f6cd11fc084228bda",
+    "encoding_mixup_components_v021.ipynb": "dbe65fb696db7e91bcc26ce498a5a971fe605513f58657b5533febcc77e238e6"
+  },
+  "approved_data_reads": 0,
+  "approved_data_fits": 0,
+  "actual_GPU_preflight_pending": true
+}

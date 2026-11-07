@@ -1,0 +1,17 @@
+{
+  "status": "source_and_CPU_preflight_passed_not_dispatched",
+  "created_utc": "2026-11-07T16:08:33.717772+00:00",
+  "protocol_sha256": "32916828f16a345bc53a789fd48e11d51f9654e87dd2923c99bb12e7cdb662fb",
+  "source_code_sha256": "cf894a607a3bc07ca5b50b0ad4218b0d597ecfd19d9fbe3740d3208a68944499",
+  "component_code_sha256": "dbe65fb696db7e91bcc26ce498a5a971fe605513f58657b5533febcc77e238e6",
+  "component_synthetic_checks": 18,
+  "validation_synthetic_checks": 4,
+  "default_inert": true,
+  "actual_GPU_preflight_pending": true,
+  "approved_data_fits": 0,
+  "CUDA_preflight_helper_sha256": "078a8db4d382276375ef9cb1da0f4aa7c0a303391b45dce276fbcb0259783b01",
+  "notes": [
+    "A driver-generation assertion initially matched curve_aux_weight while checking for obsolete aux_weight; corrected before a driver was written or any data fit",
+    "Optional Orca workflow unavailable: zsh:1: command not found: orca; no alternate Orca executable attempted; project work uses existing authorized command tools"
+  ]
+}

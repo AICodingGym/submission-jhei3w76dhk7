@@ -1,3 +1,5 @@
+Superseded by frozen `protocol_v021.json` (SHA32916828f16a345bc53a789fd48e11d51f9654e87dd2923c99bb12e7cdb662fb), `controlled_experiments_v021.ipynb` and `screen_preflight_v021.json`. The text below preserves the earlier design draft.
+
 # Next controlled batch — design draft, not frozen or dispatched
 
 Active objective: official mean MAE<=0.15 first, prioritizing inspiration from the supplied first-place report, then subsequent ranked reports. Best official remains0.17427. V019 completed and passed98 audit checks, but none of its three candidates qualified. Do not fit F, refit all data or submit any V019 candidate.

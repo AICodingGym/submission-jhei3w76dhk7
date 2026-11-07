@@ -1,0 +1,25 @@
+{
+  "status": "prepared_not_dispatched",
+  "created_utc": "2026-11-07T16:11:41.189839+00:00",
+  "source_code_sha256": "cf894a607a3bc07ca5b50b0ad4218b0d597ecfd19d9fbe3740d3208a68944499",
+  "component_code_sha256": "dbe65fb696db7e91bcc26ce498a5a971fe605513f58657b5533febcc77e238e6",
+  "protocol_sha256": "32916828f16a345bc53a789fd48e11d51f9654e87dd2923c99bb12e7cdb662fb",
+  "payload_bytes": 11721301,
+  "payload_sha256": "f36f7902c7b3199637b9b6e4656488079c85730e523b1b4610ce170232895c63",
+  "payload_members": 39,
+  "CPU_synthetic_checks": 22,
+  "actual_GPU_preflight_pending": true,
+  "approved_data_fits": 0,
+  "helper_hashes": {
+    "execute_screen_v021.py": "5b83b6b3bb7a06186d6267b09fcc95c7c4cf6e50c506bb4d7c200ff0011ba354",
+    "start_v021.sh": "b00a776e410cb4c1c6e4999917b5947507ee2c1c2d7a7dfdee510a2d6577cd16",
+    "course_preflight_v021.py": "078a8db4d382276375ef9cb1da0f4aa7c0a303391b45dce276fbcb0259783b01",
+    "copy_verified_archive_v021.py": "becb28972b980532934f7c645028ec6a6d386dc0a48b0717dbe44eacffb7d56c",
+    "snapshot_v021.py": "40fda9e999b6df6101f90708dc2dd1d29d4d47edcb92412b95625ef17c97bd41",
+    "guardian_v021.sh": "7ace8139934aad8ce02bb1ffd5929424f2c0a8c3f00e55c4af9a18970c1e8f4f",
+    "deploy_v021.py": "688348c3a012a4cb444756880ca9fbf33158d8c74882cef4e3b08d73e6520500",
+    "verify_archive_v021.py": "8a877fba7d57284fc4b2a9074d27269d09ee0b5389a2832498d9dfec70a9b15f"
+  },
+  "no_automatic_submission": true,
+  "archive_copy_retry_integrated": true
+}
