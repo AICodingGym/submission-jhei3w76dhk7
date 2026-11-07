@@ -1,0 +1,39 @@
+{
+  "status": "running_first_A_arm",
+  "recorded_utc": "2026-11-07T16:24:50.318185+00:00",
+  "pod": "v2gao-517608",
+  "node": "its-dsmlp-n05.ucsd.edu",
+  "pod_start_utc": "2026-11-07T16:13:42Z",
+  "expected_six_hour_lease_end_utc": "2026-11-07T22:13:42+00:00",
+  "login_stage": "$HOME/.pa3-setup-control.gty67K/v021-A-20261107",
+  "source_code_sha256": "cf894a607a3bc07ca5b50b0ad4218b0d597ecfd19d9fbe3740d3208a68944499",
+  "component_code_sha256": "dbe65fb696db7e91bcc26ce498a5a971fe605513f58657b5533febcc77e238e6",
+  "protocol_sha256": "32916828f16a345bc53a789fd48e11d51f9654e87dd2923c99bb12e7cdb662fb",
+  "payload_bytes": 11721301,
+  "payload_sha256": "f36f7902c7b3199637b9b6e4656488079c85730e523b1b4610ce170232895c63",
+  "actual_CUDA_proof_file": "outputs/controlled_experiments_v021/setup_helpers/course-proofs.json",
+  "actual_CUDA_proof_sha256": "d9dbfa383dd72c9fd14faa6c3794a7251901fdd5b833a644a62e209d08b92dea",
+  "actual_CUDA_checks_passed": 21,
+  "actual_training_observed": {
+    "member": "raw_onehot_curve",
+    "epoch": 3,
+    "epoch_seconds": 41.98271498270333,
+    "GPU": "NVIDIA GeForce GTX1080Ti",
+    "GPU_utilization_percent": 94
+  },
+  "sequential_arms": [
+    "raw_onehot_curve",
+    "phase_RC_mixup_curve"
+  ],
+  "epochs_each": 200,
+  "training_breaths": 61114,
+  "validation_breaths": 6791,
+  "seed": 20261102,
+  "no_completed_A_outcome_observed": true,
+  "backup_retry_helper_deployed": true,
+  "guardian_retries_transient_observation_failures": true,
+  "no_automatic_resource_allocation": true,
+  "no_automatic_submission": true,
+  "current_best_official_MAE": 0.17427,
+  "check_about_every_minutes": 10
+}
