@@ -1,0 +1,25 @@
+{
+  "observed_utc": "2026-11-07T18:44:20.232931+00:00",
+  "pod": "v2gao-517608",
+  "pod_state": "Running",
+  "expected_lease_end_utc": "2026-11-07T22:13:42Z",
+  "completed_arm": {
+    "name": "raw_onehot_curve",
+    "epochs": 200,
+    "best_epoch": 195,
+    "reported_A_mean_mae": 0.22768928771851515,
+    "runtime_seconds": 8470.504906089976,
+    "independent_audit": "pending complete screen"
+  },
+  "running_arm": {
+    "name": "phase_RC_mixup_curve",
+    "epoch": 10,
+    "epochs": 200,
+    "last_epoch_seconds": 43.10157912410796,
+    "elapsed_seconds": 442.0433080624789
+  },
+  "estimated_screen_completion_pacific": "about 1:00 PM November 7, based on current pace",
+  "ensemble_selection": "pending both complete arms and independent audit",
+  "best_preserved_official_mean_mae": 0.17427,
+  "actions": "Status check only; frozen sources, budgets, recipes and gates unchanged."
+}
