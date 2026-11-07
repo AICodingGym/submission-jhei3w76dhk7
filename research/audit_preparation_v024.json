@@ -1,0 +1,9 @@
+{
+  "status": "prepared_not_executed",
+  "created_utc": "2026-11-07T21:35:34.383608+00:00",
+  "file": "outputs/controlled_experiments_v024/review/audit_A_v024.py",
+  "sha256": "1ad17aa89a1e7aa75e8f6073697f553dc01a18fc746582008e5fa675b8c61b4e",
+  "actual_completed_V024_outcome_reads": 0,
+  "no_fitting_or_inference": true,
+  "scope": "Original grouped A rows and fit-only statistics, best/last full200 budgets, exact adapter span/mask/factory/module/parameter count, native output policy, protocol-driven bootstrap seed/draws/gate and lowest eligible decision."
+}
