@@ -1,0 +1,21 @@
+{
+  "status": "passed_source_and_synthetic_preflight",
+  "created_utc": "2026-11-07T02:32:32.875484+00:00",
+  "source_code_sha256": "b960eb2976962a1d8a2fee7b6a9633fba74b018190a07d9b89977eea0768b06d",
+  "checks": {
+    "default_inert": true,
+    "reject_missing_independent_audit_pins": true,
+    "selected_and_final_factory_identical_state": true,
+    "selected_and_final_factory_identical_forward": true,
+    "inspiratory_policy_preserves_all_rows_and_unscored_mean": true
+  },
+  "actual_E_or_secondary_outcomes_read": 0,
+  "assignment_model_fits": 0,
+  "actual_all_training_reuse_preflight_not_run": true,
+  "actual_final_fit_not_run": true,
+  "review_notes": [
+    "All five accepted inference caches now verified before new optimizer updates; same checks repeated after inference.",
+    "Corrected a draft provenance value from schema label to actual 64-character protocol digest before execution.",
+    "Completed final-manifest resume verifies and returns preserved artifacts rather than rewriting them."
+  ]
+}
