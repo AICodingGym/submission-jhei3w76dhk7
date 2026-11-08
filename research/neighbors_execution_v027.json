@@ -1,0 +1,18 @@
+{
+  "status": "completed_independently_audited",
+  "protocol_sha256": "bb28993f805089514ab9598edefafd08d912c699eb27eadd0f311fa367bb57ec",
+  "source_code_sha256": "3cf145fd39e383b6c6251a14bd79c127a5aa7791898d20dacda070ef99cf28d2",
+  "native_inner_query_MAE": 0.7197577777812822,
+  "weak_baseline_MAE": 6.061132637798443,
+  "runtime_seconds": 24.95839854099995,
+  "query_breaths": 576,
+  "pool_breaths": 60538,
+  "gradient_model_fits": 0,
+  "neural_checkpoint_inferences": 0,
+  "original_Aval_used": false,
+  "GPU_promotion": false,
+  "interpretation": "Retrieval captures coarse waveform information and disagreement predicts its own error. No evidence yet that it adds information beyond the existing LSTM; do not compare these balanced inner-query metrics as same-split A results.",
+  "independent_audit_checks": 198,
+  "freeze_binding_checks": 4,
+  "audit_sha256": "02700bce2532380cb7231dbdb13f63a89511e04667a607c73c99b1fde2af0993"
+}
