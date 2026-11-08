@@ -1,0 +1,8 @@
+{
+  "status": "prepared_before_controller_outcomes",
+  "audit_source_sha256": "8be1beda697c2275ecd36d2b8e0d3116973b823ca9c0e0e249c207c3103d5c0a",
+  "protocol_sha256": "60df642e250025108909de61d03bb8ea1275f7111167a33eee0dca7e75cc4d9d",
+  "component_code_sha256": "62b546ce5220958c5eadc2d604ae23779932ef24bc0bd76f67cc9bea6b3043d1",
+  "no_outcome": true,
+  "created_utc": "2026-11-08T22:32:49.718113+00:00"
+}

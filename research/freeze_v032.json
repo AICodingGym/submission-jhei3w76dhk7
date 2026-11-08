@@ -1,0 +1,14 @@
+{
+  "status": "frozen_before_approved_data_outcome",
+  "created_utc": "2026-11-08T22:29:44.943059+00:00",
+  "component_notebook": "research/quantized_controller_components_v032.ipynb",
+  "component_code_sha256": "62b546ce5220958c5eadc2d604ae23779932ef24bc0bd76f67cc9bea6b3043d1",
+  "driver_notebook": "research/quantized_controller_feasibility_v032.ipynb",
+  "driver_code_sha256": "4c739f7a2f07caba8fcf90080be2f62833f33f53878406166ae7a616fb50d43f",
+  "protocol_file": "research/controller_quantization_protocol_v032.json",
+  "protocol_sha256": "60df642e250025108909de61d03bb8ea1275f7111167a33eee0dca7e75cc4d9d",
+  "synthetic_checks": 48,
+  "no_diagnostic_directory": true,
+  "native_control_budget_unchanged": true,
+  "pressure_cells_shrunk": true
+}
