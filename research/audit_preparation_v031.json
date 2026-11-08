@@ -1,0 +1,9 @@
+{
+  "status": "prepared_not_executed",
+  "created_utc": "2026-11-08T17:05:11.674611+00:00",
+  "source_code_sha256": "77815759c838b9e4b0c9b2f6d2c24de025b706e76aa7add8f60c97e42a660ac0",
+  "protocol_sha256": "74fd95620b135dbd6256f7f3a120c9d6c651358eae89de67319c1b059e6a6b27",
+  "audit_file": "outputs/controlled_experiments_v031/review/audit_A_v031.py",
+  "audit_source_sha256": "7e12e1a31db03dd9e8119537852baa0a4e951780bc64a6a6912bc7dbe8c84de7",
+  "no_approved_A_outcome": true
+}

@@ -1,0 +1,44 @@
+{
+  "status": "frozen_before_approved_data_training",
+  "created_utc": "2026-11-08T17:03:17.830699+00:00",
+  "notebook": "controlled_experiments_v031.ipynb",
+  "source_code_sha256": "77815759c838b9e4b0c9b2f6d2c24de025b706e76aa7add8f60c97e42a660ac0",
+  "protocol_file": "research/protocol_v031.json",
+  "protocol_sha256": "74fd95620b135dbd6256f7f3a120c9d6c651358eae89de67319c1b059e6a6b27",
+  "result_export": "V031_SCREEN_RESULT",
+  "CPU_component_checks": 147,
+  "CPU_pruning_checks": 32,
+  "component_preflight": {
+    "notebook": "research/laplace_convolution_preflight_v031.ipynb",
+    "function": "run_laplace_convolution_preflight_v031",
+    "code_sha256": "6779006bdf23d411c2c85035447f2a27ffc8bf2c961ca2c9dc1d289209c3898f",
+    "kwargs": {
+      "deep_spec": {
+        "family": "lstm",
+        "hidden": 256,
+        "layers": 3,
+        "dropout": 0.15,
+        "bidirectional": true,
+        "joint_embedding_dim": 0,
+        "rc_heads": false,
+        "residual": true,
+        "head_width": 32,
+        "widths": [
+          256,
+          192,
+          128
+        ],
+        "output_concat": true
+      }
+    }
+  },
+  "additional_project_files": [
+    "controlled_experiments_v013.ipynb",
+    "handoff/AGENTS_PROJECT_V025.md",
+    "research/PRUNING_WORKFLOW_V025.md",
+    "research/OBJECTIVE_015.md"
+  ],
+  "no_approved_A_outcome": true,
+  "no_F_outcome": true,
+  "actual_CUDA_proofs_still_required": true
+}

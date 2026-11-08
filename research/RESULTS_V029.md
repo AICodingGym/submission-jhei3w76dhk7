@@ -1,0 +1,18 @@
+# V029: Laplace-scale objective results
+
+The completed run improved individual native inspiratory A MAE from **0.2038295445051591** (matching curve-L1 control) to **0.20013018541768796**, about1.82%. Its best frozen ensemble scored **0.18018911863240716**, versus **0.18292209456473527** for the accepted recipe on the same split. The gain **0.002732975932328102** misses the unchanged0.003 practical threshold. Both predeclared candidates are **ineligible**; selected=null. No F confirmation, all-data fit or submission follows V029. Best official mean MAE stays **0.17427** and the <=0.15 objective remains unmet.
+
+| Fixed candidate | Native A MAE | Gain vs reference | 95% breath-bootstrap delta | Eligible |
+|---|---:|---:|---|---|
+| Laplace replaces old curve0.25 |0.18106474860827027|0.0018573459564650008|[-0.003516724564533725,-0.00032790337422559143]|No|
+| Old curve0.125 + Laplace0.125 |0.18018911863240716|0.002732975932328102|[-0.0035712973166888767,-0.0018915214165291]|No|
+
+The single cold model completed all200 frozen rate epochs on the original61114-fit/6791-validation breath-grouped A split, seed20261102. Best checkpoint196 was selected by native inspiratory mean MAE with the unchanged1e-6 legacy improvement tolerance. The objective/head package was the sole planned change: positive-scale inspiratory Laplace loss plus the existing0.1 adjacent-mean curve penalty, same47 available-input features and successful mean backbone. Pressure targets were never inputs; predicted scale never changed ensemble weights. Training runtime **8548.89s (2h22m29s)**.
+
+The V025 queue correctly kept this first unfamiliar objective through its full budget because comparable completed likelihood-history references were absent. Stopping decisions used neither NLL nor training error. Final training-diagnostic MAE was0.10284 versus validation0.20017, so a substantial generalization gap remains; late validation is flattening. Learned scales also underestimate held-out absolute errors and are not calibrated confidence intervals. R50 still contributes about50.36% of total native error. Improvement differs by R/C, including a deterioration in R50/C50. See executed results_review_v029.ipynb, review/R_C_comparison.csv and review/learning_and_group_diagnostics.png.
+
+Independent **1008 checks** passed, reconstructing raw features and fit-only preprocessing, exact model/source/data/policy fingerprints, truthful NLL/architecture metadata, complete200-epoch optimizer/rate/native-selection traces, mean/scale caches and R/C-position error totals, both median/grid policies and whole-breath bootstrap. Audit research/screen_review_v029.json; prepared audit codeSHA7cf526f91d45bed4a49838f95e859cfd3c0d80f514a7dbeeaf0bdd2d364e3d84. CPU66 and actualCUDA32 pruning/69 model checks preceded fitting. CUDA step overhead0.85%; peakallocated1299644416bytes.
+
+Screen completed November8 **12:14:52AM Pacific**. Guardian observedexit0 at12:15:52AM, verified every archive member and released the GPU. Local archive **126files/131805816bytes**, SHAe001f0011717d8a8f3c30b6930c7f6c3472a29e947ad00ee45a9e52c1ba3d38f. Download/membership/file-hash verification and safe mirror extraction passed;58 new-or-identical run artifacts published, original source notebooks preserved. November8 morning Duo expiry delayed retrieval only; no job restart occurred.
+
+Source codeSHAcaebc7edc5cce7561bcd67b91145abc000a7249e82c067fcb100c068bf14fac0 and protocolSHA56f8428036f9b2803125d5dd17ee5c62a654ac88f88bcdfe2483b09b92a79d44 were frozen in git08d0400 before training. A has supported repeated research; its intervals are exploratory. The separate V030 fixed cached mixture remains a different prospective experiment, not a retroactive relaxation of V029 gates.

@@ -1,0 +1,16 @@
+{
+  "status": "independently_reviewed_before_A_training",
+  "created_utc": "2026-11-08T17:03:17.831093+00:00",
+  "source_code_sha256": "77815759c838b9e4b0c9b2f6d2c24de025b706e76aa7add8f60c97e42a660ac0",
+  "protocol_sha256": "74fd95620b135dbd6256f7f3a120c9d6c651358eae89de67319c1b059e6a6b27",
+  "CPU_checks": 147,
+  "architecture_change_only": true,
+  "unchanged_V029_objective_and_heads": true,
+  "exact_initial_mu_b_RNG_body_gradients": true,
+  "frozen_adapter_Adam_dropout_control": true,
+  "exact_validate_fixed_checkpoint_resume": true,
+  "own_architecture_loader_guard": true,
+  "private_V025_unknown_cohort_representative": true,
+  "actual_CUDA_required": true,
+  "no_approved_data_training": true
+}
