@@ -1,0 +1,9 @@
+{
+  "status": "synthetic_preflight_fix_before_any_approved_fit",
+  "cause": "Full-backbone synthetic stress tensor omitted the internal R/C code appended by the existing preprocessing API. Actual model receives47numeric features plus1internal code. Changed toy stress/benchmark tensors to48 with code0; other-breath perturbation excludes internal code.",
+  "old_source_sha256": "64eda8666747f450e1377e7b6866da3f15461c86faddebfb12143e99c7cf9712",
+  "new_code_sha256": "420928745a182d0f4f991eff0cc3088bcc7bacfe4fbd3809e868edd5ff181260",
+  "scientific_model_or_training_recipe_changed": false,
+  "preserved_original": "outputs/controlled_experiments_v035/setup_helpers/capacity_preflight_before_internal_RC_fix.ipynb",
+  "preserved_failed_output": "outputs/controlled_experiments_v035/cpu_preflight"
+}

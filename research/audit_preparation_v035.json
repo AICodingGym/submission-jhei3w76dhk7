@@ -1,0 +1,9 @@
+{
+  "status": "prepared_not_executed_before_A_outcomes",
+  "audit_path": "outputs/controlled_experiments_v035/review/audit_A_v035.py",
+  "audit_sha256": "b2059875695c4e439db740f680ca71befd0beeedb0d222f8d00b5466dc5009fb",
+  "source_code_sha256": "14866285af6f6abed533c1d06253428b1e6904bb0c7556b066bb37046e55ce31",
+  "protocol_sha256": "512cc9838a3403ddcd5e5214a54262d10059aba0568dfa17f8be2f352d532d39",
+  "adaptation": "V029 independent audit retained actual V029 objective/metadata/factory module. Updates only own source/protocol/paths, declared arm/roster/variant, generic concatenated width, exact full-capacity state shapes and actual lease gate.",
+  "no_A_outcome": true
+}

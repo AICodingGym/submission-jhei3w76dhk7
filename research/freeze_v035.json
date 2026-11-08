@@ -1,0 +1,49 @@
+{
+  "status": "frozen_before_approved_data_training",
+  "created_utc": "2026-11-08T23:15:07.920855+00:00",
+  "notebook": "controlled_experiments_v035.ipynb",
+  "source_code_sha256": "14866285af6f6abed533c1d06253428b1e6904bb0c7556b066bb37046e55ce31",
+  "protocol_file": "research/protocol_v035.json",
+  "protocol_sha256": "512cc9838a3403ddcd5e5214a54262d10059aba0568dfa17f8be2f352d532d39",
+  "result_export": "V035_SCREEN_RESULT",
+  "CPU_component_checks": 73,
+  "CPU_pruning_checks": 32,
+  "component_preflight": {
+    "notebook": "research/capacity_preflight_v035.ipynb",
+    "function": "run_capacity_preflight_v035",
+    "code_sha256": "420928745a182d0f4f991eff0cc3088bcc7bacfe4fbd3809e868edd5ff181260",
+    "kwargs": {
+      "deep_spec": {
+        "family": "lstm",
+        "hidden": 320,
+        "layers": 4,
+        "dropout": 0.15,
+        "bidirectional": true,
+        "joint_embedding_dim": 0,
+        "rc_heads": false,
+        "residual": true,
+        "head_width": 32,
+        "widths": [
+          320,
+          256,
+          192,
+          128
+        ],
+        "output_concat": true
+      }
+    }
+  },
+  "additional_project_files": [
+    "controlled_experiments_v013.ipynb",
+    "handoff/AGENTS_PROJECT_V025.md",
+    "research/PRUNING_WORKFLOW_V025.md",
+    "research/OBJECTIVE_015.md",
+    "research/laplace_preflight_v029.ipynb",
+    "research/RESULTS_V029.md",
+    "research/RESULTS_V033.md",
+    "research/RESULTS_V034.md"
+  ],
+  "no_approved_A_outcome": true,
+  "no_F_outcome": true,
+  "actual_CUDA_proofs_still_required": true
+}
