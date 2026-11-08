@@ -1,3 +1,15 @@
+# Current checkpoint: V031 complete and rejected; CPU quantization check pending
+
+November8 afternoon actualstate. V031completedall200epochs11:31:48AM Pacific, individualA.204487920(best188)worseV029.200130185; twofrozenensembles.181782103/.180269962,bestgain.002652133<.003,selectednull. Independentaudit1039PASSED. NoF/final/submission. Archive155files163247295B SHA6977682b2724231b9b0a2880154383506297fdd96a3dace800643731e42501b2 verifiedlocally,safelymirrored,73new/identicalrunfilespublished,sourcespreserved,GPUreleased. NoactiveorqueuedGPUjobsknown; nonewresourcesrequested. See research/RESULTS_V031.md andscreen_review_v031.json.
+
+Bestofficial.17427preserved,target<=.15UNMET. V029,V030,V031allrejected underunchanged .003gain+negativebootstrap gate; do notretroactivelypromote/searchweights. V028quantizationhypothesis isseparateCPUtraining-onlydiagnostic, currentlyDRAFTtextonly. Parallelworkersfailedwithworkspaceoutofcredits beforecreatingimplementationfiles; no source/protocol/approved-dataoutcomeexistsforV028. Rootcancontinue directly; donotretrycredit-failedworkers withoutchangedconditions. No originalKaggledata/solutioncode downloaded.
+
+Nextimplementboundedquantization-observation-orderCPUdiagnostic inNEWnotebooks. OnefrozenconstantrefdecayPI lag0 OLSfirst70%eligiblecontrols, heldcoefficientsfixed. Jointboundedlatentmeasurementerrors |delta|<=halfverifiedrawtraininglattice; nativecontrolresidualbudget1e-4unchanged; cannotjustwidentoleranceindependentlybyrow. Comparezeroerror/coherentLP/destructiveheldpressurepermutation; input-onlyidentifiability remainsrequiredforanylaterpredictor. Planandpreflightmustbefrozen beforeanyapproved-dataoutcome. research/QUANTIZATION_HYPOTHESIS_v028_DRAFT.md preservesmathematicalnotes/risks. NoFsplitexists,seed20261204unused.
+
+Visiblehistoryexportlast17:09UTCnotyetfinal. PreserveparentSETUP_LOG, alloldfiles, reportsandnewchanges. baseline_v001.ipynb hasUNRELATEDpreexistinguserchange(1line); doNOToverwrite/stage/revertit. LatestSSHlastworked11:40AM; renewal8:28AMmayexpire~4:28PM. AskonlynecessaryTerminal/Duo. Modelingandtrainingstayipynb; opshelperpyallowed.
+
+---
+
 # Live V031: protected span3 frontend on the Laplace model
 
 November8 9:08AM Pacific. Podv2gao-1732899(n05)Running, started9:06:14AM, ordinary6hleaseends3:06:14PM PST. Standard1GPU/4CPUlimit/16Gi, no duplicates/bypasses. ActualGTX1080Ti CUDAcorepruner32+model152checkspassed, includinginheritedNLLproof/exactnewmodelresume/zeroµ+b/protectedoutputs/control/efficiency. Step.15865svs.16013V029baseline(similarcost), peakallocated1316089856B. Rawproofsdownloadedhashverifiedinsetup_helpers. Epoch1/200completed,43.03s/epoch,earlynativeval1.10486notfinalscore. Expectedresults/review11:35–11:50AMifpaceholds. Check~10min, waitbetweentoconserveusage.

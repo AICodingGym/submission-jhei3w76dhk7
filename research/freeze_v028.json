@@ -1,0 +1,13 @@
+{
+  "status": "frozen_before_approved_data_outcome",
+  "created_utc": "2026-11-08T22:07:54.843268+00:00",
+  "component_notebook": "research/quantized_controller_components_v028.ipynb",
+  "component_code_sha256": "c9d38ea98a7ee1be58b6a1b0b28df69cae14f00ad687b60f3ccd027ee34418d7",
+  "driver_notebook": "research/quantized_controller_feasibility_v028.ipynb",
+  "driver_code_sha256": "94ee3b8ad74784fcbeb3f34f389be5f580df3c36432de399a36fc0334608c6c4",
+  "protocol_file": "research/controller_quantization_protocol_v028.json",
+  "protocol_sha256": "148541702313b4cf211b142c7a168fd4764abe914194ae6406c7eb975b6fcfb0",
+  "synthetic_checks": 45,
+  "no_diagnostic_directory": true,
+  "independent_LP_oracle_positive_and_negative_cases": true
+}
