@@ -1,0 +1,13 @@
+{
+  "status": "passed_after_fix",
+  "created_utc": "2026-11-08T05:26:27.117205+00:00",
+  "reviewer": "independent read-only subagent, then scoped implementation",
+  "finding": "Cached outcome identity omitted native arm and training diagnostic breath count; same checkpoint/run label could return old result before native trainer rejected changed metadata.",
+  "fix": "Bind actual native arm and diagnostic count into identity before cache checks.",
+  "affected_production_runs": 0,
+  "preserved_before_fix": "outputs/pruning_workflow_v025/before_identity_review",
+  "workflow_code_sha256": "91af4747704d53887742dd7b7b7aac4d961313390642971d2c474df51d3cb694",
+  "CPU_checks": 32,
+  "actual_CUDA_proof_pending": true,
+  "policy_unchanged": true
+}

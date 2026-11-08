@@ -1,0 +1,11 @@
+{
+  "exported_at_utc": "2026-11-08T05:26:27.493049+00:00",
+  "messages": 587,
+  "snapshot_file": "visible_conversation_20261108T052627Z.md",
+  "sha256": "6eb95f5c3dc222a5851a9079f689131e673833e019a76311431810729932d54e",
+  "first_message_utc": "2026-11-02T06:16:58.302Z",
+  "last_message_utc": "2026-11-08T05:26:15.112Z",
+  "coverage": "visible user/assistant messages only; experiment execution logs stored separately",
+  "exclusions": "system/developer, internal reasoning, tool payloads, app/environment control metadata",
+  "uploaded": false
+}

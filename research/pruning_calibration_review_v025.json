@@ -1,0 +1,38 @@
+{
+  "status": "calibrated_and_retrospectively_checked",
+  "created_utc": "2026-11-08T03:47:15.572168+00:00",
+  "policy_file": "research/pruning_policy_v025.json",
+  "policy_sha256": "0acdfa933d54fbae1e7728e2f8982bdae3f4227c6bd5187979bcd38b67e5fc88",
+  "reference_count": 3,
+  "relative_deficit_margin": 0.07084486505182362,
+  "stall_relative_tolerance": 0.010095403951434384,
+  "patience_intervals": 20,
+  "LR_cooldown_evaluations": 13,
+  "start_comparing_epoch": 100,
+  "budget_epochs": 200,
+  "retrospectively_pruned_runs": 0,
+  "leave_target_out_replays": [
+    {
+      "target": "v013_plain_deep_curve",
+      "target_reference_excluded": true,
+      "pruned": false,
+      "decision": null
+    },
+    {
+      "target": "v024_conv3",
+      "target_reference_excluded": true,
+      "pruned": false,
+      "decision": null
+    },
+    {
+      "target": "v024_conv7",
+      "target_reference_excluded": true,
+      "pruned": false,
+      "decision": null
+    }
+  ],
+  "training_MAE_used": false,
+  "leaderboard_scores_used": false,
+  "approved_data_fits": 0,
+  "interpretation": "Retrospective engineering safety check on limited observed histories; not a statistical guarantee for unseen runs."
+}

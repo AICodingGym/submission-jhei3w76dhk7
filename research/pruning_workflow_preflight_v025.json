@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-08T05:25:36.578041+00:00",
+  "checks": {
+    "clearly_flat_lagging_curve_can_be_pruned": true,
+    "half_budget_and_full_patience_respected": true,
+    "training_MAE_and_leaderboard_fields_do_not_change_decision": true,
+    "unfamiliar_architecture_finishes_representative": true,
+    "different_training_size_not_pruned": true,
+    "different_optimizer_not_pruned": true,
+    "unfamiliar_LR_schedule_not_pruned": true,
+    "optimizer_step_mismatch_not_pruned": true,
+    "LR_reduction_gets_grace": true,
+    "bad_but_still_improving_curve_kept": true,
+    "reference_future_epochs_not_used_online": true,
+    "relative_rule_is_unit_scale_invariant": true,
+    "completed_budget_never_relabeled_pruned": true,
+    "actual_completed_curve_replays_keep_all_three": true,
+    "missing_checkpoint_cannot_authorize_pruning": true,
+    "actual_wrapper_returns_pruned_not_completed": true,
+    "checkpoint_saved_before_stop": true,
+    "pruned_log_records_reason_progress_and_references": true,
+    "pruned_member_cannot_be_dropped_or_renormalized": true,
+    "pruned_model_rejected_as_completed_candidate": true,
+    "resume_exact_state_dict": true,
+    "resume_exact_optimizer_state": true,
+    "resume_exact_rng_state": true,
+    "resume_best_native_validation_metric_exact": true,
+    "original_pruned_checkpoint_preserved": true,
+    "queue_advances_from_pruned_to_next_experiment": true,
+    "unfamiliar_representative_runs_full_budget": true,
+    "cached_changed_arm_rejected": true,
+    "cached_changed_diagnostic_size_rejected": true,
+    "completed_native_inference_valid": true,
+    "changed_policy_hash_rejected": true,
+    "synthetic_policy_rejected_in_production_mode": true
+  },
+  "check_count": 32,
+  "source_code_hashes": {
+    "feature_components_v005.ipynb": "eb19eed69eb54cd5d087a9a678cf98701fbe9bc1a3cf85016270754c014593a6",
+    "sequence_components_v005.ipynb": "e6698a7f6e931af8a066c227058203b7e29ada68624833b700293532a30bf1b2",
+    "training_components_v008.ipynb": "a65618d1886a7ad3d1753f1f752b449114a57dcb75084f4f6cd11fc084228bda",
+    "pruning_components_v025.ipynb": "c63193c6a38b791d5d7816f6383d782da3fc3b27f7d5e3ab9e3c602f731b974a",
+    "training_workflow_v025.ipynb": "91af4747704d53887742dd7b7b7aac4d961313390642971d2c474df51d3cb694"
+  },
+  "production_policy_sha256": "0acdfa933d54fbae1e7728e2f8982bdae3f4227c6bd5187979bcd38b67e5fc88",
+  "actual_history_replays": [
+    {
+      "target": "v013_plain_deep_curve",
+      "target_reference_excluded": true,
+      "pruned": false,
+      "decision": null
+    },
+    {
+      "target": "v024_conv3",
+      "target_reference_excluded": true,
+      "pruned": false,
+      "decision": null
+    },
+    {
+      "target": "v024_conv7",
+      "target_reference_excluded": true,
+      "pruned": false,
+      "decision": null
+    }
+  ],
+  "simulated_flat_curve_pruned_epoch": 120,
+  "simulated_only_potential_saved_epochs": 80,
+  "fixture_stopped_epoch": 6,
+  "fixture_budget": 8,
+  "exact_pruned_resume": true,
+  "next_planned_experiment_executed": true,
+  "raw_approved_csv_reads": 0,
+  "approved_data_fits": 0,
+  "only_synthetic_model_fits": true,
+  "actual_cuda": false,
+  "runtime": {
+    "torch": "2.15.0",
+    "cuda": null,
+    "numpy": "2.5.4",
+    "device": "cpu"
+  }
+}
