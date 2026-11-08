@@ -1,0 +1,18 @@
+{
+  "status": "reviewed_before_approved_data_training",
+  "created_utc": "2026-11-08T05:50:29.094836+00:00",
+  "source_code_sha256": "caebc7edc5cce7561bcd67b91145abc000a7249e82c067fcb100c068bf14fac0",
+  "protocol_sha256": "56f8428036f9b2803125d5dd17ee5c62a654ac88f88bcdfe2483b09b92a79d44",
+  "CPU_component_checks": 66,
+  "CPU_pruning_checks": 32,
+  "reviewed_issues_fixed_before_freeze": [
+    "Cached prediction/scale/outcome/last/diagnostic hashes and effective training-source binding",
+    "Objective constants asserted against plan; truthful NLL metadata distinct from V008 transport",
+    "Native diagnostics cast operands tofloat64 before subtraction to reconstruct primary MAE exactly",
+    "CUDA-only timing helper corrected to_scaled_targets and exercised in CPU proof",
+    "Operational numeric runtime shadowing fixed and5regressions verified"
+  ],
+  "no_approved_data_fit_or_outcome": true,
+  "actual_CUDA_still_required": true,
+  "modeling_in_notebooks_only": true
+}
