@@ -1,0 +1,104 @@
+{
+  "status": "requested_one_ordinary_GPU_pending_last_observation",
+  "updated_utc": "2026-11-08T23:20:05.807159+00:00",
+  "pod": "v2gao-1855552",
+  "course_namespace": "DSC102_FA26_001",
+  "submitted_Pacific": "2026-11-08 15:18:17 PST",
+  "lease_seconds": 21600,
+  "actual_start_and_lease_end_not_retrieved": true,
+  "login_stage": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v035-A-20261108",
+  "guardian_PID": 1855730,
+  "source_freeze": {
+    "status": "frozen_before_approved_data_training",
+    "created_utc": "2026-11-08T23:15:07.920855+00:00",
+    "notebook": "controlled_experiments_v035.ipynb",
+    "source_code_sha256": "14866285af6f6abed533c1d06253428b1e6904bb0c7556b066bb37046e55ce31",
+    "protocol_file": "research/protocol_v035.json",
+    "protocol_sha256": "512cc9838a3403ddcd5e5214a54262d10059aba0568dfa17f8be2f352d532d39",
+    "result_export": "V035_SCREEN_RESULT",
+    "CPU_component_checks": 73,
+    "CPU_pruning_checks": 32,
+    "component_preflight": {
+      "notebook": "research/capacity_preflight_v035.ipynb",
+      "function": "run_capacity_preflight_v035",
+      "code_sha256": "420928745a182d0f4f991eff0cc3088bcc7bacfe4fbd3809e868edd5ff181260",
+      "kwargs": {
+        "deep_spec": {
+          "family": "lstm",
+          "hidden": 320,
+          "layers": 4,
+          "dropout": 0.15,
+          "bidirectional": true,
+          "joint_embedding_dim": 0,
+          "rc_heads": false,
+          "residual": true,
+          "head_width": 32,
+          "widths": [
+            320,
+            256,
+            192,
+            128
+          ],
+          "output_concat": true
+        }
+      }
+    },
+    "additional_project_files": [
+      "controlled_experiments_v013.ipynb",
+      "handoff/AGENTS_PROJECT_V025.md",
+      "research/PRUNING_WORKFLOW_V025.md",
+      "research/OBJECTIVE_015.md",
+      "research/laplace_preflight_v029.ipynb",
+      "research/RESULTS_V029.md",
+      "research/RESULTS_V033.md",
+      "research/RESULTS_V034.md"
+    ],
+    "no_approved_A_outcome": true,
+    "no_F_outcome": true,
+    "actual_CUDA_proofs_still_required": true
+  },
+  "source_commit": "618e9b7",
+  "payload": {
+    "status": "prepared_not_dispatched",
+    "created_utc": "2026-11-08T23:16:25.383358+00:00",
+    "source_code_sha256": "14866285af6f6abed533c1d06253428b1e6904bb0c7556b066bb37046e55ce31",
+    "protocol_sha256": "512cc9838a3403ddcd5e5214a54262d10059aba0568dfa17f8be2f352d532d39",
+    "payload_file": "outputs/controlled_experiments_v035/setup_helpers/v035-deploy.tar.gz",
+    "payload_sha256": "10eaf16f9141572a4f252a4ba830559851f7a7d0f6cc69c692ca528ab63f4c14",
+    "payload_bytes": 40988625,
+    "payload_members": 76,
+    "pins_sha256": "fe8c1aae8b495d835bd696535370f880c5af6b4d7ad3491b23e50f848f465542",
+    "GPU_resource_requests": 0,
+    "approved_data_fits": 0,
+    "actual_GPU_proofs_completed": false,
+    "required_existing_files": {
+      "data/train.csv": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7"
+    },
+    "pruning_reference_file_count": 8,
+    "syntax_payload_checked": true,
+    "modeling_code_in_notebooks_only": true,
+    "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions."
+  },
+  "independent_A_audit_prepared": {
+    "status": "prepared_not_executed_before_A_outcomes",
+    "audit_path": "outputs/controlled_experiments_v035/review/audit_A_v035.py",
+    "audit_sha256": "b2059875695c4e439db740f680ca71befd0beeedb0d222f8d00b5466dc5009fb",
+    "source_code_sha256": "14866285af6f6abed533c1d06253428b1e6904bb0c7556b066bb37046e55ce31",
+    "protocol_sha256": "512cc9838a3403ddcd5e5214a54262d10059aba0568dfa17f8be2f352d532d39",
+    "adaptation": "V029 independent audit retained actual V029 objective/metadata/factory module. Updates only own source/protocol/paths, declared arm/roster/variant, generic concatenated width, exact full-capacity state shapes and actual lease gate.",
+    "no_A_outcome": true
+  },
+  "actual_CUDA_proofs_unknown_until_retrieved": true,
+  "approved_data_fit_not_yet_observed": true,
+  "resources": {
+    "GPU": 1,
+    "CPU_limit": 4,
+    "RAM_limit_Gi": 16
+  },
+  "next_check": "About10minutes after request; inspect pod/start/deadline and proof/training progress. Never allocate another pod from a stale/failed SSH observation.",
+  "no_automatic_submission": true,
+  "server_guardian_archives_verifies_then_releases_idle_GPU": true,
+  "Mac_required_for_training": false,
+  "accepted_official_MAE": 0.17427,
+  "target_unmet": true
+}
