@@ -1,0 +1,8 @@
+{
+  "status": "prepared_not_executed_before_A_outcome",
+  "audit_path": "outputs/controller_bank_screen_v033r1_review/audit_v033r1.py",
+  "audit_sha256": "ffa1ac71d83517ad3dbe27e76d2189da0af9c779d12885511403c4d40e9462f2",
+  "executor_sha256": "a32ad9bf71409e8765d48b895674fb1ee08c8cb230a7fdaaa463a2fe998e50c2",
+  "alignment_correction": "Independent audit Afit arrays sort by breathID to match bank; validation remains canonical CSV order.",
+  "no_recovered_screen_directory": true
+}
