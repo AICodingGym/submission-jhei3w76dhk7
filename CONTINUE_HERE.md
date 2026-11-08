@@ -1,3 +1,11 @@
+# Latest live check: V035 queued; no GPU training yet
+
+November8 3:28:35PM Pacific scheduled check: podv2gao-1855552 remains Pending, no node/startTime. Scheduler says compatible GPUs occupied (2insufficientGPU); other nodes tainted/unschedulable/affinity-ineligible. No reliable position/start estimate. Six-hour activeDeadlineSeconds21600, but no actual lease start/end can be reported yet. GuardianPID1855730 is detached and waiting, stage$HOME/.pa3-setup-control.gty67K/v035-A-20261108; it will deploy/check/start automatically whenReady. No approved V035 fit or CUDA proof has started. Do not allocate duplicates, relax scheduler restrictions or change the frozen recipe. Monitor observation persisted outputs/controlled_experiments_v035/monitor/check_20261108T232835Z.json; orchestration_v035.json current. Next checks about10minutes, wait between checks to conserve usage. If SSHexpires ask onlyTerminal/Duo; remotequeued job/guardian unaffected.
+
+V035 capacity source/protocol/payload freeze and CPU73-check proof are complete as described below. Actual CUDA/lease timing still required before200epochs. Prepared independent A audit, no F/final/submission. All completed V033/V034 controller variants rejected. Official0.17427 preserved; <=0.15 not achieved. User modification baseline_v001.ipynb remains unstaged/untouched. Currentsourcefreezecommit618e9b7; no newmodeloutcome. Follow actual live state, not stale launch estimates.
+
+---
+
 # Live checkpoint: V035 GPU requested; V034 rejected
 
 November8 3:18PM Pacific: requested one ordinary DataHub pod v2gao-1855552 (last observed Pending), guardianPID1855730, login stage $HOME/.pa3-setup-control.gty67K/v035-A-20261108. No duplicate pods existed immediately before launch. Actual start/lease end/GPU proof/first training epoch not yet retrieved at this entry. Ordinary six-hour lease only; no bypass. Check about10minutes, not continually. Remote guardian deploys once, runs actual-CUDA core-pruning/model/lease proofs before training, archives/member-verifies after exit and releases idle GPU; no automatic allocation or submission. Source/payload metadata research/orchestration_v035.json.

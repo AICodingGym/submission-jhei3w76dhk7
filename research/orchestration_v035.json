@@ -1,6 +1,6 @@
 {
-  "status": "requested_one_ordinary_GPU_pending_last_observation",
-  "updated_utc": "2026-11-08T23:20:05.807159+00:00",
+  "status": "queued_Pending_unschedulable_no_free_compatible_GPU",
+  "updated_utc": "2026-11-08T23:28:35.927259+00:00",
   "pod": "v2gao-1855552",
   "course_namespace": "DSC102_FA26_001",
   "submitted_Pacific": "2026-11-08 15:18:17 PST",
@@ -100,5 +100,12 @@
   "server_guardian_archives_verifies_then_releases_idle_GPU": true,
   "Mac_required_for_training": false,
   "accepted_official_MAE": 0.17427,
-  "target_unmet": true
+  "target_unmet": true,
+  "latest_observation": "outputs/controlled_experiments_v035/monitor/check_20261108T232835Z.json",
+  "actual_start_utc": null,
+  "actual_lease_end_utc": null,
+  "GPU_proof_not_started": true,
+  "approved_data_fit_not_started": true,
+  "queue_start_estimate": null,
+  "scheduler_reason": "0/39 nodes are available: 2 Insufficient nvidia.com/gpu, 24 node(s) had untolerated taint(s), 4 node(s) were unschedulable, 9 node(s) didn't match Pod's node affinity/selector. no new claims to deallocate, preemption: 0/39 nodes are available: 2 No preemption victims found for incoming pod, 37 Preemption is not helpful for scheduling."
 }
