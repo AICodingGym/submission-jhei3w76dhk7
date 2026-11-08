@@ -1,0 +1,52 @@
+{
+  "schema": "v033-fixed-input-only-controller-bank-screen-v1",
+  "status": "frozen_before_A_predictions",
+  "created_utc": "2026-11-08T22:53:56.065785+00:00",
+  "hypothesis": "A controller library learned from approved training pressures can use similar known input traces to correct a previously learned pressure curve by one physical level. V032 conditional compatibility motivates but does not establish this predictor.",
+  "recipe": {
+    "neighbors": 5,
+    "passes": 4,
+    "distance_quantile": 0.9,
+    "consensus_physical_bins": 1.0,
+    "maximum_move_physical_bins": 1,
+    "bootstrap_seed": 20263301,
+    "bootstrap_draws": 1000,
+    "minimum_gain": 0.003,
+    "threads": 1
+  },
+  "training_scope": "All61114 originalAfit breaths only; no Avalidation labels or known inputs influence training/controller eligibility/scalers/distance thresholds/grid.",
+  "controller_family": "Pinned V032 constant-reference decay PI lag0; same prefix70% ordinary LS/clip/rank/condition/physical guards. Stronger bank eligibility requires SAME prefix coefficients jointly feasible over ALL eligible inspiration equations, including prefix and held; native control budget1e-4 and V032 conservative cells unchanged.",
+  "quantizer": "Refit exact fixed10-significant-digit serialization-aware physical grid from Afit inspiration only. Model bounds unchanged. Prediction codebook is unique float32 Afit inspiration pressures; must match accepted cached grid.",
+  "retrieval": "Top5 standardized RMS240-entry u_in/time_step/u_out known-input traces; exact R/C and entire known u_out mask; per-channel population mean/std on eligible bank only. Stable canonical bank order ties. Groups with fewer than6 bank members unsupported. Confidence: query fifth distance <= fixed90th percentile bank leave-one-out fifth distance in same group, linear quantile.",
+  "inference": "No query pressure or query ID passed to predictor. Start each of5 curves at accepted baseline prediction. Exactly4 parallel Jacobi passes p[t]=(d*u[t-1]+B*p_previous_pass[t-1]+c-u[t])/A at eligible t>=2; reset clipped/phase/first-two positions to baseline on every pass. Coordinate median of5, require IQR<=one physical spacing and input-distance confidence.",
+  "correction": "At most ONE existing adjacent physical pressure bin from baseline, only if median crosses its midpoint. No jumping missing bins. Exact midpoint chooses lower level. All unsupported/clipped/expiration/first2 rows retain exact baseline. No correction cap, confidence, pass, neighbor, weight or parameter searches after A outcomes.",
+  "baseline": "Accepted V018 recipe on originalA: six-model fixed weighted median then Afit inspiration codebook; use its previously audited fixed A cache, MAE0.18292209456473527. This reference is already known; only the new candidate outcome is prospectively frozen.",
+  "selection": "One candidate. Eligible only gain>=0.003 AND paired whole-breath point-weighted1000-bootstrap upper95(candidate-minus-baseline)<0, seed20263301. Never use trainingMAE or official scores for promotion/stopping. No extra candidate or runner-up if it fails.",
+  "confirmation": "Only if eligible: freeze recipe, cold fit every required baseline neural member AND controller bank on grouped Ffit only, using exact A-selected budgets; never original A models for F prediction. Fseed20261204 remains unused. F is resampling within originalAfit, not a pristine test. Positive gain and negative whole-breath interval required. No F weights/gates search.",
+  "final": "Only after successful independently audited F: all-approved controller refit and baseline prediction reuse only after exact all-data source/recipe/data/model/cache checks, aligned603600-row finite CSV, independent audit, authorized submit. This screen creates no final fit or submission.",
+  "compute": "One CPU thread, no gradient fitting/neural checkpoint inference/GPU; noniterative library fitting has no training epochs to prune. For future new A neural fits mandatory V025 workflow and actual-CUDA proof.",
+  "limitations": [
+    "Controller parameters may not be identifiable from inputs; nearest control traces may still have different reference/gains.",
+    "One-bin restriction can bound harm and also limit benefit. Conditional V03235-40% compatibility does not estimate this predictor coverage.",
+    "A has been used for repeated research; fresh cold F and eventual official evaluation remain necessary.",
+    "This tests one bounded library approach, not every possible controller inversion."
+  ],
+  "input_hashes": {
+    "data/train.csv": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+    "outputs/improvements_v005/sequence/split_breath_ids.npz": "1bb6143f16b7b8834a99a17495e9c05e8f52e6a00a797710f0bfba91ba8ffa08",
+    "outputs/controlled_experiments_v013/A_row_ids.npy": "203c2ec1a2650798779225d4d693780f61ba26a19a64e660c0d99e916e790748",
+    "outputs/postprocessing_screen_v016/weighted_median_midpoint_then_nearest_training_pressure_codebook_A_predictions.npy": "a308ddf9df0f14732d6c44c2e2cb2af1a655c5d0ce6b5f8d43ee415c346187ac",
+    "outputs/postprocessing_screen_v016/A_fit_pressure_codebook.npy": "b0de6c1101e840ede60c48215c9e0672b0c6383aee68207dfb20cdcc9329fb5e",
+    "outputs/postprocessing_screen_v016/results.json": "22715ab9533b147de33ac738fd352eb87ce9de238b21e6b7026335d8db4a7abc",
+    "research/postprocessing_review_v016.json": "e3048c98f68437698d9796067c9101d7a1cfd929f507c4544713554bf750e20e",
+    "research/postprocessing_protocol_v016.json": "e91b66f4d7047dc0991f7735955d3f3a594073806bc443e206720f641b73b040",
+    "research/quantized_controller_components_v032.ipynb": "701ecd228e99ab4049aed3a096b0bf2d503eb9570c073db1a3d2bfbb1e98330e",
+    "research/controller_quantization_protocol_v032.json": "60df642e250025108909de61d03bb8ea1275f7111167a33eee0dca7e75cc4d9d",
+    "research/controller_quantization_review_v032.json": "87194edb6438d416838a7cf474917a38eca70bfa1f76a312233cb6f75aa9676b",
+    "outputs/controller_quantization_feasibility_v032/summary.json": "129fccd0a2d5c87911a3b9062464baaa0eaf09c1149651c956c2bc698179b905",
+    "research/controller_bank_preflight_v033.json": "f7d24804ee7b9a8b1e7054d2a4d22b6eb64e69f32be2a6ca090be845d05bc266",
+    "outputs/confirmation_v014/final_all_v018/submission.csv": "274668c4dc14e9d20a554c738859fca37e448836797d7260ec7b11464dcde3e2",
+    "research/submission_receipt_v018_final.json": "ed264b8ee1a796481a62d13b12d6674fe9f267c19db9bcaa09ef50742eec0058"
+  },
+  "component_code_sha256": "bdd6d2ab01994bae8b52c9bc18d5ac7646b275153aba292f838e456b3552e7bd"
+}

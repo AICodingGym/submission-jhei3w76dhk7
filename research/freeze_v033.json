@@ -1,0 +1,12 @@
+{
+  "status": "frozen_before_A_prediction_and_label_score",
+  "created_utc": "2026-11-08T22:53:56.348296+00:00",
+  "component_notebook": "research/controller_bank_components_v033.ipynb",
+  "component_code_sha256": "bdd6d2ab01994bae8b52c9bc18d5ac7646b275153aba292f838e456b3552e7bd",
+  "driver_notebook": "research/controller_bank_screen_v033.ipynb",
+  "driver_code_sha256": "3fa36af3cae1beff0799d6800eb9f85b0a63451ce9013d9ca44df5286f0a21d2",
+  "protocol_file": "research/controller_bank_protocol_v033.json",
+  "protocol_sha256": "cdf08366de6eb9712571cf059aeb099bdb56e5ef2498d7bde1e2091958e68a1c",
+  "synthetic_check_count": 20,
+  "no_screen_directory": true
+}

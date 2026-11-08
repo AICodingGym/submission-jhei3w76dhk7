@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "check_count": 20,
+  "checks": [
+    "Pinned pure notebook helper loaded",
+    "Single-bin cap and lower exact-midpoint ties",
+    "Fallback is exact baseline",
+    "Missing physical bin never enlarges cap",
+    "Input-only prediction finite",
+    "Query prediction API excludes pressure and IDs",
+    "At most one physical pressure step",
+    "First two and expiration rows unchanged",
+    "Distance self-consistency",
+    "Distances independently match direct norm",
+    "Unseen phase group falls back",
+    "Out-of-distribution input distance falls back",
+    "Stable canonical ties; IDs absent",
+    "Query does not refit scaling",
+    "Clipping resets anchors",
+    "Four parallel passes agree with independent scalar recurrence",
+    "Breath independence",
+    "Known-input parser does not touch poisoned query pressures",
+    "Whole-breath bootstrap sign and native scale",
+    "Too-small groups cannot estimate leave-one-out fifth distance"
+  ],
+  "no_approved_data_access": true,
+  "component_code_sha256": "bdd6d2ab01994bae8b52c9bc18d5ac7646b275153aba292f838e456b3552e7bd",
+  "created_utc": "2026-11-08T22:53:56.065533+00:00"
+}

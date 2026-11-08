@@ -1,0 +1,7 @@
+{
+  "status": "prepared_not_executed_before_A_outcome",
+  "audit_path": "outputs/controller_bank_screen_v033_review/audit_v033.py",
+  "audit_sha256": "860a7bb6df60c0128a25ca4eac7de1631a9d782f57242fd0ba1e1dc2dc916fcd",
+  "executor_sha256": "b96bb8de30dec6ea7daceb3e86ce742cbc51ef48d6e500fa41b3e64c29b9535c",
+  "no_screen_directory": true
+}
