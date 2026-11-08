@@ -1,0 +1,21 @@
+{
+  "received_utc": "2026-11-08T00:57–01:02Z",
+  "status": "requirements_preserved; implementation/calibration pending completion of current V024 representative",
+  "metric": "native point-weighted validation inspiratory mean absolute error on original fixed breath-grouped A split",
+  "requirements": [
+    "Never use training MAE or leaderboard scores for pruning decisions.",
+    "Review completed reference curves at matched training stage, data size, optimizer steps, architecture and learning-rate schedule.",
+    "Wait about half the training budget and require both substantial reference-curve deficit and stalled validation improvement across several evaluations.",
+    "Calibrate and document conservative dimensionless margin, patience and LR-reduction grace from actual completed logs; no arbitrary absolute MAE cutoff.",
+    "Let unfamiliar architecture/schedule representatives finish when comparison evidence is insufficient.",
+    "Checkpoint model/optimizer/RNG for exact resume before marking status pruned; record reason, best native validation MAE, progress, recipe/seed/runtime and reference identities/hashes.",
+    "Continue to the next planned experiment when a future A-screen run is pruned.",
+    "Keep existing completed files, frozen scientific sources and accepted official result; modeling/training workflow must remain in notebooks."
+  ],
+  "integration": "New pruning-aware notebook wrapper around the existing checkpoint-before-callback trainer; do not edit hash-frozen V005/V008 or retroactively label an unfinished pruned run complete.",
+  "scope_limits": [
+    "No training-MAE-based pruning of final all-data fits, which have no independent validation holdout.",
+    "No A-history-based pruning of a different grouped confirmation split; it lacks comparable history and has frozen confirmation budgets.",
+    "Calibrate only from reviewed completed curve logs and freeze policy/source/reference hashes before new experiment outcomes."
+  ]
+}

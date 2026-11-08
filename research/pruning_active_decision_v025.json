@@ -1,0 +1,47 @@
+{
+  "observed_utc": "2026-11-08T01:01:46.812091+00:00",
+  "active_member": "conv7_curve",
+  "reference_member": "conv3_curve",
+  "current_epoch": 89,
+  "budget": 200,
+  "points": [
+    {
+      "epoch": 59,
+      "optimizer_steps": 14101,
+      "LR": 0.0012420418422704933,
+      "active_best_validation_inspiratory_MAE": 0.34941224348229205,
+      "reference_best_validation_inspiratory_MAE": 0.34205372207781976
+    },
+    {
+      "epoch": 69,
+      "optimizer_steps": 16491,
+      "LR": 0.0011447756311036869,
+      "active_best_validation_inspiratory_MAE": 0.32557468624547814,
+      "reference_best_validation_inspiratory_MAE": 0.31584470173063295
+    },
+    {
+      "epoch": 79,
+      "optimizer_steps": 18881,
+      "LR": 0.0010373103237165586,
+      "active_best_validation_inspiratory_MAE": 0.300914091800983,
+      "reference_best_validation_inspiratory_MAE": 0.28912206376435384
+    },
+    {
+      "epoch": 89,
+      "optimizer_steps": 21271,
+      "LR": 0.0009224579199442035,
+      "active_best_validation_inspiratory_MAE": 0.2791253561037354,
+      "reference_best_validation_inspiratory_MAE": 0.2844910812053543
+    }
+  ],
+  "optimizer_steps_and_rates_matched_at_each_stage": true,
+  "decision": "continue",
+  "reasons": [
+    "First representative of the span7 variant; full frozen current budget and user adoption requested after this run.",
+    "Before the halfway point and validation improvement remains substantial.",
+    "The wider variant was behind at epoch79 and ahead at89, illustrating why early deficits alone are insufficient."
+  ],
+  "training_MAE_used": false,
+  "leaderboard_score_used": false,
+  "active_checkpoint_or_training_modified": false
+}
