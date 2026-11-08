@@ -1,3 +1,5 @@
+Latest actual V024 progress4:05PM Pacific: conv3_curve COMPLETE200epochs, reportedindividualA0.203241290 (control0.203829545), best194,runtime8639.9s. Smallindividualgain; notindependentlyaudited/promotionyet. Conv7_curve11/200,43.33s/epoch; pod823946Running. Fullscreenestimate6:20–6:40PM; lease7:31:28PM. No completeensembleoutcomes/decision; frozenrecipes/gatesunchanged. All14periodicobservations preserved research/progress_v024_first_fit.json. Wait~10minbetweenchecks; retainofficial.17427.
+
 Latest actual V024 progress at1:42PM Pacific: pod823946 Running; conv3_curve13/200 at42.73s/epoch; conv7 pending sequentially. Estimate first~4PM, fullscreen~6:20–6:40PM; lease7:31:28PM. No completed new A result yet. Evidence research/progress_v024_initial.json. Frozen sources/gates unchanged.
 
 # Current state: V024 hybrid screen is running

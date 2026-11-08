@@ -1,0 +1,28 @@
+{
+  "observed_utc": "2026-11-08T00:05:10.669083+00:00",
+  "observed_Pacific": "November7 4:05 PM",
+  "pod": "v2gao-823946",
+  "state": "Running",
+  "completed_member": {
+    "name": "conv3_curve",
+    "executed_epochs": 200,
+    "reported_native_A_MAE": 0.20324129031431576,
+    "best_epoch": 194,
+    "runtime_seconds": 8639.92043235898,
+    "independent_audit_pending": true,
+    "unchanged_individual_control_A_MAE": 0.2038295445051591
+  },
+  "running_member": {
+    "name": "conv7_curve",
+    "epoch": 11,
+    "budget_epochs": 200,
+    "last_epoch_seconds": 43.33196187205613,
+    "elapsed_seconds": 488.7235368229449
+  },
+  "estimated_full_screen_finish_Pacific": "about 6:20–6:40 PM November7",
+  "lease_end_Pacific": "7:31:28 PM November7",
+  "complete_ensemble_outcomes_exist": false,
+  "promotion_decision": "pending full frozen screen and independent audit",
+  "frozen_sources_gates_and_remote_jobs_unchanged": true,
+  "periodic_observations": []
+}
