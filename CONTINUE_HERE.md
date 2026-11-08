@@ -1,3 +1,27 @@
+# Current access checkpoint: retrieve V029 overnight results after Duo renewal
+
+November8 8:27AM Pacific actualSSHcheck failed because8-hourDuoauthenticationexpired. UserTerminalrenewalquestionpending. Currentremotecompletion/score/podinventorystillUNKNOWN; do not repeat stale12:15–12:30AMestimate or claim completion. Lastverified9:54PM November7 was2/200epochsandCUDA32+69checks passed. Oldleaseexpectedend3:51:38AM November8. Detachedtraining+guardian unchanged; persistentcoursefiles/archivestage shouldbeinspectedbefore anyrestart/newpod. Nonewresourcesrequestedthisturn.
+
+Afteruserconnected: SSH inspect actual pod andstage$HOME/.pa3-setup-control.gty67K/v029-A-20261107; retrieveguardian.log/archive.json/archive-verification.json/pipeline-archive.tar.gz/completed-pod.json intoNEWoutputs/controlled_experiments_v029/completed_archive. Verifyarchive/memberhashes/safeextractionandpublishneworidenticalartifacts preservingrootsourcenotebooks; thenrunpreparedindependentauditoutputs/controlled_experiments_v029/review/audit_A_v029.py SHA7cf526f91d45bed4a49838f95e859cfd3c0d80f514a7dbeeaf0bdd2d364e3d84. CurrentauditNOTexecutedandlocalcompletedresultsabsent. Do not inferfailed/stoppedtrainingfromSSHfailure.
+
+Rootsource/protocolpinsandacceptedofficialCSVhashrechecked; official.17427preserved, goal<=.15unmet. V029twofrozenmixtures/unchanged.003gain+negativeCIgate, noF/final/submissionyet. Fullsource/pod/proofmetadataremaininresearch/orchestration_v029.json andnotesbelow. Laststatussource scientificmodelsunchanged.
+
+---
+
+# Live V029: original-A positive-scale objective training
+
+Updated November7 9:54PM Pacific. Coursepodv2gao-989316(n06) Running; started9:51:38PM, ordinary6hleaseendsNovember8 3:51:38AM PST. OneGPU,4CPUlimit,16GiRAM, noresourcebypass/duplicates. ActualGTX1080Ti CUDApruner32checks andmodel69checksPASSED beforeapprovedfit. RuntimeTorch2.2.1+cu121/CUDA12.1/numpy1.26.4, strictdeterministic/thread4. Mean-stepoverhead0.85%, peakallocated1.300GB. Rawcourseproofs downloaded/verified inoutputs/controlled_experiments_v029/setup_helpers/.
+
+Onecold200-epoch A fit laplace_curve,47features,original61114fit/6791val,seed20261102,successfulmeanbody unchanged; b=softplus(input-drivenhead)+.001(targetscaled),initb1/noextraRNG. InspirationNLL+.1oldadjacentmeanpressurepenalty; pressurelabelsneverinputs. NativeinsppointMAE selectscheckpoint usingunchanged1e-6legacyimprovementtolerance, neverNLL. V025privatequeuetruthfullyrecordsactualobjective; no comparable NLLhistory, so keepfirstfullrepresentative (actualepoch2decisionreason no_comparable_data_model_optimizer_schedule_or_runtime). Latest2/200,42.24s/epoch,earlyMAE.94985 isnotcompletedresult. Expectedfinish/review12:15–12:30AM Pacificifpaceholds. Check~10minandwait, donottuneonintermediateoutcomes.
+
+Frozensource controlled_experiments_v029.ipynb codeSHAcaebc7edc5cce7561bcd67b91145abc000a7249e82c067fcb100c068bf14fac0; protocolresearch/protocol_v029.json SHA56f8428036f9b2803125d5dd17ee5c62a654ac88f88bcdfe2483b09b92a79d44. Componentb6bd59bced1fad03882f27d9faec51deec93b3ab10afa9f06b8cef36c4d5260d; preflight4143266b792b6d6eb19fa1437d755a2f5685abdfe4ccfaaeeab1a7bd7743aca3. Git08d0400 frozeallbeforefits. Twofixedmixturesonly: replaceolddeep_curve.25withLaplace.25, orretainoldcurve.125+Laplace.125; othercurrentweightsunchanged. ReferenceA.1829220946, gain>=.003ANDupper95wholebreathdelta<0(1000drawsseed20262901), lowesteligibleonlycoldFseed20261204. NoFsplit/fit/outcomeexists. No weight/schedule/scaletuningafteroutcomes.
+
+Stage$HOME/.pa3-setup-control.gty67K/v029-A-20261107, guardianPID989554. Payload40929025B/64members SHAbb791b958384b4e535a344747f566dbfe306e96b433fd4bc28678d7a75feb512. Detachedtraining+guardianindependentofMac; verifiedmemberarchivebeforeidleGPUrelease, noautomaticresourceallocation/submission. Perfit epochs/checkpoints/pruning/outcome underoutputs/controlled_experiments_v029/laplace_curve; setupv029-screen-execution.log/v029-exit-code.txt. Helper/pins detailsresearch/orchestration_v029.json. PreparedindependentAaudit(review/audit_A_v029.py) SHA7cf526f91d45bed4a49838f95e859cfd3c0d80f514a7dbeeaf0bdd2d364e3d84 compiledNOTexecuted. Oncompletionretrievearchive/info/verification/log/pods intoNEWcompleted_archive; verifyallmembers/safeextract/publishneworidentical whilepreservingrootsources, thenindependentlyauditnativeNLLmetadata/fullbudgets/trainonlystats/µ,b/rowalignment/diagnostics/policies/bootstrap beforepromotion.
+
+Bestofficial0.17427andolderacceptedCSVs/receipts remainpreserved; target<=.15UNMET. V024/V026rejected(noF/final/submission), V027training-onlyneighborcheckcompleteaudited198+4, notLSTMimprovement. V028quantizationhypothesisDRAFT unimplemented. Standingapprovalcontinues. CurrentSSHrenewedworks; askonlynecessaryTerminal/Duo. FrozenV005/V008/V025sourcesunchanged. Allgenuineprelaunchproof/opsbugs correctedbeforefitsandoriginalspreserved.
+
+---
+
 # Latest continuation: V027 diagnostic audited; waiting for DataHub login
 
 Updated November7 about9:37PM Pacific. Current official best remains0.17427, target<=.15unmet. V024 and separate V026 fixed-mixture screens rejected under unchanged .003 practical-gain gate; no F/final/submission. V026 A0.18108043880526803, independently audited86checks. Stop this saved-weight branch. Previous GPU was released; no new GPU requested, no remote training launched in this continuation.

@@ -1,0 +1,69 @@
+{
+  "status": "actual_CUDA_proofs_passed_training_in_progress",
+  "created_utc": "2026-11-08T05:49:46.397210+00:00",
+  "source_code_sha256": "caebc7edc5cce7561bcd67b91145abc000a7249e82c067fcb100c068bf14fac0",
+  "protocol_sha256": "56f8428036f9b2803125d5dd17ee5c62a654ac88f88bcdfe2483b09b92a79d44",
+  "payload_file": "outputs/controlled_experiments_v029/setup_helpers/v029-deploy.tar.gz",
+  "payload_sha256": "bb791b958384b4e535a344747f566dbfe306e96b433fd4bc28678d7a75feb512",
+  "payload_bytes": 40929025,
+  "payload_members": 64,
+  "pins_sha256": "9bf59d0165c4b908a79a70a3ddb62cf5ef73f9f62c1fa6fa5016f992bbe6af59",
+  "GPU_resource_requests": 1,
+  "approved_data_fits": 0,
+  "actual_GPU_proofs_completed": true,
+  "required_existing_files": {
+    "data/train.csv": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7"
+  },
+  "pruning_reference_file_count": 8,
+  "syntax_payload_checked": true,
+  "modeling_code_in_notebooks_only": true,
+  "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions.",
+  "observed_utc": "2026-11-08T05:54:05.486871+00:00",
+  "pod": "v2gao-989316",
+  "node": "its-dsmlp-n06.ucsd.edu",
+  "pod_started_utc": "2026-11-08T05:51:38+00:00",
+  "expected_lease_end_utc": "2026-11-08T11:51:38+00:00",
+  "expected_lease_end_Pacific": "November8 3:51:38AM PST",
+  "approved_A_fits": "in progress,2of200epochs; no completed A outcome",
+  "GPU_component_checks": 69,
+  "GPU_pruning_checks": 32,
+  "GPU_component_proof_sha256": "ac96ad2b149d7e8e10f2f8be364ff33042a9683fbaa5a6d82615ee2b56ca58ac",
+  "GPU_pruning_proof_sha256": "311a45fb21ca56f6d41f8c43db02cbfd34b22e8c6fe518a5533180f733916de5",
+  "numeric_runtime": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "torch": "2.2.1+cu121",
+    "cuda": "12.1",
+    "cudnn": 8902,
+    "device": "NVIDIA GeForce GTX 1080 Ti",
+    "capability": [
+      6,
+      1
+    ]
+  },
+  "efficiency_profiles": [
+    {
+      "name": "plain",
+      "batch_size": 256,
+      "median_step_seconds": 0.1567478789947927,
+      "peak_allocated_bytes": 1299542016
+    },
+    {
+      "name": "laplace",
+      "batch_size": 256,
+      "median_step_seconds": 0.1580801298841834,
+      "peak_allocated_bytes": 1299644416,
+      "step_time_ratio_to_baseline": 1.0084993232312571
+    }
+  ],
+  "login_stage": "$HOME/.pa3-setup-control.gty67K/v029-A-20261107",
+  "guardian_pid": 989554,
+  "latest_epoch": 2,
+  "latest_native_validation_MAE": 0.9498483237152486,
+  "latest_epoch_seconds": 42.24493681685999,
+  "pruning_reason": "no_comparable_data_model_optimizer_schedule_or_runtime",
+  "first_representative_full_budget": true,
+  "independent_A_audit_file": "outputs/controlled_experiments_v029/review/audit_A_v029.py",
+  "independent_A_audit_sha256": "7cf526f91d45bed4a49838f95e859cfd3c0d80f514a7dbeeaf0bdd2d364e3d84",
+  "independent_A_audit_executed": false
+}

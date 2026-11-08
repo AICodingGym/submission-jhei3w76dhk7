@@ -1,0 +1,8 @@
+{
+  "status": "prepared_before_outcome",
+  "created_utc": "2026-11-08T16:35:13.588086+00:00",
+  "audit_source_sha256": "873a900c5198cb7df8880fa09546dbbed70c2823a6872eec79c8b28af3f40296",
+  "protocol_sha256": "36d8532a3b4a834177e2525829f419f1242cab4e37434a543733d3e2bb28eb60",
+  "source_code_sha256": "1a6275ff59a37123cd7535d933bf0879f40ab6dc6e1b627059cace29e79e700f",
+  "no_outcome": true
+}

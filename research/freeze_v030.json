@@ -1,0 +1,11 @@
+{
+  "status": "frozen_before_candidate_calculation",
+  "created_utc": "2026-11-08T16:34:12.955466+00:00",
+  "protocol_file": "research/protocol_v030.json",
+  "protocol_sha256": "36d8532a3b4a834177e2525829f419f1242cab4e37434a543733d3e2bb28eb60",
+  "notebook": "research/mixture_screen_v030.ipynb",
+  "source_code_sha256": "1a6275ff59a37123cd7535d933bf0879f40ab6dc6e1b627059cace29e79e700f",
+  "candidate_count": 1,
+  "model_fits": 0,
+  "no_candidate_outcome_exists": true
+}

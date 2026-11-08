@@ -1,0 +1,15 @@
+{
+  "status": "access_requires_Terminal_Duo_renewal",
+  "observed_utc": "2026-11-08T16:28:04.545941+00:00",
+  "SSH_exit_code": 255,
+  "server_message": "Duo required once every8hours; Permission denied publickey,password",
+  "last_verified_utc": "2026-11-08T05:54:05.486871+00:00",
+  "last_verified_pod": "v2gao-989316",
+  "last_verified_epoch": 2,
+  "expected_old_lease_end_utc": "2026-11-08T11:51:38+00:00",
+  "current_remote_completion": "unknown; do not infer from stale pace/lease",
+  "no_restarts_or_new_allocations": true,
+  "source_protocol_audit_pins_checked": true,
+  "accepted_CSV_hash_checked": true,
+  "renewal_requested": true
+}
