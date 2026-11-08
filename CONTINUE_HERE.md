@@ -1,3 +1,15 @@
+# Current checkpoint: V026 rejected; V025 stopping workflow reviewed
+
+Updated November7 evening, about9:30PM Pacific. V024 completed/audited126checks and its GPU was released. V026 cheap single fixed-mixture screen completed, independent86checks: A meanMAE0.18108043880526803 versus0.18292209456473527, gain0.0018416557594672367 below unchanged .003 gate, despite negative bootstrap interval. Selected=null. NO F/final/submission for either. Official best0.17427 remains preserved; target<=.15unmet. Reportsresearch/RESULTS_V024.md and RESULTS_V026.md. V026 notebook/protocol/source frozen in git09fb2b6 before calculation, no weight search. No new GPU requested.
+
+V025 conservative validation-only early-pruning workflow independently reviewed and CPU32checks passed. Review caught and fixed cache identity missing native arm/diagnostic breath count before any production use; originals preserved. Current training_workflow_v025.ipynb codeSHA91af4747704d53887742dd7b7b7aac4d961313390642971d2c474df51d3cb694; policySHA unchanged0acdfa933d54fbae1e7728e2f8982bdae3f4227c6bd5187979bcd38b67e5fc88. Same-stage arrays/steps/backbone/optimizer/rates/runtime/known-source guard, calibrated margin7.0845%, patience20, LRgrace13; unfamiliar setups finish representative. No production pruning yet. Actual CUDA hook preflight REQUIRED before next new A GPU batch. Project AGENTS routes new A fits through V025queue; frozen legacy V005/V008 unchanged.
+
+Next: stop saved-weight tinkering; prepare one bounded training-only nearest-neighbor feasibility diagnostic (V027, DRAFT only at this entry). It will compare fixed5neighbor median pressure curves against a weak pool-only R/C-position median baseline on576 original-A-fit queries disjoint from the pool; no originalAval data/labels used. This cannot establish benefit over LSTM or by itself justify a GPU model. Source/distance/scalers/query/pool/gates must be reviewed/frozen before outcomes. Prospective later cross-fitted context or Laplace-objective hypotheses remain unimplemented. No F data/fit/outcome yet; cold F seed20261204 reserved.
+
+Actual SSH check9:23PM Pacific required renewed password/Duo; user renewal question is pending. Do not repeat login request or falsely claim current live inventory verified. Previous GPU was released; no new resources allocated. Work locally while awaiting connection. Preserve all source/data/model hashes, parent SETUP_LOG and visible history.
+
+---
+
 # Current checkpoint: V024 complete; V025 pruning implemented and CPU-tested
 
 Updated November7 evening. V024 finished6:23PM Pacific; guardian verified83files/188843666bytes, archiveSHA36f77e054fe98911d6c278cb4ec6a4478b593dd70f92b7c1cac5bfef4d4d2d2a, releasedGPU823946. Local archive/mirror verified; root sources preserved. Independent126checks passed. Best fixed A candidate0.181062361 versus0.182922095, gain0.001859734 below frozen0.003 gate; selected=null. NO F/final/submission forV024. Reportsresearch/RESULTS_V024.md andresults_review_v024.ipynb. No GPU jobs remain. Bestofficial0.17427 preserved; target<=.15unmet.

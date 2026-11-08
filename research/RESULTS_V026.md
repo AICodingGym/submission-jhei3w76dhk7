@@ -1,0 +1,13 @@
+# V026: fixed retained-curve ensemble screen
+
+The single prospectively frozen mixture scored **0.18108043880526803 native inspiratory A MAE** versus **0.18292209456473527** for the accepted recipe on the same original grouped split. Its gain **0.0018416557594672367** is below the unchanged **0.003** minimum. The whole-breath 95% interval for candidate-minus-reference was [-0.002686571057567654, -0.0009603960055412033]. It is **ineligible**. No F confirmation, all-data fit or submission follows. Best official mean MAE remains **0.17427**; the <=0.15 target remains unmet.
+
+Weights were fixed before calculation: compact/curve/memory/offset each0.125; deep0.25; deep_curve0.125; conv3_curve/conv7_curve each0.0625. Output used the unchanged weighted-median midpoint and nearest A-fit-only inspiratory pressure grid. The recipe was frozen in git09fb2b6 with protocolSHA c1659cf9f76d3731058df7c4e6cabe157b97a77846ed3c2d892108f93f199a18 and notebook codeSHA5eba14311aeb62fff16da0464e503de523735315025be9e1526c2f7a00414aad. Only this one candidate was evaluated; no weight search or threshold relaxation.
+
+The median point absolute error was0.07030296325683594. That statistic is distinct from the mean MAE used for selection and official scoring.
+
+Independent audit **86/86** passed, including exact206098 original validation rows, all input/model/source hashes, transitive V024 audit, independently rebuilt fit-only grid, integer16 replication median, native mean score and multiplicity-based breath bootstrap (1000draws, seed20262601). See research/mixture_review_v026.json and outputs/mixture_screen_v026/review/independent_audit.log. CPU screen runtime1.823s; zero model fits/inference, no test data read. Results are under outputs/mixture_screen_v026/results.json; executed analysis is research/mixture_screen_v026.ipynb.
+
+Interpretation: retaining some original curve-model weight does not add a meaningful gain over V024's two-hybrid mixture (0.181062360719). Stop this weight branch. A has supported many adaptive research batches; intervals are exploratory and do not correct for that research. A future genuinely different winner must be frozen and cold-confirmed on F before any final fit. No F split, fit or outcome exists.
+
+Operational issue: sandbox denied Jupyter localhost socket binding before any cell executed. The exact notebook code was then compiled/executed in one local Python process with captured cell outputs; source hash unchanged. Details and operational executor are under outputs/mixture_screen_v026/review/execution.json. This changed no recipe, data or scoring logic.
