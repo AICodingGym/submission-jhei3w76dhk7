@@ -1,3 +1,15 @@
+# Current checkpoint: V032 diagnostic passed; input-only test next
+
+November8, about2:50PM Pacific. V031 completed and was rejected (best fixed A ensemble0.180269962, gain0.002652133 below0.003; audit1039 passed). Its verified archive is local and the GPU was released. No active GPU jobs are known; no new resources have been requested.
+
+V028 strict raw machine-precision pressure lattice check stopped before controller fitting and was audited20. A separately frozen V032 decimal-export observation model passed on both disjoint training-only samples: coherent conditional compatibility202/576 (35.07%) and230/576 (39.93%), versus18/21 exact and0 shuffled. Runtime20.68 CPU seconds; independent audit2626 passed. These are NOT pressure MAEs, recovery rates or input-only predictions. See research/RESULTS_V032.md, controller_quantization_review_v032.json and frozen notebooks/protocol. No original-A controller prediction, F split/fit, final fit or submission exists yet.
+
+Next implement and prospectively freeze a bounded input-only controller-bank correction to the accepted A model. Use original Afit labels only to learn controllers and all statistics. Query API receives known inputs and baseline predictions only. Test one fixed recipe, unchanged gain>=0.003 plus negative whole-breath interval gate; cold F only if eligible. This next V033 proposal is not implemented/frozen/evaluated at this checkpoint. Fseed20261204 remains unused. Best official0.17427 preserved, <=0.15 unmet. Existing workers exhausted workspace credits; root can continue directly; do not retry failed workers without changed conditions.
+
+Preserve unrelated user change in baseline_v001.ipynb; do not stage/revert/overwrite it. Modeling stays in notebooks, approved Gym data only. SSH last renewed8:28AM may need Terminal/Duo after~4:28PM, only if actual access fails. Parent SETUP_LOG and visible history remain preserved.
+
+---
+
 # Current checkpoint: V031 complete and rejected; CPU quantization check pending
 
 November8 afternoon actualstate. V031completedall200epochs11:31:48AM Pacific, individualA.204487920(best188)worseV029.200130185; twofrozenensembles.181782103/.180269962,bestgain.002652133<.003,selectednull. Independentaudit1039PASSED. NoF/final/submission. Archive155files163247295B SHA6977682b2724231b9b0a2880154383506297fdd96a3dace800643731e42501b2 verifiedlocally,safelymirrored,73new/identicalrunfilespublished,sourcespreserved,GPUreleased. NoactiveorqueuedGPUjobsknown; nonewresourcesrequested. See research/RESULTS_V031.md andscreen_review_v031.json.
