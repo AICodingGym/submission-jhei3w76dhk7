@@ -1,0 +1,12 @@
+{
+  "status": "frozen_before_A_predictions",
+  "created_utc": "2026-11-08T23:09:04.508188+00:00",
+  "component_notebook": "research/controller_selection_components_v034.ipynb",
+  "component_code_sha256": "c51a51a7533085aa1f7923f7c53a5e1eabad352ad9e497cba153f297ff82c6cb",
+  "driver_notebook": "research/controller_selection_screen_v034.ipynb",
+  "driver_code_sha256": "ee43b27932af58c72456996aa489bfe5ebc9d5bbdccccf99ca381ccb777804f0",
+  "protocol_file": "research/controller_selection_protocol_v034.json",
+  "protocol_sha256": "9798ac9cb3c509a6918e5952d855c9348e15f523e6e258c7e74ead59e216637e",
+  "synthetic_checks": 28,
+  "no_output_directory": true
+}

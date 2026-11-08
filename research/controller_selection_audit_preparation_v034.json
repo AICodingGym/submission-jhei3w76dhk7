@@ -1,0 +1,7 @@
+{
+  "status": "prepared_not_run_before_outcomes",
+  "audit_path": "outputs/controller_selection_screen_v034_review/audit_v034.py",
+  "audit_sha256": "1f3f2efb6108073686f95ae55b1e8be6ff064c3d21c244c9f078bf5abdd162e3",
+  "executor_sha256": "2d460f6d9b8e0b92b7ca2ff0418f3ec2cba52c77601e36462a19580e648a4b3c",
+  "no_output_directory": true
+}

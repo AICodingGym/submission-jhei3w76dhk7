@@ -1,0 +1,61 @@
+{
+  "schema": "v034-physics-parameter-selection-fixed-screen-v1",
+  "status": "frozen_before_predictions",
+  "created_utc": "2026-11-08T23:09:04.243560+00:00",
+  "recipe": {
+    "neighbors": 5,
+    "passes": 4,
+    "minimum_query_eligible": 14,
+    "controller_selection": "minimum_mean_squared_one_step_pressure_equation_residual_against_baseline_prediction",
+    "candidates": [
+      "physics_match_one_bin",
+      "physics_match_full_grid"
+    ],
+    "bootstrap_seed": 20263401,
+    "bootstrap_draws": 1000,
+    "minimum_gain": 0.003,
+    "threads": 1
+  },
+  "hypothesis": "Input-trace neighbors failed V033r1. Select coherent training controllers by how well they explain baseline MODEL PREDICTIONS and known controls, rather than raw-trace similarity. Test whether the one-bin cap also limited correction. No query truth available to selection.",
+  "learned_scope": "Reuse exact independently audited21136-controller bank built from61114 originalAfit breaths only. Known-input scales/leave-one-out group thresholds/grid remain unchanged. No Avalidation labels fit any component.",
+  "selection_method": "For query with sameR/C/fullu_out mask and original controls-only distance confidence, require14 eligible known equations. Select five training coefficient vectors minimizing mean SQUARED native one-step pressure-equation residual against accepted baseline predictions over eligible t>=2. Stable canonical bank-order ties. No true query pressure/IDs. Predictor does not refit gains on query labels.",
+  "unchanged": "SameV033r1 four parallel Jacobi passes with baseline anchors at clipped/phase/first2 rows, median5, IQR<=onephysicalgridspacing and same training-only input-distance confidence. This distance confidence still uses closest INPUT traces even though parameter selection now uses predicted pressure. Known R/C/phase groups unchanged.",
+  "candidates": {
+    "physics_match_one_bin": "Only parameter selection changes, plus minimum14queryequations needed for identifiable matching. Same at-most-one-existing-physical-level correction cap and lower-midpoint ties.",
+    "physics_match_full_grid": "Same selected parameters/curves/gates; replace one-bin cap with nearest Afit inspiration pressure codebook value of projected median, exact midpoint lower. No additional blending, clipping or weight search."
+  },
+  "evaluation": "Fixed original A6791breaths/206098inspirationpoints, native float32 parsed targets with float64 errors; baseline0.18292209456473527. Save BOTH prediction arrays/hashes before labels read for scoring.",
+  "promotion": "Both alternatives predeclared. Require gain>=0.003 AND fixed1000whole-breath point-weighted bootstrap upper95<0(seed20263401). Freeze ONLY lowest-MAE eligible recipe before any coldF outcome. If none pass stop this bounded controller-bank selection branch; no threshold/weight/pass/k tuning after results.",
+  "confirmation": "Only if eligible: all required neural baseline members coldfit on new grouped Ffit and controller bank rebuilt Ffit-only; no A models for F predictions. Fseed20261204 remains unused. F resamples Afit and is not a pristine test. Same positivegain/negativewholebreathinterval gate; no runner-up on Ffailure.",
+  "final": "All-approved final fit/reuse only after hash/recipe/data checks and successful audited F. Exact603600row ID-aligned finite CSV audit before authorized submission. This screen creates none.",
+  "compute": "CPU1thread, zero new gradient fits/inferences/GPU. No iterative training to prune. Future new A neural fits still mandatory V025.",
+  "limitations": [
+    "Predicted pressure can already have coherent bias; choosing a compatible controller may preserve that bias.",
+    "Controller gains/reference may remain non-identifiable; pressure-equation residual is not prediction accuracy.",
+    "Unbounded correction can worsen pressure despite a small equation residual; A/F native MAE gates prevent automatic promotion.",
+    "Original A has been repeatedly used for research; independent cold resampling confirmation remains required."
+  ],
+  "input_hashes": {
+    "data/train.csv": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+    "outputs/improvements_v005/sequence/split_breath_ids.npz": "1bb6143f16b7b8834a99a17495e9c05e8f52e6a00a797710f0bfba91ba8ffa08",
+    "outputs/controlled_experiments_v013/A_row_ids.npy": "203c2ec1a2650798779225d4d693780f61ba26a19a64e660c0d99e916e790748",
+    "outputs/postprocessing_screen_v016/weighted_median_midpoint_then_nearest_training_pressure_codebook_A_predictions.npy": "a308ddf9df0f14732d6c44c2e2cb2af1a655c5d0ce6b5f8d43ee415c346187ac",
+    "research/controller_bank_components_v033r1.ipynb": "f139383ca93f5da7c10769d0d10aa1eacf20752759e7b5a9ed3b0c81577c2dab",
+    "research/controller_bank_protocol_v033r1.json": "d582d05dbb53cfb35bfd5df30891f35e5367670afc55c77e098a831115c2a3ee",
+    "research/controller_bank_review_v033r1.json": "8ba9a76d2062b922f865af4982975928818afd397560d813b21fe92b8fd34f72",
+    "outputs/controller_bank_screen_v033r1/summary.json": "cdbfcd4fd192deb0d7c22efdee1233bffbb5244838d4ca30c13b1717a4c592ef",
+    "research/controller_selection_preflight_v034.json": "8f44b6f0f98728bafb2904bb334d0b1f56931a085a3c0bd32ec087d7dfcded41",
+    "outputs/confirmation_v014/final_all_v018/submission.csv": "274668c4dc14e9d20a554c738859fca37e448836797d7260ec7b11464dcde3e2",
+    "research/submission_receipt_v018_final.json": "ed264b8ee1a796481a62d13b12d6674fe9f267c19db9bcaa09ef50742eec0058",
+    "outputs/controller_bank_screen_v033r1/bank_indices.npy": "8356d7970ca48178ec9e40a383eac2bb804ab55c635bde2314e7301dff597e9a",
+    "outputs/controller_bank_screen_v033r1/bank_breath_ids.npy": "c5d3e6686a5d88e8b71ad6da7d62c0a4999ca9e00f89e5d31a797783b818e728",
+    "outputs/controller_bank_screen_v033r1/bank_coef.npy": "97900ce0ee084b39d05cb2b6e91f00b0b44140d82d98d502f0a0a2745aa8b506",
+    "outputs/controller_bank_screen_v033r1/bank_mean.npy": "6c0d998c37f257e7861094024723367c80e18414c3987cc36d9561b9f5f2a37c",
+    "outputs/controller_bank_screen_v033r1/bank_std.npy": "358ebfa47465ed74243c4561994ec1822333b8ff58048f14b0cf9e4c21c53436",
+    "outputs/controller_bank_screen_v033r1/bank_loo_fifth.npy": "e24334d88770c1f6b71cbe431a8ac87361558aac640d50ec7aa0102bbcccd3ab",
+    "outputs/controller_bank_screen_v033r1/bank_index.json": "eee119e0aa053ff64f67e71df53a3f493e6232fc3f2ed3247104045eb34c394f",
+    "outputs/controller_bank_screen_v033r1/lattice.json": "31c2393909a75c6a4f9496f33bb0f139b62f3ba53be619061920ac43cda4586a",
+    "outputs/controller_bank_screen_v033r1/training_pressure_codebook.npy": "b0de6c1101e840ede60c48215c9e0672b0c6383aee68207dfb20cdcc9329fb5e"
+  },
+  "component_code_sha256": "c51a51a7533085aa1f7923f7c53a5e1eabad352ad9e497cba153f297ff82c6cb"
+}
