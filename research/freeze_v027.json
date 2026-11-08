@@ -1,0 +1,11 @@
+{
+  "status": "frozen_before_approved_data_diagnostic",
+  "created_utc": "2026-11-08T05:34:05.837809+00:00",
+  "protocol_file": "research/neighbors_protocol_v027.json",
+  "protocol_sha256": "bb28993f805089514ab9598edefafd08d912c699eb27eadd0f311fa367bb57ec",
+  "notebook": "research/neighbors_feasibility_v027.ipynb",
+  "source_code_sha256": "3cf145fd39e383b6c6251a14bd79c127a5aa7791898d20dacda070ef99cf28d2",
+  "synthetic_preflight_file": "research/neighbors_preflight_v027.json",
+  "synthetic_checks": 7,
+  "no_diagnostic_output_directory": true
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "check_count": 7,
+  "checks": {
+    "fake_query_label_mutation_leaves_neighbor_selection_unchanged": true,
+    "fake_query_label_mutation_leaves_distances_and_scaler_unchanged": true,
+    "fake_query_label_mutation_leaves_both_predictions_unchanged": true,
+    "fake_query_label_mutation_changes_only_scoring": true,
+    "pool_pressure_mutation_does_not_change_input_retrieval": true,
+    "pool_pressure_mutation_changes_predictions": true,
+    "exact_top5_neighbors_and_finite_predictions": true
+  },
+  "synthetic_only": true,
+  "approved_data_reads": 0,
+  "gradient_model_fits": 0,
+  "neural_checkpoint_inferences": 0,
+  "source_code_sha256": "3cf145fd39e383b6c6251a14bd79c127a5aa7791898d20dacda070ef99cf28d2",
+  "created_utc": "2026-11-08T05:34:05.836994+00:00"
+}

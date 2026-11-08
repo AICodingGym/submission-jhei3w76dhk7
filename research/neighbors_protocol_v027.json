@@ -1,0 +1,70 @@
+{
+  "schema": "v027-training-only-neighbor-feasibility-v1",
+  "status": "frozen",
+  "created_utc": "2026-11-08T05:34:05.837463+00:00",
+  "created_time_note": "Exact prospective freeze timestamp; separate original DRAFT preserved",
+  "notebook": "research/neighbors_feasibility_v027.ipynb",
+  "notebook_code_sha256": "3cf145fd39e383b6c6251a14bd79c127a5aa7791898d20dacda070ef99cf28d2",
+  "hypothesis": "Nearby approved known valve/time/phase traces within the same lung setting may supply useful training-neighbor pressure context. This diagnostic checks only one simple estimator against a training-pool-only RC/position baseline.",
+  "provenance": "Independent implementation inspired by the user-supplied S06 synthesis in kagglediscussion.md. No external solution code, original Kaggle data, pretrained solution or unrelated data.",
+  "source_document_sha256": "195e535ce76460231654b2faeb5805d49b52f7fb2b679f545e0813c091484288",
+  "recipe": {
+    "query_seed": 20262701,
+    "queries_per_RC": 64,
+    "expected_queries": 576,
+    "expected_Afit_breaths": 61114,
+    "expected_original_Aval_breaths": 6791,
+    "breath_steps": 80,
+    "neighbor_count": 5,
+    "query_batch_size": 32,
+    "retrieval_inputs": [
+      "u_in",
+      "time_step",
+      "u_out"
+    ],
+    "distance": "Euclidean RMS of all240 standardized entries of the complete80-step three-channel trace; equal channel/step weights; sameR/C pool only",
+    "standardization": "One global mean and population std per input channel, fitted on pool rows only; zero std replaced by1; no target or query statistics",
+    "phase_handling": "Known binary u_out enters distance as a standardized input channel; no exact-mask restriction or query exclusion. Score query u_out==0 only; report retrieved-neighbor phase mismatch.",
+    "prediction": "Coordinatewise median of the five retrieved pool pressure curves",
+    "baseline": "Pool-only median pressure for eachR/C and position using pool u_out==0 rows; empty cells fall back to thatR/C pool inspiratory median",
+    "target_dtype": "float32 parsed only for originalAfit breaths; errors and aggregate scores float64",
+    "input_dtype": "float64, parsed only for originalAfit breaths",
+    "ties": "Stable sort by squared distance; exact ties retain canonical pool row order. Neither IDs nor pressures are passed to retrieval.",
+    "bootstrap_seed": 20262702,
+    "bootstrap_draws": 1000,
+    "bootstrap_unit": "Whole query breath, point-weighted native inspiratory MAE difference, KNN minus baseline",
+    "distance_bins": 4,
+    "uncertainty_bins": 4,
+    "threads": 1
+  },
+  "input_sha256": {
+    "data/train.csv": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7",
+    "outputs/improvements_v005/sequence/split_breath_ids.npz": "1bb6143f16b7b8834a99a17495e9c05e8f52e6a00a797710f0bfba91ba8ffa08"
+  },
+  "preserved_files_sha256": {
+    "outputs/confirmation_v014/final_all_v018/submission.csv": "274668c4dc14e9d20a554c738859fca37e448836797d7260ec7b11464dcde3e2"
+  },
+  "statistics_pools": "Only Afit excluding all576 query breaths. Original Aval excluded from every scientific calculation; its IDs are checked only for exclusion. CSV is streamed, but non-fit rows are skipped before any input/target conversion.",
+  "selection": "No k, feature, weight, mask, baseline, cutoff or model tuning from these outcomes; exactly one recipe. No automatic GPU promotion and no pressure-MAE target gate.",
+  "interpretation": "An inner Afit diagnostic cannot establish benefit over the LSTM, grouped A, cold F or the official score. Favorable results justify considering a separately frozen cross-fitted neighbor-residual model, not claiming a model improvement.",
+  "future_residual_context_requirements": [
+    "Train-query neighbor features must be cross-fitted inside the training fold, with query/self labels excluded.",
+    "Original A-validation lookup pools must contain only Afit breaths.",
+    "Cold F confirmation must rebuild features, scalers and neighbor pools on Ffit only; no original A model reuse.",
+    "Final all-approved fitting may use all approved labeled breaths only after validation selection.",
+    "Keep existing official result and never use hidden scores to select neighbor parameters."
+  ],
+  "execution_status": "Frozen before any approved data calculation; synthetic seven-check proof passed",
+  "outputs": "outputs/neighbors_feasibility_v027 (must not exist before execution); design/sample-before-scoring, predictions, retrieval identities/distances, disagreement arrays, per-query/per-RC CSVs, correlations, paired whole-breath bootstrap and immutable summary with hashes",
+  "primary_comparison_metric": "native inspiratory point-weighted mean MAE only; other metrics descriptive",
+  "weak_baseline_limitation": "Improvement over a simple R/C-position median cannot establish improvement beyond the LSTM or trigger GPU fitting; no automatic promotion.",
+  "required_preflight": "Synthetic fake-query-label mutation must leave retrieval, scaler and both predictions unchanged while changing scoring. Pool-pressure mutation must leave retrieval unchanged and change predictions. Defined but not executed in draft.",
+  "required_diagnostics": [
+    "Per-R/C mean full-breath and inspiratory neighbor phase-mismatch fraction",
+    "Neighbor pressure MAD and IQR as disagreement, not calibrated uncertainty",
+    "Control distance and disagreement relationships to held-out inner-query native errors",
+    "Per-R/C MAE, point counts and total absolute-error contribution",
+    "One paired whole-breath bootstrap versus simple baseline; no additional estimator/weight search"
+  ],
+  "query_population_note": "Exactly64 inner-query breaths per R/C; pooled point-weighted mean describes this balanced diagnostic sample, not full A-validation or official distribution."
+}
