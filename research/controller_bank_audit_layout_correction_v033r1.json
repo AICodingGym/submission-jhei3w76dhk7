@@ -1,0 +1,9 @@
+{
+  "status": "audit_only_numerical_layout_correction",
+  "created_utc": "2026-11-08T23:04:16.801182+00:00",
+  "cause": "Independent pandas three-channel view had strides(1920,8,640), different reduction order from canonical training C array(1920,24,8). Mean differed5.75e-13, std2.49e-11 despite identical data. Reconstruct C-contiguous canonical feature layout; exact equality preserved, no tolerance widened. Round-trip decimal reader used as an additional explicit raw-decimal convention; high/round_trip both produced exact statistics once contiguous.",
+  "old_audit_sha256": "ffa1ac71d83517ad3dbe27e76d2189da0af9c779d12885511403c4d40e9462f2",
+  "new_audit_sha256": "fea6d4ef2e6c1dce29f73dfecc4ec72df8e88ae4d18a1a3a0c4419f86057381c",
+  "model_or_prediction_or_protocol_changed": false,
+  "first_failure_log_sha256": "a3ae7d702f312fbb793582e0af0f6a1c7166fbfc4d559377628225a03f9b006d"
+}

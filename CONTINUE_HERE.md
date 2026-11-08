@@ -1,3 +1,23 @@
+# Live checkpoint: V033 rejected; V034 CPU screen running
+
+November8 about3:10PM Pacific. V033 alignment-only recovery completed and independent161-check audit passed. A MAE0.182879114 vs accepted0.182922095; gain0.0000429802,95%delta[-0.000166941,+0.000076746]. Ineligible; no F/final/submission. Saved bank21,136 Afit controllers. Original alignment guard failure and sources preserved, V033r1 restored CSV row order before any candidate outcome and reused hash-pinned bank. See research/RESULTS_V033.md, controller_bank_review_v033r1.json, executed controller_bank_results_v033r1.ipynb. Do not tune V033 thresholds after rejection.
+
+V034 now running locally CPU (shell43448): two prospectively frozen physics-matched-controller cap variants. Select training coefficient vectors using known inputs plus BASELINE PREDICTIONS (never query labels), same controller projection/consensus/support; compare one-bin cap versus full training-grid projection. Both predictions lock before labels. Git922e40c froze before execution;28 synthetic checks passed. Componentc51a51a7533085aa1f7923f7c53a5e1eabad352ad9e497cba153f297ff82c6cb, protocol9798ac9cb3c509a6918e5952d855c9348e15f523e6e258c7e74ead59e216637e. Own outputs/controller_selection_screen_v034; logs/executor/audit in its _review directory. After summary run prepared audit_v034.py (recorded research/controller_selection_audit_preparation_v034.json), preserve any genuine audit errors. Only lowest eligible under unchanged gain>=0.003+negativeinterval could advance cold F; if none pass, stop bounded controller-bank branch without cap/weight searches. Fseed20261204 still unused.
+
+Fresh remote pod inventory Nov8~3:03PM: empty, SSH works. No GPU allocated/queued. Official0.17427 preserved; <=0.15 unmet. V032 conditional compatibility35.07%/39.93% is not predictionMAE/recoverycoverage. V031 archived/rejected/GPU released. Workers credit-exhausted; root continues. Preserve unrelated baseline_v001.ipynb user modification. Modeling in notebooks, approved Gym data only.
+
+---
+
+# Live checkpoint: V033 CPU screen running
+
+November8 about3:00PM Pacific. V032 diagnostic results saved and audited; V033 input-only controller bank correction frozen in git15ff591 BEFORE any candidate A prediction. Component codebdd6d2ab01994bae8b52c9bc18d5ac7646b275153aba292f838e456b3552e7bd; protocolcdf08366de6eb9712571cf059aeb099bdb56e5ef2498d7bde1e2091958e68a1c.20 synthetic checks passed. One candidate only: top5 input traces within exact R/C/phase, training-bank-only scales/distance confidence, four parallel physics passes, consensus and at-most-one-level correction. No query pressure accepted by predictor API. Original A split; unchanged0.003 gain and whole-breath interval gate. No validation outcome exists at this entry.
+
+Local CPU-only executor outputs/controller_bank_screen_v033_review/execute_notebook.py is running (unified shell session42946). Scientific code remains in notebooks; log execution.log in same directory. No GPU/pod requested. Wait for actual summary then run prepared audit_v033.py (source hash recorded research/controller_bank_audit_preparation_v033.json), fix audit-only issues preserving originals if needed, never change model/protocol based on outcomes. Run research/controller_bank_results_v033.ipynb after audit, record results. Fseed20261204 remains unused; cold F conditional on eligibility. Best official0.17427 unchanged, <=0.15 unmet.
+
+V031 completed/rejected/archive verified/GPU released. V032 training-only compatibility35.07%/39.93% is NOT pressure MAE or recovery coverage. Workers exhausted credits; root continues. Preserve unrelated baseline_v001.ipynb user modification.
+
+---
+
 # Current checkpoint: V032 diagnostic passed; input-only test next
 
 November8, about2:50PM Pacific. V031 completed and was rejected (best fixed A ensemble0.180269962, gain0.002652133 below0.003; audit1039 passed). Its verified archive is local and the GPU was released. No active GPU jobs are known; no new resources have been requested.
