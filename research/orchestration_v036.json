@@ -1,0 +1,96 @@
+{
+  "status": "first_five_pod_requested_last_observed_Pending",
+  "updated_utc": "2026-11-09T04:14:20.874045+00:00",
+  "pod": "v2gao-1978631",
+  "confirmation_stage": "first_five",
+  "submitted_Pacific": "2026-11-08 20:09:15 PST",
+  "login_stage": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v036-F-first_five-20261108",
+  "guardian_PID": 1978812,
+  "source_commit": "04aab2d",
+  "source_freeze": {
+    "status": "frozen_before_F_split_or_pressure",
+    "created_utc": "2026-11-09T04:00:31.666825+00:00",
+    "notebook": "confirmation_v036.ipynb",
+    "source_code_sha256": "aa340df0768a75f4c942ce0107b2ea0eb21b5ac39fc45461f44a768a0c0d488e",
+    "protocol_file": "research/confirmation_protocol_v036.json",
+    "protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4",
+    "result_export": "V036_RESULT",
+    "CPU_component_checks": 115,
+    "component_preflight": {
+      "notebook": "research/confirmation_preflight_v036.ipynb",
+      "function": "run_confirmation_preflight_v036",
+      "code_sha256": "790df15cb623e4c41796fa7779f8e0c41ffc460eaa2895fd5fd46daec3dcd393",
+      "kwargs": {}
+    },
+    "additional_project_files": [
+      "controlled_experiments_v013.ipynb",
+      "research/laplace_preflight_v029.ipynb",
+      "research/capacity_preflight_v035.ipynb",
+      "research/confirmation_selection_v036.json",
+      "research/CONFIRMATION_PLAN_V036_DRAFT.md",
+      "research/confirmation_preflight_review_v036.json",
+      "research/confirmation_fixture_correction_v036.json",
+      "research/RESULTS_V035.md",
+      "handoff/AGENTS_PROJECT_V025.md",
+      "research/PRUNING_WORKFLOW_V025.md",
+      "research/OBJECTIVE_015.md"
+    ],
+    "CPU_to_final_only_protocol_literal_changed": true,
+    "stages": {
+      "first_five": [
+        "original_compact",
+        "deep",
+        "curve",
+        "memory",
+        "offset"
+      ],
+      "remaining_two": [
+        "deep_curve",
+        "capacity_laplace_curve"
+      ]
+    },
+    "no_F_split_or_fit_or_outcome": true,
+    "actual_CUDA_required": true
+  },
+  "payload": {
+    "status": "prepared_not_dispatched",
+    "created_utc": "2026-11-09T04:03:37.701263+00:00",
+    "source_code_sha256": "aa340df0768a75f4c942ce0107b2ea0eb21b5ac39fc45461f44a768a0c0d488e",
+    "protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4",
+    "payload_file": "outputs/confirmation_v036/setup_helpers/v036-deploy.tar.gz",
+    "payload_sha256": "1bc3e7c0a0077772e8b1654fa516c7c76681ca6dc0f5a0de735fb20a16e57923",
+    "payload_bytes": 6518626,
+    "payload_members": 54,
+    "pins_sha256": "8a803646972d71f1a319379959baceee977c9b18c68f9d9e01e532970f9116ac",
+    "GPU_resource_requests": 0,
+    "approved_data_fits": 0,
+    "actual_GPU_proofs_completed": false,
+    "required_existing_files": {
+      "data/train.csv": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7"
+    },
+    "pruning_reference_file_count": 8,
+    "syntax_payload_checked": true,
+    "modeling_code_in_notebooks_only": true,
+    "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions."
+  },
+  "audit_preparation": {
+    "status": "prepared_not_run_before_any_F_outcome",
+    "created_utc": "2026-11-09T04:12:40.725754+00:00",
+    "audit_file": "outputs/confirmation_v036/review/audit_confirmation_v036.py",
+    "audit_sha256": "3baf2c11b1ca9cf580e891074d2bc2f486937caaf91aa7ebcd34350e91afc6c4",
+    "source_code_sha256": "aa340df0768a75f4c942ce0107b2ea0eb21b5ac39fc45461f44a768a0c0d488e",
+    "protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4",
+    "stage_audits_never_read_validation_pressure": true,
+    "complete_audit_reconstructs_all_policies_and_native_scores": true,
+    "independent_cache_check": "64 fixedseed breaths, direct frozen-state CPU reconstruction after provenance/statistics/shape verification; require maximum discrepancy<one100th of Ffit training-grid spacing. No production loader guard weakened.",
+    "no_F_result_exists": true
+  },
+  "actual_CUDA_proof_not_yet_retrieved": true,
+  "actual_start_and_lease_end_unknown": true,
+  "no_F_validation_outcome": true,
+  "remaining_two_not_allocated": true,
+  "ordinary_lease_seconds": 21600,
+  "no_automatic_allocation_or_submission": true,
+  "official_best_preserved": 0.17427,
+  "target_unmet": true
+}
