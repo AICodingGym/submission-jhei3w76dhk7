@@ -1,3 +1,9 @@
+# Live process check: queued, no training active
+
+Nov9 **3:29:08PM Pacific**: only pod2973011 is Pending, with no node/startTime. Scheduler reports eligible GPU slots occupied; no queue position or start estimate. Guardian2973272 is alive and waiting, and will dispatch the reviewed remaining_two pipeline when Ready. Neither deep_curve196 nor capacity190 has started. Firstfive training/archive/1076-check audit are complete. No final fit or new submission is running. Current primary target remains official MAE<=0.1638; accepted best0.17427. About5h for the queued stage after scheduling. Next check>=3:39:08PM; preserve files/source/recipes, no duplicate requests.
+
+---
+
 # Current target and live state: MAE <=0.1638; stage two queued
 
 The user's latest primary goal is **accepted official inspiratory mean MAE <=0.1638**. The updated PA3 handout confirms this as the historical median benchmark and +1 bonus cutoff (pages2,5). Current accepted best remains **0.17427**; target is unmet. Current instructions are in `research/active_objective.json` and `research/OBJECTIVE_01638.md`. The updated PDF is preserved in `handoff/course_context/PA3_updated_20261109.pdf`, SHA256dd784dab2b94d61174c1a98a7b9bb46e5bb82667f00cb0d72e5ae99d7cdef460. Original PDFs and old <=0.15 protocol/goal files remain historical. The app Goal object still reports usageLimited with the old objective; replacement API rejected an unfinished existing goal. Do not mark that old unmet goal complete to change its label. Continue actual project work against the user's new target.
