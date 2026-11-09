@@ -1,3 +1,11 @@
+# Latest live check: V035 training148/200
+
+November8 6:19:42PM Pacific: podv2gao-1855552 Running n05, last completed148/200,59.34s/epoch,8842.55selapsed. Native single-model validation MAE0.2067283, best0.2039534 at147. About51–55mintraining remain; estimate finish7:10–7:15PM, reviewedensemble results7:25–7:35PM ifpaceholds. No completed summary/candidate ensemble scores yet. Do not treat this single-model validation score as official performance. Official0.17427 preserved, <=0.15 unmet. Ordinaryleaseends9:50:27PM, guardian1855730 active. One transient Kubernetes API observation timeout was retried safely by guardian; training continued. No restart/newresources/recipe/pruning changes.
+
+Rawobservation outputs/controlled_experiments_v035/monitor/check_20261109T021942Z.json; orchestration_v035.json updated. Source/protocolfreeze618e9b7 and actualCUDA78+32proofs unchanged. After completion retrieve/member-verify archive, safelymirror/publishnew-or-identical files preservingrootnotebooks, then independent A audit review/audit_A_v035.py beforepromotion. First capacity representative lacks matched history; retain frozen200budget. No Fsplit/fits/final/submission. Check about10minutes and wait; preserve unrelated baseline_v001.ipynb modification.
+
+---
+
 # Latest live check: V035 training58/200
 
 November8 4:49:28PM Pacific: podv2gao-1855552 Running on n05. Actual lease began3:50:27PM and ends9:50:27PM PST. GTX1080Ti, actual CUDA model78 and pruning32checks PASSED before approved training, including full four-layer exact optimizer/RNG resume, breath reset, memory and ordinary-lease gate. Fullstep.221836s vsold.159441s (1.391x), projected3.53h within6h with30minreserve. Last completed epoch58/200,58.73s/epoch,elapsed3461.55s. Current native validation MAE.373698, best.323972 at57; these are EARLY incomplete scores, not new official results or candidates. About2h20mtraining left atcurrentpace; expectedreview7:15–7:30PM Pacific ifpaceholds. No final summary yet. First unfamiliar capacity representative continues under V025; only58epochs, no support for pruning.
