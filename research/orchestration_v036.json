@@ -1,6 +1,6 @@
 {
-  "status": "corrected_first_five_training_deep_epoch17of189",
-  "updated_utc": "2026-11-09T15:25:43.730899+00:00",
+  "status": "first_five_four_finished_offset_epoch61of193",
+  "updated_utc": "2026-11-09T18:53:26.888406+00:00",
   "pod": "v2gao-2591068",
   "confirmation_stage": "first_five",
   "submitted_Pacific": "2026-11-08 20:09:15 PST",
@@ -136,8 +136,8 @@
     "modeling_code_in_notebooks_only": true,
     "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions."
   },
-  "last_observation": "outputs/confirmation_v036/monitor/schema_corrected_check_20261109T152420Z.json",
-  "next_check_not_before_utc": "2026-11-09T15:34:20Z",
+  "last_observation": "outputs/confirmation_v036/monitor/check_20261109T185225Z.json",
+  "next_check_not_before_utc": "2026-11-09T19:02:25Z",
   "conditional_final_source_prepared": "research/freeze_final_v037.json",
   "corrected_source_code_sha256": "27f89eb9f1a749e032040082b70513fc9990311eee87fcddbf7e6d5806f8138b",
   "guardian_detachment_and_dispatch_verified": true,
@@ -150,13 +150,13 @@
   },
   "remaining_lease_seconds_at_check": 20216,
   "stage_projection_fits_remaining_lease_with_30minute_reserve": true,
-  "active_member": "deep",
-  "completed_epochs": 17,
-  "member_budget": 189,
-  "last_epoch_seconds": 34.16903058066964,
-  "last_fit_elapsed_seconds": 590.3398977387697,
-  "actual_GPU_utilization_percent": 94,
-  "actual_GPU_used_MiB": 1739,
+  "active_member": "offset",
+  "completed_epochs": 61,
+  "member_budget": 193,
+  "last_epoch_seconds": 10.471504824236035,
+  "last_fit_elapsed_seconds": 647.9760576542467,
+  "actual_GPU_utilization_percent": 78,
+  "actual_GPU_used_MiB": 1169,
   "guardian_status_polling_verified": true,
   "full_failed_schema_archive_local_member_verification": {
     "verified": true,
@@ -165,7 +165,17 @@
     "safe_regular_members": true,
     "all_individual_file_hashes": true
   },
-  "first_stage_remaining_estimate_hours": 4,
   "remaining_two_estimate_hours": 5,
-  "conditional_final_capacity_estimate_hours": 3.5
+  "conditional_final_capacity_estimate_hours": 3.5,
+  "completed_first_stage_members": [
+    "deep",
+    "original_compact",
+    "curve",
+    "memory"
+  ],
+  "first_stage_remaining_estimate_minutes": [
+    23,
+    28
+  ],
+  "first_stage_finish_estimate_Pacific": "2026-11-09 11:15\u201311:20 PST"
 }

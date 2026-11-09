@@ -1,3 +1,11 @@
+# Latest live check: four first-stage models finished
+
+Nov9 **10:52:25AM PST**: pod2591068 Runningn05; GPU78%/1169MiB, zero restarts. Cold deep189, original_compact193, curve193 and memory191 finished training with report+record files. Offset **61/193**,~10.5s/epoch,647.98selapsed; approximately23–28min remain, firststagefinish~**11:15–11:20AM** ifpaceholds. No Fvalidation labels/outcome or newofficialscore. These completed fits await stageaudit; training MAE is not validation performance. Remaining_two notallocated, still~5h afterverifiedarchive/stageaudit/queue. Conditionalfinal~3.5h onlyaftercompleteFpass+independentaudit. Bestofficial0.17427 unchanged,<=0.15unmet.
+
+Guardian2599277 polls normally; one earlier transient KubernetesAPI observation timeout recovered without interrupting training. Samecorrectedsource27f89eb9..., actualCUDA130+32proofs, frozenrecipes/split/epochs unchanged. Lease ends12:50:52PM, sufficient currentstage margin. Rawmonitor outputs/confirmation_v036/monitor/check_20261109T185225Z.json. Nextcheck>=11:02:25AM, about10min. No newresources/recipe/acceptancechanges. See nextentry for exactcurrentmonitor/helper/payload/stage/audit commands. Preserve unrelatedbaseline_v001.ipynb.
+
+---
+
 # Current checkpoint: V036 cold training actually running
 
 Nov9 **07:24:20AM PST** ten-minute check: pod`v2gao-2591068` Runningn05, actualGPU94%/1739MiB, no restarts. Firstmember deep **17/189epochs**,34.17s/epoch,590.34selapsed,213optimizersteps/epoch. Otherfourfirststage members queued sequentially, remaining_two notallocated. Guardian2599277detached/activelypolling, wrapper299/executor370live. Currentlease ends**12:50:52PM PST**. SamefixedknownFsplit membership confirmed afterone-lineE->Fmetadata-keycorrection, driver**27f89eb9f1a749e032040082b70513fc9990311eee87fcddbf7e6d5806f8138b**. ActualCUDA130component+32prunerpassed. No Fvalidation pressure/outcome and NOnewofficialscore. Do notreport trainingMAEasvalidation.
