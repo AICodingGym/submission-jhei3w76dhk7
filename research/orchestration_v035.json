@@ -1,11 +1,11 @@
 {
-  "status": "queued_Pending_unschedulable_no_free_compatible_GPU",
-  "updated_utc": "2026-11-08T23:28:35.927259+00:00",
+  "status": "Running_approved_A_training",
+  "updated_utc": "2026-11-09T00:49:28.431678+00:00",
   "pod": "v2gao-1855552",
   "course_namespace": "DSC102_FA26_001",
   "submitted_Pacific": "2026-11-08 15:18:17 PST",
   "lease_seconds": 21600,
-  "actual_start_and_lease_end_not_retrieved": true,
+  "actual_start_and_lease_end_not_retrieved": false,
   "login_stage": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v035-A-20261108",
   "guardian_PID": 1855730,
   "source_freeze": {
@@ -88,8 +88,8 @@
     "adaptation": "V029 independent audit retained actual V029 objective/metadata/factory module. Updates only own source/protocol/paths, declared arm/roster/variant, generic concatenated width, exact full-capacity state shapes and actual lease gate.",
     "no_A_outcome": true
   },
-  "actual_CUDA_proofs_unknown_until_retrieved": true,
-  "approved_data_fit_not_yet_observed": true,
+  "actual_CUDA_proofs_unknown_until_retrieved": false,
+  "approved_data_fit_not_yet_observed": false,
   "resources": {
     "GPU": 1,
     "CPU_limit": 4,
@@ -101,11 +101,89 @@
   "Mac_required_for_training": false,
   "accepted_official_MAE": 0.17427,
   "target_unmet": true,
-  "latest_observation": "outputs/controlled_experiments_v035/monitor/check_20261108T232835Z.json",
-  "actual_start_utc": null,
-  "actual_lease_end_utc": null,
-  "GPU_proof_not_started": true,
-  "approved_data_fit_not_started": true,
+  "latest_observation": "outputs/controlled_experiments_v035/monitor/check_20261109T004928Z.json",
+  "actual_start_utc": "2026-11-08T23:50:27Z",
+  "actual_lease_end_utc": "2026-11-09T05:50:27+00:00",
+  "GPU_proof_not_started": false,
+  "approved_data_fit_not_started": false,
   "queue_start_estimate": null,
-  "scheduler_reason": "0/39 nodes are available: 2 Insufficient nvidia.com/gpu, 24 node(s) had untolerated taint(s), 4 node(s) were unschedulable, 9 node(s) didn't match Pod's node affinity/selector. no new claims to deallocate, preemption: 0/39 nodes are available: 2 No preemption victims found for incoming pod, 37 Preemption is not helpful for scheduling."
+  "scheduler_reason": null,
+  "actual_CUDA_proof": {
+    "status": "passed",
+    "check_count": 78,
+    "numeric_runtime": {
+      "python": "3.11.9",
+      "numpy": "1.26.4",
+      "torch": "2.2.1+cu121",
+      "cuda": "12.1",
+      "cudnn": 8902,
+      "device": "NVIDIA GeForce GTX 1080 Ti",
+      "capability": [
+        6,
+        1
+      ]
+    },
+    "lease_budget_gate_passed": true,
+    "lease_budget": {
+      "new_full_step_seconds": 0.22183649241924286,
+      "old_full_step_seconds": 0.15944080241024494,
+      "step_ratio": 1.3913407927316643,
+      "projected_training_seconds": 12724.54120516777,
+      "ordinary_lease_seconds": 21600,
+      "reserve_seconds": 1800,
+      "projection_overhead_multiplier": 1.2
+    },
+    "parameter_count": 5108162,
+    "capacity_spec": {
+      "family": "lstm",
+      "hidden": 320,
+      "layers": 4,
+      "dropout": 0.15,
+      "bidirectional": true,
+      "joint_embedding_dim": 0,
+      "rc_heads": false,
+      "residual": true,
+      "head_width": 32,
+      "widths": [
+        320,
+        256,
+        192,
+        128
+      ],
+      "output_concat": true
+    },
+    "proof_file_sha256": {
+      "outputs/controlled_experiments_v035/preflight_pruning_cuda/proof.json": "4e7e8fcb50ccfe56a18997920a6a641818cd3ec995d5abe19b0b7f1b1f2e5583",
+      "outputs/controlled_experiments_v035/preflight_component_cuda/proof.json": "df67ba13a4abd2f8920746503975f075b24383c647af15920a1bb542cc9955b4"
+    }
+  },
+  "actual_pruning_CUDA_proof": {
+    "status": "passed",
+    "check_count": 32,
+    "exact_pruned_resume": true,
+    "next_planned_experiment_executed": true
+  },
+  "last_epoch": {
+    "event": "epoch",
+    "epoch": 58,
+    "lr_used": 0.0012511068426337025,
+    "lr_next": 0.0012420418422704933,
+    "training_online_inspiratory_mae": 0.3125266218630332,
+    "training_eval_inspiratory_mae": 0.3287823532824634,
+    "training_diagnostic_breaths": 2048,
+    "training_scored_points": 1855824,
+    "optimizer_steps": 239,
+    "cumulative_optimizer_steps": 13862,
+    "validation_inspiratory_mae": 0.37369838114897147,
+    "best_val_mae": 0.32397184604631707,
+    "best_epoch": 57,
+    "epoch_seconds": 58.72829375229776,
+    "elapsed_seconds": 3461.5522959791124,
+    "training_loss_kind": "laplace_curve",
+    "training_online_objective_scaled": -3.0183313196557626,
+    "training_online_laplace_NLL_scaled": -3.0194058195006384,
+    "training_online_increment_mae": 0.15107931067365568,
+    "training_adjacent_inspiratory_pairs": 1794710,
+    "training_online_scale_mean_native": 0.3143759515149832
+  }
 }
