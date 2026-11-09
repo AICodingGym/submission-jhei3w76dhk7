@@ -1,8 +1,8 @@
 {
   "status": "conditional_final_source_frozen_before_F_outcome",
-  "created_utc": "2026-11-09T04:37:27.610550+00:00",
+  "created_utc": "2026-11-09T15:06:53.225150+00:00",
   "notebook": "final_fit_v037.ipynb",
-  "source_code_sha256": "515a83480204960f5db8948349e388719b9e9a6190c72eadfc526c3de1a52aa4",
+  "source_code_sha256": "68a4aa07834bd8cd365058631f01279620117c7a896657c9a3029622e3d4ed64",
   "result_export": "V037_RESULT",
   "required_runtime_gates": [
     "Explicit raw SHA256 of completed passed F result",
@@ -13,8 +13,8 @@
   ],
   "CPU_source_checks": 84,
   "CPU_negative_gate_checks": 3,
-  "CPU_proof_sha256": "fdd89f98e1d520997bcb2b4ad7d728b66d1227acdf779dc90e256324499c30d4",
-  "negative_gate_proof_sha256": "0d7e60982bbdaa8725ec6d7f326188eb7ca6bc6e7c81880a1d72feb0de5f7509",
+  "CPU_proof_sha256": "899eb2b94dc24bc7e4ce1366e0bf9926e2b78ffe41631933c40172e523b81cc5",
+  "negative_gate_proof_sha256": "4996af6aaeb355b77709c22c39afe998dbae380331c5208eaea94fcd433ffef0",
   "component_preflight": {
     "notebook": "research/final_preflight_v037.ipynb",
     "function": "run_final_preflight_v037",
@@ -31,5 +31,7 @@
   "actual_F_gate_not_passed": true,
   "actual_all_data_reuse_not_run": true,
   "no_actual_final_fit_or_submission": true,
-  "deployment_helpers_and_payload_not_prepared": true
+  "deployment_helpers_and_payload_not_prepared": true,
+  "previous_source_code_sha256": "515a83480204960f5db8948349e388719b9e9a6190c72eadfc526c3de1a52aa4",
+  "correction": "Only expected F driver pin revised for one-line F metadata key correction; original source/proofs preserved. No F validation outcome."
 }

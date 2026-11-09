@@ -1,0 +1,23 @@
+{
+  "status": "corrected_before_any_F_model_fit_or_F_validation_outcome",
+  "created_utc": "2026-11-09T15:06:12.278233+00:00",
+  "previous_source_code_sha256": "aa340df0768a75f4c942ce0107b2ea0eb21b5ac39fc45461f44a768a0c0d488e",
+  "corrected_source_code_sha256": "27f89eb9f1a749e032040082b70513fc9990311eee87fcddbf7e6d5806f8138b",
+  "scientific_selection_sha256": "ec2feebb872eaaf963ca27a1c1f61c23af0f6f1aac24b3d4a39986100b8f54ec",
+  "protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4",
+  "production_code_lines_changed": 1,
+  "split_algorithm_or_member_recipe_or_duration_or_weight_or_acceptance_changed": false,
+  "Ffit_labels_read_in_failed_attempt": true,
+  "Fval_labels_or_F_outcomes_or_F_model_fits": false,
+  "missing_preflight_contract": "synthetic model dispatch tests did not exercise production split serialization -> member identity",
+  "new_preflight": "actual production AST assignments executed together for all seven members using synthetic inputs",
+  "original_sources_preserved": "outputs/confirmation_v036/schema_error_preserved",
+  "additional_operational_error": "mkdir && nohup ... & kept an asynchronous subshell attached to kubectl stream; fixed to sequential mkdir then standalone nohup",
+  "CPU_contract_checks": 124,
+  "detachment_and_storage_checks": 16,
+  "conditional_final_CPU_checks": 84,
+  "conditional_final_negative_gate_checks": 3,
+  "exact_one_line_non_numeric_schema_only_diff_verified": true,
+  "original_and_corrected_split_membership_not_altered": true,
+  "manual_archive_copy_first_attempt_failed_reason": "Manual helper invocation omitted KUBECONFIG; guardian already exports it. Preserve events; rerun with explicit correct environment."
+}

@@ -1,13 +1,13 @@
 {
   "status": "passed",
-  "created_utc": "2026-11-09T04:37:27.608025+00:00",
+  "created_utc": "2026-11-09T15:06:53.222942+00:00",
   "checks": {
     "partial_stage": true,
     "failed_confirmation": true,
     "stage_audit_only": true
   },
   "check_count": 3,
-  "final_source_code_sha256": "515a83480204960f5db8948349e388719b9e9a6190c72eadfc526c3de1a52aa4",
+  "final_source_code_sha256": "68a4aa07834bd8cd365058631f01279620117c7a896657c9a3029622e3d4ed64",
   "all_synthetic_no_F_outcomes_or_approved_data_read": true,
   "no_training_artifacts_created": true
 }

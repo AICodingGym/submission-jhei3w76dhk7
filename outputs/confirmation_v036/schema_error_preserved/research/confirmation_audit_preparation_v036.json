@@ -1,0 +1,12 @@
+{
+  "status": "prepared_not_run_before_any_F_outcome",
+  "created_utc": "2026-11-09T04:12:40.725754+00:00",
+  "audit_file": "outputs/confirmation_v036/review/audit_confirmation_v036.py",
+  "audit_sha256": "3baf2c11b1ca9cf580e891074d2bc2f486937caaf91aa7ebcd34350e91afc6c4",
+  "source_code_sha256": "aa340df0768a75f4c942ce0107b2ea0eb21b5ac39fc45461f44a768a0c0d488e",
+  "protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4",
+  "stage_audits_never_read_validation_pressure": true,
+  "complete_audit_reconstructs_all_policies_and_native_scores": true,
+  "independent_cache_check": "64 fixedseed breaths, direct frozen-state CPU reconstruction after provenance/statistics/shape verification; require maximum discrepancy<one100th of Ffit training-grid spacing. No production loader guard weakened.",
+  "no_F_result_exists": true
+}

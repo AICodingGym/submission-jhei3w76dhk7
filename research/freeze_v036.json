@@ -1,16 +1,16 @@
 {
-  "status": "frozen_before_F_split_or_pressure",
-  "created_utc": "2026-11-09T04:00:31.666825+00:00",
+  "status": "corrected_schema_before_any_F_fit_or_validation_outcome",
+  "created_utc": "2026-11-09T15:06:12.270491+00:00",
   "notebook": "confirmation_v036.ipynb",
-  "source_code_sha256": "aa340df0768a75f4c942ce0107b2ea0eb21b5ac39fc45461f44a768a0c0d488e",
+  "source_code_sha256": "27f89eb9f1a749e032040082b70513fc9990311eee87fcddbf7e6d5806f8138b",
   "protocol_file": "research/confirmation_protocol_v036.json",
   "protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4",
   "result_export": "V036_RESULT",
-  "CPU_component_checks": 115,
+  "CPU_component_checks": 124,
   "component_preflight": {
     "notebook": "research/confirmation_preflight_v036.ipynb",
     "function": "run_confirmation_preflight_v036",
-    "code_sha256": "790df15cb623e4c41796fa7779f8e0c41ffc460eaa2895fd5fd46daec3dcd393",
+    "code_sha256": "49b20c3eee8a6f6d09b3497d3dd09dd0aee76bda64b8dad199a56dcf27de9a24",
     "kwargs": {}
   },
   "additional_project_files": [
@@ -24,7 +24,10 @@
     "research/RESULTS_V035.md",
     "handoff/AGENTS_PROJECT_V025.md",
     "research/PRUNING_WORKFLOW_V025.md",
-    "research/OBJECTIVE_015.md"
+    "research/OBJECTIVE_015.md",
+    "research/confirmation_schema_preflight_review_v036.json",
+    "research/schema_correction_v036.json",
+    "research/operations_schema_repair_review_v036.json"
   ],
   "CPU_to_final_only_protocol_literal_changed": true,
   "stages": {
@@ -40,6 +43,14 @@
       "capacity_laplace_curve"
     ]
   },
-  "no_F_split_or_fit_or_outcome": true,
-  "actual_CUDA_required": true
+  "no_F_split_or_fit_or_outcome": false,
+  "actual_CUDA_required": true,
+  "previous_source_code_sha256": "aa340df0768a75f4c942ce0107b2ea0eb21b5ac39fc45461f44a768a0c0d488e",
+  "correction": "One production split-serialization line: stale E_fit/E_validation keys to F_fit/F_validation. Membership algorithm/recipes/protocol unchanged; old Ffit-only labels read, no Fval labels or F models/outcomes.",
+  "CPU_proof_sha256": "8c92527e7b38eee9d8c54ef7d50af1fa3b087d1a7881ca9cf0921bf224d870e2",
+  "CPU_proof_file": "research/confirmation_schema_preflight_review_v036.json",
+  "no_F_model_fit_or_validation_outcome": true,
+  "known_F_split_created_in_preserved_failed_attempt": true,
+  "Ffit_labels_read_in_preserved_failed_attempt": true,
+  "F_validation_labels_never_read": true
 }

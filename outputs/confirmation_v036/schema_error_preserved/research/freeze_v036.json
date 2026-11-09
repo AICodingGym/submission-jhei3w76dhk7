@@ -1,0 +1,45 @@
+{
+  "status": "frozen_before_F_split_or_pressure",
+  "created_utc": "2026-11-09T04:00:31.666825+00:00",
+  "notebook": "confirmation_v036.ipynb",
+  "source_code_sha256": "aa340df0768a75f4c942ce0107b2ea0eb21b5ac39fc45461f44a768a0c0d488e",
+  "protocol_file": "research/confirmation_protocol_v036.json",
+  "protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4",
+  "result_export": "V036_RESULT",
+  "CPU_component_checks": 115,
+  "component_preflight": {
+    "notebook": "research/confirmation_preflight_v036.ipynb",
+    "function": "run_confirmation_preflight_v036",
+    "code_sha256": "790df15cb623e4c41796fa7779f8e0c41ffc460eaa2895fd5fd46daec3dcd393",
+    "kwargs": {}
+  },
+  "additional_project_files": [
+    "controlled_experiments_v013.ipynb",
+    "research/laplace_preflight_v029.ipynb",
+    "research/capacity_preflight_v035.ipynb",
+    "research/confirmation_selection_v036.json",
+    "research/CONFIRMATION_PLAN_V036_DRAFT.md",
+    "research/confirmation_preflight_review_v036.json",
+    "research/confirmation_fixture_correction_v036.json",
+    "research/RESULTS_V035.md",
+    "handoff/AGENTS_PROJECT_V025.md",
+    "research/PRUNING_WORKFLOW_V025.md",
+    "research/OBJECTIVE_015.md"
+  ],
+  "CPU_to_final_only_protocol_literal_changed": true,
+  "stages": {
+    "first_five": [
+      "original_compact",
+      "deep",
+      "curve",
+      "memory",
+      "offset"
+    ],
+    "remaining_two": [
+      "deep_curve",
+      "capacity_laplace_curve"
+    ]
+  },
+  "no_F_split_or_fit_or_outcome": true,
+  "actual_CUDA_required": true
+}
