@@ -1,3 +1,5 @@
+CURRENT UPDATE (Nov9,2026): primary target is accepted official mean inspiratory MAE <=0.1638. Read the newest CONTINUE_HERE.md entry and research/active_objective.json first. First5Fmodels audited1076checks; remaining_two pod2973011 requested/lastPending, guardian2973272. Preserve all frozen historical files and accepted official0.17427. Older prompt text below is historical.
+
 Continue my DSC102 ventilator-pressure-prediction project from this preserved checkpoint.
 
 Open /Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction and read CONTINUE_HERE.md first, then HANDOFF_CONFIRMATION_V011.md, HANDOFF_FINAL_FIT_V011.md and HANDOFF_OPERATIONS_V011.md. Follow the existing project AGENTS.md.

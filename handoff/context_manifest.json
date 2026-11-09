@@ -28,5 +28,10 @@
     "next_action": "Review prepared source and start guardian on login node; no D split/lock/result exists yet"
   },
   "git_checkpoint_file": "handoff/git_checkpoint.txt",
-  "credentials_or_raw_Codex_sessions_included": false
+  "credentials_or_raw_Codex_sessions_included": false,
+  "current_objective_file": "research/active_objective.json",
+  "current_official_MAE_target": 0.1638,
+  "updated_assignment_copy": "handoff/course_context/PA3_updated_20261109.pdf",
+  "updated_assignment_sha256": "dd784dab2b94d61174c1a98a7b9bb46e5bb82667f00cb0d72e5ae99d7cdef460",
+  "current_continuation_file": "CONTINUE_HERE.md"
 }

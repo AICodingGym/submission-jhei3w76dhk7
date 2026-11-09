@@ -1,12 +1,12 @@
 {
-  "status": "first_five_independently_passed_preparing_remaining_two",
-  "updated_utc": "2026-11-09T23:16:23.143790+00:00",
-  "pod": "v2gao-2591068",
-  "confirmation_stage": "first_five",
+  "status": "remaining_two_requested_last_observed_Pending",
+  "updated_utc": "2026-11-09T23:21:05.319734+00:00",
+  "pod": "v2gao-2973011",
+  "confirmation_stage": "remaining_two",
   "submitted_Pacific": "2026-11-08 20:09:15 PST",
-  "login_stage": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v036-F-first_five-schema-corrected-20261109",
-  "guardian_PID": 2599277,
-  "source_commit": "b3768f4",
+  "login_stage": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v036-F-remaining_two-20261109",
+  "guardian_PID": 2973272,
+  "source_commit": "c53b910",
   "source_freeze": {
     "status": "corrected_schema_before_any_F_fit_or_validation_outcome",
     "created_utc": "2026-11-09T15:06:12.270491+00:00",
@@ -65,14 +65,14 @@
   },
   "payload": {
     "status": "prepared_not_dispatched",
-    "created_utc": "2026-11-09T15:10:52.830519+00:00",
+    "created_utc": "2026-11-09T23:05:24.254613+00:00",
     "source_code_sha256": "27f89eb9f1a749e032040082b70513fc9990311eee87fcddbf7e6d5806f8138b",
     "protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4",
-    "payload_file": "outputs/confirmation_v036/setup_helpers_quota_v3/v036-deploy.tar.gz",
-    "payload_sha256": "1612f50980dcbe82a1d6661e9b26e80f4c57bb42ef9b763c6013f7fa0ac459a4",
-    "payload_bytes": 6527913,
-    "payload_members": 58,
-    "pins_sha256": "9f19dffb93aa407108b28e96d8b6fcb76adbebec17b7e51f8f20573c8d12bc87",
+    "payload_file": "outputs/confirmation_v036/setup_helpers_quota_v4/v036-deploy.tar.gz",
+    "payload_sha256": "68c588749ed5badef5041da82088184bf508f7dd10ffd82fb03b4daa8183969f",
+    "payload_bytes": 6529315,
+    "payload_members": 60,
+    "pins_sha256": "61f6990407dfc9f1b90c10661caffde17989b2301ca3574a2005743be01db6f9",
     "GPU_resource_requests": 0,
     "approved_data_fits": 0,
     "actual_GPU_proofs_completed": false,
@@ -82,7 +82,7 @@
     "pruning_reference_file_count": 8,
     "syntax_payload_checked": true,
     "modeling_code_in_notebooks_only": true,
-    "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions."
+    "archive_retry_provenance": "Preserved V036 failed-timeout helpers. Forward-only tar verification plus verified shared-home hardlinks; 900s verifier timeout with preserved failures. GPU release still requires every safe member hash. No automatic allocation or submission."
   },
   "audit_preparation": {
     "status": "prepared_not_run_before_any_F_outcome",
@@ -97,21 +97,21 @@
     "no_F_result_exists": true
   },
   "actual_CUDA_proof_not_yet_retrieved": false,
-  "actual_start_and_lease_end_unknown": false,
+  "actual_start_and_lease_end_unknown": true,
   "no_F_validation_outcome": true,
-  "remaining_two_not_allocated": true,
+  "remaining_two_not_allocated": false,
   "ordinary_lease_seconds": 21600,
   "no_automatic_allocation_or_submission": true,
   "official_best_preserved": 0.17427,
   "target_unmet": true,
-  "actual_start_utc": "2026-11-09T14:50:52Z",
-  "actual_lease_end_utc": "2026-11-09T20:50:52Z",
-  "actual_start_Pacific": "2026-11-09 06:50:52 PST",
-  "actual_lease_end_Pacific": "2026-11-09 12:50:52 PST",
+  "actual_start_utc": null,
+  "actual_lease_end_utc": null,
+  "actual_start_Pacific": null,
+  "actual_lease_end_Pacific": null,
   "actual_CUDA_component_checks": 130,
   "actual_CUDA_pruning_checks": 32,
   "F_split_created": true,
-  "first_epoch_not_yet_observed": false,
+  "first_epoch_not_yet_observed": true,
   "prior_attempt_failed_before_F_fit_due_to_course_quota": true,
   "storage_repair_report": "research/quota_recovery_v036.json",
   "partial_failed_attempt_preserved": true,
@@ -136,8 +136,8 @@
     "modeling_code_in_notebooks_only": true,
     "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions."
   },
-  "last_observation": "outputs/confirmation_v036/monitor/check_20261109T185225Z.json",
-  "next_check_not_before_utc": "2026-11-09T19:02:25Z",
+  "last_observation": "outputs/confirmation_v036/monitor/remaining_two_20261109T231934Z.json",
+  "next_check_not_before_utc": "2026-11-09T23:29:34Z",
   "conditional_final_source_prepared": "research/freeze_final_v037.json",
   "corrected_source_code_sha256": "27f89eb9f1a749e032040082b70513fc9990311eee87fcddbf7e6d5806f8138b",
   "guardian_detachment_and_dispatch_verified": true,
@@ -148,15 +148,7 @@
     "first_five": 15243.90894913662,
     "remaining_two": 17734.96475046756
   },
-  "remaining_lease_seconds_at_check": 20216,
-  "stage_projection_fits_remaining_lease_with_30minute_reserve": true,
   "active_member": null,
-  "completed_epochs": 61,
-  "member_budget": 193,
-  "last_epoch_seconds": 10.471504824236035,
-  "last_fit_elapsed_seconds": 647.9760576542467,
-  "actual_GPU_utilization_percent": 78,
-  "actual_GPU_used_MiB": 1169,
   "guardian_status_polling_verified": true,
   "full_failed_schema_archive_local_member_verification": {
     "verified": true,
@@ -174,11 +166,6 @@
     "memory",
     "offset"
   ],
-  "first_stage_remaining_estimate_minutes": [
-    23,
-    28
-  ],
-  "first_stage_finish_estimate_Pacific": "2026-11-09 11:15\u201311:20 PST",
   "current_primary_official_MAE_target": 0.1638,
   "prior_primary_target": 0.15,
   "first_stage_completion": "research/first_stage_completion_v036.json",
@@ -215,5 +202,24 @@
   "next_members": {
     "deep_curve": 196,
     "capacity_laplace_curve": 190
-  }
+  },
+  "prior_completed_pod": "v2gao-2591068",
+  "scientific_source_commit": "b3768f4",
+  "requested_utc": "2026-11-09T23:17:46.108058+00:00",
+  "new_pod_CUDA_runtime_verification_pending": true,
+  "first_stage_actual_CUDA_checks": {
+    "component": 130,
+    "pruner": 32
+  },
+  "remaining_two_models_started": false,
+  "server_first_stage_archive_verification": {
+    "verified": true,
+    "files": 252,
+    "sha256": "68aef59d863c82eddddc08e334535a3c655aa7a5e9d1c4419426c56e3efa5c53",
+    "safe_regular_members": true,
+    "all_individual_file_hashes": true,
+    "forward_only_stream": true
+  },
+  "server_archive_recovery_seconds": 103.18,
+  "old_terminal_pod_metadata_preserved_then_object_deleted": true
 }
