@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-09T23:13:35.443959+00:00",
+  "python": "3.12.11 | packaged by conda-forge | (main, Jun  4 2025, 14:38:53) [Clang 18.1.8 ]",
+  "numpy": "2.5.4",
+  "torch": "2.15.0",
+  "sklearn": "1.9.1",
+  "scipy": "1.18.1",
+  "initial_failure": "Missing local sklearn dependency at import; original failure log preserved",
+  "audit_scientific_source_unchanged": true
+}

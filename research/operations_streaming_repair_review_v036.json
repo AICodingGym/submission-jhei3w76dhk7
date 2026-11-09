@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "check_count": 18,
+  "checks": {
+    "active_worker_pending": true,
+    "missing_worker_detected": true,
+    "zero_exit_is_terminal": true,
+    "nonzero_exit_is_terminal": true,
+    "wrapper_failure_terminal": true,
+    "wrapper_success_without_process_not_pending": true,
+    "malformed_exit_rejected": true,
+    "snapshot_archive_private": true,
+    "snapshot_no_course_manifest_write": true,
+    "private_snapshot_all_safe_members_verified": true,
+    "ambiguous_copy_accepted_only_after_full_verification": true,
+    "shared_home_hardlink_exactly_verified": true,
+    "valid_outer_hash_cannot_hide_member_corruption": true,
+    "unreviewed_archive_parent_rejected": true,
+    "detached_launch_returns_before_child_completes": true,
+    "shell_syntax": true,
+    "scientific_source_unchanged": true,
+    "scientific_protocol_unchanged": true
+  },
+  "model_or_data_training": false,
+  "scientific_source_and_protocol_unchanged": true,
+  "helper_hashes": {
+    "complete_source_helpers.py": "46f271806d3e84e6ef5056162b2b72a2513ccdd0a7810bea07025818a63ad2aa",
+    "freeze_sources.py": "0520a9b080a2f63394ea9215b5ca802cd4a850a3eaeb07c0ce85b74cd825c40a",
+    "prepare_preflight.py": "d746c7793b507e1f7cfe068f9e4576658c8147ac8bff7ace39de7e1bc01eedf8",
+    "worker_state_v036.py": "99b5326251a4ee051ef738a54225d97c879b4ccad6c7167ad1c88b92fdc9951c",
+    "verify_archive_v036.py": "fc6ca0105d1f73c060266ca3afd3403fdbd897498ae7f522346054bb32e4989d",
+    "prepare_notebook_before_literal_match_fix.py": "1dd89a1e6a04f86efbf5f372ec7d6c34c4a2b30920688c734f4155e3310e7f7e",
+    "deploy_v036.py": "880683b88775983f17b396977f278f46a7cf348f475550264622ba94ef266030",
+    "guardian_v036.sh": "4971d0359b646fb9ef93c6dd01f31429ba2db5530869db518fea0a4ac8f57a26",
+    "prepare_notebook.py": "27558c66c1dcb7f91e60256d6ef03544028750fa90a6d3ec7d8799a2548e112d",
+    "build_payload_v036.py": "9585804a448a6ba50b61133dcf281b655a030cc4a7ac98c230ac6a659000bfe8",
+    "copy_verified_archive_v036.py": "09a0422a1b564f3798d3e46768b4a5b422f632097c4e4c91884c41ac7204ec24",
+    "snapshot_v036.py": "c2557f2146be816048168bb565496c1e071836d49e90ea71ae5084df4580030f",
+    "course_preflight_v036.py": "2d82c5c222050ae62fbd80f0cbe679ab17afa20ddc84f52c970627666f4c97e7",
+    "start_v036.sh": "df0f9ce1a472df58fbceffab68242b715243897bae8d22099892ee2447d25d67",
+    "execute_screen_v036.py": "1701d6500db22a019d51b0f34e830cdb6b5a151642afe9ee9ec1a1f710a1e95f"
+  }
+}

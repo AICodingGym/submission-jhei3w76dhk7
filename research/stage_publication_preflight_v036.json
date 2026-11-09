@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "utc": "2026-11-09T23:05:52.824354+00:00",
+  "checks": {
+    "new_artifacts_exact_and_source_preserved": true,
+    "conflicting_artifact_blocks_all_publication": true,
+    "accepted_official_CSV_preserved": true
+  },
+  "check_count": 3,
+  "operational_fixture_only": true,
+  "no_F_outcome_or_training": true,
+  "helper_sha256": "56756cb702915e7f31dc61a62e0d8662c67af86a84a8e04912d62a0cbb65ca91"
+}

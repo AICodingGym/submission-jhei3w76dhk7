@@ -1,0 +1,45 @@
+{
+  "status": "first_five_completed_archived_published_and_independently_audited",
+  "updated_utc": "2026-11-09T23:15:39.582526+00:00",
+  "completed_members": [
+    "original_compact",
+    "deep",
+    "curve",
+    "memory",
+    "offset"
+  ],
+  "budgets": {
+    "original_compact": 193,
+    "deep": 189,
+    "curve": 193,
+    "memory": 191,
+    "offset": 193
+  },
+  "archive": {
+    "archive_file": "/home/v2gao/private/.pa3-preserved-course-backups/v036-archives/v036-complete-v2gao-2591068-first_five-r3-20261109T191620313045Z.tar.gz",
+    "bytes": 1056127127,
+    "sha256": "68aef59d863c82eddddc08e334535a3c655aa7a5e9d1c4419426c56e3efa5c53",
+    "files": 252
+  },
+  "verification": {
+    "verified": true,
+    "files": 252,
+    "sha256": "68aef59d863c82eddddc08e334535a3c655aa7a5e9d1c4419426c56e3efa5c53",
+    "safe_regular_members": true,
+    "all_individual_file_hashes": true,
+    "forward_only_stream": true
+  },
+  "publication_file": "outputs/confirmation_v036/completed_archive_first_five/publication.json",
+  "independent_audit_file": "research/confirmation_stage_review_v036_first_five.json",
+  "independent_audit_sha256": "a6965e39304089f1e687ebea2e506e9181308ca799c7aa3ace6c8ae01a28bae3",
+  "independent_audit_checks": 1076,
+  "no_F_validation_pressure_read": true,
+  "no_complete_confirmation_yet": true,
+  "backup_timeout_originals_preserved": true,
+  "backup_streaming_repair_checks": 18,
+  "actual_local_full_stage_archive_verification_seconds": 4.47,
+  "current_primary_official_MAE_target": 0.1638,
+  "official_best_preserved": 0.17427,
+  "remaining_two_not_started": true,
+  "source_or_frozen_scientific_protocol_changed": false
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-09T23:04:02.497390+00:00",
+  "full_actual_archive_bytes": 537736795,
+  "full_actual_archive_members": 159,
+  "elapsed_seconds": 2.141402042000209,
+  "verification": {
+    "verified": true,
+    "files": 159,
+    "sha256": "f34522253b39800f7d230d1fde14132b1db5a8e38e4cab54eec633b492e58741",
+    "safe_regular_members": true,
+    "all_individual_file_hashes": true,
+    "forward_only_stream": true
+  },
+  "agrees_with_original_full_verification": true,
+  "no_scientific_source_or_protocol_change": true
+}

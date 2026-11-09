@@ -1,0 +1,30 @@
+{
+  "status": "active_project_objective",
+  "updated_utc": "2026-11-09T23:12:55.580454+00:00",
+  "official_mean_inspiratory_MAE_target": 0.1638,
+  "previous_target": 0.15,
+  "change_authority": "User explicitly replaced primary target after updating PA3 PDF",
+  "metric": "AI Coding Gym official mean absolute pressure error over u_out==0; all test rows remain in submission",
+  "grading_context": {
+    "historical_median_MAE": 0.1638,
+    "bonus_at_target": 1,
+    "base_full_accuracy_points_threshold": 0.2,
+    "base_accuracy_points": 6,
+    "higher_bonus_thresholds": {
+      "MLEvolve": 0.14237,
+      "historical_bronze": 0.1364
+    }
+  },
+  "best_accepted_official_MAE": 0.17427,
+  "target_achieved": false,
+  "source_pdf": "handoff/course_context/PA3_updated_20261109.pdf",
+  "source_pdf_sha256": "dd784dab2b94d61174c1a98a7b9bb46e5bb82667f00cb0d72e5ae99d7cdef460",
+  "verified_pages": [
+    2,
+    5
+  ],
+  "new_goal_does_not_change_frozen_experimental_protocol_or_acceptance": true,
+  "modeling_in_notebooks": true,
+  "only_assignment_approved_Gym_data": true,
+  "no_original_Kaggle_or_mirrors_or_existing_solutions": true
+}
