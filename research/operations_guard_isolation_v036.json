@@ -1,0 +1,11 @@
+{
+  "status": "operational_guard_isolation_regression_passed",
+  "created_utc": "2026-11-09T04:06:26.078035+00:00",
+  "cause": "Parent start wrapper RUN=1 is preserved for later production execution. Isolate RUN=0 in the separate CUDA-preflight child before importing the actual driver for synthetic tests. Real frozen notebook imported under start-wrapper RUN=1 after preamble in empty directory: no outputs or data created.",
+  "old_helper_sha256": "38457fdd54a53c8dc749d6f3e69b5b045d4bf8e3cdb96a75539cb5df864613fa",
+  "new_helper_sha256": "2d82c5c222050ae62fbd80f0cbe679ab17afa20ddc84f52c970627666f4c97e7",
+  "real_guarded_import_tested": true,
+  "scientific_source_protocol_recipe_unchanged": true,
+  "initial_test_runner_error": "System python3 lacks torch; regression rerun with project .venv Python. No scientific or production execution from that test failure.",
+  "unused_original_payload_preserved": "outputs/confirmation_v036/setup_helpers/before_preflight_guard_isolation"
+}

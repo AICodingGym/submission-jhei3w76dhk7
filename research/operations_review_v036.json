@@ -1,0 +1,18 @@
+{
+  "status": "syntax_and_stage_transport_review_passed",
+  "files": {
+    "verify_archive_v036.py": "c4f8370eff52496fe4ebecc2a77c3cb24bac615a510e0edc164b232735fd976d",
+    "deploy_v036.py": "880683b88775983f17b396977f278f46a7cf348f475550264622ba94ef266030",
+    "guardian_v036.sh": "129a71b5e9253d8d39e92e4977aec8f028670427296aa215d1265005029a5b6d",
+    "build_payload_v036.py": "9cca392b4bdab2f29dc86796a44af12573289748b8429b3d4057695d873697f2",
+    "copy_verified_archive_v036.py": "becb28972b980532934f7c645028ec6a6d386dc0a48b0717dbe44eacffb7d56c",
+    "snapshot_v036.py": "6837b39759f3f07fa3bc9f2b959104a51ccafa54cc06a0dfb64110d3e3adc762",
+    "course_preflight_v036.py": "2d82c5c222050ae62fbd80f0cbe679ab17afa20ddc84f52c970627666f4c97e7",
+    "start_v036.sh": "12478872c483fb52a26d9886d79bc7ee0107e22be893b1f27a474560b1163c25",
+    "execute_screen_v036.py": "1701d6500db22a019d51b0f34e830cdb6b5a151642afe9ee9ec1a1f710a1e95f"
+  },
+  "stage_status_files_isolated": true,
+  "source_and_archive_semantics": "Existing preserving V035 deployment/per-member archive verification and retries; only version/output paths and explicit two-stage environment/status filenames changed.",
+  "no_server_launch_or_F_data": true,
+  "guard_isolation_review": "research/operations_guard_isolation_v036.json"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "synthetic_fixture_fix_before_any_F_data_or_outcome",
+  "reason": "Handmade47-channel toy fixture omitted dt required by the already frozen memory model. Use the real frozen combined47 feature builder on synthetic known-input rows, exercising all actual channel names. No production model, recipe or source change.",
+  "old_proof_source_sha256": "f9bd42cbbaf3c175a3040ad9ecc8e946d4ea8f48d795bd7900a332af615ddc19",
+  "new_code_sha256": "790df15cb623e4c41796fa7779f8e0c41ffc460eaa2895fd5fd46daec3dcd393",
+  "failed_output_preserved": "outputs/confirmation_v036/cpu_preflight"
+}
