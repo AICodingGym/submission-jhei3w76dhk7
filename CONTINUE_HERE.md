@@ -1,3 +1,13 @@
+# Current checkpoint: V036 GPU retry passed CUDA; loading data
+
+Nov9 06:52AM PST actual check: new ordinary pod `v2gao-2591068` Running n05, GTX1080Ti. Actual lease **06:50:52AM–12:50:52PM PST**. Detached guardian2591295 in `$HOME/.pa3-setup-control.gty67K/v036-F-first_five-retry-20261109`. Actual CUDA component121 + pruning32 checks PASSED; strict runtime Py3.11.9/np1.26.4/Torch2.2.1+cu121/cuDNN8902. Wrapper/executor live; F known-input split created, no member epoch observed yet while approved data preprocesses. No Fvalidation outcome. Updated ops payload55members6,519,867B SHA104d1ef7e3b9016dcca9a2cc0e72083dbe77a27fa4b8b959286ad4bf786a8c79, pins5f0dbf5b0cb9e8b78f709aa6702285b59e9e587c1711aa77aea968efaed531f0. Same frozen scientific source/protocol/choice. Raw monitor outputs/confirmation_v036/monitor/retry_check_20261109T145200Z.json.
+
+Quota repair is complete (35 archives3.79GB, all paths restored, writeprobe passed). Partial old CUDA failure evidence safely archived and member-verified locally. CPU recovery pod2585033 released; old Failed1978631 metadata preserved/objectdeleted. No duplicate resources. First_five is compact/deep/curve/memory/offset, cold fixedbudgets, about4h; then independently verify archive and stage-only audit before requesting remaining_two (~4.7h). No automatic resource allocation. Monitor about10minutes; next >=07:02AM. Checkpoint/log/status/archive on private storage, course model/data paths unchanged. No training-based pruning or Fepoch/weight/runner-up selection.
+
+Conditional final V037 prepared/frozen/CPU84+3 checks but inert: no complete Fpass/audit, final fit or newCSV/submission. Best official0.17427 preserved, <=0.15 unmet. Preserve unrelated baseline_v001.ipynb modification. Source/operationscommit e029912. Older entries are historical; current running pod supersedes expired one.
+
+---
+
 # Current checkpoint: storage repair verified; preparing GPU retry
 
 Nov9 06:49AM PST: 35 owned setup backup archives (3,793,461,768 bytes) copied/hashed/fsynced to separate private persistent home and all original paths restored as same-content symlinks. Course write probe 9,961,472 bytes passed. No model/data/submission files moved. `research/quota_recovery_v036.json` records repair. Partial CUDA failed attempt preserved: 36 files, 122,982,006-byte archive SHA998863711bf8084c871e443117064c57e57e0b387ed6e016def5a1441ac9ffd3; locally verified every member. No F split/models/outcome exists.
