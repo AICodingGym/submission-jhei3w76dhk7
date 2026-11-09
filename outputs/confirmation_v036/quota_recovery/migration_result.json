@@ -1,0 +1,365 @@
+{
+  "status": "complete",
+  "created_utc": "2026-11-09T14:44:30.113751+00:00",
+  "files": [
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v005-incremental-20261103T221207Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v005-incremental-20261103T221207Z.tar.gz",
+      "bytes": 5095539,
+      "sha256": "9222838e76877658bcaaa050b3ae688735454959306600c986b90e818bf3de0c",
+      "mode": 33188,
+      "mtime_ns": 1793743932406609035,
+      "preservation_method": "copied_and_fsynced",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v007-completed-20261105T055359Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v007-completed-20261105T055359Z.tar.gz",
+      "bytes": 280134657,
+      "sha256": "059ceb600a94b20d42b64be8ab46c7c8748bfd5b293f699b4f472afdbf4504a1",
+      "mode": 33188,
+      "mtime_ns": 1793858056311518270,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v005-state-20261103T230029Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v005-state-20261103T230029Z.tar.gz",
+      "bytes": 230136409,
+      "sha256": "5d76e98307747e7546b42daec54569cb4f052a3da6f5d3f5425bb8f23cab9388",
+      "mode": 33188,
+      "mtime_ns": 1793746902172359815,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/sequence-v004b-completed.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/sequence-v004b-completed.tar.gz",
+      "bytes": 225432958,
+      "sha256": "589fdbdde0f40e7853b84089bbfce0d8e3f0f2d8201649560190ff13a65cd07c",
+      "mode": 33188,
+      "mtime_ns": 1793726242034325623,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v035-complete-20261109T031103Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v035-complete-20261109T031103Z.tar.gz",
+      "bytes": 215642426,
+      "sha256": "534651e1be657c6d00e1a2b012bb1ee1e2976f2c51b2537b3622bebd062a627a",
+      "mode": 33188,
+      "mtime_ns": 1794193895557712211,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v024-complete-20261108T022322Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v024-complete-20261108T022322Z.tar.gz",
+      "bytes": 188843666,
+      "sha256": "36f77e054fe98911d6c278cb4ec6a4478b593dd70f92b7c1cac5bfef4d4d2d2a",
+      "mode": 33188,
+      "mtime_ns": 1794104631262203455,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v005-state-20261104T031107Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v005-state-20261104T031107Z.tar.gz",
+      "bytes": 188182146,
+      "sha256": "ea120599f669d4af856fbfe9c688bc67e72b847fd95a5843019aba06c74a1f89",
+      "mode": 33188,
+      "mtime_ns": 1793761897217935466,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v005-state-20261104T025847Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v005-state-20261104T025847Z.tar.gz",
+      "bytes": 187319299,
+      "sha256": "26909394625f4cbf535133ba94a89f82e714067f1d50b0ebb4e7a9c03edc8471",
+      "mode": 33188,
+      "mtime_ns": 1793761156586112216,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v021-complete-20261107T210226Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v021-complete-20261107T210226Z.tar.gz",
+      "bytes": 185152869,
+      "sha256": "3465e546605d996a79fea3380c3074debe6f0d91ab737a22c6a1e76b8dac3d04",
+      "mode": 33188,
+      "mtime_ns": 1794085371925018575,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v011-pipeline-20261106T065857Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v011-pipeline-20261106T065857Z.tar.gz",
+      "bytes": 180449172,
+      "sha256": "3415bb3005a9dcd4f1c7df45791efc3b5b0039ea6c96253b19306ed64a939ff6",
+      "mode": 33188,
+      "mtime_ns": 1793948397768676779,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v019-complete-20261107T123718Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v019-complete-20261107T123718Z.tar.gz",
+      "bytes": 180006932,
+      "sha256": "f823e55f72c932c084bf11ff90841d08773d7c72b6d74cb3b85b39ea35a908f2",
+      "mode": 33188,
+      "mtime_ns": 1794055061657330266,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v013-complete-20261106T204613Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v013-complete-20261106T204613Z.tar.gz",
+      "bytes": 177513224,
+      "sha256": "8b41b24ac327a37691f4a75d14b8f1f53f0d69dff41a0b8e5c4ef8b45016a177",
+      "mode": 33188,
+      "mtime_ns": 1793997989908502785,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v014-complete-20261107T050757Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v014-complete-20261107T050757Z.tar.gz",
+      "bytes": 175471112,
+      "sha256": "3a0f60fbe3d36dd1c8bfc3a0668f9d7ba6ea13df04db4eccb6ddebf7d6c52d81",
+      "mode": 33188,
+      "mtime_ns": 1794028100838005664,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v005-progress-20261103T214805Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v005-progress-20261103T214805Z.tar.gz",
+      "bytes": 168087105,
+      "sha256": "17b7cb44803f5771c48f7c66753a18e9f3979343a5991c40f83f5e1a978ca2bd",
+      "mode": 33188,
+      "mtime_ns": 1793742494832742655,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v031-complete-20261108T193216Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v031-complete-20261108T193216Z.tar.gz",
+      "bytes": 163247295,
+      "sha256": "6977682b2724231b9b0a2880154383506297fdd96a3dace800643731e42501b2",
+      "mode": 33188,
+      "mtime_ns": 1794166363703814476,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v029-complete-20261108T081554Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v029-complete-20261108T081554Z.tar.gz",
+      "bytes": 131805816,
+      "sha256": "e001f0011717d8a8f3c30b6930c7f6c3472a29e947ad00ee45a9e52c1ba3d38f",
+      "mode": 33188,
+      "mtime_ns": 1794125776885775357,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v005-confirmation-C-complete.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v005-confirmation-C-complete.tar.gz",
+      "bytes": 127466546,
+      "sha256": "66591cf4cc53e34cf11298fd555e302c38b36fac119c4a66f3f71a2ef8851466",
+      "mode": 33188,
+      "mtime_ns": 1793770983660589927,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v011-pipeline-20261106T043706Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v011-pipeline-20261106T043706Z.tar.gz",
+      "bytes": 118588178,
+      "sha256": "f2a978251b22f7aa94f1b98805af87eccafc4d53cb519ae6a6717561b1f4d350",
+      "mode": 33188,
+      "mtime_ns": 1793939847155386277,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v007-review-20261104T230334Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v007-review-20261104T230334Z.tar.gz",
+      "bytes": 84140601,
+      "sha256": "599bb0832683b22e8b0892237b42e6df84c5f2ad41f8cab2a62f57ffa8c33f79",
+      "mode": 33188,
+      "mtime_ns": 1793833419083663627,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v005-state-20261103T233707Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v005-state-20261103T233707Z.tar.gz",
+      "bytes": 79749630,
+      "sha256": "1c2b6820e26ecfe242e303c4282c9eb0fdabe7b1ac512f9fb526794480314ad2",
+      "mode": 33188,
+      "mtime_ns": 1793749045772697650,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v005-final-all-complete.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v005-final-all-complete.tar.gz",
+      "bytes": 76116474,
+      "sha256": "4b31b09cb15f81cac4bedb710af2d51d70d5cbe13ed809ced304ace571d99676",
+      "mode": 33188,
+      "mtime_ns": 1793802448985663552,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v018-complete-20261107T073938Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v018-complete-20261107T073938Z.tar.gz",
+      "bytes": 69091854,
+      "sha256": "3f50617e28da8b2301818fd4158ace929c75fc4a451e5bce1ca2ac672ba5fc6b",
+      "mode": 33188,
+      "mtime_ns": 1794037197209262313,
+      "preservation_method": "private_existing_exact_hardlink",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v008-completed-20261105T170703Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v008-completed-20261105T170703Z.tar.gz",
+      "bytes": 63940755,
+      "sha256": "01d005f2e7b6ce42d59e5eaa7d85880e88a71baa85fd88b2735d67cd4d6218e6",
+      "mode": 33188,
+      "mtime_ns": 1793898432687833035,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v006-pilot-complete.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v006-pilot-complete.tar.gz",
+      "bytes": 62138850,
+      "sha256": "553dde3d797d0be8699cb1a59979d214a99b36f3c7ee63b3fd55e02dc867f333",
+      "mode": 33188,
+      "mtime_ns": 1793809569785804119,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/controlled-v003-completed.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/controlled-v003-completed.tar.gz",
+      "bytes": 47326838,
+      "sha256": "f7c7ea46097ad2f4588a46965192255608c1372135e01fe832bf7d2d12887aac",
+      "mode": 33188,
+      "mtime_ns": 1793721258956124660,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v009-completed-20261105T190712Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v009-completed-20261105T190712Z.tar.gz",
+      "bytes": 33555353,
+      "sha256": "42a2389402af8a09ae90675caaf49e6124114720b0962f04f849338609443676",
+      "mode": 33188,
+      "mtime_ns": 1793905639053913663,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v005-state-20261103T224034Z.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v005-state-20261103T224034Z.tar.gz",
+      "bytes": 32278043,
+      "sha256": "cb30016546f5144caaa21001dbfca175ccd3d249d2a32753fbf843c42d23f8b6",
+      "mode": 33188,
+      "mtime_ns": 1793745646203569899,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/controlled-v003-progress.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/controlled-v003-progress.tar.gz",
+      "bytes": 31202286,
+      "sha256": "b7802cc08e8794e56e028cb8cc329c0b4028fa8f4627397e4373c6602f7cbef0",
+      "mode": 33188,
+      "mtime_ns": 1793683651633854095,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v007-oof-extra-audit.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v007-oof-extra-audit.tar.gz",
+      "bytes": 17293694,
+      "sha256": "cfb4b702057800f6bcb3aa0333b861e3edd70aa414c63813e9437a254d61e9fa",
+      "mode": 33188,
+      "mtime_ns": 1793833619402441009,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v004b-A-complete-progress.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v004b-A-complete-progress.tar.gz",
+      "bytes": 15473304,
+      "sha256": "3a850ddc78366168a6e21c7ce55b583566ba0032f91bc08ca0847b3a8c2e4b0c",
+      "mode": 33188,
+      "mtime_ns": 1793725179601901147,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v006-confirmation-complete.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v006-confirmation-complete.tar.gz",
+      "bytes": 14391420,
+      "sha256": "62179257311a3a98a9a8500f382b0506ef61e861c555346b2d64ef6846055e91",
+      "mode": 33188,
+      "mtime_ns": 1793812757810132555,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/v004-preserved-and-v004b-source.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/v004-preserved-and-v004b-source.tar.gz",
+      "bytes": 12865224,
+      "sha256": "a80f200194b40e0376d6722e0b45de89c73aa49d0583456a3d036b0be3b40f37",
+      "mode": 33188,
+      "mtime_ns": 1793724165404081205,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/sequence-v004-progress.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/sequence-v004-progress.tar.gz",
+      "bytes": 11414827,
+      "sha256": "dc5d54a264a34e37f77c83cd83e9d291618c2a20b5f1a98e17e4a0fa20b3e9eb",
+      "mode": 33188,
+      "mtime_ns": 1793722343668219744,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/error-analysis-inputs-v004.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/error-analysis-inputs-v004.tar.gz",
+      "bytes": 8715692,
+      "sha256": "daef2396a4dc88c1124a7eb4fde89907e49576334303321f2b93e2f5c590c19c",
+      "mode": 33188,
+      "mtime_ns": 1793685527772899405,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    },
+    {
+      "source": "/home/v2gao/dsc102/pa3/setup/interim-v005-ready.tar.gz",
+      "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109/interim-v005-ready.tar.gz",
+      "bytes": 5191574,
+      "sha256": "af85b9926eed497dd7fa73b9c82291d1cc71e982d46dc8140efdf8576e8afed0",
+      "mode": 33188,
+      "mtime_ns": 1793766894775945320,
+      "preservation_method": "copied_fsynced_verified",
+      "source_path_preserved_as_same_content_symlink": true
+    }
+  ],
+  "files_relocated": 35,
+  "logical_bytes_offloaded": 3793461768,
+  "all_original_paths_preserved": true,
+  "all_private_bytes_verified": true,
+  "course_write_probe_bytes": 9961472,
+  "course_write_probe_sha256": "703801cafcafac147721877d26ebf3bf519b385fd5ee361fd55e209a94fc836f",
+  "no_model_dataset_or_submission_files_moved": true,
+  "destination": "/home/v2gao/private/.pa3-preserved-course-backups/v036-20261109",
+  "prior_small_batch_failed_to_free_enough_quota": true
+}

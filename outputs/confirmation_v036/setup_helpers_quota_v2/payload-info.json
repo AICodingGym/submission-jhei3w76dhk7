@@ -1,0 +1,21 @@
+{
+  "status": "prepared_not_dispatched",
+  "created_utc": "2026-11-09T14:46:49.645365+00:00",
+  "source_code_sha256": "aa340df0768a75f4c942ce0107b2ea0eb21b5ac39fc45461f44a768a0c0d488e",
+  "protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4",
+  "payload_file": "outputs/confirmation_v036/setup_helpers_quota_v2/v036-deploy.tar.gz",
+  "payload_sha256": "104d1ef7e3b9016dcca9a2cc0e72083dbe77a27fa4b8b959286ad4bf786a8c79",
+  "payload_bytes": 6519867,
+  "payload_members": 55,
+  "pins_sha256": "5f0dbf5b0cb9e8b78f709aa6702285b59e9e587c1711aa77aea968efaed531f0",
+  "GPU_resource_requests": 0,
+  "approved_data_fits": 0,
+  "actual_GPU_proofs_completed": false,
+  "required_existing_files": {
+    "data/train.csv": "2dc30dc5c8e603c8c68200830eab7ed8c7af42c823f8ae68b0beb663eea817d7"
+  },
+  "pruning_reference_file_count": 8,
+  "syntax_payload_checked": true,
+  "modeling_code_in_notebooks_only": true,
+  "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions."
+}

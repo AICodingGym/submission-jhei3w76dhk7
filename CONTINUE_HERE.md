@@ -1,3 +1,25 @@
+# Current checkpoint: storage repair verified; preparing GPU retry
+
+Nov9 06:49AM PST: 35 owned setup backup archives (3,793,461,768 bytes) copied/hashed/fsynced to separate private persistent home and all original paths restored as same-content symlinks. Course write probe 9,961,472 bytes passed. No model/data/submission files moved. `research/quota_recovery_v036.json` records repair. Partial CUDA failed attempt preserved: 36 files, 122,982,006-byte archive SHA998863711bf8084c871e443117064c57e57e0b387ed6e016def5a1441ac9ffd3; locally verified every member. No F split/models/outcome exists.
+
+Operational private logs/status/archive and five-observation missing-worker detection passed 15 local checks plus real CPU deployment/idle probe. Helpers `outputs/confirmation_v036/setup_helpers_quota_v2`; payload55members/6,519,867bytes SHA104d1ef7e3b9016dcca9a2cc0e72083dbe77a27fa4b8b959286ad4bf786a8c79, pins5f0dbf5b0cb9e8b78f709aa6702285b59e9e587c1711aa77aea968efaed531f0. Original helpers/payload/evidence preserved. Old Failed1978631 metadata preserved before deleting terminal object. CPU2585033 about to release; no new GPU requested at this checkpoint. Retry login stage `$HOME/.pa3-setup-control.gty67K/v036-F-first_five-retry-20261109`. Launch normal first_five pod only after fresh inventory, actual CUDA proof before F fit. Scientific V036 source/protocol/choice unchanged.
+
+Conditional V037 final notebook frozen515a8348..., CPU84+3 negative checks passed, inert/no final fitting. Best official0.17427 preserved, <=0.15 unmet. See next older entry for scientific confirmation details, but supersede its storage status with this entry. Preserve unrelated `baseline_v001.ipynb` user change.
+
+---
+
+# Current checkpoint: quota recovery before restarting V036
+
+Nov9 morning: SSH renewed. Old GPU pod `v2gao-1978631` expired at 02:09AM PST without starting F training. Confirmed root cause is course filesystem `Errno122` disk quota during synthetic CUDA preflight; no OOM, restart or actual F model fit was found. The old guardian could not see a terminal status because logging/status used the same full filesystem. Preserve original failed evidence.
+
+A CPU-only recovery pod `v2gao-2585033` is running. Only owned `setup/*.tar.gz` backup archives are being copied/hashed/fsynced to private persistent home `.pa3-preserved-course-backups/v036-20261109`; all copies must verify before source relocation and compatibility links. First 5,095,539-byte archive was preserved privately but quota still prevented restoring its original link; the batch repair explicitly includes that path. Batch relocation currently executing; verify its migration result, all original paths and write probe before claiming repair complete. No model/dataset/submission files moved.
+
+Scientific V036 source, selection and protocol remain frozen. Preparing revised operational helpers in `outputs/confirmation_v036/setup_helpers_quota_v2` to log/status/archive privately and detect missing workers conservatively. Original helpers/payload preserved. No new GPU allocated yet. After repair preserve partial proof files, verify no F models/labels/outcomes, test revised helpers, then request one normal first_five GPU pod. Actual CUDA proofs must pass before training. About9 GPU hours total across two ordinary sequential pods, plus conditional final fit; no new reliable finish time until training starts.
+
+Conditional `final_fit_v037.ipynb` and preflight/freeze JSON are prepared, CPU84 plus3 negative-gate checks passed. They are inert: no F pass, accepted-model reuse, final fit or new CSV/submission. Final requires independently passed complete F confirmation and exact hashes. Accepted official MAE0.17427 preserved; <=0.15 unmet. Do not confuse A0.1775294806 with official or median MAE. Preserve unrelated user change `baseline_v001.ipynb` untouched.
+
+---
+
 # Live checkpoint: cold F V036 first stage requested
 
 November8 8:09PM Pacific: requested one ordinary6h DataHub podv2gao-1978631, lastobservedPending; guardianPID1978812, login stage$HOME/.pa3-setup-control.gty67K/v036-F-first_five-20261108. Actual node/start/leaseend/CUDAproof/firstepoch not yet retrieved. No other pods existed immediately before launch; no duplicate/automatic allocation. Guardian receives explicitstagefirst_five, deploys once and runs actualCUDA32pruner+confirmation/full-capacity proofs before any Ffit. Status/log filenames isolated bystage so stage2 cannot mistake first-stage exit0 for its own. Backup per-file verified before GPU release. Mac-independent remote controller; root launches stage2 only after verified backup/audit, not automatically.
