@@ -1,0 +1,9 @@
+{
+  "status": "audit_only_runtime_schema_correction",
+  "created_utc": "2026-11-09T03:37:03.524234+00:00",
+  "reason": "New capacity proof inner runtime stores torch/numpy/device; canonical course numeric_runtime separately stores torch/numpy/cuda/device/cudnn/capability. Prior V029 audit adaptation expected cuda inside the inner runtime and raised KeyError. Compare all three versions against canonical bound numeric_runtime, also verify every present inner runtime version. No comparison removed or tolerance widened; original audit and failure log preserved.",
+  "old_audit_sha256": "b2059875695c4e439db740f680ca71befd0beeedb0d222f8d00b5466dc5009fb",
+  "new_audit_sha256": "ef9d227b96aeac91648714a8fd2484d51e529008ac1f9dffbe9e2496965c08ec",
+  "first_failure_log_sha256": "8e3114a61cf4412a675c708a7ee824f38ead129443ef061c61272aebf19d4277",
+  "model_or_prediction_or_protocol_changed": false
+}

@@ -1,6 +1,6 @@
 {
-  "status": "Running_approved_A_training",
-  "updated_utc": "2026-11-09T02:19:42.045930+00:00",
+  "status": "completed_A_passed_independent_audit_GPU_released",
+  "updated_utc": "2026-11-09T03:47:14.410327+00:00",
   "pod": "v2gao-1855552",
   "course_namespace": "DSC102_FA26_001",
   "submitted_Pacific": "2026-11-08 15:18:17 PST",
@@ -101,7 +101,7 @@
   "Mac_required_for_training": false,
   "accepted_official_MAE": 0.17427,
   "target_unmet": true,
-  "latest_observation": "outputs/controlled_experiments_v035/monitor/check_20261109T021942Z.json",
+  "latest_observation": "outputs/controlled_experiments_v035/monitor/check_20261109T033321Z.json",
   "actual_start_utc": "2026-11-08T23:50:27Z",
   "actual_lease_end_utc": "2026-11-09T05:50:27+00:00",
   "GPU_proof_not_started": false,
@@ -185,5 +185,46 @@
     "training_online_increment_mae": 0.0956907739171094,
     "training_adjacent_inspiratory_pairs": 1794710,
     "training_online_scale_mean_native": 0.12437638445594959
-  }
+  },
+  "completed_utc": "2026-11-09T03:10:52.259799+00:00",
+  "GPU_released": true,
+  "archive_info": {
+    "archive_file": "/home/v2gao/dsc102/pa3/setup/v035-complete-20261109T031103Z.tar.gz",
+    "bytes": 215642426,
+    "sha256": "534651e1be657c6d00e1a2b012bb1ee1e2976f2c51b2537b3622bebd062a627a",
+    "files": 139
+  },
+  "local_archive_verified": true,
+  "published_new_or_identical_run_files": 55,
+  "independent_A_review_sha256": "f738be5e20b9df6456a1c8befb91b8faae11b4854d8c18611326761752c4d5aa",
+  "independent_A_check_count": 1025,
+  "A_selected": {
+    "name": "capacity_laplace_replacement",
+    "weights": {
+      "original_compact": 0.125,
+      "curve": 0.125,
+      "memory": 0.125,
+      "offset": 0.125,
+      "deep": 0.25,
+      "capacity_laplace_curve": 0.25
+    },
+    "MAE": 0.1775294806070807,
+    "gain": 0.005392613957654557,
+    "interval": {
+      "difference": -0.005392613957654558,
+      "low": -0.007192291285785537,
+      "high": -0.003842684282007449,
+      "unit": "whole breath",
+      "point_weighted": true,
+      "draws": 1000,
+      "seed": 20263501
+    },
+    "eligible": true,
+    "prediction_file": "outputs/controlled_experiments_v035/capacity_laplace_replacement_A_predictions.npy",
+    "prediction_sha256": "72bdcd7751b0bb337c3dc8f2c410ba71b75b56b731dc0dec64b46a5a30dfb43a"
+  },
+  "scientific_F_choice_frozen_sha256": "ec2feebb872eaaf963ca27a1c1f61c23af0f6f1aac24b3d4a39986100b8f54ec",
+  "F_driver_or_protocol_or_deployment_implemented": false,
+  "F_split_or_fit_or_outcome_exists": false,
+  "final_fit_or_submission_exists": false
 }
