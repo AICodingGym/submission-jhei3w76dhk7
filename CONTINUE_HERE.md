@@ -1,3 +1,9 @@
+# Live final fit: 98/190 epochs
+
+**Nov 10, 9:26 AM Pacific:** final V037 pod `v2gao-4010374` is healthy, GPU 94%, **98/190 fixed epochs** completed on all 67,905 approved breaths. Approximately 94 minutes of training remain, then inference/archive/retrieval/independent audit/authorized submission. Lease ends 1:43:06 PM. Ten scheduled checks persisted without reported errors; next 9:36 AM. Source/recipe unchanged, no new official result. Best 0.17427 preserved; official target <=0.1638 remains unmet. Prepared audit notebook and safe publisher described immediately below. Keep waiting between ten-minute chat checks, preserve all artifacts and user baseline modification.
+
+---
+
 # Current checkpoint: final fit 10/190; audit notebook prepared
 
 **Nov 10, 7:56 AM Pacific:** pod `v2gao-4010374` is Running, capacity final fit **10/190 epochs** at about 61 seconds per epoch, GPU 95%, no reported error. Approximately three training hours remain from this check; then inference, backup, independent audit and authorized Gym submission. All 67,905 approved breaths are used, without an independent final holdout. Frozen duration and recipe remain unchanged. Lease ends **1:43:06 PM Pacific**. Five accepted all-data models/caches were verified before the new optimizer started. Official best **0.17427** remains preserved; target **<=0.1638** is still unmet.

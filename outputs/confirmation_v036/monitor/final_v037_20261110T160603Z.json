@@ -1,0 +1,63 @@
+{
+  "now_utc": "2026-11-10T16:06:40.511830+00:00",
+  "checks": 2,
+  "last": {
+    "GPU": "NVIDIA GeForce GTX 1080 Ti, 96 %, 2882 MiB, 11264 MiB\n",
+    "archived": false,
+    "error": "",
+    "exitcode": null,
+    "final_summary": null,
+    "full_observation": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v037-final-20261110/monitor-every10/20261110T160603Z.json",
+    "guardian_alive": true,
+    "members": {
+      "capacity_laplace_curve": {
+        "complete": false,
+        "epoch": 20
+      }
+    },
+    "phase": "Running",
+    "pod": "v2gao-4010374",
+    "proof": {
+      "F_audit_sha256": "3a757c33687785acba1858c41302f57d3118c79480db7aff72f18f566df69a59",
+      "F_result_sha256": "ed5c3f254a563cc6503bece1834d5ed8c4f1fc6a51f52b3f9d9f158aacfdfcbf",
+      "actual_cuda": true,
+      "check_count": 88,
+      "estimated_final_seconds": 14327.178362690465,
+      "numeric_runtime": {
+        "capability": [
+          6,
+          1
+        ],
+        "cuda": "12.1",
+        "cudnn": 8902,
+        "device": "NVIDIA GeForce GTX 1080 Ti",
+        "numpy": "1.26.4",
+        "python": "3.11.9",
+        "torch": "2.2.1+cu121"
+      },
+      "status": "passed"
+    },
+    "reuse_and_cache_checks_passed": true,
+    "start": "2026-11-10T15:43:06Z",
+    "utc": "2026-11-10T16:06:03.196316+00:00"
+  },
+  "latest_epoch": {
+    "event": "epoch",
+    "epoch": 20,
+    "lr_used": 0.00148093584086196,
+    "lr_next": 0.0014781290011963396,
+    "training_online_inspiratory_mae": 0.5428215994475379,
+    "training_scored_points": 2061922,
+    "optimizer_steps": 266,
+    "cumulative_optimizer_steps": 5320,
+    "epoch_seconds": 61.1199993500486,
+    "elapsed_seconds": 1233.6089210561477,
+    "validation_used": false,
+    "training_loss_kind": "laplace_curve",
+    "training_online_objective_scaled": -2.44906552036415,
+    "training_online_laplace_NLL_scaled": -2.450599475139572,
+    "training_online_increment_mae": 0.2156801441586172,
+    "training_adjacent_inspiratory_pairs": 1994017,
+    "training_online_scale_mean_native": 0.5603858365032062
+  }
+}
