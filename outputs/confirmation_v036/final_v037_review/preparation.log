@@ -1,0 +1,13 @@
+{
+  "status": "prepared_before_final_output",
+  "utc": "2026-11-10T16:00:27.271735+00:00",
+  "notebook": "audit_final_v037.ipynb",
+  "code_sha256": "cfe9c297d9e5aa627e7a33e590d941479781fd8af7e252614b7854ac579ff1a8",
+  "preparation_check_count": 13,
+  "F_gate_passed": true,
+  "CPU_sample_seed": 20263701,
+  "CPU_sample_breaths": 64,
+  "CPU_maximum_difference_rule": "1/100 of median all-training observed inspiratory pressure-grid spacing",
+  "fitting_or_parameter_selection": false,
+  "full_final_audit_not_yet_run": true
+}

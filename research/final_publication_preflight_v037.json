@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "utc": "2026-11-10T16:01:59.947327+00:00",
+  "checks": {
+    "new_and_identical": true,
+    "conflict": true,
+    "unsafe_member": true
+  },
+  "check_count": 3,
+  "publisher_source_sha256": "3967ea5b060fbfc7328da7643b89e3b27e58b1100c99e6ef4cd3c102edc547a2",
+  "only_synthetic_fixture_archives": true
+}

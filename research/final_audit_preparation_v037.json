@@ -1,0 +1,28 @@
+{
+  "status": "prepared_before_final_output",
+  "utc": "2026-11-10T16:00:27.271735+00:00",
+  "notebook": "audit_final_v037.ipynb",
+  "code_sha256": "cfe9c297d9e5aa627e7a33e590d941479781fd8af7e252614b7854ac579ff1a8",
+  "preparation_checks": {
+    "Frozen final notebook source": true,
+    "Frozen dependency:controlled_experiments_v013.ipynb": true,
+    "Frozen dependency:final_fit_v011.ipynb": true,
+    "Frozen dependency:research/postprocessing_components_v016.ipynb": true,
+    "Frozen Laplace component": true,
+    "project-contained:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/improvements_v005/confirmation_round1/final_all/nn__capacity_bilstm128.pt": true,
+    "Preparation architecture/state:original_compact": true,
+    "project-contained:/Users/generalclasher/Documents/dsc102/pa3/ventilator-pressure-prediction/outputs/confirmation_v011/final_all/memory/model.pt": true,
+    "Preparation architecture/state:memory": true,
+    "Preparation architecture/state:capacity_laplace_curve": true,
+    "Exact eighth-unit weights": true,
+    "Preparation independent frozen-policy equivalence": true,
+    "No final outcome yet": true
+  },
+  "preparation_check_count": 13,
+  "F_gate_passed": true,
+  "CPU_sample_seed": 20263701,
+  "CPU_sample_breaths": 64,
+  "CPU_maximum_difference_rule": "1/100 of median all-training observed inspiratory pressure-grid spacing",
+  "fitting_or_parameter_selection": false,
+  "full_final_audit_not_yet_run": true
+}

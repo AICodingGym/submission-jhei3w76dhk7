@@ -1,3 +1,15 @@
+# Current checkpoint: final fit 10/190; audit notebook prepared
+
+**Nov 10, 7:56 AM Pacific:** pod `v2gao-4010374` is Running, capacity final fit **10/190 epochs** at about 61 seconds per epoch, GPU 95%, no reported error. Approximately three training hours remain from this check; then inference, backup, independent audit and authorized Gym submission. All 67,905 approved breaths are used, without an independent final holdout. Frozen duration and recipe remain unchanged. Lease ends **1:43:06 PM Pacific**. Five accepted all-data models/caches were verified before the new optimizer started. Official best **0.17427** remains preserved; target **<=0.1638** is still unmet.
+
+Prepared `audit_final_v037.ipynb` before final outputs, code SHA `cfe9c297d9e5aa627e7a33e590d941479781fd8af7e252614b7854ac579ff1a8`. Thirteen preparation checks passed: frozen sources, actual confirmed F gate, representative model/state shapes, and independent fixed policy. Full audit has NOT run yet. It rebuilds all approved training tensors/statistics, checks all six models and exact fixed budgets, verifies every cache and all 603,600 CSV rows, and checks independent CPU predictions on 64 test breaths selected with predeclared seed 20263701. Production loader guards remain unchanged. Receipt will be `research/final_review_v037.json`; activate only after verified final archive publication with `PA3_RUN_FINAL_AUDIT_V037=1`.
+
+Prepared operational publisher `outputs/confirmation_v036/final_v037_review/publish_final_v037.py`. Three fixture checks passed (new/identical, conflicting existing output rejected, unsafe member rejected). It mirrors all verified archive members but publishes only new/identical final V037 output files; root notebooks and previous artifacts are preserved. Publication preflight receipt: `research/final_publication_preflight_v037.json`.
+
+Ten-minute server monitor PID 4048377 and guardian PID 4019089 are healthy. Next scheduled check **8:06 AM Pacific**, then 8:16, etc. Keep chat turn open and wait between checks. Do not launch duplicate training, change fixed budgets, or submit an unaudited CSV. User modification to `baseline_v001.ipynb` remains untouched. Read next entries for exact source/payload/runtime/archive/SSH commands.
+
+---
+
 # Current live checkpoint: all-approved final V037 fit started
 
 **Nov10,7:45:32AM Pacific:** new GPU pod **v2gao-4010374 Running n06**. Lease **7:43:06AM–1:43:06PM Pacific**. Guardian**4019089**, wrapper119/executor188 alive. Actual final-consumer **88 CUDA checks passed**, both283,347,456-byte storage probes passed, and all five accepted all-data checkpoint/cache/statistics/ID checks passed BEFORE the new optimizer started. Capacity training start event present, GPU94%/2880MiB; first completed epoch not yet observed in this check. Fit **190fixed epochs on all67905approved breaths**, then six-member frozen median+all-training-grid policy and finite expiration mean. No independent holdout in final fit. Roughly3.5h; exact ETA once epoch timing is measured. Officialbest0.17427,target<=0.1638stillunmet; no newCSV or officialscoreyet.
