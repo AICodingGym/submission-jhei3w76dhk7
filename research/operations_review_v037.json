@@ -52,5 +52,8 @@
   "actual_CPU_deployment_gate_verified": true,
   "required_existing_files_verified": 51,
   "deployed_project_files_verified": 58,
-  "updated_utc": "2026-11-10T15:41:53.991952+00:00"
+  "updated_utc": "2026-11-10T15:41:53.991952+00:00",
+  "actual_GPU_checks_passed": 88,
+  "all_actual_final_reuse_checks_passed": true,
+  "final_optimizer_started": true
 }
