@@ -1,6 +1,6 @@
 {
-  "status": "remaining_two_training_deep_curve_epoch50of196",
-  "updated_utc": "2026-11-10T02:12:03.026080+00:00",
+  "status": "SSH_Duo_renewal_required_server_monitor_independent",
+  "updated_utc": "2026-11-10T03:33:46.058659+00:00",
   "pod": "v2gao-2973011",
   "confirmation_stage": "remaining_two",
   "submitted_Pacific": "2026-11-08 20:09:15 PST",
@@ -241,8 +241,14 @@
   "executor_PID": 185,
   "queue_wait_seconds": 8526,
   "periodic_scheduled_checks_completed": 11,
-  "completed_epochs": 50,
+  "completed_epochs": 135,
   "member_budget": 196,
   "actual_GPU_utilization_percent": 91,
-  "actual_GPU_used_MiB": 1734
+  "actual_GPU_used_MiB": 1734,
+  "last_verified_scheduled_check_utc": "2026-11-10T03:00:34.205555+00:00",
+  "SSH_renewal_required": true,
+  "renewal_question_pending": true,
+  "last_monitoring_attempt_failed_due_to": "Duo-required publickey/password authentication failure",
+  "last_live_training_health": "GPU91%, no errors at7:00PM; later progress unverified",
+  "server_monitor_expected_to_continue_independently": true
 }

@@ -1,3 +1,11 @@
+# Monitoring access renewal required; server jobs independent
+
+Nov9 **7:10PM Pacific** monitoring attempt failed with DataHub requiring password/Duo authentication. Asked the user to renew the shared SSH master in Terminal and reply connected. Do not repeatedly attempt authentication or request passwords in chat. Last verified scheduled result **7:00:34PM**: deep_curve135/196, GPU91%, no errors. Capacity190 follows; later progress is unverified until reconnection. Pod2973011 leaseends11:39:47PM. Detached guardian2973272 and ten-minute reporter3012588 run on DataHub independently of the Mac/SSH session; read saved summaries after reconnecting and inspect actual live state. No jobs were stopped/restarted/allocated due to lost access. No Fscore/finalfit/submission yet. Primary official target<=0.1638, acceptedbest0.17427.
+
+Source/script paths and exact monitoring/read commands remain in following entries and `research/periodic_monitor_v036.json`. On reconnect read latest `monitor-every10/summary.jsonl`; if archival completed, retrieve/verify/publish then run complete independent audit before conditional finalfit. Preserve originalfailedmonitoring evidence, userbaselinechange and all priorfiles. User requested ongoing10minute chat updates; keep waiting between checks while connected.
+
+---
+
 # Latest training check: deep_curve50/196
 
 Nov9 **6:10:34PM Pacific**: pod2973011 Runningn06, cold deep_curve **50/196epochs**, GPU91%/1734MiB. All five earlier Fmembers completed; capacity_laplace_curve190 waits sequentially. Guardian/reporter healthy,11scheduledchecks/noerrors. No Fvalidation score yet; fixed budgets and withheld Flabels unchanged. Leaseends11:39:47PM; currenttargetofficialmeanMAE<=0.1638,acceptedbest0.17427. Chatturn keptopen for10-minute updates; next6:20. Waitbetweenchecks. Source/payload/archive/audit/monitor paths in the next entries. Preserve userbaselinechange and all artifacts.
