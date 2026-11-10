@@ -1,3 +1,11 @@
+# Reconnected: final cold member42/190
+
+Nov9 **8:10:34PM Pacific**: SSH renewed and live saved checks retrieved. Deep_curve completed196epochs by7:40PM; the final cold **capacity_laplace_curve model is42/190**. GPU91%/2978MiB, no reported errors. Six cold Fmembers are now complete; only capacity remains. It progressed5epochs7:40,17at7:50,29at8:00,42at8:10. Approximately2htraining remain, then fixed predictions/Fscore/archive and independent completeaudit. Actualleaseends11:39:47PM. No Fvalidation result or newofficialscore/finalfit/submission yet; targetofficialmeanMAE<=0.1638,acceptedbest0.17427.
+
+Server reporter3012588 and guardian2973272 are alive; all23 scheduled ten-minute checks persisted during SSH gap and no monitor errors were recorded. Chatturn continuesopen for10-minute updates; next8:20PM. Readonly summary command/path in following entries or `research/periodic_monitor_v036.json`. New savedlocalobservation outputs/confirmation_v036/monitor/reconnected_20261110T041057Z.json. No newresources/restarts/protocolchanges. Preserve baseline_v001.ipynb user modification and all previousartifacts.
+
+---
+
 # Monitoring access renewal required; server jobs independent
 
 Nov9 **7:10PM Pacific** monitoring attempt failed with DataHub requiring password/Duo authentication. Asked the user to renew the shared SSH master in Terminal and reply connected. Do not repeatedly attempt authentication or request passwords in chat. Last verified scheduled result **7:00:34PM**: deep_curve135/196, GPU91%, no errors. Capacity190 follows; later progress is unverified until reconnection. Pod2973011 leaseends11:39:47PM. Detached guardian2973272 and ten-minute reporter3012588 run on DataHub independently of the Mac/SSH session; read saved summaries after reconnecting and inspect actual live state. No jobs were stopped/restarted/allocated due to lost access. No Fscore/finalfit/submission yet. Primary official target<=0.1638, acceptedbest0.17427.

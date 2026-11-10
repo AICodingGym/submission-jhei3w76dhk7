@@ -1,6 +1,6 @@
 {
-  "status": "SSH_Duo_renewal_required_server_monitor_independent",
-  "updated_utc": "2026-11-10T03:33:46.058659+00:00",
+  "status": "remaining_two_training_capacity_epoch42of190",
+  "updated_utc": "2026-11-10T04:11:34.778407+00:00",
   "pod": "v2gao-2973011",
   "confirmation_stage": "remaining_two",
   "submitted_Pacific": "2026-11-08 20:09:15 PST",
@@ -136,8 +136,8 @@
     "modeling_code_in_notebooks_only": true,
     "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions."
   },
-  "last_observation": "outputs/confirmation_v036/monitor/chat_check_20261110T021034Z.json",
-  "next_check_not_before_utc": "2026-11-10T02:20:34Z",
+  "last_observation": "outputs/confirmation_v036/monitor/reconnected_20261110T041057Z.json",
+  "next_check_not_before_utc": "2026-11-10T04:20:34Z",
   "conditional_final_source_prepared": "research/freeze_final_v037.json",
   "corrected_source_code_sha256": "27f89eb9f1a749e032040082b70513fc9990311eee87fcddbf7e6d5806f8138b",
   "guardian_detachment_and_dispatch_verified": true,
@@ -148,7 +148,7 @@
     "first_five": 15243.90894913662,
     "remaining_two": 17734.96475046756
   },
-  "active_member": "deep_curve",
+  "active_member": "capacity_laplace_curve",
   "guardian_status_polling_verified": true,
   "full_failed_schema_archive_local_member_verification": {
     "verified": true,
@@ -231,7 +231,7 @@
   "periodic_monitor_file": "research/periodic_monitor_v036.json",
   "periodic_monitor_PID": 3012588,
   "periodic_monitor_interval_seconds": 600,
-  "last_live_check_utc": "2026-11-10T02:10:34.205489+00:00",
+  "last_live_check_utc": "2026-11-10T04:10:34.205604+00:00",
   "periodic_monitor_first_scheduled_check_succeeded": true,
   "periodic_monitor_errors": 0,
   "periodic_monitor_alive": true,
@@ -240,15 +240,24 @@
   "wrapper_PID": 127,
   "executor_PID": 185,
   "queue_wait_seconds": 8526,
-  "periodic_scheduled_checks_completed": 11,
-  "completed_epochs": 135,
-  "member_budget": 196,
+  "periodic_scheduled_checks_completed": 23,
+  "completed_epochs": 42,
+  "member_budget": 190,
   "actual_GPU_utilization_percent": 91,
-  "actual_GPU_used_MiB": 1734,
+  "actual_GPU_used_MiB": 2978,
   "last_verified_scheduled_check_utc": "2026-11-10T03:00:34.205555+00:00",
-  "SSH_renewal_required": true,
-  "renewal_question_pending": true,
+  "SSH_renewal_required": false,
+  "renewal_question_pending": false,
   "last_monitoring_attempt_failed_due_to": "Duo-required publickey/password authentication failure",
-  "last_live_training_health": "GPU91%, no errors at7:00PM; later progress unverified",
-  "server_monitor_expected_to_continue_independently": true
+  "server_monitor_expected_to_continue_independently": true,
+  "SSH_restored_utc": "2026-11-10T04:10:57.301982+00:00",
+  "completed_cold_members": [
+    "original_compact",
+    "deep",
+    "curve",
+    "memory",
+    "offset",
+    "deep_curve"
+  ],
+  "remaining_training_estimate_hours": 2
 }
