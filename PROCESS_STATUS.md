@@ -1,3 +1,11 @@
+# Latest live state: second-stage GPU allocated, job starting
+
+Nov9 **5:40:34PM Pacific** scheduled check: pod**2973011 Running on n06**, actual start**5:39:47PM**, six-hour lease ends**11:39:47PM**. Queue lasted2h22m06s. Guardian2973272 dispatched successfully. Wrapper127/executor185 are alive, loading approved data; no completed new epoch observed yet. Exact cached actualCUDA130component+32pruner proofs verified against same Python3.11.9/np1.26.4/Torch2.2.1+cu121/cuDNN8902/GTX1080Ti runtime and frozen source/data/helpers; no synthetic rerun. Deep_curve196 then capacity_laplace_curve190 remain cold fixed-budget fits, about5h total. First5Fmembers already completed and independently audited1076checks. No Fvalidation result/newofficial score/finalfit/submission yet. Primary official meanMAEtarget<=0.1638, acceptedbest0.17427.
+
+Server ten-minute reporter3012588 is healthy, eight scheduled checks through5:40, no errors; next5:50. Current chat turn is being kept open for10-minute updates after user clarified they expected chat reports, rather than saved server logs alone. Wait between checks to conserve usage. Read `monitor-every10/summary.jsonl` in remaining_two login stage; `research/periodic_monitor_v036.json` has paths/PIDs. Continue exact frozen protocol and prepared complete audit after verified archival. Preserve all artifacts and baseline_v001.ipynb user modification.
+
+---
+
 # Automatic ten-minute checks are running remotely
 
 Nov9 **4:20:34PM Pacific**: at the user's request, installed a single read-only DataHub monitor **PID3012588**, interval **600seconds**, next scheduled check **4:30:34PM Pacific**. It writes full observations and compact summaries every10minutes on the login server and stops after verified archival or a terminal pod. It does not train, allocate/delete pods, submit or message anyone. It survives Mac sleep and holds a single-instance flock. Existing operational guardian2973272 continues its lease/dispatch/backup duties; do not launch a duplicate monitor or pod.
