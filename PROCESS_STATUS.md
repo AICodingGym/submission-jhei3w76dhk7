@@ -1,3 +1,21 @@
+# Final V037 complete and independently audited; submit next
+
+**Nov 10,12:29 PM Pacific:** renewed SSH retrieved successful final run. Fit completed **10:59:34 AM**, all **190 epochs /50,540 optimizer steps /67,905 approved breaths**. Guardian verified all107archive members and releasedGPU; no pods remain. Local raw archive126,729,339bytes SHA`94b7e21d258ed6228c84d435309fbb936e7dc213fde16b2e7867b5d0e7057f2a` and every member independently verified; safe mirror/publisher created31new final outputs and left root notebooks/old artifacts unchanged.
+
+**audit_final_v037.ipynb passed1,322checks**, including rebuilt training features/statistics, all six recipes/provenance/budgets, independent64test-breath CPU checks permodel (largest3.24e-5 vsdeclared0.000703limit), whole-row fixedpolicy and exact603600rowCSV alignment/values. Receipt`research/final_review_v037.json`; codeSHA cfe9c297d9e5aa627e7a33e590d941479781fd8af7e252614b7854ac579ff1a8 unchanged. CSV`outputs/confirmation_v036/final_all_v037/submission.csv` SHA`a99e8acd59d2dbc6a2b50ce53ff6b108269afd8c010e6ba8504f27addc53f1e1`; finalmanifestSHA eaa7bf022bc88d292798ee0321aeb1ca00c1671b2730671dcda121735908da16. NewcapacitymodelSHA f6e146d2dd391063ef3bdcae37d409b726eea8fd63cb9381e6fb7d680d1a455b. Finalfit has no independent holdout; priorFconfirmationgain3.06% supplies evidence, not an officialscore.
+
+Next: commit reviewed source, submit verifiedCSV throughGym withuserjhei3w76dhk7 and --no-upload-logs, preserve officialreceipt andoldbest0.17427. Use reviewed isolatedcheckout forCLIautomatic sourcearchiving to keepunrelated baseline_v001.ipynbuserchange unstaged/untouched. Targetofficial<=0.1638 stillunmet untilscoreverified. Then continue controllediterations ifneeded understandingapproval. ActualretreivalSFTPbraceerror andmissinglocalnbformat recorded; standard-librarynotebookexecutorused withoutchangingmodeldependencies. No models retrained orscientificguards loosened.
+
+---
+
+# Monitoring access renewal required near final-fit completion
+
+**Nov 10, approximately 10:56 AM Pacific:** SSH requires password/Duo renewal. User has been asked to reconnect in Mac Terminal; credentials must remain in Terminal. Last verified scheduled report **10:46:03 AM**: pod `v2gao-4010374`, final capacity fit **177/190 epochs**, GPU96%, no errors, about13 minutes of training remaining at that time. Later completion is UNVERIFIED until renewed access. Detached training, archival guardian4019089 and ten-minute monitor4048377 continue independently of the Mac/SSH session. Lease ends **1:43:06 PM**. Do not start a duplicate run or keep attempting authentication. Official best **0.17427** unchanged; current official target **<=0.1638** unmet.
+
+After reconnect, first read actual latest saved `monitor-every10/summary.jsonl` in login stage `.pa3-setup-control.gty67K/v037-final-20261110`. If completed, obtain `archive.json`, `archive-verification.json` and `pipeline-archive.tar.gz`; verify raw archive and every manifest member with `verify_archive_v037.py`, safely mirror/publish via `outputs/confirmation_v036/final_v037_review/publish_final_v037.py`, then run **audit_final_v037.ipynb** with `PA3_RUN_FINAL_AUDIT_V037=1` before authorized Gym submission. Audit source cfe9c297d9e5aa627e7a33e590d941479781fd8af7e252614b7854ac579ff1a8; preparation13checks passed; publisher3fixture checks passed. Preserve all prior results, root notebooks and user baseline modification. See following entries for exact frozen scientific/deployment hashes, paths and commands. No final CSV or official new score has been observed locally.
+
+---
+
 # Live final fit: 98/190 epochs
 
 **Nov 10, 9:26 AM Pacific:** final V037 pod `v2gao-4010374` is healthy, GPU 94%, **98/190 fixed epochs** completed on all 67,905 approved breaths. Approximately 94 minutes of training remain, then inference/archive/retrieval/independent audit/authorized submission. Lease ends 1:43:06 PM. Ten scheduled checks persisted without reported errors; next 9:36 AM. Source/recipe unchanged, no new official result. Best 0.17427 preserved; official target <=0.1638 remains unmet. Prepared audit notebook and safe publisher described immediately below. Keep waiting between ten-minute chat checks, preserve all artifacts and user baseline modification.

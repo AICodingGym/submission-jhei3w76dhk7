@@ -1,0 +1,86 @@
+{
+  "status": "complete_audited_not_yet_submitted",
+  "utc": "2026-11-10T20:30:36.681884+00:00",
+  "final_manifest_sha256": "eaa7bf022bc88d292798ee0321aeb1ca00c1671b2730671dcda121735908da16",
+  "submission_sha256": "a99e8acd59d2dbc6a2b50ce53ff6b108269afd8c010e6ba8504f27addc53f1e1",
+  "final_audit_sha256": "ec39d0ef3ba1edc4982bf66352231929f4bc622e97be99ce749ca6d7714f89d7",
+  "audit_checks": 1322,
+  "training_breaths": 67905,
+  "epochs": 190,
+  "optimizer_steps": 50540,
+  "fit_seconds": 11667.956448043231,
+  "models": {
+    "original_compact": {
+      "checkpoint_sha256": "19897b624599c57f2e4a7f976b2d2fdd4d0b5b1ba3f3dbf6884198ebdef23883",
+      "epochs": 193,
+      "optimizer_steps": 51338,
+      "seed": 20261102,
+      "parameter_count": 584769,
+      "training_seconds": 2256.850973560009,
+      "accepted_reuse": true
+    },
+    "deep": {
+      "checkpoint_sha256": "591e3a778af84bfe7fa0f6592f8595fa2c969bdbb37fc0a36a2a251eacb4aad0",
+      "epochs": 189,
+      "optimizer_steps": 50274,
+      "seed": 20261102,
+      "parameter_count": 2592449,
+      "training_seconds": 8091.782008016948,
+      "accepted_reuse": true
+    },
+    "curve": {
+      "checkpoint_sha256": "6aa532cf6e3f413e38411e88de567ac2e21ba134e982589b39415e40ef20fb9c",
+      "epochs": 193,
+      "optimizer_steps": 51338,
+      "seed": 20261102,
+      "parameter_count": 584769,
+      "training_seconds": 2331.2048823311925,
+      "accepted_reuse": true
+    },
+    "memory": {
+      "checkpoint_sha256": "3a1748ef22864316497ddb24721e28e480aa6256351155d8c0445dfa25a77d43",
+      "epochs": 191,
+      "optimizer_steps": 50806,
+      "seed": 20261102,
+      "parameter_count": 584970,
+      "training_seconds": 2875.3153422879986,
+      "accepted_reuse": true
+    },
+    "offset": {
+      "checkpoint_sha256": "a9aea37f9da6eb14024c76bc8f7f44d3b968291ca8cad53bacf5ef17747a95ef",
+      "epochs": 193,
+      "optimizer_steps": 51338,
+      "seed": 20261102,
+      "parameter_count": 597122,
+      "training_seconds": 2513.915291639976,
+      "accepted_reuse": true
+    },
+    "capacity_laplace_curve": {
+      "checkpoint_sha256": "f6e146d2dd391063ef3bdcae37d409b726eea8fd63cb9381e6fb7d680d1a455b",
+      "epochs": 190,
+      "optimizer_steps": 50540,
+      "seed": 20261102,
+      "parameter_count": 5108162,
+      "training_seconds": 11667.956448043231,
+      "accepted_reuse": false
+    }
+  },
+  "archive_sha256": "94b7e21d258ed6228c84d435309fbb936e7dc213fde16b2e7867b5d0e7057f2a",
+  "all_107_archive_members_verified": true,
+  "all_603600_rows_verified": true,
+  "GPU_released": true,
+  "current_official_best": 0.17427,
+  "current_official_target": 0.1638,
+  "new_official_score_pending": true,
+  "baseline_user_file_sha256_before_submission": "3a36cd7ffba24f2c1aabe3aa2f6fa5f6d1b73ab1ac8e3e8801b40ff30c4c22ec",
+  "genuine_operational_errors": [
+    {
+      "error": "scp default SFTP treats remote brace list as a literal path",
+      "fix": "Retried with seven explicit source paths; transfer and all107member hashes passed"
+    },
+    {
+      "error": "Local nbformat is not installed",
+      "fix": "Used standard-library notebook executor; no model environment change or weakened checks"
+    }
+  ]
+}

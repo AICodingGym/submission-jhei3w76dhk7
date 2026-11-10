@@ -1,0 +1,6 @@
+{
+  "original_file": "final_v037_20261110T174603Z.json",
+  "correctly_named_copy": "final_v037_20261110T175603Z.json",
+  "reason": "Local retrieval occurred later than the expected 9:46 report; actual embedded report is9:56. Original retrieval file preserved.",
+  "bytes_unchanged": true
+}

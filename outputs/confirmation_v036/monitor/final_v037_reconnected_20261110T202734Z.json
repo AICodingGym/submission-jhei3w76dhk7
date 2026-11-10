@@ -1,0 +1,45 @@
+{
+  "utc": "2026-11-10T20:27:34.990338+00:00",
+  "archive.json": {
+    "archive_file": "/home/v2gao/private/.pa3-preserved-course-backups/v037-archives/v037-complete-v2gao-4010374-final-20261110T185943787346Z.tar.gz",
+    "bytes": 126729339,
+    "sha256": "94b7e21d258ed6228c84d435309fbb936e7dc213fde16b2e7867b5d0e7057f2a",
+    "files": 107
+  },
+  "archive-verification.json": {
+    "verified": true,
+    "files": 107,
+    "sha256": "94b7e21d258ed6228c84d435309fbb936e7dc213fde16b2e7867b5d0e7057f2a",
+    "safe_regular_members": true,
+    "all_individual_file_hashes": true,
+    "forward_only_stream": true
+  },
+  "archive-copy-result.json": {
+    "verified": true,
+    "files": 107,
+    "sha256": "94b7e21d258ed6228c84d435309fbb936e7dc213fde16b2e7867b5d0e7057f2a",
+    "safe_regular_members": true,
+    "all_individual_file_hashes": true,
+    "forward_only_stream": true
+  },
+  "guardian_log_tail": ":04Z state=pending\n2026-11-10T17:59:06Z state=pending\n2026-11-10T18:00:08Z state=pending\n2026-11-10T18:01:09Z state=pending\n2026-11-10T18:02:11Z state=pending\n2026-11-10T18:03:12Z state=pending\n2026-11-10T18:04:14Z state=pending\n2026-11-10T18:05:16Z state=pending\n2026-11-10T18:06:18Z state=pending\n2026-11-10T18:07:20Z state=pending\n2026-11-10T18:08:21Z state=pending\n2026-11-10T18:09:23Z state=pending\n2026-11-10T18:10:26Z state=pending\n2026-11-10T18:11:28Z state=pending\n2026-11-10T18:12:29Z state=pending\n2026-11-10T18:13:31Z state=pending\n2026-11-10T18:14:33Z state=pending\n2026-11-10T18:15:35Z state=pending\n2026-11-10T18:16:37Z state=pending\n2026-11-10T18:17:39Z state=pending\n2026-11-10T18:18:40Z state=pending\n2026-11-10T18:19:42Z state=pending\n2026-11-10T18:20:55Z state=pending\n2026-11-10T18:21:57Z state=pending\n2026-11-10T18:22:59Z state=pending\n2026-11-10T18:24:01Z state=pending\n2026-11-10T18:25:02Z state=pending\n2026-11-10T18:26:06Z state=pending\n2026-11-10T18:27:07Z state=pending\n2026-11-10T18:28:09Z state=pending\n2026-11-10T18:29:11Z state=pending\n2026-11-10T18:30:32Z state=pending\n2026-11-10T18:31:34Z state=pending\n2026-11-10T18:32:36Z state=pending\n2026-11-10T18:33:38Z state=pending\n2026-11-10T18:34:40Z state=pending\n2026-11-10T18:35:42Z state=pending\n2026-11-10T18:36:44Z state=pending\n2026-11-10T18:37:45Z state=pending\n2026-11-10T18:38:47Z state=pending\n2026-11-10T18:39:49Z state=pending\n2026-11-10T18:40:51Z state=pending\n2026-11-10T18:41:52Z state=pending\n2026-11-10T18:42:54Z state=pending\n2026-11-10T18:43:56Z state=pending\n2026-11-10T18:44:58Z state=pending\n2026-11-10T18:46:19Z state=pending\n2026-11-10T18:47:21Z state=pending\n2026-11-10T18:48:23Z state=pending\n2026-11-10T18:49:24Z state=pending\n2026-11-10T18:50:26Z state=pending\n2026-11-10T18:51:28Z state=pending\n2026-11-10T18:52:29Z state=pending\n2026-11-10T18:53:31Z state=pending\n2026-11-10T18:54:33Z state=pending\n2026-11-10T18:55:35Z state=pending\n2026-11-10T18:56:37Z state=pending\n2026-11-10T18:57:39Z state=pending\n2026-11-10T18:58:40Z state=pending\n2026-11-10T18:59:42Z state=0\npod \"v2gao-4010374\" deleted from v2gao namespace\nVerified backup and released idle GPU; state=0; no automatic replacement\n",
+  "monitor_checks": 20,
+  "last": {
+    "GPU": null,
+    "archived": true,
+    "error": "Error from server (NotFound): pods \"v2gao-4010374\" not found\n",
+    "exitcode": "0",
+    "final_summary": null,
+    "full_observation": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v037-final-20261110/monitor-every10/20261110T190603Z.json",
+    "guardian_alive": false,
+    "members": {},
+    "phase": null,
+    "pod": "v2gao-4010374",
+    "proof": null,
+    "reuse_and_cache_checks_passed": null,
+    "start": null,
+    "utc": "2026-11-10T19:06:03.196281+00:00"
+  },
+  "monitor_errors": null,
+  "pods": []
+}

@@ -54,3 +54,7 @@
 Nov 10, 8:02 AM Pacific: final all-data capacity fit observed 10/190 at7:56, GPU95%, ~61s/epoch. Prepared independent audit_final_v037.ipynb before final outputs (code cfe9c297d9e5aa627e7a33e590d941479781fd8af7e252614b7854ac579ff1a8); 13 source/shape/gate/policy preparation checks passed. Prepared safe final archive publisher; three synthetic preservation/conflict/path checks passed. No training changes/new official score. Waiting between ten-minute checks.
 
 Nov 10,9:26AM Pacific: final V03798/190, GPU94%, ~61s/epoch. Ten scheduled reports saved with no errors; roughly94min training remain. No source/recipe/official score change.
+
+2026-11-10T20:10:12.123693+00:00: scheduled final V037 status retrieval rejected with password/Duo required. Last verified177/190 at10:46AM. User asked once to renew inTerminal; no retry/duplicate job. Training and guardian independent ofSSH; completion not yet retrieved.
+
+2026-11-10T20:30:36.681884+00:00: final V037 retrieved and all107 archive members verified; independent notebookaudit1322checks passed. CSV SHAa99e8acd59d2dbc6a2b50ce53ff6b108269afd8c010e6ba8504f27addc53f1e1. All190epochs complete, GPUreleased. Officialsubmissionnext. SFTPbracepatherror correctedwithexplicitpaths; localnbformatmissing, usedstdlibexecutor. No modelsource/runtimechange.
