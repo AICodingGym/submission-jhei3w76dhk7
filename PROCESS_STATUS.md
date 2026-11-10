@@ -1,3 +1,11 @@
+# Automatic ten-minute checks are running remotely
+
+Nov9 **4:20:34PM Pacific**: at the user's request, installed a single read-only DataHub monitor **PID3012588**, interval **600seconds**, next scheduled check **4:30:34PM Pacific**. It writes full observations and compact summaries every10minutes on the login server and stops after verified archival or a terminal pod. It does not train, allocate/delete pods, submit or message anyone. It survives Mac sleep and holds a single-instance flock. Existing operational guardian2973272 continues its lease/dispatch/backup duties; do not launch a duplicate monitor or pod.
+
+Monitor source `outputs/confirmation_v036/monitor/monitor_every_10m.py`, SHA25627f1da0b7585eaad3c0ffc94f1026b048355e2c96058ef7c91e5382c3f4f40e0. Remote stage `$HOME/.pa3-setup-control.gty67K/v036-F-remaining_two-20261109`; report directory `monitor-every10/`, compact `summary.jsonl`, full `<UTC>.json`, `events.jsonl`, optional `errors.jsonl`. PID/config `research/periodic_monitor_v036.json`. Reporter launch/event files verify it started and scheduled its first check. Latest actual live read **4:18:48PM**: pod2973011 still Pending/no node/start. Current target official meanMAE<=0.1638; best0.17427. First5coldmodels/archive/1076audit complete; two remaining wait for GPU, ~5h once started. See older current-state entry for source/payload/audit details. Preserve all files and baseline_v001.ipynb user change.
+
+---
+
 # Live process check: queued, no training active
 
 Nov9 **3:29:08PM Pacific**: only pod2973011 is Pending, with no node/startTime. Scheduler reports eligible GPU slots occupied; no queue position or start estimate. Guardian2973272 is alive and waiting, and will dispatch the reviewed remaining_two pipeline when Ready. Neither deep_curve196 nor capacity190 has started. Firstfive training/archive/1076-check audit are complete. No final fit or new submission is running. Current primary target remains official MAE<=0.1638; accepted best0.17427. About5h for the queued stage after scheduling. Next check>=3:39:08PM; preserve files/source/recipes, no duplicate requests.

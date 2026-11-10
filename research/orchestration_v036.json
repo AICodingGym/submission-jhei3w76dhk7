@@ -1,6 +1,6 @@
 {
-  "status": "remaining_two_Pending_GPU_slots_occupied_guardian_alive",
-  "updated_utc": "2026-11-09T23:29:38.797141+00:00",
+  "status": "remaining_two_last_Pending_remote_10minute_monitor_active",
+  "updated_utc": "2026-11-10T00:22:12.257274+00:00",
   "pod": "v2gao-2973011",
   "confirmation_stage": "remaining_two",
   "submitted_Pacific": "2026-11-08 20:09:15 PST",
@@ -136,8 +136,8 @@
     "modeling_code_in_notebooks_only": true,
     "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions."
   },
-  "last_observation": "outputs/confirmation_v036/monitor/process_inventory_20261109T232908Z.json",
-  "next_check_not_before_utc": "2026-11-09T23:39:08Z",
+  "last_observation": "outputs/confirmation_v036/monitor/remaining_two_20261109T235519Z.json",
+  "next_check_not_before_utc": "2026-11-10T00:30:34.205328+00:00",
   "conditional_final_source_prepared": "research/freeze_final_v037.json",
   "corrected_source_code_sha256": "27f89eb9f1a749e032040082b70513fc9990311eee87fcddbf7e6d5806f8138b",
   "guardian_detachment_and_dispatch_verified": true,
@@ -226,5 +226,10 @@
   "only_project_pod": "v2gao-2973011",
   "no_active_training": true,
   "scheduler_reason": "Eligible GPUs occupied; other nodes have taints/affinity/unschedulable constraints",
-  "queue_position_or_start_estimate_available": false
+  "queue_position_or_start_estimate_available": false,
+  "queue_wait_seconds_from_creation": 2258.5,
+  "periodic_monitor_file": "research/periodic_monitor_v036.json",
+  "periodic_monitor_PID": 3012588,
+  "periodic_monitor_interval_seconds": 600,
+  "last_live_check_utc": "2026-11-10T00:18:48.414412+00:00"
 }
