@@ -1,6 +1,6 @@
 {
-  "status": "remaining_two_Running_preprocessing_cached_CUDA_verified",
-  "updated_utc": "2026-11-10T01:42:55.868186+00:00",
+  "status": "remaining_two_training_deep_curve_epoch50of196",
+  "updated_utc": "2026-11-10T02:12:03.026080+00:00",
   "pod": "v2gao-2973011",
   "confirmation_stage": "remaining_two",
   "submitted_Pacific": "2026-11-08 20:09:15 PST",
@@ -111,7 +111,7 @@
   "actual_CUDA_component_checks": 130,
   "actual_CUDA_pruning_checks": 32,
   "F_split_created": true,
-  "first_epoch_not_yet_observed": true,
+  "first_epoch_not_yet_observed": false,
   "prior_attempt_failed_before_F_fit_due_to_course_quota": true,
   "storage_repair_report": "research/quota_recovery_v036.json",
   "partial_failed_attempt_preserved": true,
@@ -136,8 +136,8 @@
     "modeling_code_in_notebooks_only": true,
     "archive_retry_provenance": "Version-adapted reviewed V024 retry guardian; copies verified member by member before GPU deletion; no automatic resource requests or submissions."
   },
-  "last_observation": "outputs/confirmation_v036/monitor/scheduled_monitor_status_20261110T003332Z.json",
-  "next_check_not_before_utc": "2026-11-10T01:50:34Z",
+  "last_observation": "outputs/confirmation_v036/monitor/chat_check_20261110T021034Z.json",
+  "next_check_not_before_utc": "2026-11-10T02:20:34Z",
   "conditional_final_source_prepared": "research/freeze_final_v037.json",
   "corrected_source_code_sha256": "27f89eb9f1a749e032040082b70513fc9990311eee87fcddbf7e6d5806f8138b",
   "guardian_detachment_and_dispatch_verified": true,
@@ -148,7 +148,7 @@
     "first_five": 15243.90894913662,
     "remaining_two": 17734.96475046756
   },
-  "active_member": null,
+  "active_member": "deep_curve",
   "guardian_status_polling_verified": true,
   "full_failed_schema_archive_local_member_verification": {
     "verified": true,
@@ -211,7 +211,7 @@
     "component": 130,
     "pruner": 32
   },
-  "remaining_two_models_started": false,
+  "remaining_two_models_started": true,
   "server_first_stage_archive_verification": {
     "verified": true,
     "files": 252,
@@ -231,7 +231,7 @@
   "periodic_monitor_file": "research/periodic_monitor_v036.json",
   "periodic_monitor_PID": 3012588,
   "periodic_monitor_interval_seconds": 600,
-  "last_live_check_utc": "2026-11-10T01:40:34.208432+00:00",
+  "last_live_check_utc": "2026-11-10T02:10:34.205489+00:00",
   "periodic_monitor_first_scheduled_check_succeeded": true,
   "periodic_monitor_errors": 0,
   "periodic_monitor_alive": true,
@@ -240,5 +240,9 @@
   "wrapper_PID": 127,
   "executor_PID": 185,
   "queue_wait_seconds": 8526,
-  "periodic_scheduled_checks_completed": 8
+  "periodic_scheduled_checks_completed": 11,
+  "completed_epochs": 50,
+  "member_budget": 196,
+  "actual_GPU_utilization_percent": 91,
+  "actual_GPU_used_MiB": 1734
 }

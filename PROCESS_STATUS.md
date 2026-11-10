@@ -1,3 +1,9 @@
+# Latest training check: deep_curve50/196
+
+Nov9 **6:10:34PM Pacific**: pod2973011 Runningn06, cold deep_curve **50/196epochs**, GPU91%/1734MiB. All five earlier Fmembers completed; capacity_laplace_curve190 waits sequentially. Guardian/reporter healthy,11scheduledchecks/noerrors. No Fvalidation score yet; fixed budgets and withheld Flabels unchanged. Leaseends11:39:47PM; currenttargetofficialmeanMAE<=0.1638,acceptedbest0.17427. Chatturn keptopen for10-minute updates; next6:20. Waitbetweenchecks. Source/payload/archive/audit/monitor paths in the next entries. Preserve userbaselinechange and all artifacts.
+
+---
+
 # Latest live state: second-stage GPU allocated, job starting
 
 Nov9 **5:40:34PM Pacific** scheduled check: pod**2973011 Running on n06**, actual start**5:39:47PM**, six-hour lease ends**11:39:47PM**. Queue lasted2h22m06s. Guardian2973272 dispatched successfully. Wrapper127/executor185 are alive, loading approved data; no completed new epoch observed yet. Exact cached actualCUDA130component+32pruner proofs verified against same Python3.11.9/np1.26.4/Torch2.2.1+cu121/cuDNN8902/GTX1080Ti runtime and frozen source/data/helpers; no synthetic rerun. Deep_curve196 then capacity_laplace_curve190 remain cold fixed-budget fits, about5h total. First5Fmembers already completed and independently audited1076checks. No Fvalidation result/newofficial score/finalfit/submission yet. Primary official meanMAEtarget<=0.1638, acceptedbest0.17427.
