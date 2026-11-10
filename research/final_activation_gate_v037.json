@@ -1,0 +1,22 @@
+{
+  "status": "passed_actual_final_prerequisite_gate",
+  "utc": "2026-11-10T15:19:41.679699+00:00",
+  "gate": {
+    "F_result_sha256": "ed5c3f254a563cc6503bece1834d5ed8c4f1fc6a51f52b3f9d9f158aacfdfcbf",
+    "F_audit_sha256": "3a757c33687785acba1858c41302f57d3118c79480db7aff72f18f566df69a59",
+    "selection_sha256": "6f413d00dfe86eea6eb8fc8a6339ef3b2dabe7e11140d8f2f99530755f107d14",
+    "scientific_A_selection_sha256": "ec2feebb872eaaf963ca27a1c1f61c23af0f6f1aac24b3d4a39986100b8f54ec",
+    "F_protocol_sha256": "e9fb1fc5fd7a342fd744f8ed2d7bcdbb4eab3d3e5be8f12da6f93575374ab0f4"
+  },
+  "final_source_code_sha256": "68a4aa07834bd8cd365058631f01279620117c7a896657c9a3029622e3d4ed64",
+  "weights": {
+    "original_compact": 0.125,
+    "curve": 0.125,
+    "memory": 0.125,
+    "offset": 0.125,
+    "deep": 0.25,
+    "capacity_laplace_curve": 0.25
+  },
+  "new_member_epochs": 190,
+  "no_final_fit_or_all_data_reuse_performed": true
+}

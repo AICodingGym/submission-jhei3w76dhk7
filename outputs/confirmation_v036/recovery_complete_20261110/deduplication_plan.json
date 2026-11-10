@@ -1,0 +1,11 @@
+{
+  "planned_utc": "2026-11-10T15:08:15.331861+00:00",
+  "reason": "Private persistent filesystem Errno122 prevented archive/monitor logs after successful worker exit0",
+  "source_duplicate": ".pa3-setup-control.gty67K/v036-F-first_five-schema-corrected-20261109/pipeline-archive-attempt-20261109T191728544977Z-1.tar.gz",
+  "canonical": ".pa3-preserved-course-backups/v036-archives/v036-complete-v2gao-2591068-first_five-r3-20261109T191620313045Z.tar.gz",
+  "bytes": 1056127127,
+  "expected_sha256": "68aef59d863c82eddddc08e334535a3c655aa7a5e9d1c4419426c56e3efa5c53",
+  "canonical_already_locally_member_verified": true,
+  "operation": "Recompute both full hashes, replace duplicate path with same-filesystem hardlink to exact canonical bytes. No content loss, path preserved.",
+  "no_model_dataset_or_submission_changes": true
+}

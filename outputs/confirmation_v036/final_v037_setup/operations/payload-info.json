@@ -1,0 +1,16 @@
+{
+  "status": "prepared_after_passed_complete_F_and_gate",
+  "utc": "2026-11-10T15:38:27.555925+00:00",
+  "payload_sha256": "f5299d530c2fd32caa2639474203747d662235183e17d318910b709423c97d05",
+  "payload_bytes": 550641,
+  "payload_members": 69,
+  "pins_sha256": "f46983c71248f065d45398fb83267845a01e0534242e4c5ef0dc5b235c817c57",
+  "F_result_sha256": "ed5c3f254a563cc6503bece1834d5ed8c4f1fc6a51f52b3f9d9f158aacfdfcbf",
+  "F_audit_sha256": "3a757c33687785acba1858c41302f57d3118c79480db7aff72f18f566df69a59",
+  "source_code_sha256": "68a4aa07834bd8cd365058631f01279620117c7a896657c9a3029622e3d4ed64",
+  "existing_prerequisite_files": 51,
+  "existing_prerequisite_bytes": 815760372,
+  "project_files": 58,
+  "no_GPU_requested": true,
+  "no_final_fit_started": true
+}

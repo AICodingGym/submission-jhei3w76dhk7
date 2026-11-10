@@ -1,0 +1,15 @@
+{
+  "status": "exact_duplicate_replaced_with_verified_hardlink",
+  "utc": "2026-11-10T15:09:33.898565+00:00",
+  "duplicate": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v036-F-first_five-schema-corrected-20261109/pipeline-archive-attempt-20261109T191728544977Z-1.tar.gz",
+  "canonical": "/dsmlp/home-fs03/08/308/v2gao/.pa3-preserved-course-backups/v036-archives/v036-complete-v2gao-2591068-first_five-r3-20261109T191620313045Z.tar.gz",
+  "bytes": 1056127127,
+  "sha256": "68aef59d863c82eddddc08e334535a3c655aa7a5e9d1c4419426c56e3efa5c53",
+  "old_inode": 850781860,
+  "old_links": 1,
+  "new_inode": 850781369,
+  "new_links": 3,
+  "original_path_and_content_preserved": true,
+  "write_probe_bytes": 8388576,
+  "no_model_dataset_or_submission_changes": true
+}

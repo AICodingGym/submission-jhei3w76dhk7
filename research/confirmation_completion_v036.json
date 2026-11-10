@@ -1,0 +1,60 @@
+{
+  "status": "complete_F_confirmation_independently_passed",
+  "utc": "2026-11-10T15:37:31.054319+00:00",
+  "baseline_MAE": 0.1952774874360924,
+  "candidate_MAE": 0.18931062550641048,
+  "gain": 0.0059668619296819325,
+  "relative_improvement_percent": 3.0555810646809354,
+  "interval": [
+    -0.007811636809518014,
+    -0.004147257147386356
+  ],
+  "audit_checks": 1516,
+  "F_result_sha256": "ed5c3f254a563cc6503bece1834d5ed8c4f1fc6a51f52b3f9d9f158aacfdfcbf",
+  "F_audit_sha256": "3a757c33687785acba1858c41302f57d3118c79480db7aff72f18f566df69a59",
+  "complete_result_UTC": "2026-11-10T06:12:12.926566+00:00",
+  "all_seven_cold": true,
+  "predeclared_budgets_unchanged": true,
+  "no_F_epoch_or_weight_selection": true,
+  "confirmation_is_resampling_evidence": true,
+  "original_A_validation_excluded": true,
+  "recovery_archive": {
+    "archive_file": "/home/v2gao/private/.pa3-preserved-course-backups/v036-archives/v036-complete-recovery-v2gao-2973011-remaining_two-r3-20261110T151256098360Z.tar.gz",
+    "bytes": 178115769,
+    "sha256": "f443ca648905f54eed3fe488d885a67141b676eeec538f1130f8cdf4ebb654f1",
+    "files": 41,
+    "archive_kind": "incremental_after_verified_first_five",
+    "base_archive_sha256": "68aef59d863c82eddddc08e334535a3c655aa7a5e9d1c4419426c56e3efa5c53"
+  },
+  "recovery_verification": {
+    "verified": true,
+    "files": 41,
+    "sha256": "f443ca648905f54eed3fe488d885a67141b676eeec538f1130f8cdf4ebb654f1",
+    "safe_regular_members": true,
+    "all_individual_file_hashes": true,
+    "forward_only_stream": true
+  },
+  "base_archive_sha256": "68aef59d863c82eddddc08e334535a3c655aa7a5e9d1c4419426c56e3efa5c53",
+  "base_members_verified": 240,
+  "new_or_updated_files": 25,
+  "only_mutable_events_appended_with_original_preserved": true,
+  "private_deduplication": {
+    "status": "exact_duplicate_replaced_with_verified_hardlink",
+    "utc": "2026-11-10T15:09:33.898565+00:00",
+    "duplicate": "/dsmlp/home-fs03/08/308/v2gao/.pa3-setup-control.gty67K/v036-F-first_five-schema-corrected-20261109/pipeline-archive-attempt-20261109T191728544977Z-1.tar.gz",
+    "canonical": "/dsmlp/home-fs03/08/308/v2gao/.pa3-preserved-course-backups/v036-archives/v036-complete-v2gao-2591068-first_five-r3-20261109T191620313045Z.tar.gz",
+    "bytes": 1056127127,
+    "sha256": "68aef59d863c82eddddc08e334535a3c655aa7a5e9d1c4419426c56e3efa5c53",
+    "old_inode": 850781860,
+    "old_links": 1,
+    "new_inode": 850781369,
+    "new_links": 3,
+    "original_path_and_content_preserved": true,
+    "write_probe_bytes": 8388576,
+    "no_model_dataset_or_submission_changes": true
+  },
+  "official_best_preserved": 0.17427,
+  "current_primary_target": 0.1638,
+  "no_new_official_score": true,
+  "no_final_fit_yet": true
+}

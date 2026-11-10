@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "utc": "2026-11-10T15:16:02.444776+00:00",
+  "checks": {
+    "valid_append_preserves_original_and_publishes_new": true,
+    "changed_checkpoint_rejected_before_publication": true,
+    "nonprefix_events_rejected_before_publication": true
+  },
+  "check_count": 3,
+  "operational_synthetic_fixture_only": true,
+  "production_publisher_sha256": "1c6927fb8b55ee9b2edfe72cdeb413c78b6353aad2331fd9e3c86a149455357b"
+}

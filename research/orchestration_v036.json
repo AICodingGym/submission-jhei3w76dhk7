@@ -1,6 +1,6 @@
 {
-  "status": "remaining_two_training_capacity_epoch42of190",
-  "updated_utc": "2026-11-10T04:11:34.778407+00:00",
+  "status": "complete_F_passed_final_deployment_CPU_verified",
+  "updated_utc": "2026-11-10T15:41:53.992848+00:00",
   "pod": "v2gao-2973011",
   "confirmation_stage": "remaining_two",
   "submitted_Pacific": "2026-11-08 20:09:15 PST",
@@ -98,7 +98,7 @@
   },
   "actual_CUDA_proof_not_yet_retrieved": false,
   "actual_start_and_lease_end_unknown": false,
-  "no_F_validation_outcome": true,
+  "no_F_validation_outcome": false,
   "remaining_two_not_allocated": false,
   "ordinary_lease_seconds": 21600,
   "no_automatic_allocation_or_submission": true,
@@ -259,5 +259,17 @@
     "offset",
     "deep_curve"
   ],
-  "remaining_training_estimate_hours": 2
+  "remaining_training_estimate_hours": 2,
+  "confirmation_complete": true,
+  "F_passed": true,
+  "F_candidate_MAE": 0.18931062550641048,
+  "F_baseline_MAE": 0.1952774874360924,
+  "F_gain": 0.0059668619296819325,
+  "F_complete_audit_checks": 1516,
+  "F_result_sha256": "ed5c3f254a563cc6503bece1834d5ed8c4f1fc6a51f52b3f9d9f158aacfdfcbf",
+  "F_audit_sha256": "3a757c33687785acba1858c41302f57d3118c79480db7aff72f18f566df69a59",
+  "final_deployment_review": "research/operations_review_v037.json",
+  "private_quota_repaired": true,
+  "recovery_CPU_pod": "v2gao-3857412",
+  "no_final_fit_started": true
 }

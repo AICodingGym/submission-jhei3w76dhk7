@@ -1,0 +1,56 @@
+{
+  "status": "reviewed_staged_CPU_deployment_and_actual_gate_passed",
+  "utc": "2026-11-10T15:40:33.510599+00:00",
+  "payload": {
+    "status": "prepared_after_passed_complete_F_and_gate",
+    "utc": "2026-11-10T15:38:27.555925+00:00",
+    "payload_sha256": "f5299d530c2fd32caa2639474203747d662235183e17d318910b709423c97d05",
+    "payload_bytes": 550641,
+    "payload_members": 69,
+    "pins_sha256": "f46983c71248f065d45398fb83267845a01e0534242e4c5ef0dc5b235c817c57",
+    "F_result_sha256": "ed5c3f254a563cc6503bece1834d5ed8c4f1fc6a51f52b3f9d9f158aacfdfcbf",
+    "F_audit_sha256": "3a757c33687785acba1858c41302f57d3118c79480db7aff72f18f566df69a59",
+    "source_code_sha256": "68a4aa07834bd8cd365058631f01279620117c7a896657c9a3029622e3d4ed64",
+    "existing_prerequisite_files": 51,
+    "existing_prerequisite_bytes": 815760372,
+    "project_files": 58,
+    "no_GPU_requested": true,
+    "no_final_fit_started": true
+  },
+  "operational_checks": 25,
+  "actual_CPU_deployment_gate_verification_pending": false,
+  "actual_GPU_proof_required": true,
+  "scientific_source_frozen_before_F_outcome": true,
+  "scientific_source_code_sha256": "68a4aa07834bd8cd365058631f01279620117c7a896657c9a3029622e3d4ed64",
+  "final_target_directory": "outputs/confirmation_v036/final_all_v037",
+  "runtime_directory": ".pa3-preserved-course-backups/v037-runtime/<pod>-final",
+  "archive_directory": ".pa3-preserved-course-backups/v037-archives",
+  "no_automatic_allocation_or_submission": true,
+  "storage_probe_bytes_per_filesystem": 283347456,
+  "archive_error_reserve_bytes": 5242880,
+  "only_new_model_fit": {
+    "capacity_laplace_curve": 190
+  },
+  "all_training_breaths": 67905,
+  "reused_accepted_model_ids": [
+    "original_compact",
+    "deep",
+    "curve",
+    "memory",
+    "offset"
+  ],
+  "source_fits_in_notebook_only": true,
+  "previous_failed_attempts_preserved": [
+    "build_payload_before_prerequisite_graph_fix.py",
+    "unused_before_deploy_environment_fix"
+  ],
+  "genuine_operational_errors": [
+    "AST literal extraction did not evaluate nested dict() in legacy originals; resolved names from accepted prior manifest instead.",
+    "CPU dry-deploy caught obsolete PA3_V036_DEPLOY_SHA256; corrected helper namespace and added six namespace contract checks."
+  ],
+  "no_model_or_data_recipe_changes": true,
+  "actual_CPU_deployment_gate_verified": true,
+  "required_existing_files_verified": 51,
+  "deployed_project_files_verified": 58,
+  "updated_utc": "2026-11-10T15:41:53.991952+00:00"
+}
